@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "INDEPENDENT_LOCAL_SAVED_EVIDENCE_AUDIT_NOT_NEW_RPC",
+  "transactionHash": "0x17509be1a415297b7ffbad6ad346625d6f67cb24aaffdd66ab4aae7e79f9f0a6",
+  "checks": [
+    "approved_raw_plan_hash",
+    "exact_B_nonce4_value_0.09999",
+    "unique_33_share_mint_and_Contributed100",
+    "Purchased_0.303",
+    "NFT3204_A_to_Vault",
+    "Seaport_full_offer_and_consideration_0.3_A_0.003_creator",
+    "all_100_holders_supplies_and_creator_B_balances",
+    "ACTIVE_full_principal_purchase_accounting",
+    "nine_ledger_reservations_sum",
+    "nine_actual_gas_receipts_sum",
+    "report_validation_readme_consistency"
+  ],
+  "allNineActualGasFeeWei": "903282250000000",
+  "totalPrincipalWei": "303000000000000000",
+  "spentAndReservedWei": "304097985200000000",
+  "approvedBudgetWei": "304500000000000000",
+  "independentNativeBalanceOrTraceVerification": "NOT_RUN",
+  "bemHarvestOrClaimTest": "NOT_RUN",
+  "transactionsSentByAudit": 0
+}

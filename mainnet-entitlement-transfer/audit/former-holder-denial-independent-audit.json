@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "OFFLINE_INDEPENDENT_DECODE_OF_SAVED_LIVE_REVERT",
+  "rpcRequests": 0,
+  "newTransactionsSent": 0,
+  "freshNotHolderSimulation": "NOT_RUN",
+  "sourceBindings": {
+    "liveProofRawHash": "0x525c0e310d4ab27377a335f88ccccbcfc617a782c4df2240e574b7b0dac952e9",
+    "journalRawHash": "0x8a6dc15e2ac05aa043fbd71e9b56cf1f7c0b3da49f2de8869b23fe790e472dfc",
+    "transferEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+    "compiledVaultArtifactRawHash": "0xeffce67929be4ff5baf073e983d3ebb1e07d2ae9d2640459edf8e7a0e9eaa6be",
+    "entitlementToolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+    "captureScriptSha256": "decb9ebe2a7ffd066b430d7804000df058510407516948a7ac557d56e8e89ac0"
+  },
+  "proofBlock": {
+    "number": "128590706",
+    "hash": "0x3ebfc77f63e3584f50e0db238e9a38ccea8fad462d97cfa40d20d99feb846091",
+    "afterTransferReceiptBlock": "128590538",
+    "buyerClaimStatusAtReview": "NOT_YET_EXECUTED_JOURNAL_HAS_TWO_STEPS"
+  },
+  "call": {
+    "account": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "vault": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+    "functionName": "claim",
+    "args": [
+      "1"
+    ],
+    "valueWei": "0",
+    "gas": "3000000"
+  },
+  "independentDecode": {
+    "rawRevertData": "0x7623fb52",
+    "expectedEncodedError": "0x7623fb52",
+    "decodedErrorName": "NotHolder",
+    "decodedArgs": [],
+    "compiledAbiSource": "out/GroupBuyVault.sol/GroupBuyVault.json"
+  },
+  "state": {
+    "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "creatorBalance": "0",
+    "buyerBBalance": "1",
+    "claimedRaw": "136654",
+    "claimableRaw": "323",
+    "accPerShareRaw": "136977",
+    "vaultCodeHash": "0x61c1667856d7a9eb0d4f00dcc26f4123847f223500db9b9c5de567a2d28bee18"
+  },
+  "checks": {
+    "fixedSourceHashAndCaptureScript": true,
+    "exactCreatorClaimOne": true,
+    "typedNotHolderRawBytesMatchCompiledAbi": true,
+    "transferReceiptAndEntryHashBound": true,
+    "proofAfterConfirmedTransfer": true,
+    "creatorZeroAndBuyerOne": true,
+    "positivePreTransferEntitlementStill323": true,
+    "noKeysAndZeroTransactionsRecorded": true
+  },
+  "limitations": [
+    "The source capture performed a live read-only simulation; this independent audit only decodes the saved bytes and verifies local evidence bindings.",
+    "This audit does not contact RPC or freshly verify canonicality.",
+    "Ordering before B claim will be rechecked by final reconciliation after the third receipt exists."
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "status": "READ_ONLY_OBSERVED_MAINNET_EXECUTION_NOT_STARTED",
+  "observedAt": "2026-10-19T13:05:41.499Z",
+  "chainId": 56,
+  "checkpoint": {
+    "selection": "PROVIDER_FINALIZED_TAG",
+    "blockNumber": "128559198",
+    "blockHash": "0xb90b1d9ccb93eee389655b1080b12c3cfc96cea312c289123221022428c3d9cd",
+    "timestamp": "1792415136"
+  },
+  "independentCrossCheck": {
+    "status": "MATCH",
+    "endpoint": "https://bsc-dataseed.bnbchain.org",
+    "chainId": 56,
+    "blockNumber": "128559198",
+    "blockHash": "0xb90b1d9ccb93eee389655b1080b12c3cfc96cea312c289123221022428c3d9cd"
+  },
+  "historicalForkCheckpointMatches": true,
+  "accounts": [
+    {
+      "role": "creator",
+      "address": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "balanceWei": "204835734200000000",
+      "balanceBNB": "0.2048357342",
+      "hasCode": false,
+      "nonce": 5
+    },
+    {
+      "role": "sellerA",
+      "address": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "balanceWei": "4959767700000000",
+      "balanceBNB": "0.0049597677",
+      "hasCode": false,
+      "nonce": 5
+    },
+    {
+      "role": "buyerB",
+      "address": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "balanceWei": "114878979500000000",
+      "balanceBNB": "0.1148789795",
+      "hasCode": false,
+      "nonce": 4
+    }
+  ],
+  "funding": {
+    "sellerPriceWei": "300000000000000000",
+    "marketFeeWei": "3000000000000000",
+    "totalUpfrontWei": "303000000000000000",
+    "sharePriceWei": "3030000000000000",
+    "sellerPriceBNB": "0.3",
+    "marketFeeBNB": "0.003",
+    "totalUpfrontBNB": "0.303",
+    "sharePriceBNB": "0.00303",
+    "gasIncluded": false,
+    "creatorMaximumSharesBeforeGas": "67",
+    "buyerBMaximumSharesBeforeGas": "37",
+    "totalMaximumSharesBeforeGas": "104",
+    "aggregatePrincipalShortfallWei": "0",
+    "aggregatePrincipalShortfallBNB": "0",
+    "completeFundingPossibleBeforeGas": true,
+    "proposedAllocationOnly": {
+      "creator": {
+        "ids": "1..67",
+        "shares": 67,
+        "contributionWei": "203010000000000000",
+        "contributionBNB": "0.20301"
+      },
+      "buyerB": {
+        "ids": "68..100",
+        "shares": 33,
+        "contributionWei": "99990000000000000",
+        "contributionBNB": "0.09999"
+      }
+    },
+    "allocationConfirmed": false,
+    "note": "Balances exclude deployment, governance and transaction gas. Later seller/fee proceeds cannot finance upfront contributions. 67/33 is an unconfirmed example, not an instruction to transfer money."
+  },
+  "gasPriceWei": "50000000",
+  "gasEstimateForFullLifecycle": "NOT_ESTIMATED_GOVERNANCE_AND_ALLOCATION_MISSING",
+  "miner": {
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "tokenId": "3204",
+    "owner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "sellerOwnsMiner": true,
+    "approved": "0x0000000000000000000000000000000000000000",
+    "noTokenApproval": true,
+    "seaportOperatorApproved": false
+  },
+  "protocolRuntimeIdentities": [
+    {
+      "field": "collection",
+      "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "codeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+      "matchesForkBaselineRuntime": true
+    },
+    {
+      "field": "mining",
+      "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "codeHash": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce",
+      "matchesForkBaselineRuntime": true
+    },
+    {
+      "field": "bem",
+      "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+      "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344",
+      "matchesForkBaselineRuntime": true
+    },
+    {
+      "field": "market",
+      "address": "0x0000000000000068F116a894984e2DB1123eB395",
+      "codeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+      "matchesForkBaselineRuntime": true
+    }
+  ],
+  "seaport": {
+    "address": "0x0000000000000068F116a894984e2DB1123eB395",
+    "version": "1.6",
+    "domainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb",
+    "conduitController": "0x00000000F9490004C11Cef243f5400493c00Ad63",
+    "sellerCounter": "0"
+  },
+  "mining": {
+    "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "minerKey": "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+    "pendingRaw": "13555620",
+    "pendingIsNotGuaranteedClaimAmount": true
+  },
+  "bem": {
+    "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+    "decimals": 8
+  },
+  "blockers": [
+    "LIVE_DEPLOYMENT_MANIFEST_NOT_PREPARED",
+    "GOVERNANCE_MULTISIG_AND_DELAY_UNSPECIFIED",
+    "ALLOCATION_AND_GAS_BUDGET_UNCONFIRMED"
+  ],
+  "mainnetTransactionsSent": 0,
+  "orderSignaturesCreated": 0,
+  "privateKeysConsumed": false,
+  "environmentFieldsConsumed": [
+    "BSC_RPC_URL"
+  ],
+  "rpcCredentials": "REDACTED",
+  "marketDatabaseWrites": 0,
+  "governanceDeployment": "NOT_RUN",
+  "purchase": "NOT_RUN",
+  "rewardsAndRedemption": "NOT_RUN",
+  "limitation": "Runtime hashes are compared against the observed fork baseline, not an independent full source audit. Proxy implementation semantics and complete governance history are not approved by this observation."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "INDEPENDENT_PLAN_CHECK_PASS",
+  "planHash": "0xae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b",
+  "planFile": "mainnet-entitlement-transfer/plans/new-harvest-ae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b.json",
+  "toolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "to": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "functionName": "harvest",
+  "nonce": 13,
+  "valueWei": "0",
+  "gasEstimate": "159657",
+  "gas": "191589",
+  "gasPrice": "50000000",
+  "maxFeeWei": "9579450000000",
+  "maxFeeBNB": "0.00000957945",
+  "reservedAfterWei": "304313570550000000",
+  "reservedAfterBNB": "0.30431357055",
+  "remainingCapBNB": "0.00018642945",
+  "snapshotBlock": "128588686",
+  "pendingRaw": "29050",
+  "prerequisiteTxs": [
+    "0xb3af0c8a9cc570826a4782fd3b09f9d306fdd5d7dd89c7b10c0985899f5a03ea",
+    "0x5a7426b05a54f8bfbf6a9012a5094110689dde36910048f63736d9db0c9767bd",
+    "0x09bad685e01819a520fa4120c5c6023c12768a6171846df73862614939785105"
+  ],
+  "newTransactionsSent": 0
+}

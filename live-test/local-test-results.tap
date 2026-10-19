@@ -1,0 +1,595 @@
+TAP version 13
+# Subtest: default is read-only and reconcile cannot combine with broadcast
+ok 1 - default is read-only and reconcile cannot combine with broadcast
+  ---
+  duration_ms: 5.328708
+  ...
+# Subtest: duplicate, unknown, missing and invalid step arguments stop early
+ok 2 - duplicate, unknown, missing and invalid step arguments stop early
+  ---
+  duration_ms: 0.275
+  ...
+# Subtest: broadcast requires a reviewed raw bundle hash
+ok 3 - broadcast requires a reviewed raw bundle hash
+  ---
+  duration_ms: 0.09625
+  ...
+# Subtest: fee limits require positive exact decimal BNB without exponent or truncation
+ok 4 - fee limits require positive exact decimal BNB without exponent or truncation
+  ---
+  duration_ms: 0.271916
+  ...
+# Subtest: all human gates and both actual TTY streams must be present
+ok 5 - all human gates and both actual TTY streams must be present
+  ---
+  duration_ms: 0.33875
+  ...
+# Subtest: noninteractive CLI refuses broadcast before reading nonexistent env or network
+ok 6 - noninteractive CLI refuses broadcast before reading nonexistent env or network
+  ---
+  duration_ms: 151.709166
+  ...
+# Subtest: rehearsal requires successful cleanup and all four exact deployment identities
+ok 7 - rehearsal requires successful cleanup and all four exact deployment identities
+  ---
+  duration_ms: 0.339667
+  ...
+# Subtest: changed session, source, tool, bundle or checkpoint invalidates rehearsal
+ok 8 - changed session, source, tool, bundle or checkpoint invalidates rehearsal
+  ---
+  duration_ms: 0.126916
+  ...
+# Subtest: confirmation cannot silently permit a changed nonce, payload, address or gas price
+ok 9 - confirmation cannot silently permit a changed nonce, payload, address or gas price
+  ---
+  duration_ms: 0.176125
+  ...
+# Subtest: budget reservation and both durable journals precede the only broadcast
+ok 10 - budget reservation and both durable journals precede the only broadcast
+  ---
+  duration_ms: 0.358166
+  ...
+# Subtest: failure at reservation never broadcasts or advances to another stage
+ok 11 - failure at reservation never broadcasts or advances to another stage
+  ---
+  duration_ms: 0.245667
+  ...
+# Subtest: failure at saveReserved never broadcasts or advances to another stage
+ok 12 - failure at saveReserved never broadcasts or advances to another stage
+  ---
+  duration_ms: 0.082917
+  ...
+# Subtest: failure at sign never broadcasts or advances to another stage
+ok 13 - failure at sign never broadcasts or advances to another stage
+  ---
+  duration_ms: 0.1235
+  ...
+# Subtest: failure at saveSigned never broadcasts or advances to another stage
+ok 14 - failure at saveSigned never broadcasts or advances to another stage
+  ---
+  duration_ms: 0.131625
+  ...
+# Subtest: ambiguous network failure preserves hash and never retries broadcast
+ok 15 - ambiguous network failure preserves hash and never retries broadcast
+  ---
+  duration_ms: 0.147875
+  ...
+# Subtest: RPC returning another hash is rejected after recording the signed hash
+ok 16 - RPC returning another hash is rejected after recording the signed hash
+  ---
+  duration_ms: 0.147875
+  ...
+# Subtest: journal and budget are required together, including prior bundles with orphan reservations
+ok 17 - journal and budget are required together, including prior bundles with orphan reservations
+  ---
+  duration_ms: 0.49925
+  ...
+# Subtest: budget amount, sender, nonce, operation and bytecode bindings cannot be replaced
+ok 18 - budget amount, sender, nonce, operation and bytecode bindings cannot be replaced
+  ---
+  duration_ms: 0.456417
+  ...
+# Subtest: journal steps must be continuous, source-bound, and prior steps confirmed
+ok 19 - journal steps must be continuous, source-bound, and prior steps confirmed
+  ---
+  duration_ms: 0.270417
+  ...
+# Subtest: reserved-without-hash can be recorded, while a signed state without hash is rejected
+ok 20 - reserved-without-hash can be recorded, while a signed state without hash is rejected
+  ---
+  duration_ms: 0.111208
+  ...
+# Subtest: RPC URL stays bound to preflight and cannot become a loopback or another endpoint
+ok 21 - RPC URL stays bound to preflight and cannot become a loopback or another endpoint
+  ---
+  duration_ms: 0.185625
+  ...
+# Subtest: just-before-send latest and pending nonces must both equal the reviewed nonce
+ok 22 - just-before-send latest and pending nonces must both equal the reviewed nonce
+  ---
+  duration_ms: 0.122458
+  ...
+# Subtest: deployed validator must match both rehearsal address and runtime
+ok 23 - deployed validator must match both rehearsal address and runtime
+  ---
+  duration_ms: 0.396875
+  ...
+# Subtest: Timelock self-admin cannot also silently gain proposer or executor roles
+ok 24 - Timelock self-admin cannot also silently gain proposer or executor roles
+  ---
+  duration_ms: 0.553667
+  ...
+# Subtest: missing ledger starts empty and existing CLI reservations count toward new deployment budget
+ok 25 - missing ledger starts empty and existing CLI reservations count toward new deployment budget
+  ---
+  duration_ms: 128.522833
+  ...
+# Subtest: ledger total is recomputed and malformed or negative entries fail closed
+ok 26 - ledger total is recomputed and malformed or negative entries fail closed
+  ---
+  duration_ms: 0.7275
+  ...
+# Subtest: budgets accumulate across bundles and sessions without resetting old reservations
+ok 27 - budgets accumulate across bundles and sessions without resetting old reservations
+  ---
+  duration_ms: 33.304375
+  ...
+# Subtest: reservation replay and the same sender nonce under a different id are both rejected
+ok 28 - reservation replay and the same sender nonce under a different id are both rejected
+  ---
+  duration_ms: 35.098709
+  ...
+# Subtest: confirmed and reverted reservations remain fully counted and cannot reserve their nonce again
+ok 29 - confirmed and reverted reservations remain fully counted and cannot reserve their nonce again
+  ---
+  duration_ms: 58.625
+  ...
+# Subtest: reservation requires the shared lock and validates positive limits, binding, and nonce
+ok 30 - reservation requires the shared lock and validates positive limits, binding, and nonce
+  ---
+  duration_ms: 22.788333
+  ...
+# Subtest: shared exclusive lock refuses simultaneous and stale lock files, and normal release is idempotent
+ok 31 - shared exclusive lock refuses simultaneous and stale lock files, and normal release is idempotent
+  ---
+  duration_ms: 20.571708
+  ...
+# Subtest: release does not remove a replaced lock
+ok 32 - release does not remove a replaced lock
+  ---
+  duration_ms: 10.662667
+  ...
+# Subtest: atomic state writes roundtrip BigInt, replace old contents, leave no temporary files and restrict permissions
+ok 33 - atomic state writes roundtrip BigInt, replace old contents, leave no temporary files and restrict permissions
+  ---
+  duration_ms: 25.778542
+  ...
+# Subtest: failure before atomic rename preserves the previous journal and cleans the temporary file
+ok 34 - failure before atomic rename preserves the previous journal and cleans the temporary file
+  ---
+  duration_ms: 14.384833
+  ...
+# Subtest: escaping paths, symlink files and symlink parent directories are refused without changing their target
+ok 35 - escaping paths, symlink files and symlink parent directories are refused without changing their target
+  ---
+  duration_ms: 3.226125
+  ...
+# Subtest: invalid JSON and a symlink ledger are never silently reset
+ok 36 - invalid JSON and a symlink ledger are never silently reset
+  ---
+  duration_ms: 2.931083
+  ...
+# Subtest: tool hash binds runtime source and session, but excludes tests, observation files and reports
+ok 37 - tool hash binds runtime source and session, but excludes tests, observation files and reports
+  ---
+  duration_ms: 16.544375
+  ...
+# Subtest: symlink runtime inputs cannot produce a bootstrap tool hash
+ok 38 - symlink runtime inputs cannot produce a bootstrap tool hash
+  ---
+  duration_ms: 2.184041
+  ...
+# Subtest: real protocol config matches original fork version and fee recipient stays outside Config
+ok 39 - real protocol config matches original fork version and fee recipient stays outside Config
+  ---
+  duration_ms: 1.350083
+  ...
+# Subtest: baseline/session NFT mismatch and unknown Seaport versions are rejected
+ok 40 - baseline/session NFT mismatch and unknown Seaport versions are rejected
+  ---
+  duration_ms: 0.252542
+  ...
+# Subtest: four atomic actions encode using the actual compiled Factory ABI
+ok 41 - four atomic actions encode using the actual compiled Factory ABI
+  ---
+  duration_ms: 5.699375
+  ...
+# Subtest: scheduleBatch and executeBatch agree exactly on operation identity and carry zero value
+ok 42 - scheduleBatch and executeBatch agree exactly on operation identity and carry zero value
+  ---
+  duration_ms: 1.853166
+  ...
+# Subtest: Safe imports use official raw-data BatchFile shape without signatures, invented nonce or Safe service calls
+ok 43 - Safe imports use official raw-data BatchFile shape without signatures, invented nonce or Safe service calls
+  ---
+  duration_ms: 0.641375
+  ...
+# Subtest: salt binds session, template hash, addresses, and config so an old schedule cannot replay on changed deployment
+ok 44 - salt binds session, template hash, addresses, and config so an old schedule cannot replay on changed deployment
+  ---
+  duration_ms: 3.897584
+  ...
+# Subtest: builder rejects mocked/reserved protocol, alternate delay, and collapsed authority
+ok 45 - builder rejects mocked/reserved protocol, alternate delay, and collapsed authority
+  ---
+  duration_ms: 0.39525
+  ...
+# Subtest: readiness distinguishes unscheduled/waiting/ready/done and refuses contradictory states
+ok 46 - readiness distinguishes unscheduled/waiting/ready/done and refuses contradictory states
+  ---
+  duration_ms: 0.177708
+  ...
+# Subtest: complete role event replay rejects any hidden extra admin/executor and accepts a revoked temporary grant
+ok 47 - complete role event replay rejects any hidden extra admin/executor and accepts a revoked temporary grant
+  ---
+  duration_ms: 1.361375
+  ...
+# Subtest: live inspection verifies configured Safe, receipt runtimes, immutable Timelock floor and schedule simulation
+ok 48 - live inspection verifies configured Safe, receipt runtimes, immutable Timelock floor and schedule simulation
+  ---
+  duration_ms: 5.399708
+  ...
+# Subtest: waiting does not simulate or send execute; ready simulates only the inner Timelock call
+ok 49 - waiting does not simulate or send execute; ready simulates only the inner Timelock call
+  ---
+  duration_ms: 3.019708
+  ...
+# Subtest: done requires selected approved fixed template/config and creation resumed
+ok 50 - done requires selected approved fixed template/config and creation resumed
+  ---
+  duration_ms: 3.936541
+  ...
+# Subtest: mainnet inspection rejects local fork, changed implementation, guardian role and early unpause
+ok 51 - mainnet inspection rejects local fork, changed implementation, guardian role and early unpause
+  ---
+  duration_ms: 8.449125
+  ...
+# Subtest: inspection rechecks Safe owners/modules and rejects altered template runtime
+ok 52 - inspection rechecks Safe owners/modules and rejects altered template runtime
+  ---
+  duration_ms: 1.030167
+  ...
+# Subtest: validator address and code must match the source-matched rehearsal, not merely have code
+ok 53 - validator address and code must match the source-matched rehearsal, not merely have code
+  ---
+  duration_ms: 3.245875
+  ...
+# Subtest: governance preparation binds passing cleaned-up rehearsal, input hashes and all four runtime identities
+ok 54 - governance preparation binds passing cleaned-up rehearsal, input hashes and all four runtime identities
+  ---
+  duration_ms: 0.939292
+  ...
+# Subtest: deployment state is only an index: four canonical CREATE transactions independently bind initcode nonce runtime
+ok 55 - deployment state is only an index: four canonical CREATE transactions independently bind initcode nonce runtime
+  ---
+  duration_ms: 1.569709
+  ...
+# Subtest: fork receipts, failed CREATE, altered initcode and nonce drift cannot qualify as deployment evidence
+ok 56 - fork receipts, failed CREATE, altered initcode and nonce drift cannot qualify as deployment evidence
+  ---
+  duration_ms: 0.832458
+  ...
+# Subtest: CLI accepts only explicit local inputs and never accepts broadcast/sign/private-key arguments
+ok 57 - CLI accepts only explicit local inputs and never accepts broadcast/sign/private-key arguments
+  ---
+  duration_ms: 440.522167
+  ...
+# Subtest: candidate acceptance requires code provenance and configuration together
+ok 58 - candidate acceptance requires code provenance and configuration together
+  ---
+  duration_ms: 0.584791
+  ...
+# Subtest: getters cannot substitute for any of the runtime provenance checks
+ok 59 - getters cannot substitute for any of the runtime provenance checks
+  ---
+  duration_ms: 0.0735
+  ...
+# Subtest: single signature, duplicate owners, changed singleton and unknown version fail review
+ok 60 - single signature, duplicate owners, changed singleton and unknown version fail review
+  ---
+  duration_ms: 0.063375
+  ...
+# Subtest: enabled modules or incomplete pagination do not pass preparation review
+ok 61 - enabled modules or incomplete pagination do not pass preparation review
+  ---
+  duration_ms: 0.0485
+  ...
+# Subtest: wrong chain or dev clients are rejected before reading target code
+ok 62 - wrong chain or dev clients are rejected before reading target code
+  ---
+  duration_ms: 0.564542
+  ...
+# Subtest: official proxy initcode returns embedded runtime before constructor error-string data
+ok 63 - official proxy initcode returns embedded runtime before constructor error-string data
+  ---
+  duration_ms: 0.563625
+  ...
+# Subtest: exact stated 0.2/0.1 balances cannot fund 100 integral shares or fees
+ok 64 - exact stated 0.2/0.1 balances cannot fund 100 integral shares or fees
+  ---
+  duration_ms: 0.7
+  ...
+# Subtest: aggregate balance alone is insufficient when share rounding strands funds
+ok 65 - aggregate balance alone is insufficient when share rounding strands funds
+  ---
+  duration_ms: 0.134334
+  ...
+# Subtest: 67/33 exact contributions completely fund the order but do not include gas
+ok 66 - 67/33 exact contributions completely fund the order but do not include gas
+  ---
+  duration_ms: 0.057125
+  ...
+# Subtest: live observed balances cover principal without claiming a full gas budget
+ok 67 - live observed balances cover principal without claiming a full gas budget
+  ---
+  duration_ms: 0.056792
+  ...
+# Subtest: negative balances are rejected
+ok 68 - negative balances are rejected
+  ---
+  duration_ms: 0.20875
+  ...
+# Subtest: funding another split does not mean the confirmed 67/33 split is funded
+ok 69 - funding another split does not mean the confirmed 67/33 split is funded
+  ---
+  duration_ms: 0.050541
+  ...
+# Subtest: read-only RPC methods reach the underlying provider
+ok 70 - read-only RPC methods reach the underlying provider
+  ---
+  duration_ms: 0.070542
+  ...
+# Subtest: broadcast, wallet signatures, impersonation and unknown RPCs cannot reach transport
+ok 71 - broadcast, wallet signatures, impersonation and unknown RPCs cannot reach transport
+  ---
+  duration_ms: 0.29625
+  ...
+# Subtest: environment input is mandatory
+ok 72 - environment input is mandatory
+  ---
+  duration_ms: 0.135625
+  ...
+# Subtest: CLI refuses broadcast before reading environment or opening a network connection
+ok 73 - CLI refuses broadcast before reading environment or opening a network connection
+  ---
+  duration_ms: 138.22425
+  ...
+# Subtest: current core files still match the reviewed core hash and artifact metadata sources
+ok 74 - current core files still match the reviewed core hash and artifact metadata sources
+  ---
+  duration_ms: 92.16925
+  ...
+# Subtest: exactly four unsigned CREATE requests derive sequential nonces and addresses
+ok 75 - exactly four unsigned CREATE requests derive sequential nonces and addresses
+  ---
+  duration_ms: 10.402083
+  ...
+# Subtest: Timelock constructor embeds only the confirmed Safe as proposer and executor with 600 second floor
+ok 76 - Timelock constructor embeds only the confirmed Safe as proposer and executor with 600 second floor
+  ---
+  duration_ms: 5.216083
+  ...
+# Subtest: proxy initializes atomically with predicted implementation, Timelock and independent guardian
+ok 77 - proxy initializes atomically with predicted implementation, Timelock and independent guardian
+  ---
+  duration_ms: 5.383458
+  ...
+# Subtest: changing nonce changes every expected CREATE address and proxy bindings
+ok 78 - changing nonce changes every expected CREATE address and proxy bindings
+  ---
+  duration_ms: 10.335958
+  ...
+# Subtest: pending transactions or checkpoint nonce drift invalidate the complete bundle
+ok 79 - pending transactions or checkpoint nonce drift invalidate the complete bundle
+  ---
+  duration_ms: 0.278709
+  ...
+# Subtest: changed core hash and non-BSC identities are rejected
+ok 80 - changed core hash and non-BSC identities are rejected
+  ---
+  duration_ms: 0.153792
+  ...
+# Subtest: zero delay and overlapping guardian governance addresses are rejected
+ok 81 - zero delay and overlapping guardian governance addresses are rejected
+  ---
+  duration_ms: 0.13625
+  ...
+# Subtest: a label cannot substitute for multisig code or distinct threshold owners
+ok 82 - a label cannot substitute for multisig code or distinct threshold owners
+  ---
+  duration_ms: 0.278583
+  ...
+# Subtest: creator contracts and malformed or negative nonces are rejected
+ok 83 - creator contracts and malformed or negative nonces are rejected
+  ---
+  duration_ms: 0.147334
+  ...
+# Subtest: prepared report keeps later governance, proxy gas, release gate and signatures explicitly incomplete
+ok 84 - prepared report keeps later governance, proxy gas, release gate and signatures explicitly incomplete
+  ---
+  duration_ms: 4.653625
+  ...
+# Subtest: read-only preparation estimates only first three deployments, rounds gas buffer up, and leaves transactions unsigned
+ok 85 - read-only preparation estimates only first three deployments, rounds gas buffer up, and leaves transactions unsigned
+  ---
+  duration_ms: 5.95525
+  ...
+# Subtest: nonce change during read-only preparation prevents saving a stale sequence
+ok 86 - nonce change during read-only preparation prevents saving a stale sequence
+  ---
+  duration_ms: 5.114834
+  ...
+# Subtest: chain, protocol code drift and occupied CREATE address fail closed
+ok 87 - chain, protocol code drift and occupied CREATE address fail closed
+  ---
+  duration_ms: 5.184458
+  ...
+# Subtest: unavailable gas estimates do not fabricate values or disclose provider error text
+ok 88 - unavailable gas estimates do not fabricate values or disclose provider error text
+  ---
+  duration_ms: 5.195875
+  ...
+# Subtest: full Safe review must reject unreviewed modules, guard, implementation and owner drift
+ok 89 - full Safe review must reject unreviewed modules, guard, implementation and owner drift
+  ---
+  duration_ms: 0.32225
+  ...
+# Subtest: Safe review at a different checkpoint or with changed implementation is rejected
+ok 90 - Safe review at a different checkpoint or with changed implementation is rejected
+  ---
+  duration_ms: 0.134666
+  ...
+# Subtest: governance inspector finalized request is pinned to the same preparation block
+ok 91 - governance inspector finalized request is pinned to the same preparation block
+  ---
+  duration_ms: 5.14625
+  ...
+# Subtest: CLI rejects broadcasting or missing env before environment access and network
+ok 92 - CLI rejects broadcasting or missing env before environment access and network
+  ---
+  duration_ms: 327.166959
+  ...
+# Subtest: binds four deploy initcodes and expected addresses to reviewed artifacts and current session
+ok 93 - binds four deploy initcodes and expected addresses to reviewed artifacts and current session
+  ---
+  duration_ms: 9.388208
+  ...
+# Subtest: rejects session hash
+ok 94 - rejects session hash
+  ---
+  duration_ms: 2.673584
+  ...
+# Subtest: rejects source hash
+ok 95 - rejects source hash
+  ---
+  duration_ms: 2.613708
+  ...
+# Subtest: rejects chain ID
+ok 96 - rejects chain ID
+  ---
+  duration_ms: 1.155167
+  ...
+# Subtest: rejects missing deployment
+ok 97 - rejects missing deployment
+  ---
+  duration_ms: 1.075084
+  ...
+# Subtest: rejects changed nonce
+ok 98 - rejects changed nonce
+  ---
+  duration_ms: 8.410416
+  ...
+# Subtest: rejects changed amount
+ok 99 - rejects changed amount
+  ---
+  duration_ms: 1.194041
+  ...
+# Subtest: rejects changed sender
+ok 100 - rejects changed sender
+  ---
+  duration_ms: 1.070375
+  ...
+# Subtest: rejects changed initcode
+ok 101 - rejects changed initcode
+  ---
+  duration_ms: 7.158708
+  ...
+# Subtest: rejects changed expected address
+ok 102 - rejects changed expected address
+  ---
+  duration_ms: 7.637125
+  ...
+# Subtest: rejects weakened delay
+ok 103 - rejects weakened delay
+  ---
+  duration_ms: 1.133167
+  ...
+# Subtest: source access has no private key consumption and forwards only read allowlist
+ok 104 - source access has no private key consumption and forwards only read allowlist
+  ---
+  duration_ms: 4.885708
+  ...
+# Subtest: network errors cannot count as expected contract rejection
+ok 105 - network errors cannot count as expected contract rejection
+  ---
+  duration_ms: 0.33
+  ...
+# Subtest: concurrent signal and finally shutdown await the same completed cleanup
+ok 106 - concurrent signal and finally shutdown await the same completed cleanup
+  ---
+  duration_ms: 0.167792
+  ...
+# Subtest: unexpected contract error cannot count as the intended access-control rejection
+ok 107 - unexpected contract error cannot count as the intended access-control rejection
+  ---
+  duration_ms: 0.175834
+  ...
+# Subtest: requires all expected transaction fields and explicitly supplied env file
+ok 108 - requires all expected transaction fields and explicitly supplied env file
+  ---
+  duration_ms: 1.590958
+  ...
+# Subtest: rejects broadcast, signing, unknown, duplicate and malformed parameters
+ok 109 - rejects broadcast, signing, unknown, duplicate and malformed parameters
+  ---
+  duration_ms: 0.762917
+  ...
+# Subtest: accepts an explicit confirmation count and CREATE destination
+ok 110 - accepts an explicit confirmation count and CREATE destination
+  ---
+  duration_ms: 0.274
+  ...
+# Subtest: matches canonical successful receipt and actual gas, leaving business UNVERIFIED
+ok 111 - matches canonical successful receipt and actual gas, leaving business UNVERIFIED
+  ---
+  duration_ms: 1.626125
+  ...
+# Subtest: CREATE requires null transaction and receipt destinations
+ok 112 - CREATE requires null transaction and receipt destinations
+  ---
+  duration_ms: 0.360667
+  ...
+# Subtest: refuses non-BSC and development clients without requesting any receipt
+ok 113 - refuses non-BSC and development clients without requesting any receipt
+  ---
+  duration_ms: 0.29825
+  ...
+# Subtest: fails each transaction identity, receipt identity, revert and inclusion mismatch
+ok 114 - fails each transaction identity, receipt identity, revert and inclusion mismatch
+  ---
+  duration_ms: 0.756666
+  ...
+# Subtest: insufficient confirmations are explicitly not passed with observed count
+ok 115 - insufficient confirmations are explicitly not passed with observed count
+  ---
+  duration_ms: 0.092958
+  ...
+# Subtest: rejects noncanonical receipt and a reorg during observation
+ok 116 - rejects noncanonical receipt and a reorg during observation
+  ---
+  duration_ms: 0.24525
+  ...
+# Subtest: missing receipt and provider failures remain unverified and redact sensitive details
+ok 117 - missing receipt and provider failures remain unverified and redact sensitive details
+  ---
+  duration_ms: 0.323666
+  ...
+1..117
+# tests 117
+# suites 0
+# pass 117
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 809.747708

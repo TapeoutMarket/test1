@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "OFFLINE_INDEPENDENT_SAVED_TRANSFER_EVIDENCE",
+  "rpcRequests": 0,
+  "freshCanonicalChainVerification": "NOT_RUN",
+  "transactionHash": "0x28dee1670e0d52d10cd7532fef95bc1274b627484e3f108154a36f6ee5066df7",
+  "blockNumber": "128590538",
+  "blockHash": "0x5a564d6600202bb217b40edaabdc82ea4ce9d91a08210ab6d856425b061be3da",
+  "sourceBindings": {
+    "planRawHash": "0x6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129",
+    "journalRawHash": "0x8a6dc15e2ac05aa043fbd71e9b56cf1f7c0b3da49f2de8869b23fe790e472dfc",
+    "transferEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+    "harvestEntryHash": "0x51dafa6d388337b21fa9535c14abe85ab86139ea682ce259447d7307a85af2c2",
+    "budgetRawHash": "0x29263f1b9702c667e465a2834c616f8f150fd7f3c62aa264cd8c7962e39d7e61",
+    "compiledVaultArtifactRawHash": "0xeffce67929be4ff5baf073e983d3ebb1e07d2ae9d2640459edf8e7a0e9eaa6be",
+    "entitlementToolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+    "rewardsToolHash": "501b3ba397abf2d824216a7e246fb90a79d5f81b79046e9cd8b89ed77a5e1649"
+  },
+  "rawReceipt": {
+    "totalLogs": 1,
+    "decodedFromCompiledVaultABI": {
+      "address": "0xbdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a",
+      "logIndex": 689,
+      "eventName": "TransferSingle",
+      "args": {
+        "operator": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "to": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "id": "1",
+        "value": "1"
+      }
+    },
+    "noBemTransfer": true,
+    "noRewardsSync": true,
+    "noRewardClaim": true,
+    "noHarvest": true,
+    "noMinerMovement": true
+  },
+  "entitlement": {
+    "shareId": "1",
+    "previousHolder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "currentHolder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "claimedBeforeRaw": "136654",
+    "claimedAfterRaw": "136654",
+    "accPerShareRaw": "136977",
+    "positiveUnclaimedRaw": "323",
+    "positiveUnclaimedBEM": "0.00000323",
+    "all100ClaimedUnchanged": true,
+    "all100ClaimableRaw": "323",
+    "creatorCount": 66,
+    "buyerBCount": 34,
+    "totalAccountedRaw": "13697739",
+    "totalPaidRaw": "13665400",
+    "vaultBemRaw": "32339",
+    "remainderRaw": "39",
+    "holderPaymentRaw": "0",
+    "minerRemainsInVault": true
+  },
+  "formerHolderDenial": {
+    "status": "SAVED_METADATA_MATCHES_EXPECTED_STRICT_CHECK",
+    "saved": {
+      "status": "PASS",
+      "account": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "id": "1",
+      "expectedError": "NotHolder",
+      "blockNumber": "128590538",
+      "transactionsSent": 0
+    },
+    "rawRevertIndependentlyDecodedByThisAudit": false,
+    "freshCallByThisAudit": "NOT_RUN",
+    "note": "The frozen sender accepts only a genuine viem ContractFunctionRevertedError decoded as NotHolder; this audit checks its saved result metadata. Separate raw live revert proof is not read or claimed here."
+  },
+  "gas": {
+    "gasUsed": "68845",
+    "gasPriceWei": "50000000",
+    "maxFeeWei": "4799650000000",
+    "actualFeeWei": "3442250000000",
+    "actualFeeBNB": "0.00000344225"
+  },
+  "budget": {
+    "reservationCount": 14,
+    "totalReservedWei": "304318370200000000",
+    "approvedCapWei": "304500000000000000",
+    "remainingCapWei": "181629800000000",
+    "old12DigestPreserved": true,
+    "reservationsNeverReleased": true
+  },
+  "checks": {
+    "planAndRuntimeHash": true,
+    "harvestPrefixImmutable": true,
+    "exactSingleTransferCompiledAbi": true,
+    "noRewardEventsOrPayout": true,
+    "all100RowsAnd66By34Balances": true,
+    "positive323RightsFollowShare1": true,
+    "claimedUnchanged": true,
+    "accountingAndMinerUnchanged": true,
+    "savedNotHolderMetadata": true,
+    "gasAndBudgetArithmetic": true
+  },
+  "limitations": [
+    "This review is offline and makes no fresh canonical-chain or confirmation query.",
+    "Creator denial is saved strict-check metadata here; independent raw revert capture is a separate artifact.",
+    "B claim has not been executed or marked complete in this audit."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "INDEPENDENT_LOCAL_REVIEW_OF_SAVED_RECEIPTS_AND_FINAL_REPORTS",
+  "rpcRequests": 0,
+  "transactionsSent": 0,
+  "creatorPaidRaw": "9155818",
+  "buyerBPaidRaw": "4509582",
+  "vaultRemainderRaw": "85",
+  "harvestedRaw": "13665485",
+  "rewardsActualGasFeeWei": "168224250000000",
+  "allDeploymentsAndEightTestsActualGasFeeWei": "1071506500000000",
+  "totalReservedWei": "304303991100000000",
+  "checks": [
+    "three_exact_receipts_and_frozen_plans",
+    "unchanged_history_hash_prefix",
+    "same_H_q_r_and_zero_claim_inflow",
+    "all_100_ID_owners_supplies_claimed_claimable",
+    "actual_67_to_33_payments_and_conservation",
+    "twelve_preserved_budget_reservations",
+    "offline_reconciliation_PASS",
+    "reports_and_validation_consistency"
+  ],
+  "issuesRemaining": 0
+}

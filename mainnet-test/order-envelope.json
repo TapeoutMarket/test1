@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1",
+  "source": {
+    "kind": "json",
+    "name": "MAINNET_TEST_SELLER_VALIDATION_PENDING"
+  },
+  "sourceChainId": 56,
+  "market": "0x0000000000000068F116a894984e2DB1123eB395",
+  "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "tokenId": "3204",
+  "seller": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "buyerPaysWei": "303000000000000000",
+  "currency": {
+    "kind": "native",
+    "symbol": "BNB",
+    "token": "0x0000000000000000000000000000000000000000"
+  },
+  "fees": [
+    {
+      "kind": "seller",
+      "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "amountWei": "300000000000000000"
+    },
+    {
+      "kind": "market",
+      "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "amountWei": "3000000000000000"
+    }
+  ],
+  "nativeStartTime": "1792420871",
+  "nativeEndTime": "1792507271",
+  "quoteExpiresAt": null,
+  "validation": {
+    "status": "unknown",
+    "blockNumber": "128571937",
+    "blockHash": "0x09118eaa29524be12ce875f549150019aa540f8b1c231f5aad722561be60197d"
+  },
+  "exportedAt": "2026-10-19T14:41:17.720Z",
+  "identity": {
+    "status": "verified",
+    "marketCodeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+    "collectionCodeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+    "proxy": null,
+    "evidenceVersion": "mainnet-readonly-runtime-and-seaport-getters-v1"
+  },
+  "protocol": "seaport",
+  "orderHash": "0xe7f4a836c7eee681eb2cced9357e0b54848ee79f1a4b95a058c154907fef07cd",
+  "seaport": {
+    "parameters": {
+      "offerer": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "zone": "0x0000000000000000000000000000000000000000",
+      "offer": [
+        {
+          "itemType": 2,
+          "token": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+          "identifierOrCriteria": "3204",
+          "startAmount": "1",
+          "endAmount": "1"
+        }
+      ],
+      "consideration": [
+        {
+          "itemType": 0,
+          "token": "0x0000000000000000000000000000000000000000",
+          "identifierOrCriteria": "0",
+          "startAmount": "300000000000000000",
+          "endAmount": "300000000000000000",
+          "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9"
+        },
+        {
+          "itemType": 0,
+          "token": "0x0000000000000000000000000000000000000000",
+          "identifierOrCriteria": "0",
+          "startAmount": "3000000000000000",
+          "endAmount": "3000000000000000",
+          "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129"
+        }
+      ],
+      "orderType": 0,
+      "startTime": "1792420871",
+      "endTime": "1792507271",
+      "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "salt": "108846239088962081811683985843683327778349698260047245149394903985830829905354",
+      "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "totalOriginalConsiderationItems": "2"
+    },
+    "components": {
+      "offerer": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "zone": "0x0000000000000000000000000000000000000000",
+      "offer": [
+        {
+          "itemType": 2,
+          "token": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+          "identifierOrCriteria": "3204",
+          "startAmount": "1",
+          "endAmount": "1"
+        }
+      ],
+      "consideration": [
+        {
+          "itemType": 0,
+          "token": "0x0000000000000000000000000000000000000000",
+          "identifierOrCriteria": "0",
+          "startAmount": "300000000000000000",
+          "endAmount": "300000000000000000",
+          "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9"
+        },
+        {
+          "itemType": 0,
+          "token": "0x0000000000000000000000000000000000000000",
+          "identifierOrCriteria": "0",
+          "startAmount": "3000000000000000",
+          "endAmount": "3000000000000000",
+          "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129"
+        }
+      ],
+      "orderType": 0,
+      "startTime": "1792420871",
+      "endTime": "1792507271",
+      "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "salt": "108846239088962081811683985843683327778349698260047245149394903985830829905354",
+      "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "counter": "0"
+    },
+    "signature": "0x",
+    "domain": {
+      "name": "Seaport",
+      "version": "1.6",
+      "chainId": 56,
+      "verifyingContract": "0x0000000000000068F116a894984e2DB1123eB395",
+      "domainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb"
+    }
+  }
+}

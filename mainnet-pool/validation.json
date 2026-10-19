@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "step": "create-pool",
+  "status": "CONFIRMED",
+  "planFile": "mainnet-pool/plans/create-pool-160202869ab4bf0f4468613d2d5328bd9bc5bbf82a04783e24c6ed33f1f3528d.json",
+  "planHash": "0x160202869ab4bf0f4468613d2d5328bd9bc5bbf82a04783e24c6ed33f1f3528d",
+  "poolToolHash": "c6e3f405ac75a0aa40d8d053cb1dc908797feed96bac56f889a1aaa6bd4fa601",
+  "nonce": 9,
+  "gas": "1691616",
+  "gasPrice": "50000000",
+  "maxFeeWei": "84580800000000",
+  "totalReservedWeiIfApproved": "756665200000000",
+  "signed": true,
+  "broadcast": true,
+  "reservationCreated": true,
+  "localTests": {
+    "passed": 150,
+    "failed": 0
+  },
+  "combinedTests": {
+    "passed": 289,
+    "failed": 0
+  },
+  "currentReservedWei": "756665200000000",
+  "transactionsSent": 1,
+  "privateKeysConsumed": true,
+  "transactionHash": "0x391c7bbee1c93025675055f0f26b7a8c8913a5333fea167b50115265efc11aca",
+  "blockNumber": "128576858",
+  "blockHash": "0x820739f8f2cd8cb2c0aba2588679f18507a2428cbe7857be8fe9844a42d4f7c6",
+  "actualGasFeeWei": "69267700000000",
+  "gasUsed": "1385354",
+  "minimumConfirmations": 15,
+  "postconditionsVerified": true,
+  "recoveryUsed": false,
+  "journalFile": "mainnet-pool/transactions/a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c.json"
+}

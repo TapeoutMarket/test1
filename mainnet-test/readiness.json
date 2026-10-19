@@ -1,0 +1,104 @@
+{
+  "status": "PREPARED_AWAITING_FIRST_TRANSACTION_CONFIRMATION",
+  "observedAt": "2026-10-19T14:41:29.264Z",
+  "checkpoint": {
+    "blockNumber": "128571937",
+    "blockHash": "0x09118eaa29524be12ce875f549150019aa540f8b1c231f5aad722561be60197d"
+  },
+  "governanceStatus": "ALREADY_EXECUTED",
+  "creationPaused": false,
+  "liveIdentity": {
+    "status": "REVIEWED_MANIFEST_AND_CHAIN_IDENTITY_MATCH",
+    "blockNumber": "128571955",
+    "blockHash": "0x6fe4676c8006272ccdd3d492681b2204273adf746f7ed0335fbea5df7d9c6146",
+    "template": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+    "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+    "termsHash": "0xf45386c41b83d630bea3c5a600b550877352761fa44d24768b8b2f59911b68cc",
+    "factoryCurrentStateChecked": true,
+    "externalDependencyCodeChecked": true,
+    "roleAuditBoundary": "Known roles and code verified here; complete historic grants/revocations and multisig ownership require the separately hash-pinned reviewed audit. No production-readiness label is trusted."
+  },
+  "protocol": {
+    "protocol": "seaport",
+    "status": "NOT_EXECUTABLE",
+    "executable": false,
+    "permanentInvalid": false,
+    "checks": {
+      "pinnedMarketIdentity": true,
+      "pinnedCollectionIdentity": true,
+      "domainMatches": true,
+      "originalCounter": true,
+      "notCancelled": true,
+      "notFilled": true,
+      "started": true,
+      "notExpired": true,
+      "sellerOwnsMiner": true,
+      "sellerApproval": false,
+      "signatureOrSeaportValidation": false,
+      "sourceIdentityExplicitlyVerified": true
+    },
+    "blockNumber": "128571972",
+    "blockHash": "0xdb0fbdf39d2367ce1076ab813567dc36b886222f9da8fccda2b4bfb7815b6ea2",
+    "orderHash": "0xe7f4a836c7eee681eb2cced9357e0b54848ee79f1a4b95a058c154907fef07cd",
+    "quoteTtlIsNotNativeExpiry": true,
+    "executionSimulationStillRequired": true
+  },
+  "accounts": [
+    {
+      "role": "creator",
+      "address": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "balance": "204286585550000000",
+      "nonce": 9
+    },
+    {
+      "role": "sellerA",
+      "address": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "balance": "4959767700000000",
+      "nonce": 5
+    },
+    {
+      "role": "buyerB",
+      "address": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "balance": "114878979500000000",
+      "nonce": 4
+    }
+  ],
+  "miner": {
+    "owner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "approved": "0x0000000000000000000000000000000000000000",
+    "approvedAll": false
+  },
+  "orderHash": "0xe7f4a836c7eee681eb2cced9357e0b54848ee79f1a4b95a058c154907fef07cd",
+  "predictedPool": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "fundingDeadline": "1792506971",
+  "orderExpiresAt": "1792507271",
+  "fundingDeadlineBeijing": "2026-10-20 22:36:11",
+  "orderExpiresBeijing": "2026-10-20 22:41:11",
+  "independentCheckpoint": "MATCH",
+  "sessionPath": "mainnet-test/session.json",
+  "sessionHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+  "manifestHash": "0x3a041e534d6a14c3173b084d6d1d17f36ed45bcf7f36cc1ff3756e3d25964113",
+  "sourceEvidence": {
+    "governance": {
+      "path": "live-test/observations/governance-inspection-1792420701946.json",
+      "hash": "0xacb421b5e4598a704575f77f7a22a4d80617d665c7182c84e7af369fd26f7e6a"
+    },
+    "preflight": {
+      "path": "live-test/observations/preflight-1792420710423.json",
+      "hash": "0xaf217317eb9b9958f5f6ff9f97b5481474c03c708d09946e34052b9998389f31"
+    }
+  },
+  "plannedTransactions": [
+    "seller-approve",
+    "seller-validate",
+    "create-pool",
+    "creator-contribute",
+    "buyer-b-complete"
+  ],
+  "note": "Order is currently unsigned and unvalidated. Seller validate will make this FULL_OPEN order publicly fillable for 0.303 BNB. No market/database listing is created. Last contribution atomically purchases; no separate purchase transaction.",
+  "oldPreflightStaticFields": "Legacy plannedGovernance/blockers are historical hardcoded labels; current governance conclusion comes from ALREADY_EXECUTED inspection and live identity reads.",
+  "gasForLaterSteps": "NOT_YET_SIMULATABLE_UNTIL_PRECEDING_STEPS",
+  "mainnetTransactionsSent": 0,
+  "privateKeysConsumed": false,
+  "marketDatabaseWrites": 0
+}

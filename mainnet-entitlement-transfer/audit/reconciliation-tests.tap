@@ -1,0 +1,55 @@
+TAP version 13
+# Subtest: audit is not ready until exactly three ordered confirmed positive steps exist
+ok 1 - audit is not ready until exactly three ordered confirmed positive steps exist
+  ---
+  duration_ms: 0.429458
+  ...
+# Subtest: math pays increment323 and leaves99 unpaid shares plus39 remainder, never paying cumulative accumulator
+ok 2 - math pays increment323 and leaves99 unpaid shares plus39 remainder, never paying cumulative accumulator
+  ---
+  duration_ms: 0.361875
+  ...
+# Subtest: new harvest independently decodes actual mint with nonzero old ledger and remainder
+ok 3 - new harvest independently decodes actual mint with nonzero old ledger and remainder
+  ---
+  duration_ms: 6.149708
+  ...
+# Subtest: transfer permits only exact Vault share1 creator to B and no BEM, miner or reward events
+ok 4 - transfer permits only exact Vault share1 creator to B and no BEM, miner or reward events
+  ---
+  duration_ms: 1.913333
+  ...
+# Subtest: B claim1 pays only323 and rejects cumulative amount, other recipient or new inflow
+ok 5 - B claim1 pays only323 and rejects cumulative amount, other recipient or new inflow
+  ---
+  duration_ms: 2.558916
+  ...
+# Subtest: raw receipt identity rejects foreign transaction/block, removed, duplicate or unordered logs
+ok 6 - raw receipt identity rejects foreign transaction/block, removed, duplicate or unordered logs
+  ---
+  duration_ms: 1.456166
+  ...
+# Subtest: saved all100 snapshots preserve transferred rights and require former-holder NotHolder evidence
+ok 7 - saved all100 snapshots preserve transferred rights and require former-holder NotHolder evidence
+  ---
+  duration_ms: 1.434792
+  ...
+# Subtest: plan source and history hashes are bound, fabricated old budgets fail, and final PASS path is preserved
+ok 8 - plan source and history hashes are bound, fabricated old budgets fail, and final PASS path is preserved
+  ---
+  duration_ms: 1.44825
+  ...
+# Subtest: saved raw NotHolder bytes independently decode and bind to transferred but unclaimed ID1 state
+ok 9 - saved raw NotHolder bytes independently decode and bind to transferred but unclaimed ID1 state
+  ---
+  duration_ms: 1.181083
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 320.753334

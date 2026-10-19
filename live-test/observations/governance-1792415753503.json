@@ -1,0 +1,134 @@
+{
+  "status": "SAFE_141_RUNTIME_AND_CURRENT_CONFIGURATION_MATCH",
+  "observedAt": "2026-10-19T13:15:50.161Z",
+  "chainId": 56,
+  "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+  "checkpoint": {
+    "blockNumber": "128560557",
+    "blockHash": "0xf7dc2e59dfecaf40693793df973c2646f07fb55066b9082f0dca722eb0b08741",
+    "timestamp": "1792415748"
+  },
+  "codeHash": "0xd7d408ebcd99b2b70be43e20253d6d92a8ea8fab29bd3be7f55b10032331fb4c",
+  "codeBytes": 171,
+  "transactionsSent": 0,
+  "privateKeysUsed": false,
+  "userPermissionStatement": "User states they have authority for this existing multisig; RPC reads cannot prove access to signing keys.",
+  "governanceAssigned": false,
+  "requestedTimelockFloorSeconds": 600,
+  "getters": {
+    "VERSION": {
+      "status": "OBSERVED",
+      "value": "1.4.1"
+    },
+    "getOwners": {
+      "status": "OBSERVED",
+      "value": [
+        "0xf0972A5ee0FD4054159A8c7177e59126ef478dA9",
+        "0x15C059A5aCB36142Eea576BDbC0330Fd7E9d3099"
+      ]
+    },
+    "getThreshold": {
+      "status": "OBSERVED",
+      "value": "2"
+    },
+    "nonce": {
+      "status": "OBSERVED",
+      "value": "4"
+    },
+    "masterCopy": {
+      "status": "OBSERVED",
+      "value": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762"
+    }
+  },
+  "slot0": {
+    "status": "OBSERVED",
+    "value": "0x00000000000000000000000029fcb43b46531bca003ddc8fcb67ffe91900c762"
+  },
+  "implementation": {
+    "address": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+    "evidence": "Safe-style singleton storage slot0; must be corroborated against deployed proxy code",
+    "codeHash": "0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff",
+    "codeBytes": 24421,
+    "masterCopyGetterMatchesSlot0": true
+  },
+  "configuration": {
+    "ownerCount": 2,
+    "validThresholdAndUniqueNonzeroOwners": true,
+    "thresholdRequiresMultipleSignatures": true,
+    "knownTestWalletsAmongOwners": {
+      "creator": false,
+      "sellerA": false,
+      "buyerB": false
+    }
+  },
+  "modules": {
+    "complete": true,
+    "addresses": [],
+    "pages": [
+      {
+        "status": "OBSERVED",
+        "value": [
+          [],
+          "0x0000000000000000000000000000000000000001"
+        ]
+      }
+    ],
+    "note": "Enabled modules can have execution authority separate from owner threshold; any nonempty set requires separate review."
+  },
+  "specialSlots": {
+    "guard_manager.guard.address": {
+      "slot": "0x4a204f620c8c5ccdca3fd54d003badd85ba500436a431f0cbda4f558c93c34c8",
+      "status": "OBSERVED",
+      "value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x0000000000000000000000000000000000000000",
+      "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+    },
+    "fallback_manager.handler.address": {
+      "slot": "0x6c9a6c4a39284e37ed1cf53d337577d14212a4870fb976a4366c693b939918d5",
+      "status": "OBSERVED",
+      "value": "0x000000000000000000000000fd0732dc9e303f09fcef3a7388ad10a83459ec99",
+      "address": "0xfd0732Dc9E303f09fCEf3a7388Ad10A83459Ec99",
+      "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+    },
+    "module_manager.module_guard.address": {
+      "slot": "0xb104e0b93118902c651344349b610029d694cfdec91c589c91ebafbcd0289947",
+      "status": "OBSERVED",
+      "value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x0000000000000000000000000000000000000000",
+      "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+    }
+  },
+  "provenance": {
+    "sources": {
+      "implementation": {
+        "address": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+        "codeHash": "0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff",
+        "source": "https://raw.githubusercontent.com/safe-global/safe-deployments/main/src/assets/v1.4.1/safe_l2.json"
+      },
+      "factory": {
+        "address": "0x4e1DCf7AD4e460CfD30791CCC4F9c8a4f820ec67",
+        "codeHash": "0x50c3cdc4074750a7a974204a716c999edd37482f907608d960b2b025ee0b3317",
+        "source": "https://raw.githubusercontent.com/safe-global/safe-deployments/main/src/assets/v1.4.1/safe_proxy_factory.json"
+      },
+      "fallback": {
+        "address": "0xfd0732Dc9E303f09fCEf3a7388Ad10A83459Ec99",
+        "codeHash": "0x7c6007a5d711cea8dfd5d91f5940ec29c7f200fe511eb1fc1397b367af3c42f9",
+        "source": "https://raw.githubusercontent.com/safe-global/safe-deployments/main/src/assets/v1.4.1/compatibility_fallback_handler.json"
+      }
+    },
+    "officialImplementationAddressAndCodeMatch": true,
+    "officialProxyFactoryCodeMatch": true,
+    "proxyRuntimeMatchesFactoryCreationReturnSection": true,
+    "proxyCreationCodeHash": "0x1856e0ee08399d74e0ea0b03adca210aeade6f748969ac023cdcb4dd62dcaf5f",
+    "observedProxyRuntime": "0x608060405273ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156050578060005260206000f35b3660008037600080366000845af43d6000803e60008114156070573d6000fd5b3d6000f3fea264697066735822122003d1488ee65e08fa41e58e888a9865554c535f2c77126a82cb4c0f917f31441364736f6c63430007060033",
+    "factoryProxyCreationCode": "0x608060405234801561001057600080fd5b506040516101e63803806101e68339818101604052602081101561003357600080fd5b8101908080519060200190929190505050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156100ca576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806101c46022913960400191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060ab806101196000396000f3fe608060405273ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156050578060005260206000f35b3660008037600080366000845af43d6000803e60008114156070573d6000fd5b3d6000f3fea264697066735822122003d1488ee65e08fa41e58e888a9865554c535f2c77126a82cb4c0f917f31441364736f6c63430007060033496e76616c69642073696e676c65746f6e20616464726573732070726f7669646564",
+    "officialFallbackAddressAndCodeMatch": true,
+    "guardAbsent": true
+  },
+  "currentConfigurationAcceptedForPreparation": true,
+  "limitations": [
+    "This is a point-in-time runtime/configuration check, not a complete historical audit.",
+    "Owners may change Safe configuration later; recheck immediately before deployment/configuration signing.",
+    "User authority is reported by the user, not proven by chain reads. No Timelock has been deployed or role assigned."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "READ_ONLY_MAINNET_ETH_CALL_NOT_BROADCAST_TRANSACTIONS",
+  "file": "mainnet-observe/observations/active-pool-1792424534771.json",
+  "blockNumber": "128580017",
+  "blockHash": "0x39ede1bcd01320886a7636d586e1116042bef307f5103577ee918c7f492eef25",
+  "negativeCasesPassed": 10,
+  "negativeCasesFailed": 0,
+  "observerLocalTestsPassed": 32,
+  "observerLocalTestsFailed": 0,
+  "transactionsSent": 0,
+  "privateKeysUsed": false,
+  "all100SharesRechecked": true,
+  "creatorShareCount": 67,
+  "buyerBShareCount": 33,
+  "bemDecimals": 8,
+  "miningPendingRaw": "13653220",
+  "miningPendingDisplayBEM": "0.13653220",
+  "pendingIsNotGuaranteedClaimAmount": true,
+  "vaultBemRaw": "0",
+  "all100ClaimedZero": true,
+  "all100ClaimableZero": true,
+  "rewards": {
+    "totalAccounted": "0",
+    "totalPaid": "0",
+    "accPerShare": "0",
+    "remainder": "0",
+    "unaccountedBem": "0"
+  },
+  "bemHarvestOrClaimTest": "NOT_RUN",
+  "observerSha256": "4f037e0bb51731157b9b6952a1270829fd3cf43879ef00835f1564b4a0c6c8be",
+  "localTestCommand": "node --import tsx --test mainnet-observe/*.test.mjs",
+  "readOnlyCommand": "node --import tsx mainnet-observe/active-pool.mjs",
+  "observedCompletionConfirmations": {
+    "required": 15,
+    "observed": "465",
+    "headBlock": "128580015",
+    "finality": "CONFIRMATION_COUNT_ONLY_NOT_A_FINALITY_GUARANTEE"
+  }
+}

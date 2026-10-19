@@ -1,0 +1,17 @@
+{
+  "step": 1,
+  "name": "GroupBuyVault",
+  "chainId": 56,
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "to": "CREATE",
+  "nonce": 5,
+  "expectedContractAddress": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+  "initCodeHash": "0x9014031c0ac0c6c5c1cfc072091163984f1da335c78285facb0fc76fe266e1fa",
+  "valueWei": "0",
+  "estimate": "7053938",
+  "gas": "8464726",
+  "gasPrice": "50000000",
+  "maxFeeWei": "423236300000000",
+  "maxFeeBNB": "0.0004232363",
+  "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d"
+}

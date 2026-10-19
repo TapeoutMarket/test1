@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "scope": "LOCAL_FORK_DEPLOYMENT_REHEARSAL",
+  "status": "FAIL",
+  "runId": "3de6be95-b41c-4886-8930-1852d8b5f479",
+  "startedAt": "2026-10-19T13:27:31.082Z",
+  "mainnetTransactionsSent": 0,
+  "privateKeysConsumed": false,
+  "orderSignaturesCreated": 0,
+  "sourceEnvironmentFieldsConsumed": [
+    "BSC_RPC_URL"
+  ],
+  "realSafeThresholdSignaturesValidated": false,
+  "safeExecutionMode": "LOCAL_IMPERSONATION_OF_SAFE_ADDRESS_ONLY",
+  "limitations": [
+    "This fork impersonates Safe as the Timelock caller. It does not execute Safe.execTransaction or verify actual 2/2 owner signatures, Safe fees, guard execution, or relayer behavior.",
+    "Fork transaction hashes and addresses are rehearsal evidence only, never mainnet deployment evidence.",
+    "No NFT listing, pool funding, purchase, reward claim, transfer or redemption is executed in this deployment rehearsal."
+  ],
+  "transport": {
+    "status": "NOT_STARTED",
+    "upstreamWritesAllowed": false,
+    "upstreamReadMethodCounts": {}
+  },
+  "deployments": [],
+  "governanceTransactions": [],
+  "checks": {
+    "assertions": []
+  },
+  "cleanup": {
+    "status": "NOT_REQUIRED",
+    "localProcessStopped": false,
+    "sourceWritesBlocked": true
+  },
+  "bootstrapToolHash": "c8941190c7f030d61537600dbc1d194e6a92349fc7395c590ff3e814bf971361",
+  "bundleFile": "live-test/observations/unsigned-deployments-1792415847788.json",
+  "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d",
+  "sessionHash": "0x58c02c94e8d921e68f4c7bd108c1b1361f48efd5f57d191a93a686a2af37a9cd",
+  "verificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+  "checkpoint": {
+    "blockNumber": "128560759",
+    "blockHash": "0x268b36f8d824868b9acf3626c781bcdc17bd7400e6e491bd66f3319df6c06d03",
+    "timestamp": "1792415839"
+  },
+  "sourceCheckpoint": {
+    "blockNumber": "128560759",
+    "blockHash": "0x268b36f8d824868b9acf3626c781bcdc17bd7400e6e491bd66f3319df6c06d03"
+  },
+  "expectedAddresses": {
+    "GroupBuyVault": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+    "GovernanceTimelock": "0x02f453192530e07541E61B43DA079273F410979b",
+    "GroupBuyFactory": "0xE45D94579425a6a2006D3e067C8d51De6B15C4fc",
+    "ERC1967Proxy": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1"
+  },
+  "reason": "RPC_CONNECTION_FAILED",
+  "completedAt": "2026-10-19T13:27:31.319Z"
+}

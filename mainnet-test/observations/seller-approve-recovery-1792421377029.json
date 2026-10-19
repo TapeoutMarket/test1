@@ -1,0 +1,85 @@
+{
+  "status": "READ_ONLY_RECOVERY_DIAGNOSTICS",
+  "transactionHash": "0x7154d3e77dce853c3150f7af076e7fe8332e0101741bbf94aebf6b9d42f49416",
+  "observedAt": "2026-10-19T14:49:37.028Z",
+  "sources": [
+    {
+      "name": "primary",
+      "chainId": 56,
+      "block": "128573045",
+      "latestNonce": 5,
+      "pendingNonce": 5,
+      "transaction": {
+        "status": "NOT_FOUND",
+        "name": "TransactionNotFoundError"
+      },
+      "receipt": {
+        "status": "NOT_FOUND",
+        "name": "TransactionReceiptNotFoundError"
+      }
+    },
+    {
+      "name": "independent",
+      "chainId": 56,
+      "block": "128573044",
+      "latestNonce": 5,
+      "pendingNonce": 5,
+      "transaction": {
+        "status": "NOT_FOUND",
+        "name": "TransactionNotFoundError"
+      },
+      "receipt": {
+        "status": "NOT_FOUND",
+        "name": "TransactionReceiptNotFoundError"
+      }
+    }
+  ],
+  "readOnlyPreview": {
+    "status": "SIMULATION_PASSED",
+    "samePlan": true,
+    "fresh": {
+      "schemaVersion": 1,
+      "status": "FROZEN_UNSIGNED_STEP_PLAN",
+      "sessionFile": "mainnet-test/session.json",
+      "sessionHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+      "runtimeToolHash": "642f174ac0c727943c61cef90a9cdf43fe8b750d007e62e0047dd64226e99377",
+      "coreVerificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+      "bootstrapToolHash": "c8941190c7f030d61537600dbc1d194e6a92349fc7395c590ff3e814bf971361",
+      "step": "seller-approve",
+      "chainId": 56,
+      "from": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "to": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "valueWei": "0",
+      "data": "0x095ea7b30000000000000000000000000000000000000068f116a894984e2db1123eb3950000000000000000000000000000000000000000000000000000000000000c84",
+      "dataHash": "0x323d73306d8fc1af3366437f778b6ccd984ca076e29982539916c3807d18fa2a",
+      "nonce": 5,
+      "gasEstimate": "57074",
+      "gas": "68489",
+      "gasPrice": "50000000",
+      "maxFeeWei": "3424450000000",
+      "maxFeeBNB": "0.00000342445",
+      "orderHash": "0xe7f4a836c7eee681eb2cced9357e0b54848ee79f1a4b95a058c154907fef07cd",
+      "before": {
+        "blockNumber": "128573053",
+        "blockHash": "0xbdea87196b2c59eb55400c9e21e87b8610d7ca526a293f916e223f5f75cd42c5",
+        "timestamp": "1792421374",
+        "owner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+        "approved": "0x0000000000000000000000000000000000000000",
+        "operatorApproved": false,
+        "counter": "0",
+        "orderHash": "0xe7f4a836c7eee681eb2cced9357e0b54848ee79f1a4b95a058c154907fef07cd",
+        "orderStatus": [
+          false,
+          false,
+          "0",
+          "0"
+        ],
+        "latestNonce": 5,
+        "pendingNonce": 5,
+        "balanceWei": "4959767700000000"
+      },
+      "consequence": "Approve Seaport to transfer only TapeOut #3204. No collection-wide approval."
+    }
+  },
+  "transactionsSent": 0
+}

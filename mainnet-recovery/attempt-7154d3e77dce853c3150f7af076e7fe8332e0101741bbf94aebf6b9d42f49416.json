@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "status": "CONFIRMED",
+  "transactionHash": "0x7154d3e77dce853c3150f7af076e7fe8332e0101741bbf94aebf6b9d42f49416",
+  "sessionHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+  "planHash": "0x7085fc34cae1d26f37d74391df3cb29c8688fcfa7db60d472786a6258742eac7",
+  "recoveryToolHash": "0x381edc88008328531cbb297bf9a35c325b83c4863749d00ef38c1f4c2d9227bc",
+  "originalRuntimeToolHash": "642f174ac0c727943c61cef90a9cdf43fe8b750d007e62e0047dd64226e99377",
+  "transport": {
+    "mode": "EXPLICIT_PUBLIC_FALLBACK",
+    "primaryEndpoint": "https://bsc-dataseed.defibit.io",
+    "independentEndpoint": "https://bsc-dataseed.bnbchain.org",
+    "automaticFallback": false,
+    "envConfigurationUnmodified": true
+  },
+  "reservationId": "seller-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-seller-approve",
+  "newReservation": false,
+  "createdAt": "2026-10-19T15:00:38.875Z",
+  "broadcastCalls": 1,
+  "attemptedAt": "2026-10-19T15:00:42.888Z",
+  "verified": {
+    "status": "CONFIRMED_ORIGINAL_HASH",
+    "transactionHash": "0x7154d3e77dce853c3150f7af076e7fe8332e0101741bbf94aebf6b9d42f49416",
+    "receipt": {
+      "transactionHash": "0x7154d3e77dce853c3150f7af076e7fe8332e0101741bbf94aebf6b9d42f49416",
+      "blockNumber": "128574540",
+      "blockHash": "0x247d47cdf26e827119b89bd29f3d57cdaa57ef413050b9f11b604b5809e5cac0",
+      "transactionIndex": 122,
+      "from": "0x1b55e6a757987576e1a130a011f9e12498de7db9",
+      "to": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c",
+      "contractAddress": null,
+      "status": "success",
+      "gasUsed": "56268",
+      "effectiveGasPrice": "50000000",
+      "cumulativeGasUsed": "18180389",
+      "logs": [
+        {
+          "address": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9",
+            "0x0000000000000000000000000000000000000068f116a894984e2db1123eb395",
+            "0x0000000000000000000000000000000000000000000000000000000000000c84"
+          ],
+          "data": "0x",
+          "blockNumber": "128574540",
+          "blockHash": "0x247d47cdf26e827119b89bd29f3d57cdaa57ef413050b9f11b604b5809e5cac0",
+          "transactionHash": "0x7154d3e77dce853c3150f7af076e7fe8332e0101741bbf94aebf6b9d42f49416",
+          "transactionIndex": 122,
+          "logIndex": 646,
+          "removed": false
+        }
+      ]
+    },
+    "feeWei": "2813400000000",
+    "after": {
+      "blockNumber": "128574540",
+      "blockHash": "0x247d47cdf26e827119b89bd29f3d57cdaa57ef413050b9f11b604b5809e5cac0",
+      "timestamp": "1792422043",
+      "owner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "approved": "0x0000000000000068F116a894984e2DB1123eB395",
+      "operatorApproved": false,
+      "counter": "0",
+      "orderHash": "0xe7f4a836c7eee681eb2cced9357e0b54848ee79f1a4b95a058c154907fef07cd",
+      "orderStatus": [
+        false,
+        false,
+        "0",
+        "0"
+      ],
+      "latestNonce": 6,
+      "pendingNonce": 6,
+      "balanceWei": "4956954300000000"
+    },
+    "latestNonce": 6,
+    "pendingNonce": 6,
+    "next": "Run the original sender with --reconcile to mark its original journal CONFIRMED. No new transaction is needed."
+  },
+  "completedAt": "2026-10-19T15:00:55.208Z"
+}

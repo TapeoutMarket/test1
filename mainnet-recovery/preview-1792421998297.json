@@ -1,0 +1,72 @@
+{
+  "scope": "EXACT_EXISTING_SIGNED_HASH_RECOVERY",
+  "status": "READY_FOR_HUMAN_RECOVERY_REVIEW",
+  "sessionHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+  "planHash": "0x7085fc34cae1d26f37d74391df3cb29c8688fcfa7db60d472786a6258742eac7",
+  "originalRuntimeToolHash": "642f174ac0c727943c61cef90a9cdf43fe8b750d007e62e0047dd64226e99377",
+  "recoveryToolHash": "0x381edc88008328531cbb297bf9a35c325b83c4863749d00ef38c1f4c2d9227bc",
+  "transactionHash": "0x7154d3e77dce853c3150f7af076e7fe8332e0101741bbf94aebf6b9d42f49416",
+  "nonce": 5,
+  "from": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "to": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "valueWei": "0",
+  "dataHash": "0x323d73306d8fc1af3366437f778b6ccd984ca076e29982539916c3807d18fa2a",
+  "gas": "68489",
+  "gasPrice": "50000000",
+  "maxFeeWei": "3424450000000",
+  "globalSpentAndReservedWei": "667913000000000",
+  "newReservation": false,
+  "transport": {
+    "mode": "EXPLICIT_PUBLIC_FALLBACK",
+    "primaryEndpoint": "https://bsc-dataseed.defibit.io",
+    "independentEndpoint": "https://bsc-dataseed.bnbchain.org",
+    "automaticFallback": false,
+    "envConfigurationUnmodified": true
+  },
+  "presence": {
+    "decision": "ELIGIBLE_FOR_EXACT_HASH_RECOVERY",
+    "observations": [
+      {
+        "label": "PRIMARY",
+        "chainId": 56,
+        "checkpointMatched": true,
+        "latestNonce": 5,
+        "pendingNonce": 5,
+        "presence": {
+          "transaction": {
+            "status": "NOT_FOUND"
+          },
+          "receipt": {
+            "status": "NOT_FOUND"
+          },
+          "status": "NOT_FOUND"
+        }
+      },
+      {
+        "label": "INDEPENDENT_PUBLIC",
+        "chainId": 56,
+        "checkpointMatched": true,
+        "latestNonce": 5,
+        "pendingNonce": 5,
+        "presence": {
+          "transaction": {
+            "status": "NOT_FOUND"
+          },
+          "receipt": {
+            "status": "NOT_FOUND"
+          },
+          "status": "NOT_FOUND"
+        }
+      }
+    ]
+  },
+  "simulations": {
+    "primarySimulation": "PASS",
+    "independentSimulation": "PASS",
+    "primaryCallGas": "68489",
+    "independentCallGas": "68489",
+    "independentGasEstimate": "UNMODIFIED_ESTIMATOR_CHECKED_AGAINST_ORIGINAL_PLAN",
+    "frozenFieldsUnchanged": true
+  },
+  "transactionsSent": 0
+}

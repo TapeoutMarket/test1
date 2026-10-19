@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "LIVE_READ_ONLY_FORMER_HOLDER_DENIAL",
+  "observedAt": "2026-10-19T17:02:04.662Z",
+  "chainId": 56,
+  "rpcEndpoint": "https://bsc-dataseed.defibit.io",
+  "identity": {
+    "chainId": 56,
+    "checkpoint": {
+      "blockNumber": "128571937",
+      "blockHash": "0x09118eaa29524be12ce875f549150019aa540f8b1c231f5aad722561be60197d"
+    },
+    "independentEndpoint": "https://bsc-dataseed.bnbchain.org",
+    "independentCheckpointMatched": true
+  },
+  "blockNumber": "128590706",
+  "blockHash": "0x3ebfc77f63e3584f50e0db238e9a38ccea8fad462d97cfa40d20d99feb846091",
+  "timestamp": "1792429322",
+  "vault": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "account": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "newHolder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+  "functionName": "claim",
+  "args": [
+    "1"
+  ],
+  "callValueWei": "0",
+  "callGas": "3000000",
+  "rawRevertData": "0x7623fb52",
+  "decodedErrorName": "NotHolder",
+  "decodedArgs": [],
+  "state": {
+    "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "creatorBalance": "0",
+    "buyerBBalance": "1",
+    "claimedRaw": "136654",
+    "claimableRaw": "323",
+    "accPerShareRaw": "136977",
+    "vaultCodeHash": "0x61c1667856d7a9eb0d4f00dcc26f4123847f223500db9b9c5de567a2d28bee18"
+  },
+  "transferTransactionHash": "0x28dee1670e0d52d10cd7532fef95bc1274b627484e3f108154a36f6ee5066df7",
+  "transferEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+  "transferReceiptBlockNumber": "128590538",
+  "sourceHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+  "scriptSha256": "decb9ebe2a7ffd066b430d7804000df058510407516948a7ac557d56e8e89ac0",
+  "transactionsSent": 0,
+  "privateKeysUsed": false
+}

@@ -1,0 +1,1259 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "OFFLINE_SAVED_EVIDENCE_ONLY",
+  "rpcRequests": 0,
+  "transactionsSent": 0,
+  "privateKeysUsed": false,
+  "freshChainConfirmation": "NOT_RUN",
+  "freshNotHolderSimulation": "NOT_RUN",
+  "note": "Only saved raw receipts, frozen plans and saved block-state/simulation evidence are reconciled. No current RPC, canonical-chain, balance or NotHolder claim is made.",
+  "sessionHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+  "entitlementToolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+  "rewardsToolHash": "501b3ba397abf2d824216a7e246fb90a79d5f81b79046e9cd8b89ed77a5e1649",
+  "sourceBindings": {
+    "coreVerificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+    "bootstrapToolHash": "c8941190c7f030d61537600dbc1d194e6a92349fc7395c590ff3e814bf971361",
+    "manifestHash": "0x3a041e534d6a14c3173b084d6d1d17f36ed45bcf7f36cc1ff3756e3d25964113",
+    "orderEnvelopeHash": "0x0079596cf7880777d588807fff7125bacd852840068b6537a1322637c1e8d63e",
+    "configFileHash": "0x3d6be7d19561e8ad9bb96f68886e87a9aab329b0ba73f66adc09d98555cfb9a3",
+    "governanceInspectionHash": "0xacb421b5e4598a704575f77f7a22a4d80617d665c7182c84e7af369fd26f7e6a",
+    "factoryArtifactHash": "0x5fa128abbc20979816e411de827243943a2ce450a735a56ba4814d7cf7547bd4",
+    "vaultArtifactHash": "0xeffce67929be4ff5baf073e983d3ebb1e07d2ae9d2640459edf8e7a0e9eaa6be",
+    "factoryAbiHash": "0x6335c56d965c60ce4847546794c70fc6b1064b5abcb9c29e33d5688b9b500037",
+    "vaultAbiHash": "0xd3bbd50e7c1693778c00054133c5576a8ca670f570b5767d3201697361aef420"
+  },
+  "baseline": {
+    "receivedRaw": "32254",
+    "perShareIncrementRaw": "323",
+    "totalAccountedRaw": "13697739",
+    "totalPaidBeforeRaw": "13665400",
+    "accPerShareRaw": "136977",
+    "remainderRaw": "39",
+    "previousAccPerShareRaw": "136654",
+    "previousRemainderRaw": "85",
+    "decimals": 8
+  },
+  "distribution": {
+    "newMiningInflow": {
+      "raw": "32254",
+      "bem": "0.00032254",
+      "decimals": 8
+    },
+    "priorRemainder": {
+      "raw": "85",
+      "bem": "0.00000085",
+      "decimals": 8
+    },
+    "perIdIncrement": {
+      "raw": "323",
+      "bem": "0.00000323",
+      "decimals": 8
+    },
+    "newAccPerShare": {
+      "raw": "136977",
+      "bem": "0.00136977",
+      "decimals": 8
+    },
+    "buyerBIdOnePayment": {
+      "raw": "323",
+      "bem": "0.00000323",
+      "decimals": 8
+    },
+    "other99Claimable": {
+      "raw": "31977",
+      "bem": "0.00031977",
+      "decimals": 8
+    },
+    "newRemainder": {
+      "raw": "39",
+      "bem": "0.00000039",
+      "decimals": 8
+    },
+    "finalVault": {
+      "raw": "32016",
+      "bem": "0.00032016",
+      "decimals": 8
+    },
+    "conservedRaw": "32339"
+  },
+  "transactions": [
+    {
+      "step": "new-harvest",
+      "transactionHash": "0x0605e95651b4ffe0f5f7dba453e627fad99abb4bc15166b21dd86bd996778a0c",
+      "blockNumber": "128589337",
+      "blockHash": "0x1ee0cba6c0ee415acabe5accc65328e4bdb26b68c00ed5797ae16905d692e8dc",
+      "entryHash": "0x51dafa6d388337b21fa9535c14abe85ab86139ea682ce259447d7307a85af2c2",
+      "planHash": "0xae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b",
+      "nonce": 13,
+      "valueWei": "0",
+      "dataHash": "0xe060bba62b44b0683c379ec71ca27d4186dc6879cdda27161f89f1f206f42aaf",
+      "gasLimit": "191589",
+      "gasUsed": "152063",
+      "gasPriceWei": "50000000",
+      "maxFee": {
+        "wei": "9579450000000",
+        "bnb": "0.00000957945"
+      },
+      "actualFee": {
+        "wei": "7603150000000",
+        "bnb": "0.00000760315"
+      },
+      "payment": {
+        "raw": "0",
+        "bem": "0",
+        "decimals": 8
+      },
+      "events": [
+        {
+          "eventName": "RewardsSynced",
+          "args": {
+            "received": "0",
+            "totalAccounted": "13665485",
+            "accPerShare": "136654",
+            "remainder": "85"
+          },
+          "logIndex": 313
+        },
+        {
+          "eventName": "RewardsSynced",
+          "args": {
+            "received": "32254",
+            "totalAccounted": "13697739",
+            "accPerShare": "136977",
+            "remainder": "39"
+          },
+          "logIndex": 316
+        },
+        {
+          "eventName": "Harvested",
+          "args": {
+            "caller": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+            "received": "32254"
+          },
+          "logIndex": 317
+        }
+      ],
+      "bemTransfers": [
+        {
+          "eventName": "Transfer",
+          "args": {
+            "from": "0x0000000000000000000000000000000000000000",
+            "to": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+            "value": "32254"
+          },
+          "logIndex": 314
+        }
+      ],
+      "savedFormerHolderDenied": null
+    },
+    {
+      "step": "transfer-share",
+      "transactionHash": "0x28dee1670e0d52d10cd7532fef95bc1274b627484e3f108154a36f6ee5066df7",
+      "blockNumber": "128590538",
+      "blockHash": "0x5a564d6600202bb217b40edaabdc82ea4ce9d91a08210ab6d856425b061be3da",
+      "entryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+      "planHash": "0x6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129",
+      "nonce": 14,
+      "valueWei": "0",
+      "dataHash": "0xaa5889bfdd0aade43c1a8c4aad701785d53d903a22fed40530a23c88fe209da4",
+      "gasLimit": "95993",
+      "gasUsed": "68845",
+      "gasPriceWei": "50000000",
+      "maxFee": {
+        "wei": "4799650000000",
+        "bnb": "0.00000479965"
+      },
+      "actualFee": {
+        "wei": "3442250000000",
+        "bnb": "0.00000344225"
+      },
+      "payment": {
+        "raw": "0",
+        "bem": "0",
+        "decimals": 8
+      },
+      "events": [
+        {
+          "eventName": "TransferSingle",
+          "args": {
+            "operator": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+            "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+            "to": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+            "id": "1",
+            "value": "1"
+          },
+          "logIndex": 689
+        }
+      ],
+      "bemTransfers": [],
+      "savedFormerHolderDenied": {
+        "status": "PASS",
+        "account": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "id": "1",
+        "expectedError": "NotHolder",
+        "blockNumber": "128590538",
+        "transactionsSent": 0
+      }
+    },
+    {
+      "step": "buyer-b-claim",
+      "transactionHash": "0xe93ae9625ef450311dc4565807bdd427de09970969ced30eb4660e5d7ecb4531",
+      "blockNumber": "128591816",
+      "blockHash": "0x34a8fb7196408148be7448d4c24dcdc4703de4e272a026e580fb44ca513ae933",
+      "entryHash": "0xd56113487b1b97db9d5b7a5bae0b06441a22ece7fe34d6f7c7c8d122ec85d1d5",
+      "planHash": "0x46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169",
+      "nonce": 6,
+      "valueWei": "0",
+      "dataHash": "0x8dc886870bbc9b0242614a04a6724f45b7fb8a12a722144324e20d3a5a848c31",
+      "gasLimit": "104284",
+      "gasUsed": "80446",
+      "gasPriceWei": "50000000",
+      "maxFee": {
+        "wei": "5214200000000",
+        "bnb": "0.0000052142"
+      },
+      "actualFee": {
+        "wei": "4022300000000",
+        "bnb": "0.0000040223"
+      },
+      "payment": {
+        "raw": "323",
+        "bem": "0.00000323",
+        "decimals": 8
+      },
+      "events": [
+        {
+          "eventName": "RewardsSynced",
+          "args": {
+            "received": "0",
+            "totalAccounted": "13697739",
+            "accPerShare": "136977",
+            "remainder": "39"
+          },
+          "logIndex": 278
+        },
+        {
+          "eventName": "RewardClaimed",
+          "args": {
+            "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+            "id": "1",
+            "amount": "323"
+          },
+          "logIndex": 279
+        }
+      ],
+      "bemTransfers": [
+        {
+          "eventName": "Transfer",
+          "args": {
+            "from": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+            "to": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+            "value": "323"
+          },
+          "logIndex": 280
+        }
+      ],
+      "savedFormerHolderDenied": {
+        "status": "PASS",
+        "account": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "id": "1",
+        "expectedError": "NotHolder",
+        "blockNumber": "128591816",
+        "transactionsSent": 0
+      }
+    }
+  ],
+  "budget": {
+    "historicalReserved": {
+      "wei": "304303991100000000",
+      "bnb": "0.3043039911"
+    },
+    "newReservedFees": {
+      "wei": "19593300000000",
+      "bnb": "0.0000195933"
+    },
+    "totalReserved": {
+      "wei": "304323584400000000",
+      "bnb": "0.3043235844"
+    },
+    "limit": {
+      "wei": "304500000000000000",
+      "bnb": "0.3045"
+    },
+    "historicalReservationsHash": "0x0b1ec9f6e8df66deb71cc934e2efd039500fae934085c4e712e1feb0dff8aabd",
+    "reservations": [
+      {
+        "reservationId": "bootstrap-72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d-1",
+        "operation": "deploy-GroupBuyVault",
+        "nonce": "5",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "423236300000000",
+        "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d",
+        "initCodeHash": "0x9014031c0ac0c6c5c1cfc072091163984f1da335c78285facb0fc76fe266e1fa",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "bootstrap-72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d-2",
+        "operation": "deploy-GovernanceTimelock",
+        "nonce": "6",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "86044650000000",
+        "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d",
+        "initCodeHash": "0xa98efbc2b4b7ab67b09aad0da43614dfd1f2e2316f413a7f53bf71a29d1ae1c2",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "bootstrap-72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d-3",
+        "operation": "deploy-GroupBuyFactory",
+        "nonce": "7",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "139912750000000",
+        "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d",
+        "initCodeHash": "0x8c5cb1cdfe8a4538cd54d617fb9146f73a1cd64f4ade1db8434bc5358419aa10",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "bootstrap-72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d-4",
+        "operation": "deploy-ERC1967Proxy",
+        "nonce": "8",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "15294850000000",
+        "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d",
+        "initCodeHash": "0x2b20b8c8f6351988716ab09fb695175d05b203ea095fa0b4ca6aed98ab994eeb",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "seller-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-seller-approve",
+        "operation": "seller-approve",
+        "nonce": "5",
+        "sender": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+        "valueWei": "0",
+        "maxFeeWei": "3424450000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0x323d73306d8fc1af3366437f778b6ccd984ca076e29982539916c3807d18fa2a",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "seller-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-seller-validate",
+        "operation": "seller-validate",
+        "nonce": "6",
+        "sender": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+        "valueWei": "0",
+        "maxFeeWei": "4171400000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0x2dd7ee4eccf1be846a8991e6bf007e9abc08db112f532454dffb81b9dbd08ac1",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "pool-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-create-pool",
+        "operation": "create-pool",
+        "nonce": "9",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "84580800000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0xf14c984f3e1de0f02811289d31eb755844b33b0df31a2002e349d4540879375f",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "funding-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-creator-contribute",
+        "operation": "creator-contribute",
+        "nonce": "10",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "203010000000000000",
+        "maxFeeWei": "216656550000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0x573a807f44e97b3bb2dbe5c403b75fec2a868beaf685a8e01beaf94494b4ccf1",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "completion-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-buyer-b-complete",
+        "operation": "buyer-b-complete",
+        "nonce": "4",
+        "sender": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "valueWei": "99990000000000000",
+        "maxFeeWei": "124663450000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0xa882e97b7b1ef72a1f182255615ebb73147e4bd4bad9c629076a01fb5ce851ba",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "rewards-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-harvest",
+        "operation": "harvest",
+        "nonce": "11",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "13748600000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0xe060bba62b44b0683c379ec71ca27d4186dc6879cdda27161f89f1f206f42aaf",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "rewards-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-creator-claim",
+        "operation": "creator-claim",
+        "nonce": "12",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "127629250000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0xef459d04ccaad217602523820cbec874befd14d6bb761d674ae79c4928478df4",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "rewards-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-buyer-b-claim",
+        "operation": "buyer-b-claim",
+        "nonce": "5",
+        "sender": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "valueWei": "0",
+        "maxFeeWei": "64628050000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0x398fca87e345513777eb964a9db74244f0a877d05a2ec53cc3f76828f17b30aa",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "entitlement-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-new-harvest",
+        "operation": "new-harvest",
+        "nonce": "13",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "9579450000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0xe060bba62b44b0683c379ec71ca27d4186dc6879cdda27161f89f1f206f42aaf",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "entitlement-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-transfer-share",
+        "operation": "transfer-share",
+        "nonce": "14",
+        "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "valueWei": "0",
+        "maxFeeWei": "4799650000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0xaa5889bfdd0aade43c1a8c4aad701785d53d903a22fed40530a23c88fe209da4",
+        "status": "RESERVED_BEFORE_SEND"
+      },
+      {
+        "reservationId": "entitlement-a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c-buyer-b-claim",
+        "operation": "buyer-b-claim",
+        "nonce": "6",
+        "sender": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "valueWei": "0",
+        "maxFeeWei": "5214200000000",
+        "bundleHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+        "initCodeHash": "0x8dc886870bbc9b0242614a04a6724f45b7fb8a12a722144324e20d3a5a848c31",
+        "status": "RESERVED_BEFORE_SEND"
+      }
+    ]
+  },
+  "savedRawNotHolderProof": {
+    "status": "PASS",
+    "scope": "INDEPENDENT_DECODE_OF_SAVED_REVERT_BYTES",
+    "blockNumber": "128590706",
+    "blockHash": "0x3ebfc77f63e3584f50e0db238e9a38ccea8fad462d97cfa40d20d99feb846091",
+    "rawRevertData": "0x7623fb52",
+    "decodedErrorName": "NotHolder",
+    "transferEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+    "freshRpcSimulation": "NOT_RUN",
+    "sourceScriptSha256": "decb9ebe2a7ffd066b430d7804000df058510407516948a7ac557d56e8e89ac0"
+  },
+  "gas": {
+    "newThreeTransactionsActualFee": {
+      "wei": "15067700000000",
+      "bnb": "0.0000150677"
+    },
+    "historicalFourDeploymentsAndEightTestsActualFee": {
+      "wei": "1071506500000000",
+      "bnb": "0.0010715065"
+    },
+    "allFourDeploymentsAndElevenTestsActualFee": {
+      "wei": "1086574200000000",
+      "bnb": "0.0010865742"
+    },
+    "historicalBaselineSource": "mainnet-entitlement-transfer/audit/historical-gas-report-baseline.json fourDeploymentsAndEightTestTransactionsActualFeeWei; immutable raw-hash-bound snapshot of historical mainnet-test/validation.json. Only that historical gas field is used; other snapshot metadata is historical, not current or final. No fresh full-history RPC or receipt re-decoding."
+  },
+  "finalSavedState": {
+    "blockNumber": "128591816",
+    "blockHash": "0x34a8fb7196408148be7448d4c24dcdc4703de4e272a026e580fb44ca513ae933",
+    "creatorShares": 66,
+    "buyerBShares": 34,
+    "all100Shares": [
+      {
+        "id": "1",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136977",
+        "claimable": "0"
+      },
+      {
+        "id": "2",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "3",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "4",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "5",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "6",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "7",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "8",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "9",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "10",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "11",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "12",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "13",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "14",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "15",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "16",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "17",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "18",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "19",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "20",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "21",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "22",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "23",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "24",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "25",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "26",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "27",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "28",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "29",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "30",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "31",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "32",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "33",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "34",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "35",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "36",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "37",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "38",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "39",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "40",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "41",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "42",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "43",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "44",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "45",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "46",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "47",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "48",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "49",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "50",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "51",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "52",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "53",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "54",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "55",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "56",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "57",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "58",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "59",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "60",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "61",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "62",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "63",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "64",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "65",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "66",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "67",
+        "holder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "68",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "69",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "70",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "71",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "72",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "73",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "74",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "75",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "76",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "77",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "78",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "79",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "80",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "81",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "82",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "83",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "84",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "85",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "86",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "87",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "88",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "89",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "90",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "91",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "92",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "93",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "94",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "95",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "96",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "97",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "98",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "99",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      },
+      {
+        "id": "100",
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "supply": "1",
+        "claimed": "136654",
+        "claimable": "323"
+      }
+    ],
+    "vaultBem": {
+      "raw": "32016",
+      "bem": "0.00032016",
+      "decimals": 8
+    }
+  },
+  "checks": {
+    "independentCompiledAbiRawEvents": true,
+    "exactThreePlansAndHistoricalPrefix": true,
+    "all100EntitlementsAtEveryStep": true,
+    "transferRetainsAccruedIdOneRights": true,
+    "savedCreatorNotHolderEvidenceMatches": true,
+    "independentSavedRawNotHolderDecoding": true,
+    "buyerOnlyClaimsTransferredIdOne": true,
+    "other99RemainClaimable": true,
+    "conservation": true,
+    "allTwelveHistoricalReservationsPreserved": true,
+    "cumulativeBudgetWithinLimit": true
+  },
+  "limitations": [
+    "Saved canonical confirmation status and NotHolder evidence were not re-queried.",
+    "Signed raw transactions are deliberately absent. Nonce/value/calldata are reconciled against saved approved plans and journals.",
+    "Mining pending and unrelated wallet balance changes are not payment evidence."
+  ],
+  "captureScript": {
+    "file": "mainnet-entitlement-transfer/audit/capture-former-holder-denial.mjs",
+    "sha256": "decb9ebe2a7ffd066b430d7804000df058510407516948a7ac557d56e8e89ac0"
+  },
+  "auditedAt": "2026-10-19T17:11:34.804Z",
+  "evidenceFiles": [
+    {
+      "file": "mainnet-entitlement-transfer/transactions/a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c.json",
+      "hash": "0x7ae1e732993a0fd8a25d11cd13e79ca75a1bc8e63ee8710e83039b58c2f34d5f"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/plans/new-harvest-ae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b.json",
+      "hash": "0xae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/plans/transfer-share-6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129.json",
+      "hash": "0x6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/plans/buyer-b-claim-46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169.json",
+      "hash": "0x46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169"
+    },
+    {
+      "file": "mainnet-rewards/transactions/a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c.json",
+      "hash": "0x34c737a318d95784b5b5b057221d9bcd83a5830754598b52210197158e40e237"
+    },
+    {
+      "file": "mainnet-completion/transactions/a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c.json",
+      "hash": "0xd1879067bfd983d7f87b29fc0d3bf367ca7bf50a62c8e20ebdd8225db5ec5027"
+    },
+    {
+      "file": "deployments/live-budget.json",
+      "hash": "0x01576a8758853300bf277c294d77af403883631b7c65577a321ed17238b12287"
+    },
+    {
+      "file": "out/IERC20.sol/IERC20.json",
+      "hash": "0x717f67039ec7941211cdc07c2c8739e94b8cd03515641edf2ec141923d6681a6"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/historical-gas-report-baseline.json",
+      "hash": "0xe65b3018fb177f44e88b0c02c3e27bf7732386dec89cb532809f3b7bb96fe21f"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/former-holder-denial-live.json",
+      "hash": "0x525c0e310d4ab27377a335f88ccccbcfc617a782c4df2240e574b7b0dac952e9"
+    }
+  ],
+  "auditScriptSha256": "16a5464da1762292648abb81d32f52087d718fcd8c0c73282f56ab2aa1ae4ac7",
+  "existingFinalPassPreserved": false
+}

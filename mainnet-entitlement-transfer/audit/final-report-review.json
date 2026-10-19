@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "INDEPENDENT_OFFLINE_LOCAL_REPORT_AND_SAVED_EVIDENCE_CONSISTENCY_REVIEW",
+  "reviewedAt": "2026-10-19T17:18:31.513721+00:00",
+  "rpcRequests": 0,
+  "transactionsSent": 0,
+  "privateKeysUsed": false,
+  "environmentFilesRead": false,
+  "runtimeOrJournalModified": false,
+  "freshChainConfirmation": "NOT_RUN",
+  "freshNotHolderSimulation": "NOT_RUN",
+  "checksPassed": 26,
+  "checks": {
+    "phaseScopeCorrected": true,
+    "mainReportStaleNotRunCorrected": true,
+    "threeConfirmedSuccessfulOperations": true,
+    "hashesAndBlocksMatch": true,
+    "actualGasRecomputed": true,
+    "threeGasTotal": true,
+    "historicalPlusNewGas": true,
+    "beijingTimesMatch": true,
+    "everyStep100SharesSupplyOne": true,
+    "transferRetainsHistoryAndAccruedRights": true,
+    "onlyTransferredIdOneClaimed": true,
+    "shareCounts66And34": true,
+    "allFinalStateSummariesMatch": true,
+    "conservation": true,
+    "remainingRightsCorrect": true,
+    "notHolderSavedProofBetweenTransferAndClaim": true,
+    "offlineAuditNotMisrepresentedAsFresh": true,
+    "finalReconciliationPass": true,
+    "fifteenReservationsReconcileAndWithinLimit": true,
+    "budgetSnapshotRawPreserved": true,
+    "noPendingAuthorizedActions": true,
+    "elevenDistinctTestTransactions": true,
+    "helperSha256Matches": true,
+    "frozenSenderBindingsMatch": true,
+    "savedTestCounts714And9": true,
+    "allLocalMarkdownLinksExist": true
+  },
+  "localMarkdownLinksChecked": 81,
+  "missingLinks": [],
+  "resolvedFindings": [
+    {
+      "file": "mainnet-entitlement-transfer/validation.json",
+      "finding": "Preparation-only scope after confirmed transactions",
+      "resolution": "Root corrected final scope; checked"
+    },
+    {
+      "file": "mainnet-test/MAINNET_TEST_REPORT.md",
+      "finding": "Second-step recap called transfer NOT_RUN",
+      "resolution": "Root corrected recap to completed transfer; checked"
+    }
+  ],
+  "unresolvedFindings": [],
+  "finalReceiptBlock": "128591816",
+  "buyerBIdOnePaymentRaw": "323",
+  "finalVaultBemRaw": "32016",
+  "newThreeActualGasFeeWei": "15067700000000",
+  "cumulativeReservedWei": "304323584400000000",
+  "inputs": [
+    {
+      "file": "mainnet-entitlement-transfer/BEM_ENTITLEMENT_TRANSFER_REPORT.md",
+      "sha256": "69f5e5a83c8520dabbe89502153d6146ec7a2340968c8aa6d399d14f5b22199c"
+    },
+    {
+      "file": "mainnet-test/MAINNET_TEST_REPORT.md",
+      "sha256": "d0101fe0c47823c35ebcd4ec9bdbc63ffc9592c8c6f3ab72ff9ead120e285aa2"
+    },
+    {
+      "file": "mainnet-test/POOL_TEST_NEXT_STEPS.md",
+      "sha256": "1ac5cc3a9af94a8917ab5b4658db631935ca17938475063172c15df763fbd7a4"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/validation.json",
+      "sha256": "3aa19be76025611e8f0afa33dcb686330bc2c5eb45ef679e1cb56b11b9c9dda6"
+    },
+    {
+      "file": "mainnet-test/validation.json",
+      "sha256": "4610f80e21455341430f0d95dafc1d85079ef7887c029544ed344ec4ad0b42ee"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/final-reconciliation.json",
+      "sha256": "7512c86eacc11d1bbe1eface9781f8be45ec230cf8b9b73d2838d74ff5bf8f87"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/transactions/a058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c.json",
+      "sha256": "b46faddcccd31aa55dbe3febda703f06963df4bdaee72f6f05a62fa9eee2c5a8"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/final-budget-snapshot.json",
+      "sha256": "ae2f792e74c45c8193a2a153de84dbde37c62c66acbb19995f839448a48347c2"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/former-holder-denial-live.json",
+      "sha256": "0d15d68a073bd339d57719a837c9559317b039b67f1dd32305d8428cafe38727"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/regression.tap",
+      "sha256": "fd6cdff3b51949b2815d6eec790f5db17c9f4e8085812a24d1b41fc63524c700"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/reconciliation-tests.tap",
+      "sha256": "6d7a2849237650e9bd27cf180d126e6078d86b1537f815b217254624929abbc7"
+    },
+    {
+      "file": "mainnet-entitlement-transfer/audit/final-reconcile.mjs",
+      "sha256": "16a5464da1762292648abb81d32f52087d718fcd8c0c73282f56ab2aa1ae4ac7"
+    }
+  ],
+  "limitations": [
+    "Saved local public artifacts only; no fresh RPC, canonical-chain or live confirmation check.",
+    "Raw ABI event decoding was independently reviewed by deployment_safety_review; this review cross-checks reports against saved journals and independent reconciliation.",
+    "No tests were rerun. TAP counts 714 and 9 were read; targeted Solidity 1 PASS is the retained parent-provided execution result.",
+    "Historical actual gas uses preserved evidence, not fresh historical RPC receipts."
+  ]
+}

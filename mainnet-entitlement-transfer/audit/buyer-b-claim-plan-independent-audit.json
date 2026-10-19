@@ -1,0 +1,32 @@
+{
+  "status": "INDEPENDENT_BUYER_B_CLAIM_PLAN_CHECK_PASS",
+  "planHash": "0x46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169",
+  "planFile": "mainnet-entitlement-transfer/plans/buyer-b-claim-46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169.json",
+  "toolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+  "from": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+  "to": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "nonce": 6,
+  "decoded": {
+    "functionName": "claim",
+    "args": [
+      "1"
+    ]
+  },
+  "valueWei": "0",
+  "gasEstimate": "86903",
+  "gas": "104284",
+  "gasPrice": "50000000",
+  "maxFeeWei": "5214200000000",
+  "maxFeeBNB": "0.0000052142",
+  "reservedAfterWei": "304323584400000000",
+  "reservedAfterBNB": "0.3043235844",
+  "remainingCapBNB": "0.0001764156",
+  "snapshotBlock": "128590883",
+  "expectedPaymentRaw": "323",
+  "expectedPaymentBEM": "0.00000323",
+  "expectedVaultAfterRaw": "32016",
+  "expectedTotalPaidAfterRaw": "13665723",
+  "other99ClaimableEachRaw": "323",
+  "prerequisiteEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+  "newTransactionsSentByPreview": 0
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "OFFLINE_UNSIGNED_TRANSFER_PLAN_REVIEW",
+  "rpcRequests": 0,
+  "transactionStatus": "UNSIGNED_PLAN_ONLY",
+  "approvalStatusAtReview": "NOT_YET_REQUESTED_PER_ROOT",
+  "sourceBindings": {
+    "planRawHash": "0x6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129",
+    "journalRawHash": "0x8bd51b914fbea1a4d9b0267a2ca752f2c3ed2b2ef7756c45ceb8870bee46d307",
+    "harvestEntryHash": "0x51dafa6d388337b21fa9535c14abe85ab86139ea682ce259447d7307a85af2c2",
+    "oldRewardsJournalHash": "0x34c737a318d95784b5b5b057221d9bcd83a5830754598b52210197158e40e237",
+    "budgetRawHash": "0x8db6e22f657d1f906e6d5c377d480d9d35adac71457b700c1503278052a27fd3",
+    "compiledVaultArtifactRawHash": "0xeffce67929be4ff5baf073e983d3ebb1e07d2ae9d2640459edf8e7a0e9eaa6be",
+    "entitlementToolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+    "rewardsToolHash": "501b3ba397abf2d824216a7e246fb90a79d5f81b79046e9cd8b89ed77a5e1649"
+  },
+  "exactAction": {
+    "chainId": 56,
+    "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "to": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+    "nonce": 14,
+    "valueWei": "0",
+    "functionName": "safeTransferFrom",
+    "args": [
+      "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "1",
+      "1",
+      "0x"
+    ],
+    "dataHash": "0xaa5889bfdd0aade43c1a8c4aad701785d53d903a22fed40530a23c88fe209da4",
+    "assetDescription": "Vault ERC1155 share #1, quantity 1; underlying miner remains in the Vault"
+  },
+  "positiveEntitlement": {
+    "shareId": "1",
+    "currentHolder": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "nextHolder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "claimedRaw": "136654",
+    "accPerShareRaw": "136977",
+    "unclaimedRaw": "323",
+    "unclaimedBEM": "0.00000323",
+    "claimedMustRemainUnchangedOnTransfer": true,
+    "creatorSharesBefore": 67,
+    "buyerSharesBefore": 33,
+    "creatorSharesExpectedAfter": 66,
+    "buyerSharesExpectedAfter": 34
+  },
+  "gas": {
+    "estimate": "79994",
+    "limit": "95993",
+    "gasPriceWei": "50000000",
+    "maxFeeWei": "4799650000000",
+    "maxFeeBNB": "0.00000479965"
+  },
+  "budget": {
+    "existingReservationCount": 13,
+    "existingReservedWei": "304313570550000000",
+    "proposedReservedAfterWei": "304318370200000000",
+    "approvedCapWei": "304500000000000000",
+    "headroomAfterWei": "181629800000000",
+    "newReservationCreatedByReview": false
+  },
+  "checks": {
+    "planRawHash": true,
+    "currentFrozenRuntime": true,
+    "compiledAbiExactCalldataRoundTrip": true,
+    "onlyShare1Amount1CreatorToB": true,
+    "noNativePrincipal": true,
+    "positive323RawRights": true,
+    "all100CurrentRowsMatchConfirmedHarvest": true,
+    "immutableHarvestEntryHashAndPriorPrefix": true,
+    "existingBudgetDigestAndArithmetic": true,
+    "feeAndNonceMatch": true
+  },
+  "limitations": [
+    "Review is of saved unsigned plan and public evidence, not a fresh chain query.",
+    "No transfer receipt exists in the reviewed journal; no transfer or claim is marked successful here.",
+    "The runtime must recheck relevant state, current nonce and quote after explicit approval and before signing/sending."
+  ]
+}

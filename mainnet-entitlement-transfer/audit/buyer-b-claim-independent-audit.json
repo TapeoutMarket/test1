@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "OFFLINE_INDEPENDENT_FINAL_CLAIM_AND_RECONCILIATION_REVIEW",
+  "rpcRequests": 0,
+  "freshChainConfirmation": "NOT_RUN",
+  "transactionHash": "0xe93ae9625ef450311dc4565807bdd427de09970969ced30eb4660e5d7ecb4531",
+  "blockNumber": "128591816",
+  "blockHash": "0x34a8fb7196408148be7448d4c24dcdc4703de4e272a026e580fb44ca513ae933",
+  "sourceBindings": {
+    "planRawHash": "0x46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169",
+    "journalRawHash": "0x7ae1e732993a0fd8a25d11cd13e79ca75a1bc8e63ee8710e83039b58c2f34d5f",
+    "buyerClaimEntryHash": "0xd56113487b1b97db9d5b7a5bae0b06441a22ece7fe34d6f7c7c8d122ec85d1d5",
+    "harvestEntryHash": "0x51dafa6d388337b21fa9535c14abe85ab86139ea682ce259447d7307a85af2c2",
+    "transferEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+    "budgetRawHash": "0x01576a8758853300bf277c294d77af403883631b7c65577a321ed17238b12287",
+    "compiledVaultArtifactRawHash": "0xeffce67929be4ff5baf073e983d3ebb1e07d2ae9d2640459edf8e7a0e9eaa6be",
+    "compiledERC20ArtifactRawHash": "0x717f67039ec7941211cdc07c2c8739e94b8cd03515641edf2ec141923d6681a6",
+    "rawDenialProofHash": "0x525c0e310d4ab27377a335f88ccccbcfc617a782c4df2240e574b7b0dac952e9",
+    "finalReconciliationRawHash": "0xc2f3ce3c83569f1a1f7c9a184f1b41f62c15a8ddd7e4fb6ff49e8ddcf014f589",
+    "finalAuditScriptSha256": "16a5464da1762292648abb81d32f52087d718fcd8c0c73282f56ab2aa1ae4ac7",
+    "historicalGasSnapshotHash": "0xe65b3018fb177f44e88b0c02c3e27bf7732386dec89cb532809f3b7bb96fe21f",
+    "entitlementToolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+    "rewardsToolHash": "501b3ba397abf2d824216a7e246fb90a79d5f81b79046e9cd8b89ed77a5e1649"
+  },
+  "decodedRawReceipt": [
+    {
+      "address": "0xbdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a",
+      "logIndex": 278,
+      "eventName": "RewardsSynced",
+      "args": {
+        "received": "0",
+        "totalAccounted": "13697739",
+        "accPerShare": "136977",
+        "remainder": "39"
+      }
+    },
+    {
+      "address": "0xbdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a",
+      "logIndex": 279,
+      "eventName": "RewardClaimed",
+      "args": {
+        "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "id": "1",
+        "amount": "323"
+      }
+    },
+    {
+      "address": "0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a",
+      "logIndex": 280,
+      "eventName": "Transfer",
+      "args": {
+        "from": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+        "to": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "value": "323"
+      }
+    }
+  ],
+  "payment": {
+    "recipient": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "raw": "323",
+    "bem": "0.00000323",
+    "calculation": "136977 - 136654 = 323",
+    "attribution": "Exact RewardClaimed and Vault-to-B BEM Transfer in this receipt; unrelated wallet balance deltas are not used."
+  },
+  "finalState": {
+    "creatorCount": 66,
+    "buyerBCount": 34,
+    "id1Holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "id1ClaimedRaw": "136977",
+    "id1ClaimableRaw": "0",
+    "other99ClaimedRaw": "136654",
+    "other99ClaimableEachRaw": "323",
+    "other99TotalClaimableRaw": "31977",
+    "totalAccountedRaw": "13697739",
+    "totalPaidRaw": "13665723",
+    "accPerShareRaw": "136977",
+    "remainderRaw": "39",
+    "vaultBemRaw": "32016",
+    "minerOwner": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+    "state": "ACTIVE"
+  },
+  "conservation": {
+    "newHarvestRaw": "32254",
+    "priorRemainderRaw": "85",
+    "paidRaw": "323",
+    "remainingRaw": "32016",
+    "formula": "323 + 32016 = 32254 + 85 = 32339",
+    "remainingFormula": "99 * 323 + 39 = 32016"
+  },
+  "formerHolderDenial": {
+    "proofBlock": "128590706",
+    "transferBlock": "128590538",
+    "claimBlock": "128591816",
+    "rawRevertData": "0x7623fb52",
+    "decodedError": "NotHolder",
+    "transferEntryHash": "0x1ed73bc0c9403afd5d003f492442069fabd193b859f1ced941281f5bb54e7de9",
+    "proofBetweenTransferAndClaim": true
+  },
+  "gas": {
+    "claimGasUsed": "80446",
+    "gasPriceWei": "50000000",
+    "claimActualFeeWei": "4022300000000",
+    "claimActualFeeBNB": "0.0000040223",
+    "newThreeActualFeeWei": "15067700000000",
+    "allFourDeploymentsAndElevenTestsActualFeeWei": "1086574200000000"
+  },
+  "budget": {
+    "reservationCount": 15,
+    "totalReservedWei": "304323584400000000",
+    "totalReservedBNB": "0.3043235844",
+    "approvedCapWei": "304500000000000000",
+    "headroomWei": "176415600000000",
+    "old12DigestPreserved": true,
+    "reservationsNeverReleased": true
+  },
+  "finalOfflineReconciliation": {
+    "status": "PASS",
+    "scope": "OFFLINE_SAVED_EVIDENCE_ONLY",
+    "rpcRequests": 0,
+    "freshChainConfirmation": "NOT_RUN",
+    "allEvidenceFileHashesMatch": true,
+    "immutableHistoricalGasSnapshotMatch": true,
+    "rawDenialBindingsMatch": true,
+    "numericAnd100RowsMatch": true
+  },
+  "checks": {
+    "frozenSourceAndPlan": true,
+    "rawReceiptCompiledAbiExact": true,
+    "pays323Not136977": true,
+    "oneSyncWithReceivedZero": true,
+    "onlyId1ClaimedUpdated": true,
+    "other99RightsRetained": true,
+    "ownership66By34": true,
+    "minerStillVault": true,
+    "conservation": true,
+    "rawNotHolderProofChronology": true,
+    "all15BudgetReservations": true,
+    "finalAuditScopeAndNumbers": true
+  },
+  "limitations": [
+    "This independent audit only reads saved public evidence and makes no RPC calls.",
+    "Current-chain canonicality and confirmation depth were enforced by the sender and are not freshly re-queried here.",
+    "Mining pending is not included in this frozen harvested batch; future harvest can change subsequent claimable amounts."
+  ]
+}

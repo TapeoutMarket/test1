@@ -1,0 +1,12 @@
+{
+  "status": "READ_ONLY_PREVIEW_STOPPED_BEFORE_SIGNATURE",
+  "stage": "PREVIEW_CREATION_RECEIPT",
+  "reason": "RPC_BLOCK_OR_HISTORICAL_STATE_UNAVAILABLE",
+  "rpcCode": -32000,
+  "fundingToolHash": "eb86bcd1f9f668befd8b9e23edab2e9d381a2cfc270ffc0c5129928aacb6664f",
+  "transactionsSent": 0,
+  "signed": false,
+  "reservationCreated": false,
+  "timestamp": "2026-10-19T15:22:55.247755+00:00",
+  "note": "Creation transaction was previously confirmed with receipt-block business state. Repeated historical storage reads are unavailable from this public RPC; fresh current-state checks have not yet completed in this attempt."
+}

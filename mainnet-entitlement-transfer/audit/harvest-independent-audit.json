@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "OFFLINE_INDEPENDENT_SAVED_EVIDENCE_AUDIT",
+  "rpcRequests": 0,
+  "freshCanonicalChainVerification": "NOT_RUN",
+  "transactionHash": "0x0605e95651b4ffe0f5f7dba453e627fad99abb4bc15166b21dd86bd996778a0c",
+  "blockNumber": "128589337",
+  "blockHash": "0x1ee0cba6c0ee415acabe5accc65328e4bdb26b68c00ed5797ae16905d692e8dc",
+  "sourceBindings": {
+    "planRawHash": "0xae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b",
+    "journalRawHash": "0x8bd51b914fbea1a4d9b0267a2ca752f2c3ed2b2ef7756c45ceb8870bee46d307",
+    "entryHash": "0x51dafa6d388337b21fa9535c14abe85ab86139ea682ce259447d7307a85af2c2",
+    "oldRewardsJournalRawHash": "0x34c737a318d95784b5b5b057221d9bcd83a5830754598b52210197158e40e237",
+    "budgetRawHash": "0x8db6e22f657d1f906e6d5c377d480d9d35adac71457b700c1503278052a27fd3",
+    "vaultCompiledArtifactRawHash": "0xeffce67929be4ff5baf073e983d3ebb1e07d2ae9d2640459edf8e7a0e9eaa6be",
+    "erc20CompiledArtifactRawHash": "0x717f67039ec7941211cdc07c2c8739e94b8cd03515641edf2ec141923d6681a6",
+    "entitlementToolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+    "rewardsToolHash": "501b3ba397abf2d824216a7e246fb90a79d5f81b79046e9cd8b89ed77a5e1649"
+  },
+  "decoding": {
+    "source": "out/GroupBuyVault.sol/GroupBuyVault.json and out/IERC20.sol/IERC20.json compiled ABI",
+    "events": [
+      {
+        "address": "0xbdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a",
+        "logIndex": 313,
+        "eventName": "RewardsSynced",
+        "args": {
+          "received": "0",
+          "totalAccounted": "13665485",
+          "accPerShare": "136654",
+          "remainder": "85"
+        }
+      },
+      {
+        "address": "0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a",
+        "logIndex": 314,
+        "eventName": "Transfer",
+        "args": {
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+          "value": "32254"
+        }
+      },
+      {
+        "address": "0x7e2e0dc66a3bd9103e69b766afa62d9f7b697b46",
+        "logIndex": 315,
+        "eventName": "MINING_EVENT_RAW_TOPIC_ONLY",
+        "abiEventNameVerified": false,
+        "topics": [
+          "0x0508a8b4117d9a7b3d8f5895f6413e61b4f9a2df35afbfb41e78d0ecfff1843f",
+          "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+          "0x000000000000000000000000bdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000000000000007dfe",
+        "amountRaw": "32254"
+      },
+      {
+        "address": "0xbdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a",
+        "logIndex": 316,
+        "eventName": "RewardsSynced",
+        "args": {
+          "received": "32254",
+          "totalAccounted": "13697739",
+          "accPerShare": "136977",
+          "remainder": "39"
+        }
+      },
+      {
+        "address": "0xbdaacdab0f95cc82fe32d92dea04c3dcbfc80f9a",
+        "logIndex": 317,
+        "eventName": "Harvested",
+        "args": {
+          "caller": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+          "received": "32254"
+        }
+      }
+    ],
+    "miningEventName": "UNVERIFIED_ABI_NAME; fixed emitter/topic/key/recipient/raw amount checked"
+  },
+  "math": {
+    "oldAccountedRaw": "13665485",
+    "oldPaidRaw": "13665400",
+    "oldAccPerShareRaw": "136654",
+    "oldRemainderRaw": "85",
+    "newReceivedRaw": "32254",
+    "newReceivedBEM": "0.00032254",
+    "formula": "d = floor((newReceived + oldRemainder) / 100)",
+    "perShareIncrementRaw": "323",
+    "accPerShareRaw": "136977",
+    "remainderRaw": "39",
+    "totalAccountedRaw": "13697739",
+    "totalPaidRaw": "13665400",
+    "vaultBEMRaw": "32339",
+    "totalClaimableRaw": "32300",
+    "holderPaymentRaw": "0",
+    "conservation": "32300 + 39 = 32339"
+  },
+  "shares": {
+    "count": 100,
+    "creatorCount": 67,
+    "buyerBCount": 33,
+    "allClaimedRaw": "136654",
+    "allClaimableRaw": "323",
+    "allSupplyOne": true,
+    "minerRemainsInVault": true
+  },
+  "gas": {
+    "gasLimit": "191589",
+    "gasUsed": "152063",
+    "gasPriceWei": "50000000",
+    "maxFeeWei": "9579450000000",
+    "actualFeeWei": "7603150000000",
+    "actualFeeBNB": "0.00000760315"
+  },
+  "budget": {
+    "count": 13,
+    "old12Digest": "0x0b1ec9f6e8df66deb71cc934e2efd039500fae934085c4e712e1feb0dff8aabd",
+    "old12ReservedWei": "304303991100000000",
+    "newReservationWei": "9579450000000",
+    "totalReservedWei": "304313570550000000",
+    "totalCapWei": "304500000000000000",
+    "remainingCapWei": "186429450000000",
+    "reservationNeverReleased": true
+  },
+  "checks": {
+    "frozenPlanAndRuntime": true,
+    "oldRewardEvidenceHashes": true,
+    "receiptLogEnvelopeAndOrder": true,
+    "compiledVaultAndTokenAbiDecoded": true,
+    "twoExactSyncAndHarvested": true,
+    "exactZeroToVaultMint": true,
+    "noHolderPaymentOrShareMovement": true,
+    "oldRemainderCarried": true,
+    "positivePerShareIncrement": true,
+    "all100SavedReceiptBlockRows": true,
+    "claimedUnchanged": true,
+    "accountingConservation": true,
+    "gasArithmetic": true,
+    "fullHistoricalBudgetDigestPreserved": true
+  },
+  "limitations": [
+    "This audit reads saved public evidence only and makes zero RPC requests.",
+    "Canonical chain and >=15 confirmations were verified by the sender; this audit does not freshly re-query them.",
+    "Mining event ABI name is not independently established here; its raw emitter/topic/key/recipient/amount are checked.",
+    "No transfer-share or B claim has been audited or marked complete by this file."
+  ]
+}

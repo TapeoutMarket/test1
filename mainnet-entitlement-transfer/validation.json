@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_ACCRUED_BEM_ENTITLEMENT_TRANSFER_CONFIRMED",
+  "chainId": 56,
+  "scope": "LOCAL_TESTS_AND_CONFIRMED_MAINNET_ENTITLEMENT_TRANSFER_WITH_OFFLINE_FINAL_RECONCILIATION",
+  "sessionHash": "0xa058f5643584aba832221e3c1da85b2bb463fbc19ca76746eb70ca248d3db05c",
+  "toolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+  "planHash": "0x46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169",
+  "planFile": "mainnet-entitlement-transfer/plans/buyer-b-claim-46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169.json",
+  "initialBaseline": "mainnet-entitlement-transfer/audit/initial-readonly-baseline.json",
+  "preview": "mainnet-entitlement-transfer/audit/buyer-b-claim-preview.json",
+  "independentPlanAudit": "mainnet-entitlement-transfer/audit/buyer-b-claim-plan-independent-audit.json",
+  "report": "mainnet-entitlement-transfer/BEM_ENTITLEMENT_TRANSFER_REPORT.md",
+  "tests": {
+    "newMock": {
+      "passed": 21,
+      "failed": 0
+    },
+    "combinedRegression": {
+      "passed": 714,
+      "failed": 0,
+      "skipped": 0,
+      "evidence": "mainnet-entitlement-transfer/audit/regression.tap"
+    },
+    "targetedSolidity": {
+      "passed": 1,
+      "failed": 0,
+      "test": "testDifferentClaimHistoryAndPositiveRightsFollowId"
+    },
+    "finalSavedEvidenceAudit": {
+      "passed": 9,
+      "failed": 0,
+      "evidence": "mainnet-entitlement-transfer/audit/reconciliation-tests.tap"
+    }
+  },
+  "operations": [
+    {
+      "step": "new-harvest",
+      "status": "CONFIRMED",
+      "nonce": 13,
+      "planHash": "0xae6c38525e7d931bd552417f56777405d72ce85ce3cdc62c5869d7f97f28a31b",
+      "transactionHash": "0x0605e95651b4ffe0f5f7dba453e627fad99abb4bc15166b21dd86bd996778a0c",
+      "blockNumber": "128589337",
+      "actualGasFeeWei": "7603150000000",
+      "paymentRaw": "0"
+    },
+    {
+      "step": "transfer-share",
+      "status": "CONFIRMED",
+      "nonce": 14,
+      "planHash": "0x6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129",
+      "transactionHash": "0x28dee1670e0d52d10cd7532fef95bc1274b627484e3f108154a36f6ee5066df7",
+      "blockNumber": "128590538",
+      "actualGasFeeWei": "3442250000000",
+      "paymentRaw": "0"
+    },
+    {
+      "step": "buyer-b-claim",
+      "status": "CONFIRMED",
+      "nonce": 6,
+      "planHash": "0x46758ef326247602f3667555b97e6e245bac64e51ef8f0dc8e4376f44e26b169",
+      "transactionHash": "0xe93ae9625ef450311dc4565807bdd427de09970969ced30eb4660e5d7ecb4531",
+      "blockNumber": "128591816",
+      "actualGasFeeWei": "4022300000000",
+      "paymentRaw": "323"
+    }
+  ],
+  "formerHolderDenied": {
+    "status": "PASS",
+    "senderProof": {
+      "status": "PASS",
+      "account": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "id": "1",
+      "expectedError": "NotHolder",
+      "blockNumber": "128590538",
+      "transactionsSent": 0
+    },
+    "independentLiveProof": "mainnet-entitlement-transfer/audit/former-holder-denial-live.json",
+    "rawRevertData": "0x7623fb52",
+    "independentDecodedErrorName": "NotHolder",
+    "independentLiveProofBlockNumber": "128590706",
+    "independentSavedProofReview": "mainnet-entitlement-transfer/audit/former-holder-denial-independent-audit.json"
+  },
+  "newTransactionSignaturesCreated": 3,
+  "newTransactionsSent": 3,
+  "newBudgetReservationsCreated": 3,
+  "privateKeysConsumed": true,
+  "spentAndReservedWei": "304323584400000000",
+  "proposedReservedAfterHarvestWei": "304313570550000000",
+  "approvedCumulativeLimitWei": "304500000000000000",
+  "nextStep": null,
+  "independentPlanReview": "mainnet-entitlement-transfer/audit/buyer-b-claim-plan-review.json",
+  "independentHarvestAudit": "mainnet-entitlement-transfer/audit/harvest-independent-audit.json",
+  "confirmedHarvest": {
+    "step": "new-harvest",
+    "status": "CONFIRMED",
+    "transactionHash": "0x0605e95651b4ffe0f5f7dba453e627fad99abb4bc15166b21dd86bd996778a0c",
+    "blockNumber": "128589337",
+    "blockHash": "0x1ee0cba6c0ee415acabe5accc65328e4bdb26b68c00ed5797ae16905d692e8dc",
+    "actualGasFeeWei": "7603150000000",
+    "baseline": {
+      "receivedRaw": "32254",
+      "perShareIncrementRaw": "323",
+      "totalAccountedRaw": "13697739",
+      "totalPaidBeforeRaw": "13665400",
+      "accPerShareRaw": "136977",
+      "remainderRaw": "39",
+      "previousAccPerShareRaw": "136654",
+      "previousRemainderRaw": "85",
+      "decimals": 8
+    },
+    "vaultBemRaw": "32339",
+    "claimedEachRaw": "136654",
+    "claimableEachRaw": "323",
+    "minimumConfirmations": 15
+  },
+  "proposedReservedAfterTransferWei": "304318370200000000",
+  "independentTransferAudit": "mainnet-entitlement-transfer/audit/transfer-independent-audit.json",
+  "confirmedTransfer": {
+    "step": "transfer-share",
+    "status": "CONFIRMED",
+    "transactionHash": "0x28dee1670e0d52d10cd7532fef95bc1274b627484e3f108154a36f6ee5066df7",
+    "blockNumber": "128590538",
+    "blockHash": "0x5a564d6600202bb217b40edaabdc82ea4ce9d91a08210ab6d856425b061be3da",
+    "actualGasFeeWei": "3442250000000",
+    "creatorShares": 66,
+    "buyerBShares": 34,
+    "firstShare": {
+      "id": "1",
+      "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "supply": "1",
+      "claimed": "136654",
+      "claimable": "323"
+    },
+    "vaultBemRaw": "32339",
+    "minimumConfirmations": 15
+  },
+  "newHolderClaim": "CONFIRMED",
+  "buyerBPrivateKeyConsumedThisTest": true,
+  "proposedReservedAfterBuyerBClaimWei": "304323584400000000",
+  "finalReconciliationStatus": "PASS",
+  "confirmedBuyerBClaim": {
+    "step": "buyer-b-claim",
+    "status": "CONFIRMED",
+    "transactionHash": "0xe93ae9625ef450311dc4565807bdd427de09970969ced30eb4660e5d7ecb4531",
+    "blockNumber": "128591816",
+    "blockHash": "0x34a8fb7196408148be7448d4c24dcdc4703de4e272a026e580fb44ca513ae933",
+    "actualGasFeeWei": "4022300000000",
+    "paymentRaw": "323",
+    "paymentBEM": "0.00000323",
+    "minimumConfirmations": 15
+  },
+  "finalReconciliation": {
+    "file": "mainnet-entitlement-transfer/audit/final-reconciliation.json",
+    "status": "PASS",
+    "scope": "OFFLINE_SAVED_EVIDENCE_ONLY",
+    "rpcRequests": 0,
+    "freshChainConfirmation": "NOT_RUN",
+    "freshNotHolderSimulation": "NOT_RUN",
+    "scriptSha256": "16a5464da1762292648abb81d32f52087d718fcd8c0c73282f56ab2aa1ae4ac7"
+  },
+  "independentBuyerBClaimAudit": "mainnet-entitlement-transfer/audit/buyer-b-claim-independent-audit.json",
+  "finalState": {
+    "asOfReceiptBlock": "128591816",
+    "blockHash": "0x34a8fb7196408148be7448d4c24dcdc4703de4e272a026e580fb44ca513ae933",
+    "timestamp": "1792429822",
+    "state": "2",
+    "minerOwner": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+    "totalAccounted": "13697739",
+    "totalPaid": "13665723",
+    "accPerShare": "136977",
+    "remainder": "39",
+    "vaultBemRaw": "32016",
+    "creatorShares": 66,
+    "buyerBShares": 34,
+    "firstShare": {
+      "id": "1",
+      "holder": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "supply": "1",
+      "claimed": "136977",
+      "claimable": "0"
+    },
+    "other99ClaimedEachRaw": "136654",
+    "other99ClaimableEachRaw": "323",
+    "other99ClaimableTotalRaw": "31977",
+    "creatorRemainingClaimableThisBatchRaw": "21318",
+    "buyerBRemainingClaimableThisBatchRaw": "10659",
+    "miningPendingObservationRaw": "10334",
+    "pendingIsNotGuaranteedClaimAmount": true
+  },
+  "rightsFollowNftId": "PASS",
+  "noRepeatHistoricalPayment": "PASS",
+  "other99EntitlementsRetained": "PASS",
+  "newThreeActualGasFeeWei": "15067700000000",
+  "allFourDeploymentsAndElevenTestsActualGasFeeWei": "1086574200000000",
+  "finalBudgetSnapshot": "mainnet-entitlement-transfer/audit/final-budget-snapshot.json",
+  "finalBudgetSnapshotRawHash": "0x01576a8758853300bf277c294d77af403883631b7c65577a321ed17238b12287"
+}

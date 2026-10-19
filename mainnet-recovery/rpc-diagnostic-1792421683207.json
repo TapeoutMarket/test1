@@ -1,0 +1,64 @@
+{
+  "status": "READ_ONLY_RPC_DIAGNOSTICS",
+  "outcomes": [
+    {
+      "source": "primary",
+      "status": "PASS"
+    },
+    {
+      "source": "independent",
+      "status": "FAIL"
+    }
+  ],
+  "errors": [
+    {
+      "label": "independent",
+      "method": "call",
+      "chain": [
+        {
+          "name": "CallExecutionError",
+          "code": null,
+          "classes": [
+            "insufficient funds"
+          ]
+        },
+        {
+          "name": "InsufficientFundsError",
+          "code": null,
+          "classes": [
+            "insufficient funds"
+          ]
+        },
+        {
+          "name": "InvalidInputRpcError",
+          "code": -32000,
+          "classes": [
+            "insufficient funds"
+          ]
+        },
+        {
+          "name": "InvalidInputRpcError",
+          "code": -32000,
+          "classes": [
+            "insufficient funds"
+          ]
+        },
+        {
+          "name": "RpcRequestError",
+          "code": -32000,
+          "classes": [
+            "insufficient funds"
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "code": -32000,
+          "classes": [
+            "insufficient funds"
+          ]
+        }
+      ]
+    }
+  ],
+  "transactionsSent": 0
+}

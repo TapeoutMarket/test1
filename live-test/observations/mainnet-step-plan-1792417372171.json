@@ -1,0 +1,17 @@
+{
+  "step": 4,
+  "name": "ERC1967Proxy",
+  "chainId": 56,
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "to": "CREATE",
+  "nonce": 8,
+  "expectedContractAddress": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1",
+  "initCodeHash": "0x2b20b8c8f6351988716ab09fb695175d05b203ea095fa0b4ca6aed98ab994eeb",
+  "valueWei": "0",
+  "estimate": "254914",
+  "gas": "305897",
+  "gasPrice": "50000000",
+  "maxFeeWei": "15294850000000",
+  "maxFeeBNB": "0.00001529485",
+  "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d"
+}

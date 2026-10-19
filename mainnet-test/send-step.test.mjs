@@ -1,0 +1,92 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {decodeFunctionData,keccak256,zeroAddress,zeroHash} from 'viem';
+import {ACCOUNTS} from '../live-test/preflight.mjs';
+import {seaportAbi} from '../scripts/fork-create-order.mjs';
+import {sendRecordedOnce} from '../live-test/deploy-mainnet.mjs';
+import {actionFor,argumentsFor,humanGates,positiveBNB,observeState,chainIdentity,preview,assertUnchangedPlan,assertLedgerMatches,rpcContext,selectRpc,exactConfirmation,safeDiagnostic} from './send-step.mjs';
+const market='0x0000000000000068F116a894984e2DB1123eB395',collection='0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C',mining='0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46',bem='0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a',code='0x6000',h='0x'+'aa'.repeat(32),hash=keccak256(code);
+function session(){return {schemaVersion:1,chainId:56,status:'FROZEN_MAINNET_TEST_SESSION',seller:ACCOUNTS.sellerA,collection,tokenId:'3204',market,checkpoint:{blockNumber:'1000',blockHash:h},coreVerificationInputHash:'a'.repeat(64),bootstrapToolHash:'b'.repeat(64),protocolRuntimeIdentities:[collection,market,mining,bem].map(address=>({address,codeHash:hash})),seaport:{version:'1.6',domainSeparator:h,counter:'4',orderHash:h},order:{signature:'0x',parameters:{offerer:ACCOUNTS.sellerA,zone:zeroAddress,offer:[{itemType:2,token:collection,identifierOrCriteria:'3204',startAmount:'1',endAmount:'1'}],consideration:[{itemType:0,token:zeroAddress,identifierOrCriteria:'0',startAmount:'300000000000000000',endAmount:'300000000000000000',recipient:ACCOUNTS.sellerA},{itemType:0,token:zeroAddress,identifierOrCriteria:'0',startAmount:'3000000000000000',endAmount:'3000000000000000',recipient:ACCOUNTS.creator}],orderType:0,startTime:'99999',endTime:'186400',zoneHash:zeroHash,salt:'12',conduitKey:zeroHash,totalOriginalConsiderationItems:'2'}},steps:{'seller-approve':{nonce:5,expectedApproval:zeroAddress},'seller-validate':{nonce:6,requiresStep:'seller-approve'}}};}
+function input(step='seller-approve'){const s=session();return {session:s,sessionHash:h,toolHash:'c'.repeat(64),action:actionFor(s,step),sessionFile:'mainnet-test/session.json'};}
+function client(overrides={}){return {getChainId:async()=>56,request:async()=> 'Geth/v1',getBlock:async({blockNumber}={})=>({number:blockNumber??1002n,hash:h,timestamp:100000n}),getCode:async({address})=>address===ACCOUNTS.sellerA?'0x':code,getTransactionCount:async()=>5,getBalance:async()=>1000000000000000000n,getGasPrice:async()=>50000000n,call:async()=>({data:'0x'}),estimateGas:async()=>60000n,readContract:async({functionName})=>({ownerOf:ACCOUNTS.sellerA,getApproved:zeroAddress,isApprovedForAll:false,information:['1.6',h,zeroAddress],getCounter:4n,getOrderHash:h,getOrderStatus:[false,false,0n,0n]})[functionName],...overrides};}
+const argv=['--env','../.env','--session','mainnet-test/session.json','--step','seller-approve'];
+test('default only plans and cannot silently broadcast',()=>{const args=argumentsFor(argv);assert.equal(args.broadcast,false);assert.equal(args.reconcile,false);});
+for(const [name,args,code]of [
+ ['unknown action',[...argv.slice(0,-1),'setApprovalForAll'],'ONLY_SELLER_APPROVE_OR_VALIDATE_SUPPORTED'],
+ ['no reviewed hash',[...argv,'--broadcast'],'REVIEWED_PLAN_HASH_REQUIRED'],
+ ['duplicate arg',[...argv,'--step','seller-validate'],'DUPLICATE_ARGUMENT'],
+ ['broadcast with reconcile',[...argv,'--broadcast','--reconcile'],'BROADCAST_AND_RECONCILE_ARE_EXCLUSIVE'],
+])test(`CLI rejects ${name}`,()=>assert.throws(()=>argumentsFor(args),new RegExp(code)));
+test('reconcile is explicit read-only mode',()=>{const args=argumentsFor([...argv,'--reconcile']);assert.equal(args.reconcile,true);assert.equal(args.broadcast,false);});
+const sendOptions={broadcast:true,maxTx:'0.0001',maxTotal:'0.0015'},env={MODE:'live',ALLOW_LIVE_SEND:'true',LIVE_RELEASE_VERIFIED:'true'};
+test('TTY and all live flags required before key consumption',()=>{assert.throws(()=>humanGates(sendOptions,env,false),/HUMAN_INTERACTIVE/);assert.throws(()=>humanGates(sendOptions,{...env,ALLOW_LIVE_SEND:'false'},true),/MODE_LIVE/);assert.throws(()=>humanGates(sendOptions,{...env,LIVE_RELEASE_VERIFIED:'false'},true),/USER_RELEASE/);assert.equal(humanGates(sendOptions,env,true).maxTotalWei,1500000000000000n);});
+for(const value of ['0','-1','1e-3','NaN','0.0000000000000000001'])test(`rejects invalid budget ${value}`,()=>assert.throws(()=>positiveBNB(value),/EXPLICIT_POSITIVE_BNB/));
+test('approval action is only single token approve with zero native value',()=>{const action=actionFor(session(),'seller-approve');assert.equal(action.to,collection);assert.equal(action.valueWei,'0');assert.equal(action.data.slice(0,10),'0x095ea7b3');assert.equal(action.nonce,5);});
+test('validation action reconstructs one unsigned fixed-price order',()=>{const action=actionFor(session(),'seller-validate');const decoded=decodeFunctionData({abi:seaportAbi,data:action.data});assert.equal(decoded.functionName,'validate');assert.equal(decoded.args[0].length,1);assert.equal(decoded.args[0][0].signature,'0x');assert.equal(decoded.args[0][0].parameters.consideration[0].startAmount,300000000000000000n);});
+for(const [name,change,error]of [
+ ['wrong chain',s=>s.chainId=31337,'FROZEN_BSC_SESSION'],['other seller',s=>s.seller=ACCOUNTS.creator,'FIXED_TEST_ASSET'],['other NFT',s=>s.tokenId='3205','FIXED_TEST_ASSET'],['other market',s=>s.market=ACCOUNTS.creator,'FIXED_TEST_ASSET'],['signed order',s=>s.order.signature='0x11','UNSIGNED_SELLER_ORDER'],['nonzero conduit',s=>s.order.parameters.conduitKey=h,'ZERO_CONDUIT'],['other fee recipient',s=>s.order.parameters.consideration[1].recipient=ACCOUNTS.buyerB,'FIXED_NATIVE_PRICE'],['different price',s=>s.order.parameters.consideration[0].startAmount='1','FIXED_NATIVE_PRICE'],['additional consideration',s=>s.order.parameters.consideration.push(s.order.parameters.consideration[0]),'EXACT_ORDER_ITEMS'],['multiple NFT quantity',s=>s.order.parameters.offer[0].startAmount='2','EXACT_MINER_OFFER'],['nonce gap',s=>s.steps['seller-validate'].nonce=9,'SEQUENTIAL_SELLER_NONCES'],['unexpected initial approval',s=>s.steps['seller-approve'].expectedApproval=market,'INITIAL_APPROVAL'],['missing protocol identity',s=>s.protocolRuntimeIdentities.pop(),'PROTOCOL_RUNTIME_IDENTITIES'],
+])test(`session rejects ${name}`,()=>{const s=session();change(s);assert.throws(()=>actionFor(s,'seller-approve'),new RegExp(error));});
+test('read-only preview freezes exact gas, nonce, calldata and zero value',async()=>{const p=await preview(client(),input(),{independent:client()});assert.equal(p.gas,'72000');assert.equal(p.gasPrice,'50000000');assert.equal(p.maxFeeWei,'3600000000000');assert.equal(p.nonce,5);assert.equal(p.valueWei,'0');assert.match(p.consequence,/only TapeOut #3204/);});
+for(const [name,change,error]of [
+ ['owner','ownerOf','SELLER_NO_LONGER_OWNS_MINER'],['approval','getApproved','TOKEN_APPROVAL_STATE_CHANGED'],['collection-wide approval','isApprovedForAll','UNEXPECTED_COLLECTION_WIDE_APPROVAL'],['counter','getCounter','SELLER_COUNTER_OR_ORDER_HASH_CHANGED'],['order hash','getOrderHash','SELLER_COUNTER_OR_ORDER_HASH_CHANGED'],['order already validated','getOrderStatus','ORDER_ALREADY_VALIDATED_CANCELLED_OR_FILLED'],
+])test(`preflight refuses changed ${name}`,async()=>{const original=client(),replacement={ownerOf:ACCOUNTS.creator,getApproved:market,isApprovedForAll:true,getCounter:5n,getOrderHash:zeroHash,getOrderStatus:[true,false,0n,0n]}[change];const bad=client({readContract:async arg=>arg.functionName===change?replacement:original.readContract(arg)});await assert.rejects(()=>observeState(bad,input()),new RegExp(error));});
+test('pending seller nonce prevents signing a competing transaction',async()=>{await assert.rejects(()=>observeState(client({getTransactionCount:async({blockTag})=>blockTag==='pending'?6:5}),input()),/SELLER_NONCE_CHANGED/);});
+test('reverted RPC simulation is not a prepared plan',async()=>{await assert.rejects(()=>preview(client({call:async()=>{throw new Error('simulated failure');}}),input(),{independent:client()}),/simulated failure/);});
+test('separate endpoint must agree on source checkpoint',async()=>{await assert.rejects(()=>chainIdentity(client(),input(),client({getBlock:async()=>({hash:zeroHash})})),/INDEPENDENT_MAINNET_CHECKPOINT_MISMATCH/);});
+test('development clients rejected even on chain 56',async()=>{await assert.rejects(()=>chainIdentity(client({request:async()=> 'anvil/v1.4.3'}),input(),client()),/MAINNET_IDENTITY_REJECTED/);});
+test('changed runtime rejects prior session',async()=>{await assert.rejects(()=>chainIdentity(client({getCode:async()=> '0x6001'}),input(),client()),/PROTOCOL_RUNTIME_CHANGED/);});
+for(const field of ['rpcMode','primaryEndpoint','independentEndpoint','nonce','gas','gasPrice','maxFeeWei','to','data','runtimeToolHash','sessionHash'])test(`confirmation rejects modified ${field}`,async()=>{const a=await preview(client(),input(),{independent:client()}),b=structuredClone(a);b[field]=String(b[field])+'1';assert.throws(()=>assertUnchangedPlan(a,b),/REVIEWED_TRANSACTION_CHANGED/);});
+test('new blocks alone do not invalidate fixed transaction fields',async()=>{const a=await preview(client(),input(),{independent:client()}),b=structuredClone(a);b.before.blockNumber='1003';b.before.timestamp='100001';assert.doesNotThrow(()=>assertUnchangedPlan(a,b));});
+test('signed hash is durably saved before the one broadcast and no retry occurs',async()=>{const calls=[];await assert.rejects(()=>sendRecordedOnce({reservation:async()=>calls.push('reserve'),saveReserved:async()=>calls.push('journal'),sign:async()=>{calls.push('sign');return '0x1234';},saveSigned:async hash=>{calls.push('hash');assert.equal(hash,keccak256('0x1234'));},send:async()=>{calls.push('send');throw new Error('unknown');}}),/unknown/);assert.deepEqual(calls,['reserve','journal','sign','hash','send']);});
+test('a failed hash journal write prevents all broadcasting',async()=>{let sent=false;await assert.rejects(()=>sendRecordedOnce({reservation:async()=>{},saveReserved:async()=>{},sign:async()=> '0x1234',saveSigned:async()=>{throw new Error('disk failure');},send:async()=>{sent=true;}}),/disk failure/);assert.equal(sent,false);});
+test('prior deployment budget stays included for seller operations',()=>{const i=input(),journal={schemaVersion:1,chainId:56,sessionHash:h,steps:[]};const ledger={spentAndReservedWei:'100',reservations:[{command:'legacy',to:market,calldataHash:h,valueWei:'0',maxFeeWei:'100',status:'RECEIPT_VERIFIED'}]};assert.doesNotThrow(()=>assertLedgerMatches(journal,ledger,i));assert.equal(ledger.spentAndReservedWei,'100');});
+test('unexplained seller budget reservation blocks resending',()=>{const i=input(),journal={schemaVersion:1,chainId:56,sessionHash:h,steps:[]},ledger={spentAndReservedWei:'100',reservations:[{reservationId:`seller-${h.slice(2)}-seller-approve`,operation:'seller-approve',sender:ACCOUNTS.sellerA,nonce:'5',bundleHash:h,initCodeHash:i.action.dataHash,valueWei:'0',maxFeeWei:'100',status:'RESERVED_BEFORE_SEND'}]};assert.throws(()=>assertLedgerMatches(journal,ledger,i),/ORPHAN_SELLER_BUDGET_RESERVATION/);});
+test('runtime never accepts raw transaction or private key CLI options',async()=>{const source=await fs.readFile(new URL('./send-step.mjs',import.meta.url),'utf8');assert.match(source,/HOLDER_A_PRIVATE_KEY/);assert.doesNotMatch(source,/setApprovalForAll|anvil_impersonateAccount|anvil_setBalance/);assert.doesNotMatch(source,/writeAtomic\([^\n]*(?:key|rawTransaction|serializedTransaction)/);assert.match(source,/retryCount:0/);});
+test('canonical string nonces from frozen session normalize safely',()=>{const s=session();s.steps['seller-approve'].nonce='5';s.steps['seller-validate'].nonce='6';assert.equal(actionFor(s,'seller-approve').nonce,5);assert.equal(actionFor(s,'seller-validate').nonce,6);s.steps['seller-approve'].nonce='9007199254740992';s.steps['seller-validate'].nonce='9007199254740993';assert.throws(()=>actionFor(s,'seller-approve'),/SEQUENTIAL_SELLER_NONCES_REQUIRED/);});
+test('virgin workspace creates confined journal and plan directories before reading missing state',async()=>{const {ensureSenderDirectories}=await import('./send-step.mjs'),{readConfinedJson}=await import('../live-test/deployment-io.mjs');const os=await import('node:os'),path=await import('node:path');const temporary=await fs.mkdtemp(path.join(os.tmpdir(),'seller-virgin-')),root=await fs.realpath(temporary);try{await ensureSenderDirectories({root});await assert.rejects(()=>readConfinedJson('mainnet-test/transactions/'+h.slice(2)+'.json',{root}),error=>error.code==='ENOENT');assert.equal((await fs.lstat(path.join(root,'mainnet-test/plans'))).isDirectory(),true);}finally{await fs.rm(root,{recursive:true,force:true});}});
+test('sender runtime directory initialization refuses existing symlink',async()=>{const {ensureSenderDirectories}=await import('./send-step.mjs');const os=await import('node:os'),path=await import('node:path');const temporary=await fs.mkdtemp(path.join(os.tmpdir(),'seller-symlink-')),root=await fs.realpath(temporary);try{await fs.mkdir(path.join(root,'mainnet-test'));await fs.mkdir(path.join(root,'elsewhere'));await fs.symlink(path.join(root,'elsewhere'),path.join(root,'mainnet-test/transactions'));await assert.rejects(()=>ensureSenderDirectories({root}),/MAINNET_DIRECTORY_SYMLINK_REFUSED/);}finally{await fs.rm(root,{recursive:true,force:true});}});
+
+test('public fallback is explicit and selects one fixed public endpoint',()=>{
+  const ordinary=argumentsFor(argv),fallback=argumentsFor([...argv,'--public-rpc-fallback']),configured='https://rpc.example.invalid/private-api-key';
+  assert.equal(ordinary.publicRpcFallback,false);assert.equal(fallback.publicRpcFallback,true);
+  assert.equal(selectRpc(ordinary,configured).selectedRpc,configured);
+  const chosen=selectRpc(fallback,configured);assert.equal(chosen.frozenEnvRpc,configured);assert.equal(chosen.selectedRpc,'https://bsc-dataseed.defibit.io');assert.equal(chosen.independentEndpoint,'https://bsc-dataseed.bnbchain.org');
+  assert.equal(rpcContext(ordinary).primaryEndpoint,'ENV_BSC_RPC_URL_REDACTED');assert.doesNotMatch(JSON.stringify(rpcContext(ordinary)),/private-api-key/);
+});
+test('unknown endpoint overrides and duplicate fallback flags are rejected',()=>{
+  assert.throws(()=>argumentsFor([...argv,'--rpc','https://example.invalid']),/INVALID_ARGUMENT/);
+  assert.throws(()=>argumentsFor([...argv,'--public-rpc-fallback','--public-rpc-fallback']),/DUPLICATE_ARGUMENT/);
+});
+test('fallback mode is frozen in plan and exact confirmation',async()=>{
+  const options=argumentsFor([...argv,'--public-rpc-fallback']),i={...input(),...rpcContext(options)},p=await preview(client(),i,{independent:client()});
+  assert.equal(p.rpcMode,'EXPLICIT_PUBLIC_RPC_FALLBACK');assert.equal(p.primaryEndpoint,'https://bsc-dataseed.defibit.io');
+  assert.match(exactConfirmation({...options,reviewedPlanHash:h},p),/ EXPLICIT_PUBLIC_RPC_FALLBACK$/);
+  const ordinary=await preview(client(),input(),{independent:client()});assert.throws(()=>assertUnchangedPlan(p,ordinary),/REVIEWED_TRANSACTION_CHANGED/);
+});
+test('fresh independent gas estimate precedes bounded call using the same fresh gas price',async()=>{
+  const calls=[],gasPrice=70000000n;
+  const p=await preview(client({getGasPrice:async()=>gasPrice,estimateGas:async request=>{calls.push('estimate');assert.equal(request.gas,undefined);assert.equal(request.gasPrice,gasPrice);return 57074n;},call:async request=>{calls.push('call');assert.equal(request.gas,68489n);assert.equal(request.gasPrice,gasPrice);assert.equal(request.value,0n);return {data:'0x'};}}),input(),{independent:client()});
+  assert.deepEqual(calls,['estimate','call']);assert.equal(p.gas,'68489');assert.equal(p.gasPrice,String(gasPrice));assert.equal(p.gasEstimate,'57074');
+});
+test('gas cap and balance checks stop before bounded call',async()=>{
+  let calls=0;const call=async()=>{calls++;};
+  await assert.rejects(()=>preview(client({estimateGas:async()=>2000000n,call}),input(),{independent:client()}),/SELLER_GAS_LIMIT_EXCEEDED/);
+  await assert.rejects(()=>preview(client({getBalance:async()=>1n,call}),input(),{independent:client()}),/SELLER_GAS_BALANCE_INSUFFICIENT/);assert.equal(calls,0);
+});
+test('estimate failure preserves its stage and never calls or retries',async()=>{
+  let estimates=0,calls=0,stage;
+  await assert.rejects(()=>preview(client({estimateGas:async()=>{estimates++;throw new Error('RPC_ESTIMATE_REJECTED');},call:async()=>{calls++;}}),input(),{independent:client(),onStage:s=>{stage=s;}}),/RPC_ESTIMATE_REJECTED/);
+  assert.equal(stage,'PREVIEW_ESTIMATE_GAS');assert.equal(estimates,1);assert.equal(calls,0);
+});
+test('bounded call failure preserves its stage and never switches endpoints or retries',async()=>{
+  let calls=0,stage;const cause=Object.assign(new Error('insufficient funds; https://private.invalid/secret-api-key 0x1234'),{name:'InsufficientFundsError',code:-32000});
+  const error=Object.assign(new Error('do not print provider detail'),{name:'CallExecutionError',cause});
+  await assert.rejects(()=>preview(client({call:async()=>{calls++;throw error;}}),{...input(),...rpcContext({publicRpcFallback:true})},{independent:client(),onStage:s=>{stage=s;}}),e=>e===error);
+  const diagnostic=safeDiagnostic(error,stage);assert.equal(calls,1);assert.equal(diagnostic.stage,'PREVIEW_BOUNDED_CALL');assert.equal(diagnostic.reason,'INSUFFICIENT_FUNDS');assert.equal(diagnostic.code,-32000);assert.deepEqual(diagnostic.errorNames,['CallExecutionError','InsufficientFundsError']);assert.doesNotMatch(JSON.stringify(diagnostic),/secret-api-key|private.invalid|0x1234|provider detail/);
+});
+test('safe diagnostic exposes only guard codes or classified errors',()=>{
+  assert.equal(safeDiagnostic(new Error('REVIEWED_TRANSACTION_CHANGED_REPLAN_REQUIRED'),'COMPARE_REVIEWED_PLAN').reason,'REVIEWED_TRANSACTION_CHANGED_REPLAN_REQUIRED');
+  const error=Object.assign(new Error('my private secret'),{name:'https://secret.invalid/token',code:'secret'}),diagnostic=safeDiagnostic(error,'untrusted stage https://secret.invalid');
+  assert.equal(diagnostic.reason,'DETAILS_REDACTED');assert.equal(diagnostic.stage,'UNKNOWN_STAGE');assert.equal(diagnostic.code,null);assert.deepEqual(diagnostic.errorNames,['OTHER_ERROR']);assert.doesNotMatch(JSON.stringify(diagnostic),/secret.invalid|private secret/);
+});

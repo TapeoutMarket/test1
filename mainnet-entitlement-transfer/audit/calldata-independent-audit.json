@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "INDEPENDENT_COMPILED_ABI_CALLDATA_ENCODING_NO_ENV_NO_RPC",
+  "vault": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "compiledVaultAbiHash": "0xd3bbd50e7c1693778c00054133c5576a8ca670f570b5767d3201697361aef420",
+  "actions": [
+    {
+      "step": "new-harvest",
+      "functionName": "harvest",
+      "args": [],
+      "data": "0x4641257d",
+      "dataHash": "0xe060bba62b44b0683c379ec71ca27d4186dc6879cdda27161f89f1f206f42aaf"
+    },
+    {
+      "step": "transfer-share",
+      "functionName": "safeTransferFrom",
+      "args": [
+        "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+        "1",
+        "1",
+        "0x"
+      ],
+      "data": "0xf242432a0000000000000000000000007eedccb674e9549b61b01eb65ac68da071adf12900000000000000000000000063979c9d5200a5080be93eb440d469d2f2ec66820000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000000",
+      "dataHash": "0xaa5889bfdd0aade43c1a8c4aad701785d53d903a22fed40530a23c88fe209da4"
+    },
+    {
+      "step": "buyer-b-claim",
+      "functionName": "claim",
+      "args": [
+        "1"
+      ],
+      "data": "0x379607f50000000000000000000000000000000000000000000000000000000000000001",
+      "dataHash": "0x8dc886870bbc9b0242614a04a6724f45b7fb8a12a722144324e20d3a5a848c31"
+    }
+  ],
+  "privateKeysUsed": false,
+  "transactionsSent": 0
+}

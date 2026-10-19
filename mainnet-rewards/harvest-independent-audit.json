@@ -1,0 +1,20 @@
+{
+  "scope": "INDEPENDENT_SAVED_EVIDENCE_CROSS_CHECK_NO_NEW_RPC",
+  "status": "PASS",
+  "step": "harvest",
+  "transactionHash": "0xb3af0c8a9cc570826a4782fd3b09f9d306fdd5d7dd89c7b10c0985899f5a03ea",
+  "checks": [
+    "exact_approved_nonce_value_calldata_gas",
+    "canonical_receipt_and_frozen_plan",
+    "zero_first_sync_exact_mint_and_second_sync_Harvested",
+    "H_13665485_q_136654_r_85",
+    "all_100_ids_unclaimed_67_33_ownership",
+    "Vault_balance_and_accounted_equal_H_paid_0",
+    "ten_budget_reservations_sum_and_preserved_history",
+    "actual_fee_11023150000000_wei"
+  ],
+  "spentAndReservedWei": "304111733800000000",
+  "actualGasFeeWei": "11023150000000",
+  "transactionsSentByAudit": 0,
+  "claimsCovered": false
+}

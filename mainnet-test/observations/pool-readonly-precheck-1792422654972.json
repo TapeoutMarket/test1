@@ -1,0 +1,29 @@
+{
+  "status": "READ_ONLY_CREATE_POOL_PRECHECK_PASS_NOT_A_SEND_PLAN",
+  "identity": {
+    "status": "REVIEWED_MANIFEST_AND_CHAIN_IDENTITY_MATCH",
+    "blockNumber": "128575856",
+    "blockHash": "0x902fea9cfcbb9bd7c5aba7272a83165dca2143b8815dba61d63b23dda0167be4",
+    "template": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+    "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+    "termsHash": "0xf45386c41b83d630bea3c5a600b550877352761fa44d24768b8b2f59911b68cc",
+    "factoryCurrentStateChecked": true,
+    "externalDependencyCodeChecked": true,
+    "roleAuditBoundary": "Known roles and code verified here; complete historic grants/revocations and multisig ownership require the separately hash-pinned reviewed audit. No production-readiness label is trusted."
+  },
+  "creator": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "factory": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1",
+  "predictedPool": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "latestNonce": 9,
+  "pendingNonce": 9,
+  "balanceWei": "204286585550000000",
+  "poolCode": "0x",
+  "isPool": false,
+  "calldataHash": "0xf14c984f3e1de0f02811289d31eb755844b33b0df31a2002e349d4540879375f",
+  "gasEstimate": "1409680",
+  "gas": "1691616",
+  "gasPrice": "50000000",
+  "maxFeeWei": "84580800000000",
+  "transactionsSent": 0,
+  "privateKeysConsumed": false
+}

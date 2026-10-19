@@ -1,0 +1,106 @@
+{
+  "status": "SAFE_COMPATIBLE_GETTERS_OBSERVED_IDENTITY_REVIEW_REQUIRED",
+  "observedAt": "2026-10-19T13:13:03.569Z",
+  "chainId": 56,
+  "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+  "checkpoint": {
+    "blockNumber": "128560187",
+    "blockHash": "0xe448bfdc2adab577ce7aeef2dd600a1d2d3fb97cfae122dd0fa98c8799134c5e",
+    "timestamp": "1792415582"
+  },
+  "codeHash": "0xd7d408ebcd99b2b70be43e20253d6d92a8ea8fab29bd3be7f55b10032331fb4c",
+  "codeBytes": 171,
+  "transactionsSent": 0,
+  "privateKeysUsed": false,
+  "userPermissionStatement": "User states they have authority for this existing multisig; RPC reads cannot prove access to signing keys.",
+  "governanceAssigned": false,
+  "requestedTimelockFloorSeconds": 600,
+  "getters": {
+    "VERSION": {
+      "status": "OBSERVED",
+      "value": "1.4.1"
+    },
+    "getOwners": {
+      "status": "OBSERVED",
+      "value": [
+        "0xf0972A5ee0FD4054159A8c7177e59126ef478dA9",
+        "0x15C059A5aCB36142Eea576BDbC0330Fd7E9d3099"
+      ]
+    },
+    "getThreshold": {
+      "status": "OBSERVED",
+      "value": "2"
+    },
+    "nonce": {
+      "status": "OBSERVED",
+      "value": "4"
+    },
+    "masterCopy": {
+      "status": "OBSERVED",
+      "value": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762"
+    }
+  },
+  "slot0": {
+    "status": "OBSERVED",
+    "value": "0x00000000000000000000000029fcb43b46531bca003ddc8fcb67ffe91900c762"
+  },
+  "implementation": {
+    "address": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+    "evidence": "Safe-style singleton storage slot0; must be corroborated against deployed proxy code",
+    "codeHash": "0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff",
+    "codeBytes": 24421,
+    "masterCopyGetterMatchesSlot0": true
+  },
+  "configuration": {
+    "ownerCount": 2,
+    "validThresholdAndUniqueNonzeroOwners": true,
+    "thresholdRequiresMultipleSignatures": true,
+    "knownTestWalletsAmongOwners": {
+      "creator": false,
+      "sellerA": false,
+      "buyerB": false
+    }
+  },
+  "modules": {
+    "complete": true,
+    "addresses": [],
+    "pages": [
+      {
+        "status": "OBSERVED",
+        "value": [
+          [],
+          "0x0000000000000000000000000000000000000001"
+        ]
+      }
+    ],
+    "note": "Enabled modules can have execution authority separate from owner threshold; any nonempty set requires separate review."
+  },
+  "specialSlots": {
+    "guard_manager.guard.address": {
+      "slot": "0x4a204f620c8c5ccdca3fd54d003badd85ba500436a431f0cbda4f558c93c34c8",
+      "status": "OBSERVED",
+      "value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x0000000000000000000000000000000000000000",
+      "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+    },
+    "fallback_manager.handler.address": {
+      "slot": "0x6c9a6c4a39284e37ed1cf53d337577d14212a4870fb976a4366c693b939918d5",
+      "status": "OBSERVED",
+      "value": "0x000000000000000000000000fd0732dc9e303f09fcef3a7388ad10a83459ec99",
+      "address": "0xfd0732Dc9E303f09fCEf3a7388Ad10A83459Ec99",
+      "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+    },
+    "module_manager.module_guard.address": {
+      "slot": "0xb104e0b93118902c651344349b610029d694cfdec91c589c91ebafbcd0289947",
+      "status": "OBSERVED",
+      "value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x0000000000000000000000000000000000000000",
+      "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+    }
+  },
+  "limitations": [
+    "Getters alone cannot prove standard Safe code or authority semantics.",
+    "Implementation/proxy runtime provenance and any modules/guards/fallback require separate review.",
+    "No Timelock has been deployed or role assigned."
+  ]
+}

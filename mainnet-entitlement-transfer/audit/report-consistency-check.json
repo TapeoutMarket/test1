@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "LOCAL_REPORT_ARTIFACT_CONSISTENCY_NO_RPC",
+  "reportFiles": [
+    "mainnet-entitlement-transfer/BEM_ENTITLEMENT_TRANSFER_REPORT.md",
+    "mainnet-test/MAINNET_TEST_REPORT.md",
+    "mainnet-test/POOL_TEST_NEXT_STEPS.md"
+  ],
+  "localLinksChecked": 81,
+  "missingLinks": [],
+  "summaryStatus": "PASS_ACCRUED_BEM_ENTITLEMENT_TRANSFER_CONFIRMED",
+  "confirmedTestTransactions": 11,
+  "confirmedNewTransactions": 3,
+  "receiverPaymentRaw": "323",
+  "finalVaultRaw": "32016",
+  "spentAndReservedWei": "304323584400000000",
+  "rpcRequests": 0,
+  "transactionsSent": 0
+}

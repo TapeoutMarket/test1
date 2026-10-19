@@ -1,0 +1,20 @@
+{
+  "scope": "STATIC_ABI_ONLY",
+  "deploymentStatus": "NOT_DEPLOYED_BY_THIS_EXPORT",
+  "parameterStatus": "NOT_PREPARED_NO_MAINNET_DEPLOYMENT_RECEIPTS",
+  "sourceArtifact": "out/GovernanceTimelock.sol/GovernanceTimelock.json",
+  "compiler": "0.8.24+commit.e11b9ed9",
+  "evmVersion": "paris",
+  "methods": [
+    "scheduleBatch",
+    "executeBatch",
+    "hashOperationBatch",
+    "getTimestamp",
+    "isOperationReady"
+  ],
+  "sourceArtifactSHA256": "b86327ca1148602f3da5becdaf036691b61cd4e6bc16bcba026746b692a53a65",
+  "abiSHA256": "673ec8ccdea5834e3b2e8f99bace6ca8953a5b669840d1e1bf1e8798bfb99793",
+  "mainnetTransactionsSent": 0,
+  "rpcRequests": 0,
+  "privateKeysRead": false
+}

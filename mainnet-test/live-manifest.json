@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1",
+  "mode": "live",
+  "chainId": 56,
+  "network": {
+    "checkpointBlock": "128571937",
+    "checkpointHash": "0x09118eaa29524be12ce875f549150019aa540f8b1c231f5aad722561be60197d"
+  },
+  "factory": {
+    "address": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1",
+    "codeHash": "0x3393efd5eca370873663b81c5a68e7ebfce4d34e984ec8119a54073b89b2d4a2",
+    "implementation": {
+      "address": "0xE45D94579425a6a2006D3e067C8d51De6B15C4fc",
+      "codeHash": "0xfe5a894f45dc16c08af56f3d5c0644a0f675ad272a6286a4a336358574e97d0e"
+    }
+  },
+  "template": {
+    "address": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+    "codeHash": "0xbd048645bfc14c772c190fa5d532e883ba0bf58fe8bef3e4b94894ce3b7f3559",
+    "validator": {
+      "address": "0xfa2Af5622b09aA78918119C2f2E8Ef8bcb3A7583",
+      "codeHash": "0x38b59c524567e54481c0119746a29f744dd3d804b85f0032c67c6a4918959d8c"
+    }
+  },
+  "governance": {
+    "timelock": {
+      "address": "0x02f453192530e07541E61B43DA079273F410979b",
+      "codeHash": "0x64c76223a94454d8ca947a242211834a4b270a99a0ab6377765491b4397aa9f0"
+    },
+    "multisig": {
+      "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+      "codeHash": "0xd7d408ebcd99b2b70be43e20253d6d92a8ea8fab29bd3be7f55b10032331fb4c"
+    },
+    "guardian": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "minimumDelay": "600",
+    "roleAuditBlock": "128571518",
+    "roleAuditBlockHash": "0x06cdb36bc8ff47053ef522215bb5b654f448fcedb03a14fa5822343f01eb741c",
+    "roleAuditReportHash": "0x7268ed4c5b47ee0608523c90dd7c32d3831b2848c2ebe57b870c3fb6a0423cba"
+  },
+  "config": {
+    "chainId": "56",
+    "templateVersion": 1,
+    "marketKind": 0,
+    "market": "0x0000000000000068F116a894984e2DB1123eB395",
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "mining": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "bem": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+    "marketCodeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+    "seaportDomainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb",
+    "seaportVersionHash": "0x95f740a33d720b7cd93c75d515ac95ca3bbaa2594cce46ea48e00974ea8fcd14",
+    "safetyMargin": "300",
+    "mockOnly": false
+  },
+  "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+  "dependencies": {
+    "collection": {
+      "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "codeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992"
+    },
+    "mining": {
+      "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "codeHash": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce"
+    },
+    "bem": {
+      "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+      "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344"
+    }
+  },
+  "vault": {
+    "address": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+    "codeHash": "0x61c1667856d7a9eb0d4f00dcc26f4123847f223500db9b9c5de567a2d28bee18",
+    "termsHash": "0xf45386c41b83d630bea3c5a600b550877352761fa44d24768b8b2f59911b68cc",
+    "payloadHash": "0xbdb00cf2d56beb85cb417dae54dc41b90f12f0848287ffaaf975e37703073f8d",
+    "creator": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "round": "1"
+  }
+}

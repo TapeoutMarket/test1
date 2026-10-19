@@ -1,0 +1,364 @@
+{
+  "status": "READY_FOR_USER_SAFE_EXECUTION",
+  "chainId": 56,
+  "checkpoint": {
+    "blockNumber": "128568730",
+    "blockHash": "0x2153eaeb6a8862c364c564b0eadef230564611375af01b9ff5c5c07b13db613b",
+    "timestamp": "1792419428"
+  },
+  "checkpointPolicy": "Finalized block timestamp; readiness can lag the latest block by a few seconds. Rerun inspection after finalization, without reducing the delay.",
+  "operation": {
+    "state": 2,
+    "stateName": "READY",
+    "timestamp": "1792419332",
+    "readyAt": "1792419332",
+    "chainTimestamp": "1792419428",
+    "remainingSeconds": "0",
+    "canExecute": true,
+    "status": "READY_FOR_USER_SAFE_EXECUTION"
+  },
+  "governance": {
+    "status": "SAFE_141_RUNTIME_AND_CURRENT_CONFIGURATION_MATCH",
+    "observedAt": "2026-10-19T14:17:10.564Z",
+    "chainId": 56,
+    "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+    "checkpoint": {
+      "blockNumber": "128568730",
+      "blockHash": "0x2153eaeb6a8862c364c564b0eadef230564611375af01b9ff5c5c07b13db613b",
+      "timestamp": "1792419428"
+    },
+    "codeHash": "0xd7d408ebcd99b2b70be43e20253d6d92a8ea8fab29bd3be7f55b10032331fb4c",
+    "codeBytes": 171,
+    "transactionsSent": 0,
+    "privateKeysUsed": false,
+    "userPermissionStatement": "User states they have authority for this existing multisig; RPC reads cannot prove access to signing keys.",
+    "governanceAssigned": false,
+    "requestedTimelockFloorSeconds": 600,
+    "getters": {
+      "VERSION": {
+        "status": "OBSERVED",
+        "value": "1.4.1"
+      },
+      "getOwners": {
+        "status": "OBSERVED",
+        "value": [
+          "0xf0972A5ee0FD4054159A8c7177e59126ef478dA9",
+          "0x15C059A5aCB36142Eea576BDbC0330Fd7E9d3099"
+        ]
+      },
+      "getThreshold": {
+        "status": "OBSERVED",
+        "value": "2"
+      },
+      "nonce": {
+        "status": "OBSERVED",
+        "value": "5"
+      },
+      "masterCopy": {
+        "status": "OBSERVED",
+        "value": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762"
+      }
+    },
+    "slot0": {
+      "status": "OBSERVED",
+      "value": "0x00000000000000000000000029fcb43b46531bca003ddc8fcb67ffe91900c762"
+    },
+    "implementation": {
+      "address": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+      "evidence": "Safe-style singleton storage slot0; must be corroborated against deployed proxy code",
+      "codeHash": "0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff",
+      "codeBytes": 24421,
+      "masterCopyGetterMatchesSlot0": true
+    },
+    "configuration": {
+      "ownerCount": 2,
+      "validThresholdAndUniqueNonzeroOwners": true,
+      "thresholdRequiresMultipleSignatures": true,
+      "knownTestWalletsAmongOwners": {
+        "creator": false,
+        "sellerA": false,
+        "buyerB": false
+      }
+    },
+    "modules": {
+      "complete": true,
+      "addresses": [],
+      "pages": [
+        {
+          "status": "OBSERVED",
+          "value": [
+            [],
+            "0x0000000000000000000000000000000000000001"
+          ]
+        }
+      ],
+      "note": "Enabled modules can have execution authority separate from owner threshold; any nonempty set requires separate review."
+    },
+    "specialSlots": {
+      "guard_manager.guard.address": {
+        "slot": "0x4a204f620c8c5ccdca3fd54d003badd85ba500436a431f0cbda4f558c93c34c8",
+        "status": "OBSERVED",
+        "value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "address": "0x0000000000000000000000000000000000000000",
+        "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+      },
+      "fallback_manager.handler.address": {
+        "slot": "0x6c9a6c4a39284e37ed1cf53d337577d14212a4870fb976a4366c693b939918d5",
+        "status": "OBSERVED",
+        "value": "0x000000000000000000000000fd0732dc9e303f09fcef3a7388ad10a83459ec99",
+        "address": "0xfd0732Dc9E303f09fCEf3a7388Ad10A83459Ec99",
+        "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+      },
+      "module_manager.module_guard.address": {
+        "slot": "0xb104e0b93118902c651344349b610029d694cfdec91c589c91ebafbcd0289947",
+        "status": "OBSERVED",
+        "value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "address": "0x0000000000000000000000000000000000000000",
+        "interpretation": "Raw Safe-family storage observation; applicability depends on verified implementation version."
+      }
+    },
+    "provenance": {
+      "sources": {
+        "implementation": {
+          "address": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+          "codeHash": "0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff",
+          "source": "https://raw.githubusercontent.com/safe-global/safe-deployments/main/src/assets/v1.4.1/safe_l2.json"
+        },
+        "factory": {
+          "address": "0x4e1DCf7AD4e460CfD30791CCC4F9c8a4f820ec67",
+          "codeHash": "0x50c3cdc4074750a7a974204a716c999edd37482f907608d960b2b025ee0b3317",
+          "source": "https://raw.githubusercontent.com/safe-global/safe-deployments/main/src/assets/v1.4.1/safe_proxy_factory.json"
+        },
+        "fallback": {
+          "address": "0xfd0732Dc9E303f09fCEf3a7388Ad10A83459Ec99",
+          "codeHash": "0x7c6007a5d711cea8dfd5d91f5940ec29c7f200fe511eb1fc1397b367af3c42f9",
+          "source": "https://raw.githubusercontent.com/safe-global/safe-deployments/main/src/assets/v1.4.1/compatibility_fallback_handler.json"
+        }
+      },
+      "officialImplementationAddressAndCodeMatch": true,
+      "officialProxyFactoryCodeMatch": true,
+      "proxyRuntimeMatchesFactoryCreationReturnSection": true,
+      "proxyCreationCodeHash": "0x1856e0ee08399d74e0ea0b03adca210aeade6f748969ac023cdcb4dd62dcaf5f",
+      "observedProxyRuntime": "0x608060405273ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156050578060005260206000f35b3660008037600080366000845af43d6000803e60008114156070573d6000fd5b3d6000f3fea264697066735822122003d1488ee65e08fa41e58e888a9865554c535f2c77126a82cb4c0f917f31441364736f6c63430007060033",
+      "factoryProxyCreationCode": "0x608060405234801561001057600080fd5b506040516101e63803806101e68339818101604052602081101561003357600080fd5b8101908080519060200190929190505050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156100ca576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806101c46022913960400191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060ab806101196000396000f3fe608060405273ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156050578060005260206000f35b3660008037600080366000845af43d6000803e60008114156070573d6000fd5b3d6000f3fea264697066735822122003d1488ee65e08fa41e58e888a9865554c535f2c77126a82cb4c0f917f31441364736f6c63430007060033496e76616c69642073696e676c65746f6e20616464726573732070726f7669646564",
+      "officialFallbackAddressAndCodeMatch": true,
+      "guardAbsent": true
+    },
+    "currentConfigurationAcceptedForPreparation": true,
+    "limitations": [
+      "This is a point-in-time runtime/configuration check, not a complete historical audit.",
+      "Owners may change Safe configuration later; recheck immediately before deployment/configuration signing.",
+      "User authority is reported by the user, not proven by chain reads. No Timelock has been deployed or role assigned."
+    ]
+  },
+  "runtime": {
+    "template": "0xbd048645bfc14c772c190fa5d532e883ba0bf58fe8bef3e4b94894ce3b7f3559",
+    "timelock": "0x64c76223a94454d8ca947a242211834a4b270a99a0ab6377765491b4397aa9f0",
+    "factoryImplementation": "0xfe5a894f45dc16c08af56f3d5c0644a0f675ad272a6286a4a336358574e97d0e",
+    "factory": "0x3393efd5eca370873663b81c5a68e7ebfce4d34e984ec8119a54073b89b2d4a2"
+  },
+  "implementation": "0xE45D94579425a6a2006D3e067C8d51De6B15C4fc",
+  "roles": [
+    {
+      "role": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x02f453192530e07541E61B43DA079273F410979b",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "role": "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1",
+      "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "role": "0xd8aa0f3194971a2a116679f7c2090f6939c8d4e01a2a8d7e41d55e5351469e63",
+      "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "role": "0xfd643c72710c63c0180259aba6b2d05451e3591a24e58b62239378085726f783",
+      "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "role": "0xd8aa0f3194971a2a116679f7c2090f6939c8d4e01a2a8d7e41d55e5351469e63",
+      "address": "0x0000000000000000000000000000000000000000",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1",
+      "address": "0x0000000000000000000000000000000000000000",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1",
+      "address": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0xd8aa0f3194971a2a116679f7c2090f6939c8d4e01a2a8d7e41d55e5351469e63",
+      "address": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "address": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1",
+      "address": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0xd8aa0f3194971a2a116679f7c2090f6939c8d4e01a2a8d7e41d55e5351469e63",
+      "address": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "role": "0xfd643c72710c63c0180259aba6b2d05451e3591a24e58b62239378085726f783",
+      "address": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "roleHistory": {
+    "status": "EXACT_ROLE_MEMBERSHIP_RECONSTRUCTED",
+    "eventsProcessed": 4,
+    "activeMembers": [
+      "0x0000000000000000000000000000000000000000000000000000000000000000:0x02f453192530e07541e61b43da079273f410979b",
+      "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1:0x1f502a0b76ea9b42821b82e424c741aef87c3d03",
+      "0xd8aa0f3194971a2a116679f7c2090f6939c8d4e01a2a8d7e41d55e5351469e63:0x1f502a0b76ea9b42821b82e424c741aef87c3d03",
+      "0xfd643c72710c63c0180259aba6b2d05451e3591a24e58b62239378085726f783:0x1f502a0b76ea9b42821b82e424c741aef87c3d03"
+    ],
+    "source": "RoleGranted and RoleRevoked from Timelock constructor receipt through observation checkpoint",
+    "fromBlock": "128563718",
+    "toBlock": "128568730",
+    "checkpointBlockHash": "0x2153eaeb6a8862c364c564b0eadef230564611375af01b9ff5c5c07b13db613b",
+    "reportHash": "0xd33451d5f48521fccafc8c8ff6b198486fd60316b71849287b095c6f9cdc54bd"
+  },
+  "minimumDelaySeconds": "600",
+  "minimumDelayFloor": "600",
+  "requiredMinDelay": "600",
+  "validator": {
+    "address": "0xfa2Af5622b09aA78918119C2f2E8Ef8bcb3A7583",
+    "codeHash": "0x38b59c524567e54481c0119746a29f744dd3d804b85f0032c67c6a4918959d8c",
+    "matchesRehearsal": true
+  },
+  "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+  "operationId": "0x811d9fff56b2f952640c71d9f7558794b726ba0fdeed549d297879f1c5bb35f5",
+  "selectedTemplate": "0x0000000000000000000000000000000000000000",
+  "selectedConfigHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "creationPaused": true,
+  "simulation": {
+    "status": "PASS",
+    "method": "executeBatch",
+    "from": "0x1f502a0b76EA9b42821B82e424C741AeF87C3D03",
+    "scope": "INNER_TIMELOCK_CALL_NOT_SAFE_SIGNATURE_EXECUTION"
+  },
+  "mainnetTransactionsSent": 0,
+  "privateKeysConsumed": false,
+  "safeServiceRequests": 0,
+  "sessionHash": "0x58c02c94e8d921e68f4c7bd108c1b1361f48efd5f57d191a93a686a2af37a9cd",
+  "verificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+  "bootstrapToolHash": "c8941190c7f030d61537600dbc1d194e6a92349fc7395c590ff3e814bf971361",
+  "rehearsalEvidence": {
+    "path": "live-test/rehearsals/deployment-2f3eb594-5f59-4507-869d-20abc20062ee.json",
+    "hash": "0x75b35d3101402f403dd69183bc015a47957db1f0553f10ebfe50f45850ab7063",
+    "status": "PASS",
+    "cleanup": {
+      "status": "PASS",
+      "localProcessStopped": true,
+      "sourceWritesBlocked": true
+    }
+  },
+  "deploymentEvidence": {
+    "addresses": {
+      "template": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+      "timelock": "0x02f453192530e07541E61B43DA079273F410979b",
+      "factoryImplementation": "0xE45D94579425a6a2006D3e067C8d51De6B15C4fc",
+      "factory": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1"
+    },
+    "receipts": [
+      {
+        "name": "GroupBuyVault",
+        "transactionHash": "0x2c57fb7ffa37051f9a038827272f8d72a9d102a3379fa81ea5db0c8ad39aca69",
+        "blockNumber": "128563434",
+        "blockHash": "0x821e48560b45500fa80ce0fd2a128ae6cf634a4dc955de89c13617167ce8c575",
+        "address": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+        "runtimeCodeHash": "0xbd048645bfc14c772c190fa5d532e883ba0bf58fe8bef3e4b94894ce3b7f3559",
+        "confirmations": "5281"
+      },
+      {
+        "name": "GovernanceTimelock",
+        "transactionHash": "0xc6094c145393986142f26f1d4d709096abefd934199b3ef811cd9f46959259d6",
+        "blockNumber": "128563718",
+        "blockHash": "0x799af64df92e39d5566c8bfd8e6f9e1099b2c6e035d254ce3bdad0b855dc7e86",
+        "address": "0x02f453192530e07541E61B43DA079273F410979b",
+        "runtimeCodeHash": "0x64c76223a94454d8ca947a242211834a4b270a99a0ab6377765491b4397aa9f0",
+        "confirmations": "4997"
+      },
+      {
+        "name": "GroupBuyFactory",
+        "transactionHash": "0x4946e965fae959c0ae2717cdd16faa6f4e4624ea9cff63721ab08cba2b9d76c2",
+        "blockNumber": "128564045",
+        "blockHash": "0xc2f636b513afe42c9ac7f4ede0065d410ab6a0e285d5505bc50003bc07aacfe5",
+        "address": "0xE45D94579425a6a2006D3e067C8d51De6B15C4fc",
+        "runtimeCodeHash": "0xfe5a894f45dc16c08af56f3d5c0644a0f675ad272a6286a4a336358574e97d0e",
+        "confirmations": "4681"
+      },
+      {
+        "name": "ERC1967Proxy",
+        "transactionHash": "0x446e42c7238f383d718f20065e56d032fd0bb4d22ee694d85b3433a1ebb6683c",
+        "blockNumber": "128564390",
+        "blockHash": "0x9e2ee83bf0fe71ddfb49a216af08b086c182e568ffcc24aa8b0d2c0f6b373d39",
+        "address": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1",
+        "runtimeCodeHash": "0x3393efd5eca370873663b81c5a68e7ebfce4d34e984ec8119a54073b89b2d4a2",
+        "confirmations": "4336"
+      }
+    ]
+  },
+  "configuration": {
+    "chainId": "56",
+    "templateVersion": 1,
+    "marketKind": 0,
+    "market": "0x0000000000000068F116a894984e2DB1123eB395",
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "mining": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "bem": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+    "marketCodeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+    "seaportDomainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb",
+    "seaportVersionHash": "0x95f740a33d720b7cd93c75d515ac95ca3bbaa2594cce46ea48e00974ea8fcd14",
+    "safetyMargin": "300",
+    "mockOnly": false
+  },
+  "orderContext": {
+    "seller": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "tokenId": "3204",
+    "feeRecipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "note": "Fee recipient is an order consideration recipient; Factory Config does not contain it."
+  }
+}

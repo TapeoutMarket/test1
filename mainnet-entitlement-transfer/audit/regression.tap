@@ -1,0 +1,3580 @@
+TAP version 13
+# Subtest: B completion defaults to a read-only unsigned plan
+ok 1 - B completion defaults to a read-only unsigned plan
+  ---
+  duration_ms: 0.42825
+  ...
+# Subtest: CLI rejects creator operation
+ok 2 - CLI rejects creator operation
+  ---
+  duration_ms: 0.102875
+  ...
+# Subtest: CLI rejects unreviewed broadcast
+ok 3 - CLI rejects unreviewed broadcast
+  ---
+  duration_ms: 0.065833
+  ...
+# Subtest: CLI rejects broadcast plus reconcile
+ok 4 - CLI rejects broadcast plus reconcile
+  ---
+  duration_ms: 0.037208
+  ...
+# Subtest: CLI rejects caller IDs override
+ok 5 - CLI rejects caller IDs override
+  ---
+  duration_ms: 0.032917
+  ...
+# Subtest: CLI rejects caller value override
+ok 6 - CLI rejects caller value override
+  ---
+  duration_ms: 0.030458
+  ...
+# Subtest: CLI rejects caller nonce override
+ok 7 - CLI rejects caller nonce override
+  ---
+  duration_ms: 0.029042
+  ...
+# Subtest: CLI rejects duplicate flags
+ok 8 - CLI rejects duplicate flags
+  ---
+  duration_ms: 0.032708
+  ...
+# Subtest: action encodes B nonce4, all IDs68 through100, exact .09999 BNB and requireCompletion=true
+ok 9 - action encodes B nonce4, all IDs68 through100, exact .09999 BNB and requireCompletion=true
+  ---
+  duration_ms: 44.347708
+  ...
+# Subtest: B action rejects other buyer
+ok 10 - B action rejects other buyer
+  ---
+  duration_ms: 7.624
+  ...
+# Subtest: B action rejects other pool
+ok 11 - B action rejects other pool
+  ---
+  duration_ms: 2.681917
+  ...
+# Subtest: B action rejects other manifest clone
+ok 12 - B action rejects other manifest clone
+  ---
+  duration_ms: 2.646792
+  ...
+# Subtest: B action rejects different allocation address
+ok 13 - B action rejects different allocation address
+  ---
+  duration_ms: 2.597542
+  ...
+# Subtest: B action rejects wrong allocation role
+ok 14 - B action rejects wrong allocation role
+  ---
+  duration_ms: 2.525708
+  ...
+# Subtest: B action rejects incomplete IDs
+ok 15 - B action rejects incomplete IDs
+  ---
+  duration_ms: 10.751042
+  ...
+# Subtest: B action rejects overlapping IDs
+ok 16 - B action rejects overlapping IDs
+  ---
+  duration_ms: 2.430458
+  ...
+# Subtest: B action rejects wrong share count
+ok 17 - B action rejects wrong share count
+  ---
+  duration_ms: 4.684417
+  ...
+# Subtest: B action rejects wrong principal
+ok 18 - B action rejects wrong principal
+  ---
+  duration_ms: 3.615084
+  ...
+# Subtest: B action rejects altered payload
+ok 19 - B action rejects altered payload
+  ---
+  duration_ms: 12.179875
+  ...
+# Subtest: B action rejects changed nonce
+ok 20 - B action rejects changed nonce
+  ---
+  duration_ms: 18.863875
+  ...
+# Subtest: B action rejects missing creator prerequisite
+ok 21 - B action rejects missing creator prerequisite
+  ---
+  duration_ms: 2.706667
+  ...
+# Subtest: exact 33-share contribution, NFT transfer, complete Seaport fill and Purchased events pass
+ok 22 - exact 33-share contribution, NFT transfer, complete Seaport fill and Purchased events pass
+  ---
+  duration_ms: 24.568167
+  ...
+# Subtest: completion events reject changed participant
+ok 23 - completion events reject changed participant
+  ---
+  duration_ms: 26.324291
+  ...
+# Subtest: completion events reject changed contribution IDs
+ok 24 - completion events reject changed contribution IDs
+  ---
+  duration_ms: 10.924
+  ...
+# Subtest: completion events reject changed contribution principal
+ok 25 - completion events reject changed contribution principal
+  ---
+  duration_ms: 7.504542
+  ...
+# Subtest: completion events reject changed contribution soldCount
+ok 26 - completion events reject changed contribution soldCount
+  ---
+  duration_ms: 2.814125
+  ...
+# Subtest: completion events reject changed mint operator
+ok 27 - completion events reject changed mint operator
+  ---
+  duration_ms: 2.6095
+  ...
+# Subtest: completion events reject changed mint source
+ok 28 - completion events reject changed mint source
+  ---
+  duration_ms: 2.674542
+  ...
+# Subtest: completion events reject changed mint recipient
+ok 29 - completion events reject changed mint recipient
+  ---
+  duration_ms: 29.374917
+  ...
+# Subtest: completion events reject changed duplicate minted ID
+ok 30 - completion events reject changed duplicate minted ID
+  ---
+  duration_ms: 2.978875
+  ...
+# Subtest: completion events reject changed wrong minted ID
+ok 31 - completion events reject changed wrong minted ID
+  ---
+  duration_ms: 2.712917
+  ...
+# Subtest: completion events reject changed mint amount two
+ok 32 - completion events reject changed mint amount two
+  ---
+  duration_ms: 26.202208
+  ...
+# Subtest: completion events reject changed mint amount zero
+ok 33 - completion events reject changed mint amount zero
+  ---
+  duration_ms: 15.854125
+  ...
+# Subtest: completion events reject changed miner source
+ok 34 - completion events reject changed miner source
+  ---
+  duration_ms: 14.477709
+  ...
+# Subtest: completion events reject changed miner recipient
+ok 35 - completion events reject changed miner recipient
+  ---
+  duration_ms: 44.620375
+  ...
+# Subtest: completion events reject changed miner ID
+ok 36 - completion events reject changed miner ID
+  ---
+  duration_ms: 5.891792
+  ...
+# Subtest: completion events reject changed purchase market
+ok 37 - completion events reject changed purchase market
+  ---
+  duration_ms: 53.531375
+  ...
+# Subtest: completion events reject changed purchase collection
+ok 38 - completion events reject changed purchase collection
+  ---
+  duration_ms: 17.862917
+  ...
+# Subtest: completion events reject changed purchase NFT ID
+ok 39 - completion events reject changed purchase NFT ID
+  ---
+  duration_ms: 2.742959
+  ...
+# Subtest: completion events reject changed purchase total
+ok 40 - completion events reject changed purchase total
+  ---
+  duration_ms: 2.856542
+  ...
+# Subtest: completion events reject changed purchase order hash
+ok 41 - completion events reject changed purchase order hash
+  ---
+  duration_ms: 2.5675
+  ...
+# Subtest: completion events reject changed unexpected listing ID
+ok 42 - completion events reject changed unexpected listing ID
+  ---
+  duration_ms: 29.87925
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong order hash
+ok 43 - complete Seaport fulfillment rejects wrong order hash
+  ---
+  duration_ms: 7.8285
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong offerer
+ok 44 - complete Seaport fulfillment rejects wrong offerer
+  ---
+  duration_ms: 3.04575
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong zone
+ok 45 - complete Seaport fulfillment rejects wrong zone
+  ---
+  duration_ms: 27.442208
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong NFT recipient
+ok 46 - complete Seaport fulfillment rejects wrong NFT recipient
+  ---
+  duration_ms: 6.077375
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong offer item type
+ok 47 - complete Seaport fulfillment rejects wrong offer item type
+  ---
+  duration_ms: 2.466167
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong offer token
+ok 48 - complete Seaport fulfillment rejects wrong offer token
+  ---
+  duration_ms: 2.404208
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong offer identifier
+ok 49 - complete Seaport fulfillment rejects wrong offer identifier
+  ---
+  duration_ms: 35.287958
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong offer quantity
+ok 50 - complete Seaport fulfillment rejects wrong offer quantity
+  ---
+  duration_ms: 2.800542
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong extra offered item
+ok 51 - complete Seaport fulfillment rejects wrong extra offered item
+  ---
+  duration_ms: 3.510917
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong seller item type
+ok 52 - complete Seaport fulfillment rejects wrong seller item type
+  ---
+  duration_ms: 2.397625
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong seller token
+ok 53 - complete Seaport fulfillment rejects wrong seller token
+  ---
+  duration_ms: 3.527125
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong seller identifier
+ok 54 - complete Seaport fulfillment rejects wrong seller identifier
+  ---
+  duration_ms: 3.938041
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong seller amount
+ok 55 - complete Seaport fulfillment rejects wrong seller amount
+  ---
+  duration_ms: 2.617375
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong seller recipient
+ok 56 - complete Seaport fulfillment rejects wrong seller recipient
+  ---
+  duration_ms: 2.400333
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong fee amount
+ok 57 - complete Seaport fulfillment rejects wrong fee amount
+  ---
+  duration_ms: 2.332166
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong fee recipient
+ok 58 - complete Seaport fulfillment rejects wrong fee recipient
+  ---
+  duration_ms: 2.30875
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong fee item type
+ok 59 - complete Seaport fulfillment rejects wrong fee item type
+  ---
+  duration_ms: 20.6265
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong fee token
+ok 60 - complete Seaport fulfillment rejects wrong fee token
+  ---
+  duration_ms: 3.358084
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong fee identifier
+ok 61 - complete Seaport fulfillment rejects wrong fee identifier
+  ---
+  duration_ms: 4.232041
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong missing consideration
+ok 62 - complete Seaport fulfillment rejects wrong missing consideration
+  ---
+  duration_ms: 2.558417
+  ...
+# Subtest: complete Seaport fulfillment rejects wrong extra consideration
+ok 63 - complete Seaport fulfillment rejects wrong extra consideration
+  ---
+  duration_ms: 2.35675
+  ...
+# Subtest: completion rejects missing mint
+ok 64 - completion rejects missing mint
+  ---
+  duration_ms: 2.565208
+  ...
+# Subtest: completion rejects duplicate mint
+ok 65 - completion rejects duplicate mint
+  ---
+  duration_ms: 16.799375
+  ...
+# Subtest: completion rejects wrong mint emitter
+ok 66 - completion rejects wrong mint emitter
+  ---
+  duration_ms: 8.101
+  ...
+# Subtest: completion rejects missing contribution
+ok 67 - completion rejects missing contribution
+  ---
+  duration_ms: 2.341834
+  ...
+# Subtest: completion rejects duplicate contribution
+ok 68 - completion rejects duplicate contribution
+  ---
+  duration_ms: 19.195292
+  ...
+# Subtest: completion rejects wrong contribution emitter
+ok 69 - completion rejects wrong contribution emitter
+  ---
+  duration_ms: 2.469709
+  ...
+# Subtest: completion rejects missing NFT Transfer
+ok 70 - completion rejects missing NFT Transfer
+  ---
+  duration_ms: 3.603541
+  ...
+# Subtest: completion rejects duplicate NFT Transfer
+ok 71 - completion rejects duplicate NFT Transfer
+  ---
+  duration_ms: 7.808291
+  ...
+# Subtest: completion rejects wrong NFT Transfer emitter
+ok 72 - completion rejects wrong NFT Transfer emitter
+  ---
+  duration_ms: 19.566541
+  ...
+# Subtest: completion rejects missing OrderFulfilled
+ok 73 - completion rejects missing OrderFulfilled
+  ---
+  duration_ms: 9.334875
+  ...
+# Subtest: completion rejects duplicate OrderFulfilled
+ok 74 - completion rejects duplicate OrderFulfilled
+  ---
+  duration_ms: 2.655833
+  ...
+# Subtest: completion rejects wrong OrderFulfilled emitter
+ok 75 - completion rejects wrong OrderFulfilled emitter
+  ---
+  duration_ms: 2.319959
+  ...
+# Subtest: completion rejects missing Purchased
+ok 76 - completion rejects missing Purchased
+  ---
+  duration_ms: 13.467125
+  ...
+# Subtest: completion rejects duplicate Purchased
+ok 77 - completion rejects duplicate Purchased
+  ---
+  duration_ms: 8.968541
+  ...
+# Subtest: completion rejects wrong Purchased emitter
+ok 78 - completion rejects wrong Purchased emitter
+  ---
+  duration_ms: 7.372833
+  ...
+# Subtest: all completion logs belong to the same transaction and canonical block
+ok 79 - all completion logs belong to the same transaction and canonical block
+  ---
+  duration_ms: 15.121875
+  ...
+# Subtest: preview validates creator67 and unused B33 before exact completion=true simulation
+ok 80 - preview validates creator67 and unused B33 before exact completion=true simulation
+  ---
+  duration_ms: 9.770625
+  ...
+# Subtest: B preview rejects not registered
+ok 81 - B preview rejects not registered
+  ---
+  duration_ms: 2.897917
+  ...
+# Subtest: B preview rejects not FUNDING
+ok 82 - B preview rejects not FUNDING
+  ---
+  duration_ms: 14.446
+  ...
+# Subtest: B preview rejects wrong sold count
+ok 83 - B preview rejects wrong sold count
+  ---
+  duration_ms: 2.5895
+  ...
+# Subtest: B preview rejects wrong prior principal
+ok 84 - B preview rejects wrong prior principal
+  ---
+  duration_ms: 4.27875
+  ...
+# Subtest: B preview rejects wrong funded value
+ok 85 - B preview rejects wrong funded value
+  ---
+  duration_ms: 5.22975
+  ...
+# Subtest: B preview rejects prior refund
+ok 86 - B preview rejects prior refund
+  ---
+  duration_ms: 2.560792
+  ...
+# Subtest: B preview rejects prior purchase
+ok 87 - B preview rejects prior purchase
+  ---
+  duration_ms: 2.342625
+  ...
+# Subtest: B preview rejects wrong bitmap
+ok 88 - B preview rejects wrong bitmap
+  ---
+  duration_ms: 2.688708
+  ...
+# Subtest: B preview rejects market not executable
+ok 89 - B preview rejects market not executable
+  ---
+  duration_ms: 3.50225
+  ...
+# Subtest: B preview rejects miner owner changed
+ok 90 - B preview rejects miner owner changed
+  ---
+  duration_ms: 2.495042
+  ...
+# Subtest: B preview rejects approval missing
+ok 91 - B preview rejects approval missing
+  ---
+  duration_ms: 2.4985
+  ...
+# Subtest: B preview rejects collection approval
+ok 92 - B preview rejects collection approval
+  ---
+  duration_ms: 2.659417
+  ...
+# Subtest: B preview rejects counter drift
+ok 93 - B preview rejects counter drift
+  ---
+  duration_ms: 2.429
+  ...
+# Subtest: B preview rejects order unvalidated
+ok 94 - B preview rejects order unvalidated
+  ---
+  duration_ms: 2.366875
+  ...
+# Subtest: B preview rejects order cancelled
+ok 95 - B preview rejects order cancelled
+  ---
+  duration_ms: 9.341417
+  ...
+# Subtest: B preview rejects order filled
+ok 96 - B preview rejects order filled
+  ---
+  duration_ms: 3.921875
+  ...
+# Subtest: creator must hold exactly1..67 and all B slots must remain unminted
+ok 97 - creator must hold exactly1..67 and all B slots must remain unminted
+  ---
+  duration_ms: 9.698667
+  ...
+# Subtest: creator and B balance arrays must independently agree with holders
+ok 98 - creator and B balance arrays must independently agree with holders
+  ---
+  duration_ms: 4.89325
+  ...
+# Subtest: per-share prices must all match even if wrong costs cancel in total
+ok 99 - per-share prices must all match even if wrong costs cancel in total
+  ---
+  duration_ms: 17.751584
+  ...
+# Subtest: B needs principal plus maximum gas, and Vault must retain exact creator principal
+ok 100 - B needs principal plus maximum gas, and Vault must retain exact creator principal
+  ---
+  duration_ms: 11.631708
+  ...
+# Subtest: B pending nonce changes and missing creator evidence prevent simulation
+ok 101 - B pending nonce changes and missing creator evidence prevent simulation
+  ---
+  duration_ms: 2.595708
+  ...
+# Subtest: failed purchase simulation never retries
+ok 102 - failed purchase simulation never retries
+  ---
+  duration_ms: 2.322917
+  ...
+# Subtest: creator prerequisite relies on exact canonical receipt events and never old storage
+ok 103 - creator prerequisite relies on exact canonical receipt events and never old storage
+  ---
+  duration_ms: 6.824541
+  ...
+# Subtest: creator prerequisite rejects missing creator contribution without historic state fallback
+ok 104 - creator prerequisite rejects missing creator contribution without historic state fallback
+  ---
+  duration_ms: 4.39975
+  ...
+# Subtest: creator prerequisite rejects incorrect creator mint without historic state fallback
+ok 105 - creator prerequisite rejects incorrect creator mint without historic state fallback
+  ---
+  duration_ms: 2.57325
+  ...
+# Subtest: creator prerequisite rejects wrong principal without historic state fallback
+ok 106 - creator prerequisite rejects wrong principal without historic state fallback
+  ---
+  duration_ms: 2.231125
+  ...
+# Subtest: creator prerequisite rejects wrong nonce without historic state fallback
+ok 107 - creator prerequisite rejects wrong nonce without historic state fallback
+  ---
+  duration_ms: 6.945084
+  ...
+# Subtest: creator prerequisite rejects changed gas without historic state fallback
+ok 108 - creator prerequisite rejects changed gas without historic state fallback
+  ---
+  duration_ms: 2.631375
+  ...
+# Subtest: creator prerequisite rejects 14 confirmations without historic state fallback
+ok 109 - creator prerequisite rejects 14 confirmations without historic state fallback
+  ---
+  duration_ms: 2.55425
+  ...
+# Subtest: creator prerequisite rejects noncanonical block without historic state fallback
+ok 110 - creator prerequisite rejects noncanonical block without historic state fallback
+  ---
+  duration_ms: 4.974959
+  ...
+# Subtest: completion receipt proves ACTIVE100, miner in Vault, correct purchase spent and zero funding
+ok 111 - completion receipt proves ACTIVE100, miner in Vault, correct purchase spent and zero funding
+  ---
+  duration_ms: 10.6805
+  ...
+# Subtest: completion post-state rejects not ACTIVE
+ok 112 - completion post-state rejects not ACTIVE
+  ---
+  duration_ms: 5.163875
+  ...
+# Subtest: completion post-state rejects not all sold
+ok 113 - completion post-state rejects not all sold
+  ---
+  duration_ms: 5.414084
+  ...
+# Subtest: completion post-state rejects funding not spent
+ok 114 - completion post-state rejects funding not spent
+  ---
+  duration_ms: 5.4585
+  ...
+# Subtest: completion post-state rejects wrong total principal
+ok 115 - completion post-state rejects wrong total principal
+  ---
+  duration_ms: 3.333417
+  ...
+# Subtest: completion post-state rejects wrong purchase spending
+ok 116 - completion post-state rejects wrong purchase spending
+  ---
+  duration_ms: 3.560417
+  ...
+# Subtest: completion post-state rejects unexpected refund
+ok 117 - completion post-state rejects unexpected refund
+  ---
+  duration_ms: 2.972708
+  ...
+# Subtest: completion post-state rejects wrong sold bitmap
+ok 118 - completion post-state rejects wrong sold bitmap
+  ---
+  duration_ms: 24.090667
+  ...
+# Subtest: completion post-state rejects miner not in Vault
+ok 119 - completion post-state rejects miner not in Vault
+  ---
+  duration_ms: 11.623292
+  ...
+# Subtest: completion post-state rejects unregistered clone
+ok 120 - completion post-state rejects unregistered clone
+  ---
+  duration_ms: 3.333209
+  ...
+# Subtest: completion post-state rejects unfilled Seaport order
+ok 121 - completion post-state rejects unfilled Seaport order
+  ---
+  duration_ms: 7.373959
+  ...
+# Subtest: completion post-state rejects partially filled order
+ok 122 - completion post-state rejects partially filled order
+  ---
+  duration_ms: 3.59
+  ...
+# Subtest: final 100 holders and both wallet balance arrays must exactly retain creator67/B33
+ok 123 - final 100 holders and both wallet balance arrays must exactly retain creator67/B33
+  ---
+  duration_ms: 13.510042
+  ...
+# Subtest: final clone code and residual native principal are checked independently of success events
+ok 124 - final clone code and residual native principal are checked independently of success events
+  ---
+  duration_ms: 5.188292
+  ...
+# Subtest: B receipt rejects reverted receipt
+ok 125 - B receipt rejects reverted receipt
+  ---
+  duration_ms: 3.889958
+  ...
+# Subtest: B receipt rejects 14 confirmations
+ok 126 - B receipt rejects 14 confirmations
+  ---
+  duration_ms: 2.192792
+  ...
+# Subtest: B receipt rejects incorrect B principal
+ok 127 - B receipt rejects incorrect B principal
+  ---
+  duration_ms: 2.156083
+  ...
+# Subtest: B receipt rejects incorrect nonce
+ok 128 - B receipt rejects incorrect nonce
+  ---
+  duration_ms: 2.122166
+  ...
+# Subtest: B receipt rejects incorrect gas
+ok 129 - B receipt rejects incorrect gas
+  ---
+  duration_ms: 2.056125
+  ...
+# Subtest: B receipt rejects incorrect gas price
+ok 130 - B receipt rejects incorrect gas price
+  ---
+  duration_ms: 4.794708
+  ...
+# Subtest: B receipt rejects fee above cap
+ok 131 - B receipt rejects fee above cap
+  ---
+  duration_ms: 2.304584
+  ...
+# Subtest: business-check failure preserves canonical receipt before returning failure
+ok 132 - business-check failure preserves canonical receipt before returning failure
+  ---
+  duration_ms: 4.786417
+  ...
+# Subtest: Seaport native amounts are event-verified while independent receipt-side payments remain NOT_RUN
+ok 133 - Seaport native amounts are event-verified while independent receipt-side payments remain NOT_RUN
+  ---
+  duration_ms: 3.099375
+  ...
+# Subtest: B confirmation freezes completionToolHash
+ok 134 - B confirmation freezes completionToolHash
+  ---
+  duration_ms: 2.449958
+  ...
+# Subtest: B confirmation freezes fundingToolHash
+ok 135 - B confirmation freezes fundingToolHash
+  ---
+  duration_ms: 2.338792
+  ...
+# Subtest: B confirmation freezes rpcMode
+ok 136 - B confirmation freezes rpcMode
+  ---
+  duration_ms: 2.449375
+  ...
+# Subtest: B confirmation freezes nonce
+ok 137 - B confirmation freezes nonce
+  ---
+  duration_ms: 2.559667
+  ...
+# Subtest: B confirmation freezes to
+ok 138 - B confirmation freezes to
+  ---
+  duration_ms: 2.300042
+  ...
+# Subtest: B confirmation freezes valueWei
+ok 139 - B confirmation freezes valueWei
+  ---
+  duration_ms: 5.940667
+  ...
+# Subtest: B confirmation freezes requireCompletion
+ok 140 - B confirmation freezes requireCompletion
+  ---
+  duration_ms: 2.334667
+  ...
+# Subtest: B confirmation freezes dataHash
+ok 141 - B confirmation freezes dataHash
+  ---
+  duration_ms: 2.991458
+  ...
+# Subtest: B confirmation freezes gas
+ok 142 - B confirmation freezes gas
+  ---
+  duration_ms: 2.398667
+  ...
+# Subtest: B confirmation freezes gasPrice
+ok 143 - B confirmation freezes gasPrice
+  ---
+  duration_ms: 2.468875
+  ...
+# Subtest: B confirmation freezes maxFeeWei
+ok 144 - B confirmation freezes maxFeeWei
+  ---
+  duration_ms: 2.215583
+  ...
+# Subtest: B confirmation freezes maximumSpendWei
+ok 145 - B confirmation freezes maximumSpendWei
+  ---
+  duration_ms: 2.17525
+  ...
+# Subtest: B plan freezes full IDs, creator prerequisite, previous shares and order status
+ok 146 - B plan freezes full IDs, creator prerequisite, previous shares and order status
+  ---
+  duration_ms: 2.791375
+  ...
+# Subtest: B budget adds full .09999 principal and gas to all creator and deployment reservations
+ok 147 - B budget adds full .09999 principal and gas to all creator and deployment reservations
+  ---
+  duration_ms: 2.273167
+  ...
+# Subtest: B budget rejects omitted B principal
+ok 148 - B budget rejects omitted B principal
+  ---
+  duration_ms: 1.871875
+  ...
+# Subtest: B budget rejects reset prior total
+ok 149 - B budget rejects reset prior total
+  ---
+  duration_ms: 1.797458
+  ...
+# Subtest: B budget rejects deducting expected fee recipient income
+ok 150 - B budget rejects deducting expected fee recipient income
+  ---
+  duration_ms: 4.295708
+  ...
+# Subtest: B budget rejects zero principal reservation
+ok 151 - B budget rejects zero principal reservation
+  ---
+  duration_ms: 1.980916
+  ...
+# Subtest: B budget rejects wrong actor
+ok 152 - B budget rejects wrong actor
+  ---
+  duration_ms: 1.882667
+  ...
+# Subtest: B budget rejects wrong nonce
+ok 153 - B budget rejects wrong nonce
+  ---
+  duration_ms: 1.815292
+  ...
+# Subtest: B budget rejects numeric principal
+ok 154 - B budget rejects numeric principal
+  ---
+  duration_ms: 1.799958
+  ...
+# Subtest: B budget rejects different fee
+ok 155 - B budget rejects different fee
+  ---
+  duration_ms: 1.878333
+  ...
+# Subtest: B budget rejects orphan reservation
+ok 156 - B budget rejects orphan reservation
+  ---
+  duration_ms: 2.243042
+  ...
+# Subtest: B budget rejects signed transaction without hash
+ok 157 - B budget rejects signed transaction without hash
+  ---
+  duration_ms: 1.913125
+  ...
+# Subtest: B unknown send outcome retains hash and reservation with no automatic retry
+ok 158 - B unknown send outcome retains hash and reservation with no automatic retry
+  ---
+  duration_ms: 0.178542
+  ...
+# Subtest: B reservation or signed-hash write failure prevents broadcasting
+ok 159 - B reservation or signed-hash write failure prevents broadcasting
+  ---
+  duration_ms: 0.098084
+  ...
+# Subtest: three zero-value actions target the Vault and freeze nonce, actor and only share1
+ok 160 - three zero-value actions target the Vault and freeze nonce, actor and only share1
+  ---
+  duration_ms: 8.121167
+  ...
+# Subtest: new harvest carries old85 units into integer distribution rather than dropping them
+ok 161 - new harvest carries old85 units into integer distribution rather than dropping them
+  ---
+  duration_ms: 4.165625
+  ...
+# Subtest: new inflow14 fails positive test but15 and99 pass because old remainder participates
+ok 162 - new inflow14 fails positive test but15 and99 pass because old remainder participates
+  ---
+  duration_ms: 10.814416
+  ...
+# Subtest: harvest rejects dropped old ledger, direct donation and mismatched actual mint
+ok 163 - harvest rejects dropped old ledger, direct donation and mismatched actual mint
+  ---
+  duration_ms: 15.280583
+  ...
+# Subtest: transfer emits only exact single Vault share1 movement and no reward or miner event
+ok 164 - transfer emits only exact single Vault share1 movement and no reward or miner event
+  ---
+  duration_ms: 63.417875
+  ...
+# Subtest: B claims only delta for ID1, never accumulated Q1 or other IDs
+ok 165 - B claims only delta for ID1, never accumulated Q1 or other IDs
+  ---
+  duration_ms: 34.468583
+  ...
+# Subtest: all receipts reject wrong emitter, removed or mixed transaction and unordered logs
+ok 166 - all receipts reject wrong emitter, removed or mixed transaction and unordered logs
+  ---
+  duration_ms: 9.623125
+  ...
+# Subtest: all100 states preserve accrued rights through transfer and update only ID1 on B claim
+ok 167 - all100 states preserve accrued rights through transfer and update only ID1 on B claim
+  ---
+  duration_ms: 32.831917
+  ...
+# Subtest: state rejects other share transfer, paid or claimed drift, new donation and moved miner
+ok 168 - state rejects other share transfer, paid or claimed drift, new donation and moved miner
+  ---
+  duration_ms: 41.454958
+  ...
+# Subtest: former holder denial accepts only genuine decoded NotHolder, including nested viem errors
+ok 169 - former holder denial accepts only genuine decoded NotHolder, including nested viem errors
+  ---
+  duration_ms: 8.044542
+  ...
+# Subtest: read-only former holder check pins creator claim1 to exact block and cannot accept network failure
+ok 170 - read-only former holder check pins creator claim1 to exact block and cannot accept network failure
+  ---
+  duration_ms: 4.042167
+  ...
+# Subtest: three preflights simulate only exact zero-value calls with fixed nonce and current state
+ok 171 - three preflights simulate only exact zero-value calls with fixed nonce and current state
+  ---
+  duration_ms: 25.454167
+  ...
+# Subtest: preflight refuses nonce drift, prior evidence failure, insufficient gas and excess gas
+ok 172 - preflight refuses nonce drift, prior evidence failure, insufficient gas and excess gas
+  ---
+  duration_ms: 9.612833
+  ...
+# Subtest: one-shot sending keeps reserved fee and signed hash after unknown outcome
+ok 173 - one-shot sending keeps reserved fee and signed hash after unknown outcome
+  ---
+  duration_ms: 0.285375
+  ...
+# Subtest: canonical receipts preserve share rights on transfer and pay only B ID1
+ok 174 - canonical receipts preserve share rights on transfer and pay only B ID1
+  ---
+  duration_ms: 100.008375
+  ...
+# Subtest: canonical receipt is retained before event, poststate or former-holder denial failure
+ok 175 - canonical receipt is retained before event, poststate or former-holder denial failure
+  ---
+  duration_ms: 17.122083
+  ...
+# Subtest: all three receipts bind canonical15 confirmations, exact actor/value/data/nonce and fee
+ok 176 - all three receipts bind canonical15 confirmations, exact actor/value/data/nonce and fee
+  ---
+  duration_ms: 89.3475
+  ...
+# Subtest: frozen plan permits head/pending drift but rejects actor, source, history and accrued-right changes
+ok 177 - frozen plan permits head/pending drift but rejects actor, source, history and accrued-right changes
+  ---
+  duration_ms: 11.797125
+  ...
+# Subtest: historical checkpoint prefix binds entries even when numerical baseline is unchanged
+ok 178 - historical checkpoint prefix binds entries even when numerical baseline is unchanged
+  ---
+  duration_ms: 0.190667
+  ...
+# Subtest: prior canonical receipts rebuild entitlement without historical storage and reject changed evidence
+ok 179 - prior canonical receipts rebuild entitlement without historical storage and reject changed evidence
+  ---
+  duration_ms: 120.602958
+  ...
+# Subtest: budget refuses reset or fabricated prior reservations without reading the live ledger
+ok 180 - budget refuses reset or fabricated prior reservations without reading the live ledger
+  ---
+  duration_ms: 1.457208
+  ...
+# Subtest: canonical creation receipt and exact events pass while all historical storage APIs throw missing trie
+ok 181 - canonical creation receipt and exact events pass while all historical storage APIs throw missing trie
+  ---
+  duration_ms: 13.828167
+  ...
+# Subtest: prerequisite rejects unconfirmed journal before any RPC receipt read
+ok 182 - prerequisite rejects unconfirmed journal before any RPC receipt read
+  ---
+  duration_ms: 19.227167
+  ...
+# Subtest: prerequisite rejects missing transaction hash before any RPC receipt read
+ok 183 - prerequisite rejects missing transaction hash before any RPC receipt read
+  ---
+  duration_ms: 10.886583
+  ...
+# Subtest: prerequisite rejects wrong plan status before any RPC receipt read
+ok 184 - prerequisite rejects wrong plan status before any RPC receipt read
+  ---
+  duration_ms: 2.484959
+  ...
+# Subtest: prerequisite rejects wrong pool tool hash before any RPC receipt read
+ok 185 - prerequisite rejects wrong pool tool hash before any RPC receipt read
+  ---
+  duration_ms: 8.091792
+  ...
+# Subtest: prerequisite rejects wrong seller tool hash before any RPC receipt read
+ok 186 - prerequisite rejects wrong seller tool hash before any RPC receipt read
+  ---
+  duration_ms: 6.341417
+  ...
+# Subtest: prerequisite rejects wrong session before any RPC receipt read
+ok 187 - prerequisite rejects wrong session before any RPC receipt read
+  ---
+  duration_ms: 5.578625
+  ...
+# Subtest: prerequisite rejects changed frozen binding before any RPC receipt read
+ok 188 - prerequisite rejects changed frozen binding before any RPC receipt read
+  ---
+  duration_ms: 1.638583
+  ...
+# Subtest: prerequisite rejects changed plan sender before any RPC receipt read
+ok 189 - prerequisite rejects changed plan sender before any RPC receipt read
+  ---
+  duration_ms: 3.86225
+  ...
+# Subtest: prerequisite rejects changed plan target before any RPC receipt read
+ok 190 - prerequisite rejects changed plan target before any RPC receipt read
+  ---
+  duration_ms: 4.158042
+  ...
+# Subtest: prerequisite rejects changed plan value before any RPC receipt read
+ok 191 - prerequisite rejects changed plan value before any RPC receipt read
+  ---
+  duration_ms: 2.838
+  ...
+# Subtest: prerequisite rejects changed plan nonce before any RPC receipt read
+ok 192 - prerequisite rejects changed plan nonce before any RPC receipt read
+  ---
+  duration_ms: 4.288083
+  ...
+# Subtest: prerequisite rejects changed plan calldata hash before any RPC receipt read
+ok 193 - prerequisite rejects changed plan calldata hash before any RPC receipt read
+  ---
+  duration_ms: 4.299291
+  ...
+# Subtest: prerequisite rejects changed plan gas before any RPC receipt read
+ok 194 - prerequisite rejects changed plan gas before any RPC receipt read
+  ---
+  duration_ms: 60.110833
+  ...
+# Subtest: prerequisite rejects changed plan gas price before any RPC receipt read
+ok 195 - prerequisite rejects changed plan gas price before any RPC receipt read
+  ---
+  duration_ms: 11.81575
+  ...
+# Subtest: prerequisite rejects changed plan fee cap before any RPC receipt read
+ok 196 - prerequisite rejects changed plan fee cap before any RPC receipt read
+  ---
+  duration_ms: 4.342667
+  ...
+# Subtest: pruned-safe receipt check rejects 14 confirmations
+ok 197 - pruned-safe receipt check rejects 14 confirmations
+  ---
+  duration_ms: 6.921292
+  ...
+# Subtest: pruned-safe receipt check rejects reverted transaction
+ok 198 - pruned-safe receipt check rejects reverted transaction
+  ---
+  duration_ms: 6.723875
+  ...
+# Subtest: pruned-safe receipt check rejects different live sender
+ok 199 - pruned-safe receipt check rejects different live sender
+  ---
+  duration_ms: 1.698
+  ...
+# Subtest: pruned-safe receipt check rejects different live target
+ok 200 - pruned-safe receipt check rejects different live target
+  ---
+  duration_ms: 2.307959
+  ...
+# Subtest: pruned-safe receipt check rejects nonzero native value
+ok 201 - pruned-safe receipt check rejects nonzero native value
+  ---
+  duration_ms: 1.786958
+  ...
+# Subtest: pruned-safe receipt check rejects different calldata
+ok 202 - pruned-safe receipt check rejects different calldata
+  ---
+  duration_ms: 1.460959
+  ...
+# Subtest: pruned-safe receipt check rejects different live nonce
+ok 203 - pruned-safe receipt check rejects different live nonce
+  ---
+  duration_ms: 22.918417
+  ...
+# Subtest: pruned-safe receipt check rejects different live gas
+ok 204 - pruned-safe receipt check rejects different live gas
+  ---
+  duration_ms: 1.714709
+  ...
+# Subtest: pruned-safe receipt check rejects different live gas price
+ok 205 - pruned-safe receipt check rejects different live gas price
+  ---
+  duration_ms: 7.070958
+  ...
+# Subtest: pruned-safe receipt check rejects actual fee above frozen maximum
+ok 206 - pruned-safe receipt check rejects actual fee above frozen maximum
+  ---
+  duration_ms: 27.370084
+  ...
+# Subtest: pruned-safe receipt check rejects noncanonical receipt block
+ok 207 - pruned-safe receipt check rejects noncanonical receipt block
+  ---
+  duration_ms: 2.047333
+  ...
+# Subtest: canonical block is rechecked after exact event matching
+ok 208 - canonical block is rechecked after exact event matching
+  ---
+  duration_ms: 4.334709
+  ...
+# Subtest: PoolCreated vault still must match despite unavailable old storage
+ok 209 - PoolCreated vault still must match despite unavailable old storage
+  ---
+  duration_ms: 2.001542
+  ...
+# Subtest: PoolCreated creator still must match despite unavailable old storage
+ok 210 - PoolCreated creator still must match despite unavailable old storage
+  ---
+  duration_ms: 14.035125
+  ...
+# Subtest: PoolCreated template still must match despite unavailable old storage
+ok 211 - PoolCreated template still must match despite unavailable old storage
+  ---
+  duration_ms: 8.061042
+  ...
+# Subtest: PoolCreated configHash still must match despite unavailable old storage
+ok 212 - PoolCreated configHash still must match despite unavailable old storage
+  ---
+  duration_ms: 1.764916
+  ...
+# Subtest: PoolCreated termsHash still must match despite unavailable old storage
+ok 213 - PoolCreated termsHash still must match despite unavailable old storage
+  ---
+  duration_ms: 2.097708
+  ...
+# Subtest: PoolCreated round still must match despite unavailable old storage
+ok 214 - PoolCreated round still must match despite unavailable old storage
+  ---
+  duration_ms: 69.742958
+  ...
+# Subtest: PoolCreated salt still must match despite unavailable old storage
+ok 215 - PoolCreated salt still must match despite unavailable old storage
+  ---
+  duration_ms: 5.849167
+  ...
+# Subtest: PoolCreated orderPayload still must match despite unavailable old storage
+ok 216 - PoolCreated orderPayload still must match despite unavailable old storage
+  ---
+  duration_ms: 3.359625
+  ...
+# Subtest: VaultInitialized factory still must match despite unavailable old storage
+ok 217 - VaultInitialized factory still must match despite unavailable old storage
+  ---
+  duration_ms: 2.913917
+  ...
+# Subtest: VaultInitialized creator still must match despite unavailable old storage
+ok 218 - VaultInitialized creator still must match despite unavailable old storage
+  ---
+  duration_ms: 45.836916
+  ...
+# Subtest: VaultInitialized configHash still must match despite unavailable old storage
+ok 219 - VaultInitialized configHash still must match despite unavailable old storage
+  ---
+  duration_ms: 2.017959
+  ...
+# Subtest: VaultInitialized termsHash still must match despite unavailable old storage
+ok 220 - VaultInitialized termsHash still must match despite unavailable old storage
+  ---
+  duration_ms: 1.905167
+  ...
+# Subtest: VaultInitialized payload still must match despite unavailable old storage
+ok 221 - VaultInitialized payload still must match despite unavailable old storage
+  ---
+  duration_ms: 5.660208
+  ...
+# Subtest: missing creation event cannot be replaced by a previously CONFIRMED journal flag
+ok 222 - missing creation event cannot be replaced by a previously CONFIRMED journal flag
+  ---
+  duration_ms: 1.689334
+  ...
+# Subtest: receipt log from a different canonical block is rejected
+ok 223 - receipt log from a different canonical block is rejected
+  ---
+  duration_ms: 6.651083
+  ...
+# Subtest: default creator contribution entry only prepares an unsigned plan
+ok 224 - default creator contribution entry only prepares an unsigned plan
+  ---
+  duration_ms: 0.808042
+  ...
+# Subtest: CLI refuses different operation
+ok 225 - CLI refuses different operation
+  ---
+  duration_ms: 0.459625
+  ...
+# Subtest: CLI refuses missing env
+ok 226 - CLI refuses missing env
+  ---
+  duration_ms: 0.065041
+  ...
+# Subtest: CLI refuses unreviewed broadcast
+ok 227 - CLI refuses unreviewed broadcast
+  ---
+  duration_ms: 0.1995
+  ...
+# Subtest: CLI refuses broadcast and reconcile
+ok 228 - CLI refuses broadcast and reconcile
+  ---
+  duration_ms: 0.046125
+  ...
+# Subtest: CLI refuses duplicate flag
+ok 229 - CLI refuses duplicate flag
+  ---
+  duration_ms: 0.037209
+  ...
+# Subtest: CLI refuses arbitrary IDs
+ok 230 - CLI refuses arbitrary IDs
+  ---
+  duration_ms: 0.054375
+  ...
+# Subtest: CLI refuses value override
+ok 231 - CLI refuses value override
+  ---
+  duration_ms: 0.03325
+  ...
+# Subtest: CLI refuses raw signed transaction
+ok 232 - CLI refuses raw signed transaction
+  ---
+  duration_ms: 1.281125
+  ...
+# Subtest: CLI refuses nonce override
+ok 233 - CLI refuses nonce override
+  ---
+  duration_ms: 0.656916
+  ...
+# Subtest: action encodes all creator IDs 1 through 67, exact principal and completion=false
+ok 234 - action encodes all creator IDs 1 through 67, exact principal and completion=false
+  ---
+  duration_ms: 43.094708
+  ...
+# Subtest: action refuses other creator
+ok 235 - action refuses other creator
+  ---
+  duration_ms: 3.188958
+  ...
+# Subtest: action refuses other clone
+ok 236 - action refuses other clone
+  ---
+  duration_ms: 32.291125
+  ...
+# Subtest: action refuses other manifest clone
+ok 237 - action refuses other manifest clone
+  ---
+  duration_ms: 3.344834
+  ...
+# Subtest: action refuses changed creator allocation address
+ok 238 - action refuses changed creator allocation address
+  ---
+  duration_ms: 5.403042
+  ...
+# Subtest: action refuses changed creator allocation role
+ok 239 - action refuses changed creator allocation role
+  ---
+  duration_ms: 7.046042
+  ...
+# Subtest: action refuses incomplete IDs
+ok 240 - action refuses incomplete IDs
+  ---
+  duration_ms: 3.802583
+  ...
+# Subtest: action refuses other IDs
+ok 241 - action refuses other IDs
+  ---
+  duration_ms: 5.138708
+  ...
+# Subtest: action refuses changed share count
+ok 242 - action refuses changed share count
+  ---
+  duration_ms: 6.661458
+  ...
+# Subtest: action refuses lower principal
+ok 243 - action refuses lower principal
+  ---
+  duration_ms: 6.286041
+  ...
+# Subtest: action refuses higher principal
+ok 244 - action refuses higher principal
+  ---
+  duration_ms: 2.588666
+  ...
+# Subtest: action refuses changed payload
+ok 245 - action refuses changed payload
+  ---
+  duration_ms: 1.987375
+  ...
+# Subtest: action refuses missing createPool prerequisite
+ok 246 - action refuses missing createPool prerequisite
+  ---
+  duration_ms: 28.940792
+  ...
+# Subtest: action refuses unsafe nonce
+ok 247 - action refuses unsafe nonce
+  ---
+  duration_ms: 3.049292
+  ...
+# Subtest: real core mint uses one exact TransferBatch and one Contributed
+ok 248 - real core mint uses one exact TransferBatch and one Contributed
+  ---
+  duration_ms: 3.401084
+  ...
+# Subtest: Contributed rejects altered participant 0x0000000000000000000000000000000000000099
+ok 249 - Contributed rejects altered participant 0x0000000000000000000000000000000000000099
+  ---
+  duration_ms: 11.528334
+  ...
+# Subtest: Contributed rejects altered ids 2,3
+ok 250 - Contributed rejects altered ids 2,3
+  ---
+  duration_ms: 35.845917
+  ...
+# Subtest: Contributed rejects altered ids 1,2
+ok 251 - Contributed rejects altered ids 1,2
+  ---
+  duration_ms: 2.356667
+  ...
+# Subtest: Contributed rejects altered ids 67,66
+ok 252 - Contributed rejects altered ids 67,66
+  ---
+  duration_ms: 2.367125
+  ...
+# Subtest: Contributed rejects altered principal 203009999999999999
+ok 253 - Contributed rejects altered principal 203009999999999999
+  ---
+  duration_ms: 4.20425
+  ...
+# Subtest: Contributed rejects altered principal 203010000000000001
+ok 254 - Contributed rejects altered principal 203010000000000001
+  ---
+  duration_ms: 3.819333
+  ...
+# Subtest: Contributed rejects altered soldCount 66
+ok 255 - Contributed rejects altered soldCount 66
+  ---
+  duration_ms: 23.180959
+  ...
+# Subtest: Contributed rejects altered soldCount 100
+ok 256 - Contributed rejects altered soldCount 100
+  ---
+  duration_ms: 14.515041
+  ...
+# Subtest: mint rejects operator
+ok 257 - mint rejects operator
+  ---
+  duration_ms: 40.41825
+  ...
+# Subtest: mint rejects nonzero mint source
+ok 258 - mint rejects nonzero mint source
+  ---
+  duration_ms: 5.772167
+  ...
+# Subtest: mint rejects recipient
+ok 259 - mint rejects recipient
+  ---
+  duration_ms: 5.352584
+  ...
+# Subtest: mint rejects missing ID
+ok 260 - mint rejects missing ID
+  ---
+  duration_ms: 28.761917
+  ...
+# Subtest: mint rejects duplicate ID
+ok 261 - mint rejects duplicate ID
+  ---
+  duration_ms: 6.9255
+  ...
+# Subtest: mint rejects wrong ID
+ok 262 - mint rejects wrong ID
+  ---
+  duration_ms: 2.243542
+  ...
+# Subtest: mint rejects reordered IDs
+ok 263 - mint rejects reordered IDs
+  ---
+  duration_ms: 47.877209
+  ...
+# Subtest: mint rejects missing value
+ok 264 - mint rejects missing value
+  ---
+  duration_ms: 2.394875
+  ...
+# Subtest: mint rejects value two
+ok 265 - mint rejects value two
+  ---
+  duration_ms: 4.181667
+  ...
+# Subtest: mint rejects value zero
+ok 266 - mint rejects value zero
+  ---
+  duration_ms: 2.178041
+  ...
+# Subtest: receipt event check refuses missing Contributed
+ok 267 - receipt event check refuses missing Contributed
+  ---
+  duration_ms: 6.143625
+  ...
+# Subtest: receipt event check refuses duplicate Contributed
+ok 268 - receipt event check refuses duplicate Contributed
+  ---
+  duration_ms: 2.172875
+  ...
+# Subtest: receipt event check refuses missing mint
+ok 269 - receipt event check refuses missing mint
+  ---
+  duration_ms: 2.095833
+  ...
+# Subtest: receipt event check refuses duplicate mint
+ok 270 - receipt event check refuses duplicate mint
+  ---
+  duration_ms: 4.24775
+  ...
+# Subtest: receipt event check refuses wrong contribution emitter
+ok 271 - receipt event check refuses wrong contribution emitter
+  ---
+  duration_ms: 2.072375
+  ...
+# Subtest: receipt event check refuses wrong mint emitter
+ok 272 - receipt event check refuses wrong mint emitter
+  ---
+  duration_ms: 1.864667
+  ...
+# Subtest: receipt event check refuses removed log
+ok 273 - receipt event check refuses removed log
+  ---
+  duration_ms: 1.642
+  ...
+# Subtest: receipt event check refuses other transaction
+ok 274 - receipt event check refuses other transaction
+  ---
+  duration_ms: 1.626125
+  ...
+# Subtest: receipt event check refuses other block
+ok 275 - receipt event check refuses other block
+  ---
+  duration_ms: 1.624083
+  ...
+# Subtest: creator contribution must not report a purchase
+ok 276 - creator contribution must not report a purchase
+  ---
+  duration_ms: 48.758417
+  ...
+# Subtest: unexpected single transfer alongside core batch is rejected
+ok 277 - unexpected single transfer alongside core batch is rejected
+  ---
+  duration_ms: 25.533542
+  ...
+# Subtest: 67 Single events cannot substitute for this core version exact batch mint
+ok 278 - 67 Single events cannot substitute for this core version exact batch mint
+  ---
+  duration_ms: 10.55675
+  ...
+# Subtest: preview checks all share slots and every creator share cost, then simulates exact native principal
+ok 279 - preview checks all share slots and every creator share cost, then simulates exact native principal
+  ---
+  duration_ms: 10.775834
+  ...
+# Subtest: preview refuses unregistered pool
+ok 280 - preview refuses unregistered pool
+  ---
+  duration_ms: 19.196458
+  ...
+# Subtest: preview refuses not FUNDING
+ok 281 - preview refuses not FUNDING
+  ---
+  duration_ms: 11.340375
+  ...
+# Subtest: preview refuses already sold
+ok 282 - preview refuses already sold
+  ---
+  duration_ms: 5.599375
+  ...
+# Subtest: preview refuses already funded
+ok 283 - preview refuses already funded
+  ---
+  duration_ms: 3.435125
+  ...
+# Subtest: preview refuses prior principal
+ok 284 - preview refuses prior principal
+  ---
+  duration_ms: 6.651
+  ...
+# Subtest: preview refuses prior refund
+ok 285 - preview refuses prior refund
+  ---
+  duration_ms: 10.808208
+  ...
+# Subtest: preview refuses prior purchase
+ok 286 - preview refuses prior purchase
+  ---
+  duration_ms: 9.976334
+  ...
+# Subtest: preview refuses unexecutable market
+ok 287 - preview refuses unexecutable market
+  ---
+  duration_ms: 4.365166
+  ...
+# Subtest: preview refuses NFT no longer owned by seller
+ok 288 - preview refuses NFT no longer owned by seller
+  ---
+  duration_ms: 6.56175
+  ...
+# Subtest: preview refuses missing single-token approval
+ok 289 - preview refuses missing single-token approval
+  ---
+  duration_ms: 3.426291
+  ...
+# Subtest: preview refuses collection-wide approval
+ok 290 - preview refuses collection-wide approval
+  ---
+  duration_ms: 2.17725
+  ...
+# Subtest: preview refuses counter drift
+ok 291 - preview refuses counter drift
+  ---
+  duration_ms: 2.152125
+  ...
+# Subtest: preview refuses other order hash
+ok 292 - preview refuses other order hash
+  ---
+  duration_ms: 3.517709
+  ...
+# Subtest: preview refuses unvalidated order
+ok 293 - preview refuses unvalidated order
+  ---
+  duration_ms: 3.388583
+  ...
+# Subtest: preview refuses cancelled order
+ok 294 - preview refuses cancelled order
+  ---
+  duration_ms: 2.32925
+  ...
+# Subtest: preview refuses filled order
+ok 295 - preview refuses filled order
+  ---
+  duration_ms: 11.561292
+  ...
+# Subtest: all 100 slots must be empty even when an occupied ID is outside the creator allocation
+ok 296 - all 100 slots must be empty even when an occupied ID is outside the creator allocation
+  ---
+  duration_ms: 3.21175
+  ...
+# Subtest: one share cost mismatch rejects even when the total could be counterbalanced
+ok 297 - one share cost mismatch rejects even when the total could be counterbalanced
+  ---
+  duration_ms: 2.018333
+  ...
+# Subtest: creator principal plus maximum gas must both fit available native balance
+ok 298 - creator principal plus maximum gas must both fit available native balance
+  ---
+  duration_ms: 1.873709
+  ...
+# Subtest: nonempty Vault balance is not accepted as an empty initial funding pool
+ok 299 - nonempty Vault balance is not accepted as an empty initial funding pool
+  ---
+  duration_ms: 45.611375
+  ...
+# Subtest: creator pending nonce, smart-account code, and changed clone code stop preview
+ok 300 - creator pending nonce, smart-account code, and changed clone code stop preview
+  ---
+  duration_ms: 2.74475
+  ...
+# Subtest: missing creation receipt and protocol failure are rejected before gas work
+ok 301 - missing creation receipt and protocol failure are rejected before gas work
+  ---
+  duration_ms: 1.64
+  ...
+# Subtest: excessive gas and nonpositive gas price prevent simulation
+ok 302 - excessive gas and nonpositive gas price prevent simulation
+  ---
+  duration_ms: 2.23275
+  ...
+# Subtest: simulation rejection never retries or returns a signed plan
+ok 303 - simulation rejection never retries or returns a signed plan
+  ---
+  duration_ms: 12.930083
+  ...
+# Subtest: reservation failure stops before journal, signing, or broadcasting
+ok 304 - reservation failure stops before journal, signing, or broadcasting
+  ---
+  duration_ms: 1.197208
+  ...
+# Subtest: journal failure after reservation prevents signature and send
+ok 305 - journal failure after reservation prevents signature and send
+  ---
+  duration_ms: 0.849917
+  ...
+# Subtest: signed-hash persistence failure prevents any broadcast
+ok 306 - signed-hash persistence failure prevents any broadcast
+  ---
+  duration_ms: 0.409458
+  ...
+# Subtest: unknown broadcast outcome keeps principal reservation and one recorded hash without retry
+ok 307 - unknown broadcast outcome keeps principal reservation and one recorded hash without retry
+  ---
+  duration_ms: 0.141417
+  ...
+# Subtest: confirmation freezes fundingToolHash
+ok 308 - confirmation freezes fundingToolHash
+  ---
+  duration_ms: 5.717875
+  ...
+# Subtest: confirmation freezes poolToolHash
+ok 309 - confirmation freezes poolToolHash
+  ---
+  duration_ms: 2.051917
+  ...
+# Subtest: confirmation freezes sellerRuntimeToolHash
+ok 310 - confirmation freezes sellerRuntimeToolHash
+  ---
+  duration_ms: 6.875542
+  ...
+# Subtest: confirmation freezes rpcMode
+ok 311 - confirmation freezes rpcMode
+  ---
+  duration_ms: 1.928584
+  ...
+# Subtest: confirmation freezes primaryEndpoint
+ok 312 - confirmation freezes primaryEndpoint
+  ---
+  duration_ms: 1.858792
+  ...
+# Subtest: confirmation freezes nonce
+ok 313 - confirmation freezes nonce
+  ---
+  duration_ms: 1.849916
+  ...
+# Subtest: confirmation freezes to
+ok 314 - confirmation freezes to
+  ---
+  duration_ms: 1.843
+  ...
+# Subtest: confirmation freezes valueWei
+ok 315 - confirmation freezes valueWei
+  ---
+  duration_ms: 6.589
+  ...
+# Subtest: confirmation freezes dataHash
+ok 316 - confirmation freezes dataHash
+  ---
+  duration_ms: 2.220041
+  ...
+# Subtest: confirmation freezes pool
+ok 317 - confirmation freezes pool
+  ---
+  duration_ms: 2.052
+  ...
+# Subtest: confirmation freezes requireCompletion
+ok 318 - confirmation freezes requireCompletion
+  ---
+  duration_ms: 2.180125
+  ...
+# Subtest: confirmation freezes gas
+ok 319 - confirmation freezes gas
+  ---
+  duration_ms: 1.906667
+  ...
+# Subtest: confirmation freezes gasPrice
+ok 320 - confirmation freezes gasPrice
+  ---
+  duration_ms: 1.918791
+  ...
+# Subtest: confirmation freezes maxFeeWei
+ok 321 - confirmation freezes maxFeeWei
+  ---
+  duration_ms: 16.328042
+  ...
+# Subtest: confirmation freezes maximumSpendWei
+ok 322 - confirmation freezes maximumSpendWei
+  ---
+  duration_ms: 2.664333
+  ...
+# Subtest: full IDs, prerequisites, slot ownership and costs stay frozen during confirmation
+ok 323 - full IDs, prerequisites, slot ownership and costs stay frozen during confirmation
+  ---
+  duration_ms: 2.556375
+  ...
+# Subtest: unexpected sold bitmap alone stops an apparently empty pool
+ok 324 - unexpected sold bitmap alone stops an apparently empty pool
+  ---
+  duration_ms: 2.040208
+  ...
+# Subtest: global budget includes historical .0007566652 BNB plus .20301 principal plus frozen fee
+ok 325 - global budget includes historical .0007566652 BNB plus .20301 principal plus frozen fee
+  ---
+  duration_ms: 1.805
+  ...
+# Subtest: funding journal rejects missing principal in sum
+ok 326 - funding journal rejects missing principal in sum
+  ---
+  duration_ms: 1.58
+  ...
+# Subtest: funding journal rejects reset historical budget
+ok 327 - funding journal rejects reset historical budget
+  ---
+  duration_ms: 8.162833
+  ...
+# Subtest: funding journal rejects principal zero in reservation
+ok 328 - funding journal rejects principal zero in reservation
+  ---
+  duration_ms: 5.768417
+  ...
+# Subtest: funding journal rejects incorrect journal principal
+ok 329 - funding journal rejects incorrect journal principal
+  ---
+  duration_ms: 3.325041
+  ...
+# Subtest: funding journal rejects numeric instead of canonical string principal
+ok 330 - funding journal rejects numeric instead of canonical string principal
+  ---
+  duration_ms: 1.612583
+  ...
+# Subtest: funding journal rejects exponent-form principal
+ok 331 - funding journal rejects exponent-form principal
+  ---
+  duration_ms: 1.499541
+  ...
+# Subtest: funding journal rejects nonce changed
+ok 332 - funding journal rejects nonce changed
+  ---
+  duration_ms: 1.460708
+  ...
+# Subtest: funding journal rejects fee changed
+ok 333 - funding journal rejects fee changed
+  ---
+  duration_ms: 4.782291
+  ...
+# Subtest: funding journal rejects orphan reservation
+ok 334 - funding journal rejects orphan reservation
+  ---
+  duration_ms: 3.707833
+  ...
+# Subtest: funding journal rejects signed state missing hash
+ok 335 - funding journal rejects signed state missing hash
+  ---
+  duration_ms: 1.642375
+  ...
+# Subtest: funding journal rejects another target
+ok 336 - funding journal rejects another target
+  ---
+  duration_ms: 1.530709
+  ...
+# Subtest: canonical receipt proves 67 exact holdings and principal while miner stays with seller
+ok 337 - canonical receipt proves 67 exact holdings and principal while miner stays with seller
+  ---
+  duration_ms: 10.497417
+  ...
+# Subtest: contribution receipt rejects reverted receipt
+ok 338 - contribution receipt rejects reverted receipt
+  ---
+  duration_ms: 2.522875
+  ...
+# Subtest: contribution receipt rejects only 14 confirmations
+ok 339 - contribution receipt rejects only 14 confirmations
+  ---
+  duration_ms: 1.8515
+  ...
+# Subtest: contribution receipt rejects wrong transaction native amount
+ok 340 - contribution receipt rejects wrong transaction native amount
+  ---
+  duration_ms: 1.76
+  ...
+# Subtest: contribution receipt rejects wrong transaction nonce
+ok 341 - contribution receipt rejects wrong transaction nonce
+  ---
+  duration_ms: 1.757083
+  ...
+# Subtest: contribution receipt rejects wrong transaction gas
+ok 342 - contribution receipt rejects wrong transaction gas
+  ---
+  duration_ms: 40.094458
+  ...
+# Subtest: contribution receipt rejects wrong transaction gas price
+ok 343 - contribution receipt rejects wrong transaction gas price
+  ---
+  duration_ms: 2.148791
+  ...
+# Subtest: contribution receipt rejects unexpected ACTIVE state
+ok 344 - contribution receipt rejects unexpected ACTIVE state
+  ---
+  duration_ms: 2.56
+  ...
+# Subtest: contribution receipt rejects soldCount 100
+ok 345 - contribution receipt rejects soldCount 100
+  ---
+  duration_ms: 2.812625
+  ...
+# Subtest: contribution receipt rejects incorrect funded principal
+ok 346 - contribution receipt rejects incorrect funded principal
+  ---
+  duration_ms: 4.001958
+  ...
+# Subtest: contribution receipt rejects incorrect totalPrincipalIn
+ok 347 - contribution receipt rejects incorrect totalPrincipalIn
+  ---
+  duration_ms: 3.987417
+  ...
+# Subtest: contribution receipt rejects unexpected refund
+ok 348 - contribution receipt rejects unexpected refund
+  ---
+  duration_ms: 2.5105
+  ...
+# Subtest: contribution receipt rejects purchase unexpectedly spent principal
+ok 349 - contribution receipt rejects purchase unexpectedly spent principal
+  ---
+  duration_ms: 2.323625
+  ...
+# Subtest: contribution receipt rejects incorrect bitmap
+ok 350 - contribution receipt rejects incorrect bitmap
+  ---
+  duration_ms: 2.268667
+  ...
+# Subtest: contribution receipt rejects incorrect native Vault balance
+ok 351 - contribution receipt rejects incorrect native Vault balance
+  ---
+  duration_ms: 2.341292
+  ...
+# Subtest: contribution receipt rejects miner transferred to Vault
+ok 352 - contribution receipt rejects miner transferred to Vault
+  ---
+  duration_ms: 2.695333
+  ...
+# Subtest: contribution receipt rejects other clone code
+ok 353 - contribution receipt rejects other clone code
+  ---
+  duration_ms: 2.326125
+  ...
+# Subtest: contribution receipt rejects unregistered Vault
+ok 354 - contribution receipt rejects unregistered Vault
+  ---
+  duration_ms: 2.860792
+  ...
+# Subtest: holder, supply and creator balance for all 100 IDs must agree with 67 minted shares
+ok 355 - holder, supply and creator balance for all 100 IDs must agree with 67 minted shares
+  ---
+  duration_ms: 10.614291
+  ...
+# Subtest: canonical receipt is retained before any event or business postcondition failure
+ok 356 - canonical receipt is retained before any event or business postcondition failure
+  ---
+  duration_ms: 17.035042
+  ...
+# Subtest: failure saving canonical receipt stops business verification and preserves failure
+ok 357 - failure saving canonical receipt stops business verification and preserves failure
+  ---
+  duration_ms: 1.905
+  ...
+# Subtest: all primary read requests share the global limit of eight
+ok 358 - all primary read requests share the global limit of eight
+  ---
+  duration_ms: 15.113375
+  ...
+# Subtest: rejected read releases its slot without retrying or blocking queued reads
+ok 359 - rejected read releases its slot without retrying or blocking queued reads
+  ---
+  duration_ms: 9.326208
+  ...
+# Subtest: invalid read concurrency 0 fails closed
+ok 360 - invalid read concurrency 0 fails closed
+  ---
+  duration_ms: 0.4485
+  ...
+# Subtest: invalid read concurrency -1 fails closed
+ok 361 - invalid read concurrency -1 fails closed
+  ---
+  duration_ms: 0.109291
+  ...
+# Subtest: invalid read concurrency 1.5 fails closed
+ok 362 - invalid read concurrency 1.5 fails closed
+  ---
+  duration_ms: 0.067292
+  ...
+# Subtest: invalid read concurrency 17 fails closed
+ok 363 - invalid read concurrency 17 fails closed
+  ---
+  duration_ms: 0.037667
+  ...
+# Subtest: ten fixed negative cases retain exact actors, IDs, actions and custom errors
+ok 364 - ten fixed negative cases retain exact actors, IDs, actions and custom errors
+  ---
+  duration_ms: 0.906208
+  ...
+# Subtest: genuine viem decoded custom errors match directly and through execution wrapper
+ok 365 - genuine viem decoded custom errors match directly and through execution wrapper
+  ---
+  duration_ms: 0.914667
+  ...
+# Subtest: expected revert does not accept ordinary Error mentioning NotHolder
+ok 366 - expected revert does not accept ordinary Error mentioning NotHolder
+  ---
+  duration_ms: 0.04725
+  ...
+# Subtest: expected revert does not accept network timeout
+ok 367 - expected revert does not accept network timeout
+  ---
+  duration_ms: 0.034667
+  ...
+# Subtest: expected revert does not accept RPC body with apparent errorName
+ok 368 - expected revert does not accept RPC body with apparent errorName
+  ---
+  duration_ms: 0.030917
+  ...
+# Subtest: expected revert does not accept unrecognized selector
+ok 369 - expected revert does not accept unrecognized selector
+  ---
+  duration_ms: 0.030125
+  ...
+# Subtest: expected revert does not accept plain revert reason text
+ok 370 - expected revert does not accept plain revert reason text
+  ---
+  duration_ms: 0.090458
+  ...
+# Subtest: expected revert does not accept no error
+ok 371 - expected revert does not accept no error
+  ---
+  duration_ms: 0.028791
+  ...
+# Subtest: all negative simulations use the pinned block, fixed gas and exact call without sending
+ok 372 - all negative simulations use the pinned block, fixed gas and exact call without sending
+  ---
+  duration_ms: 6.13125
+  ...
+# Subtest: negative checks fail on a successful call
+ok 373 - negative checks fail on a successful call
+  ---
+  duration_ms: 0.762042
+  ...
+# Subtest: negative checks fail on a network timeout
+ok 374 - negative checks fail on a network timeout
+  ---
+  duration_ms: 1.31125
+  ...
+# Subtest: negative checks fail on a different decoded custom error
+ok 375 - negative checks fail on a different decoded custom error
+  ---
+  duration_ms: 2.893042
+  ...
+# Subtest: one noncontract error cannot disappear among nine correct reverts
+ok 376 - one noncontract error cannot disappear among nine correct reverts
+  ---
+  duration_ms: 1.344292
+  ...
+# Subtest: snapshot pins all100 share and reward reads, wallet BEM and Mining pending to one block
+ok 377 - snapshot pins all100 share and reward reads, wallet BEM and Mining pending to one block
+  ---
+  duration_ms: 3.188625
+  ...
+# Subtest: snapshot never substitutes RPC failure with zero pending or zero claimable
+ok 378 - snapshot never substitutes RPC failure with zero pending or zero claimable
+  ---
+  duration_ms: 9.675334
+  ...
+# Subtest: snapshot requires verified clone identity before declaring a valid observation
+ok 379 - snapshot requires verified clone identity before declaring a valid observation
+  ---
+  duration_ms: 0.239333
+  ...
+# Subtest: forged error names and cyclic noncontract causes never match a custom revert
+ok 380 - forged error names and cyclic noncontract causes never match a custom revert
+  ---
+  duration_ms: 0.339666
+  ...
+# Subtest: SDK latest identity reads are pinned while explicit checkpoint requests retain their block
+ok 381 - SDK latest identity reads are pinned while explicit checkpoint requests retain their block
+  ---
+  duration_ms: 0.881209
+  ...
+# Subtest: snapshot marks not ACTIVE as FAIL rather than passing an observation
+ok 382 - snapshot marks not ACTIVE as FAIL rather than passing an observation
+  ---
+  duration_ms: 1.00625
+  ...
+# Subtest: snapshot marks missing share supply as FAIL rather than passing an observation
+ok 383 - snapshot marks missing share supply as FAIL rather than passing an observation
+  ---
+  duration_ms: 0.474333
+  ...
+# Subtest: snapshot marks wrong NFT owner as FAIL rather than passing an observation
+ok 384 - snapshot marks wrong NFT owner as FAIL rather than passing an observation
+  ---
+  duration_ms: 0.681917
+  ...
+# Subtest: snapshot marks unexpected BEM decimals as FAIL rather than passing an observation
+ok 385 - snapshot marks unexpected BEM decimals as FAIL rather than passing an observation
+  ---
+  duration_ms: 0.575292
+  ...
+# Subtest: snapshot marks reward accounting exceeds balance as FAIL rather than passing an observation
+ok 386 - snapshot marks reward accounting exceeds balance as FAIL rather than passing an observation
+  ---
+  duration_ms: 0.909792
+  ...
+# Subtest: snapshot detects changed canonical block hash
+ok 387 - snapshot detects changed canonical block hash
+  ---
+  duration_ms: 0.402833
+  ...
+# Subtest: read-only CLI rejects environment, endpoint, key and broadcast arguments
+ok 388 - read-only CLI rejects environment, endpoint, key and broadcast arguments
+  ---
+  duration_ms: 0.109083
+  ...
+# Subtest: synthetic completion prerequisite baseline reaches receipt verification only
+ok 389 - synthetic completion prerequisite baseline reaches receipt verification only
+  ---
+  duration_ms: 2.713917
+  ...
+# Subtest: completion prerequisite rejects unconfirmed completion with zero RPC calls
+ok 390 - completion prerequisite rejects unconfirmed completion with zero RPC calls
+  ---
+  duration_ms: 0.154041
+  ...
+# Subtest: completion prerequisite rejects different completion transaction with zero RPC calls
+ok 391 - completion prerequisite rejects different completion transaction with zero RPC calls
+  ---
+  duration_ms: 0.153959
+  ...
+# Subtest: completion prerequisite rejects different session with zero RPC calls
+ok 392 - completion prerequisite rejects different session with zero RPC calls
+  ---
+  duration_ms: 0.119
+  ...
+# Subtest: completion prerequisite rejects changed frozen binding with zero RPC calls
+ok 393 - completion prerequisite rejects changed frozen binding with zero RPC calls
+  ---
+  duration_ms: 0.09325
+  ...
+# Subtest: completion prerequisite rejects changed runtime hash with zero RPC calls
+ok 394 - completion prerequisite rejects changed runtime hash with zero RPC calls
+  ---
+  duration_ms: 0.077875
+  ...
+# Subtest: completion prerequisite rejects changed native principal with zero RPC calls
+ok 395 - completion prerequisite rejects changed native principal with zero RPC calls
+  ---
+  duration_ms: 0.075667
+  ...
+# Subtest: canonical receipt is fetched once, saved before business checks, and used for all events
+ok 396 - canonical receipt is fetched once, saved before business checks, and used for all events
+  ---
+  duration_ms: 6.280416
+  ...
+# Subtest: 14 confirmations cannot produce business success or saved canonical evidence
+ok 397 - 14 confirmations cannot produce business success or saved canonical evidence
+  ---
+  duration_ms: 0.52025
+  ...
+# Subtest: business failure retains the already validated receipt callback
+ok 398 - business failure retains the already validated receipt callback
+  ---
+  duration_ms: 0.988459
+  ...
+# Subtest: receipt rejects changed transaction nonce
+ok 399 - receipt rejects changed transaction nonce
+  ---
+  duration_ms: 0.260417
+  ...
+# Subtest: receipt rejects changed transaction gas
+ok 400 - receipt rejects changed transaction gas
+  ---
+  duration_ms: 0.461
+  ...
+# Subtest: receipt rejects changed transaction gasPrice
+ok 401 - receipt rejects changed transaction gasPrice
+  ---
+  duration_ms: 0.247292
+  ...
+# Subtest: receipt gas cost cannot exceed the reviewed cap
+ok 402 - receipt gas cost cannot exceed the reviewed cap
+  ---
+  duration_ms: 0.238375
+  ...
+# Subtest: a later canonical hash change prevents success
+ok 403 - a later canonical hash change prevents success
+  ---
+  duration_ms: 0.827042
+  ...
+# Subtest: wrong clone runtime never passes after PoolCreated
+ok 404 - wrong clone runtime never passes after PoolCreated
+  ---
+  duration_ms: 0.961292
+  ...
+# Subtest: created pool rejects unexpected isPool
+ok 405 - created pool rejects unexpected isPool
+  ---
+  duration_ms: 0.753625
+  ...
+# Subtest: created pool rejects unexpected state
+ok 406 - created pool rejects unexpected state
+  ---
+  duration_ms: 1.903125
+  ...
+# Subtest: created pool rejects unexpected soldCount
+ok 407 - created pool rejects unexpected soldCount
+  ---
+  duration_ms: 1.783958
+  ...
+# Subtest: created pool rejects unexpected fundedWei
+ok 408 - created pool rejects unexpected fundedWei
+  ---
+  duration_ms: 0.992583
+  ...
+# Subtest: created pool rejects unexpected ownerOf
+ok 409 - created pool rejects unexpected ownerOf
+  ---
+  duration_ms: 0.672042
+  ...
+# Subtest: wrong immutable validator is rejected
+ok 410 - wrong immutable validator is rejected
+  ---
+  duration_ms: 29.456083
+  ...
+# Subtest: CLI defaults to one read-only createPool plan
+ok 411 - CLI defaults to one read-only createPool plan
+  ---
+  duration_ms: 0.404583
+  ...
+# Subtest: CLI explicit reconcile cannot broadcast
+ok 412 - CLI explicit reconcile cannot broadcast
+  ---
+  duration_ms: 0.063833
+  ...
+# Subtest: CLI refuses missing explicit env
+ok 413 - CLI refuses missing explicit env
+  ---
+  duration_ms: 0.148625
+  ...
+# Subtest: CLI refuses different action
+ok 414 - CLI refuses different action
+  ---
+  duration_ms: 0.093625
+  ...
+# Subtest: CLI refuses unreviewed broadcast
+ok 415 - CLI refuses unreviewed broadcast
+  ---
+  duration_ms: 0.039292
+  ...
+# Subtest: CLI refuses broadcast plus reconcile
+ok 416 - CLI refuses broadcast plus reconcile
+  ---
+  duration_ms: 0.04075
+  ...
+# Subtest: CLI refuses duplicate mode flag
+ok 417 - CLI refuses duplicate mode flag
+  ---
+  duration_ms: 0.032708
+  ...
+# Subtest: CLI refuses private key override
+ok 418 - CLI refuses private key override
+  ---
+  duration_ms: 0.0315
+  ...
+# Subtest: CLI refuses raw transaction override
+ok 419 - CLI refuses raw transaction override
+  ---
+  duration_ms: 0.086041
+  ...
+# Subtest: CLI refuses nonce override
+ok 420 - CLI refuses nonce override
+  ---
+  duration_ms: 0.085209
+  ...
+# Subtest: action uses the frozen existing Factory and creates no payment or additional contracts
+ok 421 - action uses the frozen existing Factory and creates no payment or additional contracts
+  ---
+  duration_ms: 3.524333
+  ...
+# Subtest: salt and CREATE2 address independently bind all seven frozen inputs
+ok 422 - salt and CREATE2 address independently bind all seven frozen inputs
+  ---
+  duration_ms: 26.143292
+  ...
+# Subtest: action rejects wrong chain
+ok 423 - action rejects wrong chain
+  ---
+  duration_ms: 1.690834
+  ...
+# Subtest: action rejects wrong creator
+ok 424 - action rejects wrong creator
+  ---
+  duration_ms: 5.115834
+  ...
+# Subtest: action rejects new Factory
+ok 425 - action rejects new Factory
+  ---
+  duration_ms: 5.249875
+  ...
+# Subtest: action rejects new template
+ok 426 - action rejects new template
+  ---
+  duration_ms: 3.734833
+  ...
+# Subtest: action rejects other clone
+ok 427 - action rejects other clone
+  ---
+  duration_ms: 3.856625
+  ...
+# Subtest: action rejects other session clone
+ok 428 - action rejects other session clone
+  ---
+  duration_ms: 12.073791
+  ...
+# Subtest: action rejects other manifest creator
+ok 429 - action rejects other manifest creator
+  ---
+  duration_ms: 6.350834
+  ...
+# Subtest: action rejects next round
+ok 430 - action rejects next round
+  ---
+  duration_ms: 1.439875
+  ...
+# Subtest: action rejects checkpoint
+ok 431 - action rejects checkpoint
+  ---
+  duration_ms: 19.06225
+  ...
+# Subtest: action rejects different order hash
+ok 432 - action rejects different order hash
+  ---
+  duration_ms: 1.601959
+  ...
+# Subtest: action rejects different total
+ok 433 - action rejects different total
+  ---
+  duration_ms: 15.294958
+  ...
+# Subtest: action rejects other fee recipient
+ok 434 - action rejects other fee recipient
+  ---
+  duration_ms: 1.315292
+  ...
+# Subtest: action rejects signed payload
+ok 435 - action rejects signed payload
+  ---
+  duration_ms: 1.344791
+  ...
+# Subtest: action rejects changed order parameters
+ok 436 - action rejects changed order parameters
+  ---
+  duration_ms: 1.275
+  ...
+# Subtest: action rejects changed terms hash
+ok 437 - action rejects changed terms hash
+  ---
+  duration_ms: 1.467708
+  ...
+# Subtest: action rejects changed payload
+ok 438 - action rejects changed payload
+  ---
+  duration_ms: 1.639917
+  ...
+# Subtest: action rejects changed supplied round
+ok 439 - action rejects changed supplied round
+  ---
+  duration_ms: 36.491583
+  ...
+# Subtest: action rejects missing validate prerequisite
+ok 440 - action rejects missing validate prerequisite
+  ---
+  duration_ms: 1.872833
+  ...
+# Subtest: action rejects unsafe creator nonce
+ok 441 - action rejects unsafe creator nonce
+  ---
+  duration_ms: 1.644
+  ...
+# Subtest: action rejects negative creator nonce
+ok 442 - action rejects negative creator nonce
+  ---
+  duration_ms: 9.466083
+  ...
+# Subtest: preview checks prerequisites, identity and executable order before bounded gas call
+ok 443 - preview checks prerequisites, identity and executable order before bounded gas call
+  ---
+  duration_ms: 5.78
+  ...
+# Subtest: preview refuses missing seller receipt before gas estimation
+ok 444 - preview refuses missing seller receipt before gas estimation
+  ---
+  duration_ms: 0.132916
+  ...
+# Subtest: preview refuses wrong factory identity before gas estimation
+ok 445 - preview refuses wrong factory identity before gas estimation
+  ---
+  duration_ms: 0.064041
+  ...
+# Subtest: preview refuses nonexecutable order before gas estimation
+ok 446 - preview refuses nonexecutable order before gas estimation
+  ---
+  duration_ms: 0.053042
+  ...
+# Subtest: preview refuses different protocol order before gas estimation
+ok 447 - preview refuses different protocol order before gas estimation
+  ---
+  duration_ms: 0.045209
+  ...
+# Subtest: preview refuses existing registered clone
+ok 448 - preview refuses existing registered clone
+  ---
+  duration_ms: 0.251791
+  ...
+# Subtest: preview refuses wrong deterministic salt
+ok 449 - preview refuses wrong deterministic salt
+  ---
+  duration_ms: 0.26925
+  ...
+# Subtest: preview refuses wrong predicted clone
+ok 450 - preview refuses wrong predicted clone
+  ---
+  duration_ms: 60.372458
+  ...
+# Subtest: preview refuses changed NFT owner
+ok 451 - preview refuses changed NFT owner
+  ---
+  duration_ms: 1.537375
+  ...
+# Subtest: preview refuses missing token approval
+ok 452 - preview refuses missing token approval
+  ---
+  duration_ms: 5.899333
+  ...
+# Subtest: preview refuses collection-wide approval
+ok 453 - preview refuses collection-wide approval
+  ---
+  duration_ms: 4.600666
+  ...
+# Subtest: preview refuses counter changed
+ok 454 - preview refuses counter changed
+  ---
+  duration_ms: 0.429208
+  ...
+# Subtest: preview refuses order hash changed
+ok 455 - preview refuses order hash changed
+  ---
+  duration_ms: 0.289666
+  ...
+# Subtest: preview refuses Seaport version changed
+ok 456 - preview refuses Seaport version changed
+  ---
+  duration_ms: 0.216042
+  ...
+# Subtest: preview refuses Seaport domain changed
+ok 457 - preview refuses Seaport domain changed
+  ---
+  duration_ms: 0.20925
+  ...
+# Subtest: preview refuses unvalidated order
+ok 458 - preview refuses unvalidated order
+  ---
+  duration_ms: 0.217333
+  ...
+# Subtest: preview refuses cancelled order
+ok 459 - preview refuses cancelled order
+  ---
+  duration_ms: 0.168
+  ...
+# Subtest: preview refuses filled order
+ok 460 - preview refuses filled order
+  ---
+  duration_ms: 0.175084
+  ...
+# Subtest: creator latest or pending nonce drift prevents a new plan
+ok 461 - creator latest or pending nonce drift prevents a new plan
+  ---
+  duration_ms: 0.507333
+  ...
+# Subtest: deployed pool bytecode and creator smart-account code are rejected
+ok 462 - deployed pool bytecode and creator smart-account code are rejected
+  ---
+  duration_ms: 0.389125
+  ...
+# Subtest: deadline safety margin and changed observed block both fail closed
+ok 463 - deadline safety margin and changed observed block both fail closed
+  ---
+  duration_ms: 2.184583
+  ...
+# Subtest: invalid gas price, excessive gas, or insufficient balance stop before simulation
+ok 464 - invalid gas price, excessive gas, or insufficient balance stop before simulation
+  ---
+  duration_ms: 0.570417
+  ...
+# Subtest: simulation failure returns no plan and never retries
+ok 465 - simulation failure returns no plan and never retries
+  ---
+  duration_ms: 0.751542
+  ...
+# Subtest: reviewed plan freezes rpcMode
+ok 466 - reviewed plan freezes rpcMode
+  ---
+  duration_ms: 0.33775
+  ...
+# Subtest: reviewed plan freezes primaryEndpoint
+ok 467 - reviewed plan freezes primaryEndpoint
+  ---
+  duration_ms: 0.202166
+  ...
+# Subtest: reviewed plan freezes independentEndpoint
+ok 468 - reviewed plan freezes independentEndpoint
+  ---
+  duration_ms: 0.202833
+  ...
+# Subtest: reviewed plan freezes sessionHash
+ok 469 - reviewed plan freezes sessionHash
+  ---
+  duration_ms: 0.178958
+  ...
+# Subtest: reviewed plan freezes poolToolHash
+ok 470 - reviewed plan freezes poolToolHash
+  ---
+  duration_ms: 0.1815
+  ...
+# Subtest: reviewed plan freezes sellerRuntimeToolHash
+ok 471 - reviewed plan freezes sellerRuntimeToolHash
+  ---
+  duration_ms: 0.172792
+  ...
+# Subtest: reviewed plan freezes nonce
+ok 472 - reviewed plan freezes nonce
+  ---
+  duration_ms: 0.1755
+  ...
+# Subtest: reviewed plan freezes to
+ok 473 - reviewed plan freezes to
+  ---
+  duration_ms: 0.169208
+  ...
+# Subtest: reviewed plan freezes valueWei
+ok 474 - reviewed plan freezes valueWei
+  ---
+  duration_ms: 0.171041
+  ...
+# Subtest: reviewed plan freezes data
+ok 475 - reviewed plan freezes data
+  ---
+  duration_ms: 0.302333
+  ...
+# Subtest: reviewed plan freezes dataHash
+ok 476 - reviewed plan freezes dataHash
+  ---
+  duration_ms: 0.177416
+  ...
+# Subtest: reviewed plan freezes pool
+ok 477 - reviewed plan freezes pool
+  ---
+  duration_ms: 0.163375
+  ...
+# Subtest: reviewed plan freezes salt
+ok 478 - reviewed plan freezes salt
+  ---
+  duration_ms: 0.168875
+  ...
+# Subtest: reviewed plan freezes round
+ok 479 - reviewed plan freezes round
+  ---
+  duration_ms: 0.272083
+  ...
+# Subtest: reviewed plan freezes orderHash
+ok 480 - reviewed plan freezes orderHash
+  ---
+  duration_ms: 0.196958
+  ...
+# Subtest: reviewed plan freezes gasEstimate
+ok 481 - reviewed plan freezes gasEstimate
+  ---
+  duration_ms: 0.161458
+  ...
+# Subtest: reviewed plan freezes gas
+ok 482 - reviewed plan freezes gas
+  ---
+  duration_ms: 0.165125
+  ...
+# Subtest: reviewed plan freezes gasPrice
+ok 483 - reviewed plan freezes gasPrice
+  ---
+  duration_ms: 0.171084
+  ...
+# Subtest: reviewed plan freezes maxFeeWei
+ok 484 - reviewed plan freezes maxFeeWei
+  ---
+  duration_ms: 0.175792
+  ...
+# Subtest: evidence and business state cannot drift during user confirmation
+ok 485 - evidence and business state cannot drift during user confirmation
+  ---
+  duration_ms: 0.359708
+  ...
+# Subtest: real compiled event layouts require exact PoolCreated plus VaultInitialized
+ok 486 - real compiled event layouts require exact PoolCreated plus VaultInitialized
+  ---
+  duration_ms: 1.218833
+  ...
+# Subtest: PoolCreated rejects changed vault
+ok 487 - PoolCreated rejects changed vault
+  ---
+  duration_ms: 30.680334
+  ...
+# Subtest: PoolCreated rejects changed creator
+ok 488 - PoolCreated rejects changed creator
+  ---
+  duration_ms: 0.440459
+  ...
+# Subtest: PoolCreated rejects changed template
+ok 489 - PoolCreated rejects changed template
+  ---
+  duration_ms: 0.257959
+  ...
+# Subtest: PoolCreated rejects changed configHash
+ok 490 - PoolCreated rejects changed configHash
+  ---
+  duration_ms: 0.332708
+  ...
+# Subtest: PoolCreated rejects changed termsHash
+ok 491 - PoolCreated rejects changed termsHash
+  ---
+  duration_ms: 0.238291
+  ...
+# Subtest: PoolCreated rejects changed round
+ok 492 - PoolCreated rejects changed round
+  ---
+  duration_ms: 0.288542
+  ...
+# Subtest: PoolCreated rejects changed salt
+ok 493 - PoolCreated rejects changed salt
+  ---
+  duration_ms: 0.242917
+  ...
+# Subtest: PoolCreated rejects changed orderPayload
+ok 494 - PoolCreated rejects changed orderPayload
+  ---
+  duration_ms: 0.354875
+  ...
+# Subtest: VaultInitialized rejects changed factory
+ok 495 - VaultInitialized rejects changed factory
+  ---
+  duration_ms: 0.519666
+  ...
+# Subtest: VaultInitialized rejects changed creator
+ok 496 - VaultInitialized rejects changed creator
+  ---
+  duration_ms: 0.461791
+  ...
+# Subtest: VaultInitialized rejects changed configHash
+ok 497 - VaultInitialized rejects changed configHash
+  ---
+  duration_ms: 0.448916
+  ...
+# Subtest: VaultInitialized rejects changed termsHash
+ok 498 - VaultInitialized rejects changed termsHash
+  ---
+  duration_ms: 2.981917
+  ...
+# Subtest: VaultInitialized rejects changed payload
+ok 499 - VaultInitialized rejects changed payload
+  ---
+  duration_ms: 0.928042
+  ...
+# Subtest: creation receipt rejects missing PoolCreated
+ok 500 - creation receipt rejects missing PoolCreated
+  ---
+  duration_ms: 0.21325
+  ...
+# Subtest: creation receipt rejects duplicate PoolCreated
+ok 501 - creation receipt rejects duplicate PoolCreated
+  ---
+  duration_ms: 7.033459
+  ...
+# Subtest: creation receipt rejects wrong Factory emitter
+ok 502 - creation receipt rejects wrong Factory emitter
+  ---
+  duration_ms: 0.193917
+  ...
+# Subtest: creation receipt rejects missing initialization
+ok 503 - creation receipt rejects missing initialization
+  ---
+  duration_ms: 0.33825
+  ...
+# Subtest: creation receipt rejects duplicate initialization
+ok 504 - creation receipt rejects duplicate initialization
+  ---
+  duration_ms: 0.407208
+  ...
+# Subtest: creation receipt rejects wrong clone emitter
+ok 505 - creation receipt rejects wrong clone emitter
+  ---
+  duration_ms: 0.306208
+  ...
+# Subtest: creation receipt rejects removed event
+ok 506 - creation receipt rejects removed event
+  ---
+  duration_ms: 0.061875
+  ...
+# Subtest: creation receipt rejects other transaction log
+ok 507 - creation receipt rejects other transaction log
+  ---
+  duration_ms: 0.059458
+  ...
+# Subtest: creation receipt rejects other block log
+ok 508 - creation receipt rejects other block log
+  ---
+  duration_ms: 0.121
+  ...
+# Subtest: pool reservation retains earlier deployment and seller budget
+ok 509 - pool reservation retains earlier deployment and seller budget
+  ---
+  duration_ms: 5.959
+  ...
+# Subtest: empty pool journal with only historical budget is allowed
+ok 510 - empty pool journal with only historical budget is allowed
+  ---
+  duration_ms: 13.802625
+  ...
+# Subtest: journal guard rejects orphan pool reservation
+ok 511 - journal guard rejects orphan pool reservation
+  ---
+  duration_ms: 6.624375
+  ...
+# Subtest: journal guard rejects duplicate pool step
+ok 512 - journal guard rejects duplicate pool step
+  ---
+  duration_ms: 1.758792
+  ...
+# Subtest: journal guard rejects wrong session
+ok 513 - journal guard rejects wrong session
+  ---
+  duration_ms: 1.17
+  ...
+# Subtest: journal guard rejects wrong chain
+ok 514 - journal guard rejects wrong chain
+  ---
+  duration_ms: 5.46375
+  ...
+# Subtest: journal guard rejects unapproved nonce
+ok 515 - journal guard rejects unapproved nonce
+  ---
+  duration_ms: 7.336458
+  ...
+# Subtest: journal guard rejects other target
+ok 516 - journal guard rejects other target
+  ---
+  duration_ms: 1.333375
+  ...
+# Subtest: journal guard rejects other pool
+ok 517 - journal guard rejects other pool
+  ---
+  duration_ms: 29.733667
+  ...
+# Subtest: journal guard rejects changed data
+ok 518 - journal guard rejects changed data
+  ---
+  duration_ms: 13.314167
+  ...
+# Subtest: journal guard rejects signed state missing hash
+ok 519 - journal guard rejects signed state missing hash
+  ---
+  duration_ms: 1.23125
+  ...
+# Subtest: journal guard rejects reserved state already has hash
+ok 520 - journal guard rejects reserved state already has hash
+  ---
+  duration_ms: 1.113792
+  ...
+# Subtest: journal guard rejects missing budget reservation
+ok 521 - journal guard rejects missing budget reservation
+  ---
+  duration_ms: 2.2965
+  ...
+# Subtest: journal guard rejects other reservation sender
+ok 522 - journal guard rejects other reservation sender
+  ---
+  duration_ms: 1.542708
+  ...
+# Subtest: journal guard rejects other reservation nonce
+ok 523 - journal guard rejects other reservation nonce
+  ---
+  duration_ms: 1.1865
+  ...
+# Subtest: journal guard rejects unexpected principal
+ok 524 - journal guard rejects unexpected principal
+  ---
+  duration_ms: 1.111375
+  ...
+# Subtest: journal guard rejects mismatched fee
+ok 525 - journal guard rejects mismatched fee
+  ---
+  duration_ms: 4.998791
+  ...
+# Subtest: journal guard rejects reset cumulative budget
+ok 526 - journal guard rejects reset cumulative budget
+  ---
+  duration_ms: 1.159834
+  ...
+# Subtest: confirmed creation proves canonical 15-confirmation receipt, empty FUNDING pool and miner still with seller
+ok 527 - confirmed creation proves canonical 15-confirmation receipt, empty FUNDING pool and miner still with seller
+  ---
+  duration_ms: 7.984
+  ...
+# Subtest: receipt verification refuses reverted receipt
+ok 528 - receipt verification refuses reverted receipt
+  ---
+  duration_ms: 4.615083
+  ...
+# Subtest: receipt verification refuses not enough confirmations
+ok 529 - receipt verification refuses not enough confirmations
+  ---
+  duration_ms: 1.370542
+  ...
+# Subtest: receipt verification refuses other creator nonce
+ok 530 - receipt verification refuses other creator nonce
+  ---
+  duration_ms: 1.257584
+  ...
+# Subtest: receipt verification refuses other gas limit
+ok 531 - receipt verification refuses other gas limit
+  ---
+  duration_ms: 3.402459
+  ...
+# Subtest: receipt verification refuses other gas price
+ok 532 - receipt verification refuses other gas price
+  ---
+  duration_ms: 4.8585
+  ...
+# Subtest: receipt verification refuses other clone runtime
+ok 533 - receipt verification refuses other clone runtime
+  ---
+  duration_ms: 3.129666
+  ...
+# Subtest: receipt verification refuses unregistered clone
+ok 534 - receipt verification refuses unregistered clone
+  ---
+  duration_ms: 2.153667
+  ...
+# Subtest: receipt verification refuses unexpected purchased state
+ok 535 - receipt verification refuses unexpected purchased state
+  ---
+  duration_ms: 2.221167
+  ...
+# Subtest: receipt verification refuses unexpected sold shares
+ok 536 - receipt verification refuses unexpected sold shares
+  ---
+  duration_ms: 1.572791
+  ...
+# Subtest: receipt verification refuses unexpected funds
+ok 537 - receipt verification refuses unexpected funds
+  ---
+  duration_ms: 1.480167
+  ...
+# Subtest: receipt verification refuses unexpected principal
+ok 538 - receipt verification refuses unexpected principal
+  ---
+  duration_ms: 1.452708
+  ...
+# Subtest: receipt verification refuses miner left seller
+ok 539 - receipt verification refuses miner left seller
+  ---
+  duration_ms: 2.042417
+  ...
+# Subtest: receipt verification refuses wrong vault factory
+ok 540 - receipt verification refuses wrong vault factory
+  ---
+  duration_ms: 1.653125
+  ...
+# Subtest: receipt verification refuses wrong vault creator
+ok 541 - receipt verification refuses wrong vault creator
+  ---
+  duration_ms: 1.990333
+  ...
+# Subtest: receipt verification refuses wrong validator
+ok 542 - receipt verification refuses wrong validator
+  ---
+  duration_ms: 1.624709
+  ...
+# Subtest: receipt verification refuses wrong purchase payload
+ok 543 - receipt verification refuses wrong purchase payload
+  ---
+  duration_ms: 1.479458
+  ...
+# Subtest: receipt verification refuses basic postconditions fail
+ok 544 - receipt verification refuses basic postconditions fail
+  ---
+  duration_ms: 4.681666
+  ...
+# Subtest: receipt verification refuses live clone identity fails
+ok 545 - receipt verification refuses live clone identity fails
+  ---
+  duration_ms: 1.786583
+  ...
+# Subtest: CLI defaults to read-only original-hash observation
+ok 546 - CLI defaults to read-only original-hash observation
+  ---
+  duration_ms: 0.422667
+  ...
+# Subtest: CLI rejects different plan
+ok 547 - CLI rejects different plan
+  ---
+  duration_ms: 0.174708
+  ...
+# Subtest: CLI rejects new nonce
+ok 548 - CLI rejects new nonce
+  ---
+  duration_ms: 0.045833
+  ...
+# Subtest: CLI rejects new gas
+ok 549 - CLI rejects new gas
+  ---
+  duration_ms: 0.037708
+  ...
+# Subtest: CLI rejects missing recovery review
+ok 550 - CLI rejects missing recovery review
+  ---
+  duration_ms: 0.065
+  ...
+# Subtest: CLI rejects duplicate field
+ok 551 - CLI rejects duplicate field
+  ---
+  duration_ms: 0.032958
+  ...
+# Subtest: historical recovery fixture matches original approval bindings without claiming current recovery eligibility
+ok 552 - historical recovery fixture matches original approval bindings without claiming current recovery eligibility
+  ---
+  duration_ms: 5.251292
+  ...
+# Subtest: later real journal steps and reservations do not change the historical recovery fixture
+ok 553 - later real journal steps and reservations do not change the historical recovery fixture
+  ---
+  duration_ms: 0.85075
+  ...
+# Subtest: input binding rejects session hash
+ok 554 - input binding rejects session hash
+  ---
+  duration_ms: 0.729042
+  ...
+# Subtest: input binding rejects plan hash
+ok 555 - input binding rejects plan hash
+  ---
+  duration_ms: 0.636375
+  ...
+# Subtest: input binding rejects sender runtime
+ok 556 - input binding rejects sender runtime
+  ---
+  duration_ms: 0.570958
+  ...
+# Subtest: input binding rejects recorded transaction hash
+ok 557 - input binding rejects recorded transaction hash
+  ---
+  duration_ms: 0.785958
+  ...
+# Subtest: input binding rejects different calldata
+ok 558 - input binding rejects different calldata
+  ---
+  duration_ms: 1.173292
+  ...
+# Subtest: input binding rejects new nonce
+ok 559 - input binding rejects new nonce
+  ---
+  duration_ms: 1.0405
+  ...
+# Subtest: input binding rejects new target
+ok 560 - input binding rejects new target
+  ---
+  duration_ms: 0.747125
+  ...
+# Subtest: input binding rejects native value
+ok 561 - input binding rejects native value
+  ---
+  duration_ms: 0.722917
+  ...
+# Subtest: input binding rejects fee change
+ok 562 - input binding rejects fee change
+  ---
+  duration_ms: 0.722291
+  ...
+# Subtest: input binding rejects unreserved entry
+ok 563 - input binding rejects unreserved entry
+  ---
+  duration_ms: 0.757333
+  ...
+# Subtest: budget and original journal are read-only and retain prior deployment reservations
+ok 564 - budget and original journal are read-only and retain prior deployment reservations
+  ---
+  duration_ms: 0.951209
+  ...
+# Subtest: both explicit typed NotFound results permit NOT_FOUND classification
+ok 565 - both explicit typed NotFound results permit NOT_FOUND classification
+  ---
+  duration_ms: 0.189416
+  ...
+# Subtest: transport timeout is UNKNOWN, never treated as NotFound
+ok 566 - transport timeout is UNKNOWN, never treated as NotFound
+  ---
+  duration_ms: 0.285083
+  ...
+# Subtest: generic provider text saying not found is still UNKNOWN
+ok 567 - generic provider text saying not found is still UNKNOWN
+  ---
+  duration_ms: 0.154792
+  ...
+# Subtest: found pending transaction with no receipt forbids recovery broadcast
+ok 568 - found pending transaction with no receipt forbids recovery broadcast
+  ---
+  duration_ms: 0.083625
+  ...
+# Subtest: found receipt independently forbids recovery broadcast
+ok 569 - found receipt independently forbids recovery broadcast
+  ---
+  duration_ms: 0.077209
+  ...
+# Subtest: a malformed returned hash is UNKNOWN
+ok 570 - a malformed returned hash is UNKNOWN
+  ---
+  duration_ms: 0.128292
+  ...
+# Subtest: both endpoints absent with exact latest and pending nonces required
+ok 571 - both endpoints absent with exact latest and pending nonces required
+  ---
+  duration_ms: 0.03725
+  ...
+# Subtest: changed latestNonce on either endpoint blocks send
+ok 572 - changed latestNonce on either endpoint blocks send
+  ---
+  duration_ms: 0.031541
+  ...
+# Subtest: changed pendingNonce on either endpoint blocks send
+ok 573 - changed pendingNonce on either endpoint blocks send
+  ---
+  duration_ms: 0.023375
+  ...
+# Subtest: any UNKNOWN endpoint blocks sending
+ok 574 - any UNKNOWN endpoint blocks sending
+  ---
+  duration_ms: 0.0315
+  ...
+# Subtest: both endpoint identities and checkpoint pass before absence decision
+ok 575 - both endpoint identities and checkpoint pass before absence decision
+  ---
+  duration_ms: 2.171625
+  ...
+# Subtest: independent RPC wrong chain rejects
+ok 576 - independent RPC wrong chain rejects
+  ---
+  duration_ms: 2.072125
+  ...
+# Subtest: independent RPC wrong development client rejects
+ok 577 - independent RPC wrong development client rejects
+  ---
+  duration_ms: 56.89825
+  ...
+# Subtest: independent RPC wrong checkpoint rejects
+ok 578 - independent RPC wrong checkpoint rejects
+  ---
+  duration_ms: 1.661959
+  ...
+# Subtest: any existing recovery attempt blocks further attempts even before send
+ok 579 - any existing recovery attempt blocks further attempts even before send
+  ---
+  duration_ms: 0.129583
+  ...
+# Subtest: pure sequencing persists attempt and signed hash before exactly one send
+ok 580 - pure sequencing persists attempt and signed hash before exactly one send
+  ---
+  duration_ms: 0.182459
+  ...
+# Subtest: formal wrapper fixes original hash and ignores caller attempted override
+ok 581 - formal wrapper fixes original hash and ignores caller attempted override
+  ---
+  duration_ms: 0.097417
+  ...
+# Subtest: signed hash mismatch causes zero saves and zero broadcasts
+ok 582 - signed hash mismatch causes zero saves and zero broadcasts
+  ---
+  duration_ms: 0.061166
+  ...
+# Subtest: failure in makeAttempt prevents sending
+ok 583 - failure in makeAttempt prevents sending
+  ---
+  duration_ms: 0.08275
+  ...
+# Subtest: failure in saveSigned prevents sending
+ok 584 - failure in saveSigned prevents sending
+  ---
+  duration_ms: 0.0575
+  ...
+# Subtest: failure in checkImmediatelyBeforeSend prevents sending
+ok 585 - failure in checkImmediatelyBeforeSend prevents sending
+  ---
+  duration_ms: 0.055834
+  ...
+# Subtest: failure in saveAttempting prevents sending
+ok 586 - failure in saveAttempting prevents sending
+  ---
+  duration_ms: 0.057667
+  ...
+# Subtest: submission timeout stops after one call, without retry
+ok 587 - submission timeout stops after one call, without retry
+  ---
+  duration_ms: 0.305542
+  ...
+# Subtest: wrong returned tx hash is an unknown outcome and never retries
+ok 588 - wrong returned tx hash is an unknown outcome and never retries
+  ---
+  duration_ms: 0.433167
+  ...
+# Subtest: persisted attempt must equal every original binding before send
+ok 589 - persisted attempt must equal every original binding before send
+  ---
+  duration_ms: 0.307625
+  ...
+# Subtest: modified attempt status blocks send
+ok 590 - modified attempt status blocks send
+  ---
+  duration_ms: 0.129667
+  ...
+# Subtest: modified attempt broadcastCalls blocks send
+ok 591 - modified attempt broadcastCalls blocks send
+  ---
+  duration_ms: 0.172542
+  ...
+# Subtest: modified attempt transactionHash blocks send
+ok 592 - modified attempt transactionHash blocks send
+  ---
+  duration_ms: 0.077
+  ...
+# Subtest: modified attempt sessionHash blocks send
+ok 593 - modified attempt sessionHash blocks send
+  ---
+  duration_ms: 0.069875
+  ...
+# Subtest: modified attempt planHash blocks send
+ok 594 - modified attempt planHash blocks send
+  ---
+  duration_ms: 0.06975
+  ...
+# Subtest: modified attempt recoveryToolHash blocks send
+ok 595 - modified attempt recoveryToolHash blocks send
+  ---
+  duration_ms: 0.20875
+  ...
+# Subtest: modified attempt reservationId blocks send
+ok 596 - modified attempt reservationId blocks send
+  ---
+  duration_ms: 0.238875
+  ...
+# Subtest: safe diagnostics preserve known guard codes and stage without provider body
+ok 597 - safe diagnostics preserve known guard codes and stage without provider body
+  ---
+  duration_ms: 0.215875
+  ...
+# Subtest: recovery implementation never reserves budget or writes the original journal
+ok 598 - recovery implementation never reserves budget or writes the original journal
+  ---
+  duration_ms: 59.686334
+  ...
+# Subtest: diagnostics classify nested missing header without exposing provider text
+ok 599 - diagnostics classify nested missing header without exposing provider text
+  ---
+  duration_ms: 3.315792
+  ...
+# Subtest: instrumented NotFound remains explicit typed absence
+ok 600 - instrumented NotFound remains explicit typed absence
+  ---
+  duration_ms: 4.414625
+  ...
+# Subtest: independent read-only call uses exact original gas without changing estimate inputs
+ok 601 - independent read-only call uses exact original gas without changing estimate inputs
+  ---
+  duration_ms: 4.225833
+  ...
+# Subtest: call gas wrapper cannot replace the frozen gas with a new limit
+ok 602 - call gas wrapper cannot replace the frozen gas with a new limit
+  ---
+  duration_ms: 0.67775
+  ...
+# Subtest: public RPC selection requires explicit flag and never changes the configured env URL
+ok 603 - public RPC selection requires explicit flag and never changes the configured env URL
+  ---
+  duration_ms: 0.777958
+  ...
+# Subtest: recovery source separates immutable env configuration from explicit send endpoint
+ok 604 - recovery source separates immutable env configuration from explicit send endpoint
+  ---
+  duration_ms: 0.804417
+  ...
+# Subtest: three actions freeze actor, nonce, zero native value and complete claim ID set
+ok 605 - three actions freeze actor, nonce, zero native value and complete claim ID set
+  ---
+  duration_ms: 27.340709
+  ...
+# Subtest: action rejects unknown step, changed participants, pool and original contribution nonce
+ok 606 - action rejects unknown step, changed participants, pool and original contribution nonce
+  ---
+  duration_ms: 34.754333
+  ...
+# Subtest: independent artifact log encoding proves exact minted inflow and integer distribution
+ok 607 - independent artifact log encoding proves exact minted inflow and integer distribution
+  ---
+  duration_ms: 6.543208
+  ...
+# Subtest: harvest rejects donation pre-sync, wrong mint and inconsistent post-sync accounting
+ok 608 - harvest rejects donation pre-sync, wrong mint and inconsistent post-sync accounting
+  ---
+  duration_ms: 64.062042
+  ...
+# Subtest: zero inflow and positive inflow below one hundred never pass positive distribution test
+ok 609 - zero inflow and positive inflow below one hundred never pass positive distribution test
+  ---
+  duration_ms: 16.83075
+  ...
+# Subtest: harvest requires two ordered syncs, one Harvested and one exact BEM mint
+ok 610 - harvest requires two ordered syncs, one Harvested and one exact BEM mint
+  ---
+  duration_ms: 44.329667
+  ...
+# Subtest: both claims account only the frozen harvest point and pay exact 67q or33q
+ok 611 - both claims account only the frozen harvest point and pay exact 67q or33q
+  ---
+  duration_ms: 24.188375
+  ...
+# Subtest: claim rejects any new inflow, changed accumulator, misdirected payment or wrong per-ID amount
+ok 612 - claim rejects any new inflow, changed accumulator, misdirected payment or wrong per-ID amount
+  ---
+  duration_ms: 86.022417
+  ...
+# Subtest: reward receipt logs must have canonical block and transaction identity
+ok 613 - reward receipt logs must have canonical block and transaction identity
+  ---
+  duration_ms: 15.262917
+  ...
+# Subtest: preview simulates three exact zero-value calls against ACTIVE100 and frozen 67/33 holders
+ok 614 - preview simulates three exact zero-value calls against ACTIVE100 and frozen 67/33 holders
+  ---
+  duration_ms: 14.130292
+  ...
+# Subtest: harvest pending may be zero because Mining claim can settle new rewards
+ok 615 - harvest pending may be zero because Mining claim can settle new rewards
+  ---
+  duration_ms: 3.276375
+  ...
+# Subtest: ACTIVE identity, all100 supplies, exact67/33 holders and zero initial reward ledger are required
+ok 616 - ACTIVE identity, all100 supplies, exact67/33 holders and zero initial reward ledger are required
+  ---
+  duration_ms: 39.188959
+  ...
+# Subtest: claims refuse new unaccounted inflow, prior wrong claims, changed holders and accumulator drift
+ok 617 - claims refuse new unaccounted inflow, prior wrong claims, changed holders and accumulator drift
+  ---
+  duration_ms: 50.344209
+  ...
+# Subtest: zero-share distribution baseline cannot start either claim
+ok 618 - zero-share distribution baseline cannot start either claim
+  ---
+  duration_ms: 10.88475
+  ...
+# Subtest: missing prerequisite, nonce drift, missing gas balance and gas cap fail before eth_call
+ok 619 - missing prerequisite, nonce drift, missing gas balance and gas cap fail before eth_call
+  ---
+  duration_ms: 7.058291
+  ...
+# Subtest: failed simulation has one call and no implicit retry
+ok 620 - failed simulation has one call and no implicit retry
+  ---
+  duration_ms: 2.8145
+  ...
+# Subtest: unknown broadcast outcome preserves signed hash and reservation without retry or release
+ok 621 - unknown broadcast outcome preserves signed hash and reservation without retry or release
+  ---
+  duration_ms: 0.163917
+  ...
+# Subtest: reservation and durable signed-hash failures cannot reach send
+ok 622 - reservation and durable signed-hash failures cannot reach send
+  ---
+  duration_ms: 0.26225
+  ...
+# Subtest: verified receipts reconcile all100 claimed rows, paid total and Vault remainder
+ok 623 - verified receipts reconcile all100 claimed rows, paid total and Vault remainder
+  ---
+  duration_ms: 14.135291
+  ...
+# Subtest: canonical receipt is persisted before event, storage or identity postcondition failure
+ok 624 - canonical receipt is persisted before event, storage or identity postcondition failure
+  ---
+  duration_ms: 17.386916
+  ...
+# Subtest: successful zero or sub100 harvest is retained as CONFIRMED but positive test FAIL
+ok 625 - successful zero or sub100 harvest is retained as CONFIRMED but positive test FAIL
+  ---
+  duration_ms: 6.392625
+  ...
+# Subtest: poststate rejects extra inflow, incorrect paid or claimed, ownership and supply changes
+ok 626 - poststate rejects extra inflow, incorrect paid or claimed, ownership and supply changes
+  ---
+  duration_ms: 40.817042
+  ...
+# Subtest: unrelated recipient BEM balance drift is recorded but never used as payment attribution
+ok 627 - unrelated recipient BEM balance drift is recorded but never used as payment attribution
+  ---
+  duration_ms: 7.682
+  ...
+# Subtest: receipt must preserve nonce, value, calldata, fees and15 canonical confirmations
+ok 628 - receipt must preserve nonce, value, calldata, fees and15 canonical confirmations
+  ---
+  duration_ms: 18.066084
+  ...
+# Subtest: reviewed plan permits head, pending and wallet balance drift but freezes state and raw operation
+ok 629 - reviewed plan permits head, pending and wallet balance drift but freezes state and raw operation
+  ---
+  duration_ms: 6.487541
+  ...
+# Subtest: prior harvest rebuilds checkpoint from canonical receipt without historical storage
+ok 630 - prior harvest rebuilds checkpoint from canonical receipt without historical storage
+  ---
+  duration_ms: 3.604375
+  ...
+# Subtest: prior receipt refuses fabricated journal baseline, failed positive test or changed frozen source
+ok 631 - prior receipt refuses fabricated journal baseline, failed positive test or changed frozen source
+  ---
+  duration_ms: 28.803917
+  ...
+# Subtest: three rewards reserve gas only on top of all prior principal and fee reservations
+ok 632 - three rewards reserve gas only on top of all prior principal and fee reservations
+  ---
+  duration_ms: 15.068625
+  ...
+# Subtest: ledger refuses skipped steps, missing hashes, source drift, fee changes or budget reset
+ok 633 - ledger refuses skipped steps, missing hashes, source drift, fee changes or budget reset
+  ---
+  duration_ms: 69.152917
+  ...
+# Subtest: CLI requires one explicit supported step and reviewed hash before broadcast
+ok 634 - CLI requires one explicit supported step and reviewed hash before broadcast
+  ---
+  duration_ms: 0.177125
+  ...
+# Subtest: matching all four Timelock events proves each target, zero value, ordered payload and schedule delay
+ok 635 - matching all four Timelock events proves each target, zero value, ordered payload and schedule delay
+  ---
+  duration_ms: 4.629708
+  ...
+# Subtest: altered targets, payloads, delay, duplicate indexes and split transactions fail receipt matching
+ok 636 - altered targets, payloads, delay, duplicate indexes and split transactions fail receipt matching
+  ---
+  duration_ms: 15.651458
+  ...
+# Subtest: direct Safe execTransaction calldata must bind exactly the scheduled or executed Timelock request
+ok 637 - direct Safe execTransaction calldata must bind exactly the scheduled or executed Timelock request
+  ---
+  duration_ms: 1.156291
+  ...
+# Subtest: one-call MultiSend Safe wrapper is decoded, while trailing extra calls and nested delegatecall are refused
+ok 638 - one-call MultiSend Safe wrapper is decoded, while trailing extra calls and nested delegatecall are refused
+  ---
+  duration_ms: 0.770375
+  ...
+# Subtest: receipt proof includes outer relayer-to-Safe, inner Timelock data and Safe ExecutionSuccess hash
+ok 639 - receipt proof includes outer relayer-to-Safe, inner Timelock data and Safe ExecutionSuccess hash
+  ---
+  duration_ms: 1.203125
+  ...
+# Subtest: Safe 1.4.1 ExecutionSuccess RPC layout has txHash in topic1 and only payment in its 32-byte data
+ok 640 - Safe 1.4.1 ExecutionSuccess RPC layout has txHash in topic1 and only payment in its 32-byte data
+  ---
+  duration_ms: 0.972875
+  ...
+# Subtest: missing/wrong-address Safe success, failed outer receipt and mismatched scanned log blocks fail closed
+ok 641 - missing/wrong-address Safe success, failed outer receipt and mismatched scanned log blocks fail closed
+  ---
+  duration_ms: 1.243958
+  ...
+# Subtest: actual local completed inspection binds operation, config and the immutable deployment session
+ok 642 - actual local completed inspection binds operation, config and the immutable deployment session
+  ---
+  duration_ms: 24.430958
+  ...
+# Subtest: CLI only accepts explicit env and inspection paths; write flags fail before any network access
+ok 643 - CLI only accepts explicit env and inspection paths; write flags fail before any network access
+  ---
+  duration_ms: 494.907792
+  ...
+# Subtest: accepted evidence requires executed governance, exact roles and source-chain match
+ok 644 - accepted evidence requires executed governance, exact roles and source-chain match
+  ---
+  duration_ms: 1.907416
+  ...
+# Subtest: altered roles, config or 67/33 sale terms fail closed
+ok 645 - altered roles, config or 67/33 sale terms fail closed
+  ---
+  duration_ms: 0.672791
+  ...
+# Subtest: draft contains native 0.3+0.003, only \#3204, no signature or executable claim
+ok 646 - draft contains native 0.3+0.003, only \#3204, no signature or executable claim
+  ---
+  duration_ms: 9.00125
+  ...
+# Subtest: predicted manifest binds clone implementation, terms and payload before creation
+ok 647 - predicted manifest binds clone implementation, terms and payload before creation
+  ---
+  duration_ms: 6.875333
+  ...
+# Subtest: default only plans and cannot silently broadcast
+ok 648 - default only plans and cannot silently broadcast
+  ---
+  duration_ms: 0.404584
+  ...
+# Subtest: CLI rejects unknown action
+ok 649 - CLI rejects unknown action
+  ---
+  duration_ms: 0.157584
+  ...
+# Subtest: CLI rejects no reviewed hash
+ok 650 - CLI rejects no reviewed hash
+  ---
+  duration_ms: 0.067208
+  ...
+# Subtest: CLI rejects duplicate arg
+ok 651 - CLI rejects duplicate arg
+  ---
+  duration_ms: 0.089334
+  ...
+# Subtest: CLI rejects broadcast with reconcile
+ok 652 - CLI rejects broadcast with reconcile
+  ---
+  duration_ms: 0.0365
+  ...
+# Subtest: reconcile is explicit read-only mode
+ok 653 - reconcile is explicit read-only mode
+  ---
+  duration_ms: 0.041083
+  ...
+# Subtest: TTY and all live flags required before key consumption
+ok 654 - TTY and all live flags required before key consumption
+  ---
+  duration_ms: 0.220542
+  ...
+# Subtest: rejects invalid budget 0
+ok 655 - rejects invalid budget 0
+  ---
+  duration_ms: 0.043458
+  ...
+# Subtest: rejects invalid budget -1
+ok 656 - rejects invalid budget -1
+  ---
+  duration_ms: 0.085083
+  ...
+# Subtest: rejects invalid budget 1e-3
+ok 657 - rejects invalid budget 1e-3
+  ---
+  duration_ms: 0.07875
+  ...
+# Subtest: rejects invalid budget NaN
+ok 658 - rejects invalid budget NaN
+  ---
+  duration_ms: 0.034542
+  ...
+# Subtest: rejects invalid budget 0.0000000000000000001
+ok 659 - rejects invalid budget 0.0000000000000000001
+  ---
+  duration_ms: 0.031292
+  ...
+# Subtest: approval action is only single token approve with zero native value
+ok 660 - approval action is only single token approve with zero native value
+  ---
+  duration_ms: 0.913958
+  ...
+# Subtest: validation action reconstructs one unsigned fixed-price order
+ok 661 - validation action reconstructs one unsigned fixed-price order
+  ---
+  duration_ms: 1.637916
+  ...
+# Subtest: session rejects wrong chain
+ok 662 - session rejects wrong chain
+  ---
+  duration_ms: 0.082334
+  ...
+# Subtest: session rejects other seller
+ok 663 - session rejects other seller
+  ---
+  duration_ms: 0.094917
+  ...
+# Subtest: session rejects other NFT
+ok 664 - session rejects other NFT
+  ---
+  duration_ms: 0.044625
+  ...
+# Subtest: session rejects other market
+ok 665 - session rejects other market
+  ---
+  duration_ms: 0.115375
+  ...
+# Subtest: session rejects signed order
+ok 666 - session rejects signed order
+  ---
+  duration_ms: 0.058084
+  ...
+# Subtest: session rejects nonzero conduit
+ok 667 - session rejects nonzero conduit
+  ---
+  duration_ms: 0.049041
+  ...
+# Subtest: session rejects other fee recipient
+ok 668 - session rejects other fee recipient
+  ---
+  duration_ms: 0.119958
+  ...
+# Subtest: session rejects different price
+ok 669 - session rejects different price
+  ---
+  duration_ms: 0.054708
+  ...
+# Subtest: session rejects additional consideration
+ok 670 - session rejects additional consideration
+  ---
+  duration_ms: 0.040958
+  ...
+# Subtest: session rejects multiple NFT quantity
+ok 671 - session rejects multiple NFT quantity
+  ---
+  duration_ms: 0.044916
+  ...
+# Subtest: session rejects nonce gap
+ok 672 - session rejects nonce gap
+  ---
+  duration_ms: 0.041333
+  ...
+# Subtest: session rejects unexpected initial approval
+ok 673 - session rejects unexpected initial approval
+  ---
+  duration_ms: 0.040292
+  ...
+# Subtest: session rejects missing protocol identity
+ok 674 - session rejects missing protocol identity
+  ---
+  duration_ms: 0.038667
+  ...
+# Subtest: read-only preview freezes exact gas, nonce, calldata and zero value
+ok 675 - read-only preview freezes exact gas, nonce, calldata and zero value
+  ---
+  duration_ms: 0.623834
+  ...
+# Subtest: preflight refuses changed owner
+ok 676 - preflight refuses changed owner
+  ---
+  duration_ms: 0.253417
+  ...
+# Subtest: preflight refuses changed approval
+ok 677 - preflight refuses changed approval
+  ---
+  duration_ms: 0.191875
+  ...
+# Subtest: preflight refuses changed collection-wide approval
+ok 678 - preflight refuses changed collection-wide approval
+  ---
+  duration_ms: 0.183208
+  ...
+# Subtest: preflight refuses changed counter
+ok 679 - preflight refuses changed counter
+  ---
+  duration_ms: 0.289834
+  ...
+# Subtest: preflight refuses changed order hash
+ok 680 - preflight refuses changed order hash
+  ---
+  duration_ms: 0.205959
+  ...
+# Subtest: preflight refuses changed order already validated
+ok 681 - preflight refuses changed order already validated
+  ---
+  duration_ms: 0.126833
+  ...
+# Subtest: pending seller nonce prevents signing a competing transaction
+ok 682 - pending seller nonce prevents signing a competing transaction
+  ---
+  duration_ms: 0.127917
+  ...
+# Subtest: reverted RPC simulation is not a prepared plan
+ok 683 - reverted RPC simulation is not a prepared plan
+  ---
+  duration_ms: 6.384833
+  ...
+# Subtest: separate endpoint must agree on source checkpoint
+ok 684 - separate endpoint must agree on source checkpoint
+  ---
+  duration_ms: 1.19075
+  ...
+# Subtest: development clients rejected even on chain 56
+ok 685 - development clients rejected even on chain 56
+  ---
+  duration_ms: 0.271
+  ...
+# Subtest: changed runtime rejects prior session
+ok 686 - changed runtime rejects prior session
+  ---
+  duration_ms: 0.148708
+  ...
+# Subtest: confirmation rejects modified rpcMode
+ok 687 - confirmation rejects modified rpcMode
+  ---
+  duration_ms: 0.301458
+  ...
+# Subtest: confirmation rejects modified primaryEndpoint
+ok 688 - confirmation rejects modified primaryEndpoint
+  ---
+  duration_ms: 0.186916
+  ...
+# Subtest: confirmation rejects modified independentEndpoint
+ok 689 - confirmation rejects modified independentEndpoint
+  ---
+  duration_ms: 2.80525
+  ...
+# Subtest: confirmation rejects modified nonce
+ok 690 - confirmation rejects modified nonce
+  ---
+  duration_ms: 0.646167
+  ...
+# Subtest: confirmation rejects modified gas
+ok 691 - confirmation rejects modified gas
+  ---
+  duration_ms: 0.209542
+  ...
+# Subtest: confirmation rejects modified gasPrice
+ok 692 - confirmation rejects modified gasPrice
+  ---
+  duration_ms: 0.170875
+  ...
+# Subtest: confirmation rejects modified maxFeeWei
+ok 693 - confirmation rejects modified maxFeeWei
+  ---
+  duration_ms: 0.354375
+  ...
+# Subtest: confirmation rejects modified to
+ok 694 - confirmation rejects modified to
+  ---
+  duration_ms: 0.191458
+  ...
+# Subtest: confirmation rejects modified data
+ok 695 - confirmation rejects modified data
+  ---
+  duration_ms: 0.161458
+  ...
+# Subtest: confirmation rejects modified runtimeToolHash
+ok 696 - confirmation rejects modified runtimeToolHash
+  ---
+  duration_ms: 0.21275
+  ...
+# Subtest: confirmation rejects modified sessionHash
+ok 697 - confirmation rejects modified sessionHash
+  ---
+  duration_ms: 0.169584
+  ...
+# Subtest: new blocks alone do not invalidate fixed transaction fields
+ok 698 - new blocks alone do not invalidate fixed transaction fields
+  ---
+  duration_ms: 0.239834
+  ...
+# Subtest: signed hash is durably saved before the one broadcast and no retry occurs
+ok 699 - signed hash is durably saved before the one broadcast and no retry occurs
+  ---
+  duration_ms: 8.6165
+  ...
+# Subtest: a failed hash journal write prevents all broadcasting
+ok 700 - a failed hash journal write prevents all broadcasting
+  ---
+  duration_ms: 0.242667
+  ...
+# Subtest: prior deployment budget stays included for seller operations
+ok 701 - prior deployment budget stays included for seller operations
+  ---
+  duration_ms: 0.346416
+  ...
+# Subtest: unexplained seller budget reservation blocks resending
+ok 702 - unexplained seller budget reservation blocks resending
+  ---
+  duration_ms: 0.18125
+  ...
+# Subtest: runtime never accepts raw transaction or private key CLI options
+ok 703 - runtime never accepts raw transaction or private key CLI options
+  ---
+  duration_ms: 12.369167
+  ...
+# Subtest: canonical string nonces from frozen session normalize safely
+ok 704 - canonical string nonces from frozen session normalize safely
+  ---
+  duration_ms: 0.419792
+  ...
+# Subtest: virgin workspace creates confined journal and plan directories before reading missing state
+ok 705 - virgin workspace creates confined journal and plan directories before reading missing state
+  ---
+  duration_ms: 22.712916
+  ...
+# Subtest: sender runtime directory initialization refuses existing symlink
+ok 706 - sender runtime directory initialization refuses existing symlink
+  ---
+  duration_ms: 7.478
+  ...
+# Subtest: public fallback is explicit and selects one fixed public endpoint
+ok 707 - public fallback is explicit and selects one fixed public endpoint
+  ---
+  duration_ms: 0.528292
+  ...
+# Subtest: unknown endpoint overrides and duplicate fallback flags are rejected
+ok 708 - unknown endpoint overrides and duplicate fallback flags are rejected
+  ---
+  duration_ms: 0.084583
+  ...
+# Subtest: fallback mode is frozen in plan and exact confirmation
+ok 709 - fallback mode is frozen in plan and exact confirmation
+  ---
+  duration_ms: 0.746625
+  ...
+# Subtest: fresh independent gas estimate precedes bounded call using the same fresh gas price
+ok 710 - fresh independent gas estimate precedes bounded call using the same fresh gas price
+  ---
+  duration_ms: 0.20625
+  ...
+# Subtest: gas cap and balance checks stop before bounded call
+ok 711 - gas cap and balance checks stop before bounded call
+  ---
+  duration_ms: 0.471042
+  ...
+# Subtest: estimate failure preserves its stage and never calls or retries
+ok 712 - estimate failure preserves its stage and never calls or retries
+  ---
+  duration_ms: 0.1585
+  ...
+# Subtest: bounded call failure preserves its stage and never switches endpoints or retries
+ok 713 - bounded call failure preserves its stage and never switches endpoints or retries
+  ---
+  duration_ms: 0.483833
+  ...
+# Subtest: safe diagnostic exposes only guard codes or classified errors
+ok 714 - safe diagnostic exposes only guard codes or classified errors
+  ---
+  duration_ms: 0.118042
+  ...
+1..714
+# tests 714
+# suites 0
+# pass 714
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2499.159083

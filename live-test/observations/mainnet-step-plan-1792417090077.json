@@ -1,0 +1,17 @@
+{
+  "step": 2,
+  "name": "GovernanceTimelock",
+  "chainId": 56,
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "to": "CREATE",
+  "nonce": 6,
+  "expectedContractAddress": "0x02f453192530e07541E61B43DA079273F410979b",
+  "initCodeHash": "0xa98efbc2b4b7ab67b09aad0da43614dfd1f2e2316f413a7f53bf71a29d1ae1c2",
+  "valueWei": "0",
+  "estimate": "1434077",
+  "gas": "1720893",
+  "gasPrice": "50000000",
+  "maxFeeWei": "86044650000000",
+  "maxFeeBNB": "0.00008604465",
+  "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d"
+}

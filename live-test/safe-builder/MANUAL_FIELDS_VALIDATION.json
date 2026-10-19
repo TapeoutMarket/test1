@@ -1,0 +1,48 @@
+{
+  "scope": "LOCAL_MANUAL_FIELD_EXPORT_FROM_VERIFIED_MAINNET_OBSERVATION",
+  "status": "PASS",
+  "verification": {
+    "exactCompiledABI": true,
+    "twoCallsDecodeAndReencode": true,
+    "exportedFieldsEncodeToOriginalData": true,
+    "fourFactoryCallsDecodeAndReencode": true,
+    "operationIdMatches": true,
+    "configHashMatches": true,
+    "observedDeploymentState": "DEPLOYED_UNCONFIGURED",
+    "fourObservedReceiptsConfirmed": true
+  },
+  "observedCheckpoint": {
+    "blockNumber": "128564487",
+    "blockHash": "0x2e3b80a9897f3b0cbe37e79f811370f2280f4d0e3f11ef84561937103fc89944",
+    "timestamp": "1792417517"
+  },
+  "observedOperationState": "UNSCHEDULED",
+  "operationId": "0x811d9fff56b2f952640c71d9f7558794b726ba0fdeed549d297879f1c5bb35f5",
+  "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+  "timelock": "0x02f453192530e07541E61B43DA079273F410979b",
+  "factory": "0x4c680b72D3561D7649E3DF85E78fb588FCFf9DB1",
+  "template": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+  "inputs": {
+    "bundle": {
+      "file": "/Users/jaychen/Desktop/pin/groupbuy-v1/live-test/observations/governance-bundle-1792417534419.json",
+      "keccak256": "0xa48f2a1fcc3a5ea7234c1a2f76cf155e324e111c5e73636ffe342cfbe27c4e50"
+    },
+    "inspection": {
+      "file": "/Users/jaychen/Desktop/pin/groupbuy-v1/live-test/observations/governance-inspection-1792417534420.json",
+      "keccak256": "0xa97b7f94495023baa617b89355bf32f8d650b11b6b460cdc135984902c4bb34d"
+    },
+    "state": {
+      "file": "/Users/jaychen/Desktop/pin/groupbuy-v1/live-test/deployment-state.json",
+      "keccak256": "0xf27a25383b5167edb433bb85c759e13694c3fdc2b2dfa0d7c545350f49768fce"
+    }
+  },
+  "transactionBuilderImports": {
+    "schedule": "/Users/jaychen/Desktop/pin/groupbuy-v1/live-test/observations/safe-schedule-1792417534418.json",
+    "execute": "/Users/jaychen/Desktop/pin/groupbuy-v1/live-test/observations/safe-execute-1792417534419.json"
+  },
+  "rpcQueriesForThisExport": 0,
+  "signaturesCreatedForThisExport": 0,
+  "transactionsSentForThisExport": 0,
+  "safeServiceRequests": 0,
+  "note": "Local export reuses the referenced mainnet inspection. This export does not requery live chain state. Execute was not ready at that inspection."
+}

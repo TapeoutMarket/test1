@@ -1,0 +1,17 @@
+{
+  "step": 3,
+  "name": "GroupBuyFactory",
+  "chainId": 56,
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "to": "CREATE",
+  "nonce": 7,
+  "expectedContractAddress": "0xE45D94579425a6a2006D3e067C8d51De6B15C4fc",
+  "initCodeHash": "0x8c5cb1cdfe8a4538cd54d617fb9146f73a1cd64f4ade1db8434bc5358419aa10",
+  "valueWei": "0",
+  "estimate": "2331879",
+  "gas": "2798255",
+  "gasPrice": "50000000",
+  "maxFeeWei": "139912750000000",
+  "maxFeeBNB": "0.00013991275",
+  "bundleHash": "0x72166ad218a0963b3eeee898d62da0514e69fec8afed2a91b38e6e7eb138012d"
+}

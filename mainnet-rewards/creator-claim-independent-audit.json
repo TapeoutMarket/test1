@@ -1,0 +1,21 @@
+{
+  "scope": "INDEPENDENT_SAVED_EVIDENCE_CROSS_CHECK_NO_NEW_RPC",
+  "status": "PASS",
+  "step": "creator-claim",
+  "transactionHash": "0x5a7426b05a54f8bfbf6a9012a5094110689dde36910048f63736d9db0c9767bd",
+  "checks": [
+    "exact_approved_nonce12_value0_calldata_gas",
+    "canonical_receipt_and_frozen_plan",
+    "unchanged_harvest_entryHash",
+    "one_zero_received_sync_no_harvest",
+    "67_exact_RewardClaimed_and_one_Vault_to_creator_BEM_Transfer",
+    "creator_received_9155818_B_retains_4509582_raw",
+    "all_100_ids_claimed_claimable_and_ownership",
+    "Vault_balance_4509667_paid_9155818",
+    "eleven_budget_reservations_preserved_and_sum"
+  ],
+  "actualGasFeeWei": "104440900000000",
+  "spentAndReservedWei": "304239363050000000",
+  "transactionsSentByAudit": 0,
+  "buyerBClaimCovered": false
+}

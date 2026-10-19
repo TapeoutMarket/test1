@@ -1,0 +1,33 @@
+{
+  "status": "INDEPENDENT_TRANSFER_PLAN_CHECK_PASS",
+  "planHash": "0x6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129",
+  "planFile": "mainnet-entitlement-transfer/plans/transfer-share-6651de0dea2efc355dcfee004e7a59ac8c44203646cf5b491a93faa6fc3c3129.json",
+  "toolHash": "e5669faba9b75877600266d392ffd66a3a89313572b726ba4e894c948d34ab38",
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "to": "0xbdaacdAb0f95cC82FE32d92DEa04C3dcBFc80F9A",
+  "nonce": 14,
+  "decoded": {
+    "functionName": "safeTransferFrom",
+    "args": [
+      "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+      "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+      "1",
+      "1",
+      "0x"
+    ]
+  },
+  "valueWei": "0",
+  "gasEstimate": "79994",
+  "gas": "95993",
+  "gasPrice": "50000000",
+  "maxFeeWei": "4799650000000",
+  "maxFeeBNB": "0.00000479965",
+  "reservedAfterWei": "304318370200000000",
+  "reservedAfterBNB": "0.3043183702",
+  "remainingCapBNB": "0.0001816298",
+  "snapshotBlock": "128589544",
+  "transferredClaimableRaw": "323",
+  "transferredClaimableBEM": "0.00000323",
+  "prerequisiteEntryHash": "0x51dafa6d388337b21fa9535c14abe85ab86139ea682ce259447d7307a85af2c2",
+  "newTransactionsSentByPreview": 0
+}
