@@ -1,0 +1,37 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "chainId": 56,
+  "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+  "minerCollection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "minerTokenId": "3204",
+  "holderA": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "holderB": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+  "transferSimulation": {
+    "status": "DRY_RUN_SUCCEEDED_NO_TRANSACTION_SENT",
+    "preflightReportedBlock": "125716203",
+    "observedState": 1,
+    "observedMinerOwner": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+    "observedHolder1": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "observedHolder2": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "observedMiningPendingRaw": "30839",
+    "observedVaultBemBalanceRaw": "0",
+    "operation": "transfer",
+    "shareId": "2",
+    "shareAmount": "1",
+    "sender": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "calldataHash": "0x297b4b83d41d7f47f70aa048adfaa1fdbdc7ea73a6996ed3b4cc360c03c94cab",
+    "gasWithBuffer": "90538",
+    "gasPrice": "50000000",
+    "maximumFeeBNB": "0.0000045269",
+    "note": "CLI observations and simulation each used latest state. The reported block does not make them an atomic fixed-block snapshot."
+  },
+  "redemption": {
+    "status": "NOT_EXECUTED_NOT_YET_SIMULATED",
+    "requiredHolder": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "requiredIds": ["1", "2"],
+    "functionName": "redeemMiner",
+    "expectedBehaviorFromSource": "Harvest actual Mining income; pay both IDs unclaimed balances and remainder to A; burn both shares; close Vault; transfer miner to A atomically.",
+    "note": "The separate B-to-A transfer must succeed first. Source review does not establish a successful live redemption."
+  }
+}

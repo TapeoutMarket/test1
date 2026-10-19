@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "markdownEditions": 33,
+  "wordEditions": 2,
+  "localLinksChecked": 244,
+  "legacySnapshotsChecked": 86,
+  "rpcCalls": 0,
+  "privateKeysRead": false,
+  "chainTransactionsSent": 0,
+  "scope": "Saved document consistency only; not new chain verification or an external security audit",
+  "checks": [
+    {
+      "english": "reports-en/groupbuy/CONTRACT_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/PROTOCOL_COMPATIBILITY.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/SECURITY_MODEL.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/MARKET_HANDOFF.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/docs/REAL_BSC_FORK_TEST_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/docs/REAL_FORK_EVIDENCE_AUDIT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/docs/REAL_FORK_EVIDENCE_AUDIT_BEFORE_PENDING_FIX.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/docs/REAL_PROTOCOL_IDENTITY_REVIEW.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/live-test/DEPLOYMENT_PREPARATION_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/live-test/GOVERNANCE_REVIEW.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/live-test/LIVE_DEPLOYMENT_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/live-test/MAINNET_TEST_READINESS.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/live-test/MAINNET_DEPLOY_RUNBOOK.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/mainnet-test/MAINNET_TEST_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/mainnet-test/POOL_TEST_NEXT_STEPS.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/mainnet-rewards/BEM_REWARDS_TEST_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/groupbuy/mainnet-entitlement-transfer/BEM_ENTITLEMENT_TRANSFER_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/docs/PROTOCOL_CHECK.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/docs/TEST_REPORT.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-accrued-transfer-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-claim-a-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-claim-ab-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-redeem-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-reward-tests-summary.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/live-transfer-claim-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/tapeout-complete-test-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    },
+    {
+      "english": "reports-en/legacy/reports/tapeout-redemption-test-report.md",
+      "hexOccurrencesIdentical": true,
+      "longHashOccurrencesIdentical": true,
+      "decimalOccurrencesIdentical": true,
+      "tableRowCountIdentical": true,
+      "fencedBlockCountIdentical": true
+    }
+  ],
+  "issues": []
+}

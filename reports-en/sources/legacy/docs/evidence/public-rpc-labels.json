@@ -1,0 +1,23 @@
+{
+  "block": "0x7796518",
+  "labels": [
+    "mining.code",
+    "mining.implementation",
+    "mining.owner",
+    "bem.code",
+    "bem.implementation",
+    "bem.owner",
+    "collection.code",
+    "collection.implementation",
+    "collection.owner",
+    "mining.paused",
+    "mining.isSealed",
+    "bem.decimals",
+    "collection.supportsInterface"
+  ],
+  "targets": {
+    "mining": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "bem": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C"
+  }
+}

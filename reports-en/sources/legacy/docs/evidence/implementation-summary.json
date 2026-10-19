@@ -1,0 +1,17 @@
+{
+  "blockNumber": 125396248,
+  "implementations": [
+    {
+      "kind": "Mining",
+      "address": "0xa3dbe873da37cd4e4a13c7cef23a7db6ca60f898",
+      "runtimeBytes": 24574,
+      "runtimeKeccak256": "0x63b1124d3448fdeb28b163c52142e15a7a464d7ae7d817e51f6c242b62424479"
+    },
+    {
+      "kind": "TapeOut collection",
+      "address": "0x8e1d125def6d3826c278299273a0760d47626068",
+      "runtimeBytes": 12560,
+      "runtimeKeccak256": "0x2ea433839e23b3773b7880d6f1807affb0f648ae98760b9a3b6394879665c345"
+    }
+  ]
+}

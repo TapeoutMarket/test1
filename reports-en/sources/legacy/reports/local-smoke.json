@@ -1,0 +1,17 @@
+{
+  "mode": "mock",
+  "chainId": 31337,
+  "results": [
+    {
+      "scenario": "historical100 + new20 + transfer rights + full redemption + odd dust",
+      "status": "PASS",
+      "totalPaid": "120000000000000000001"
+    },
+    {
+      "scenario": "emergency skips broken Mining/BEM, preserves arrived rewards",
+      "status": "PASS"
+    }
+  ],
+  "restoredState": "AwaitingDeposit",
+  "liveTransactions": "NONE"
+}

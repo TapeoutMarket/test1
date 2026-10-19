@@ -1,0 +1,15 @@
+{
+  "source": "https://tapeout.net/pod/assets/main-C1q9aWV9.js",
+  "retrievedDate": "2026-10-03",
+  "sha256": "0f1b12c360fec6c49121c01f1faa7ee29705637efd62b107d720fa1f62010a1e",
+  "abi": [
+    "function minerKey(address,uint256) pure returns (bytes32)",
+    "function pending(bytes32) view returns (uint256)",
+    "function claim(bytes32)",
+    "function pendingLive(bytes32) view returns (uint256)"
+  ],
+  "observations": [
+    "未领取的部分会随 NFT 归新买家",
+    "anyone can trigger the claim and it pays whoever holds the circuit at that moment"
+  ]
+}

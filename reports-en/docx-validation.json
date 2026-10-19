@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "scope": "English DOCX content, deterministic rebuild, bundled renderer, and full-page visual QA only; no live chain activity",
+  "generator": "reports-en/tools/build_english_docx.py",
+  "generatorSha256": "8cc35eda8617c336ffa4695b22b2e2a3512cf0469832fc39bcab778df98f790f",
+  "runtime": "Codex bundled Python and LibreOffice",
+  "pageSize": "US Letter",
+  "bodyPointSize": 11,
+  "tableGridColor": "D9D9D9",
+  "documents": [
+    {
+      "source": "reports-en/legacy/reports/tapeout-complete-test-report.md",
+      "sourceSha256": "f5002fa0a6f280360d25f4de949f120c51d1e1d510253a54ec626b412fa5fde9",
+      "output": "reports-en/legacy/reports/tapeout-complete-test-report.docx",
+      "outputSha256": "3cb30a2e104a79508f20110656ed2e5dc9a25b3f8486e8b05980a222735af35b",
+      "pages": 9,
+      "allFinalPageImagesVisuallyInspected": true,
+      "visualResult": "PASS: every final page inspected; no clipping, overlap, unreadable hashes, broken tables, missing glyphs, or title rules",
+      "checks": {
+        "byteReproducibleRebuild": true,
+        "visibleHashesAndAddressesMatch": true,
+        "allDecimalLiteralsRetained": true,
+        "noTitleOrParagraphBorders": true,
+        "everyTableHasRepeatedHeader": true,
+        "everyTableHasLightGrayGrid": true,
+        "allSourceHyperlinksRetained": true,
+        "renderedPageCountMatches": true
+      },
+      "pageImages": [
+        {
+          "page": 1,
+          "sha256": "564ef5fc74790db75ee96c561c9f0cdcd6f9d2a5025e34c6179b65565aafb9ce"
+        },
+        {
+          "page": 2,
+          "sha256": "3742e61355b1e05e3b58a93f95570331f4f30addfad7d457ebc3f0dd71ed9352"
+        },
+        {
+          "page": 3,
+          "sha256": "ee2093a02a4c3ed3ea23060a4d781a364018fc555023d81b3c6aa269bebaedbb"
+        },
+        {
+          "page": 4,
+          "sha256": "6c569ce4e2b39a6984adc920349ee470451351133c21749830e97c3edf2103f4"
+        },
+        {
+          "page": 5,
+          "sha256": "aa863386bca4848875fc58d64d4c45742682a42b540b7b0250558e5c1e0ca6a3"
+        },
+        {
+          "page": 6,
+          "sha256": "0518dc9be4c6dcb69e3dcaf75d170fc24a477a7ca582f723f25a31c5cfbc7885"
+        },
+        {
+          "page": 7,
+          "sha256": "e7e33c0ce23d567f52ce8602834e937e48f3bae26687f8379f7fc668a2511cf6"
+        },
+        {
+          "page": 8,
+          "sha256": "9cdf06abca0f1f5bc575ef0347215f798bd2886f22ec5c059ae0c98d01ffe735"
+        },
+        {
+          "page": 9,
+          "sha256": "8bbfff0947d7e3ef31194a1adea6743deec0551af6902b0455da14bb256caa6b"
+        }
+      ]
+    },
+    {
+      "source": "reports-en/legacy/reports/tapeout-redemption-test-report.md",
+      "sourceSha256": "1b0ab1538715ea8e4e1fbdfd89bae97f946121acad4fba7fbc67012f5d28aba0",
+      "output": "reports-en/legacy/reports/tapeout-redemption-test-report.docx",
+      "outputSha256": "7aa35e6b2cebe1a20f176c90195ff230f3f9656bc06047d28f00e08945360e10",
+      "pages": 4,
+      "allFinalPageImagesVisuallyInspected": true,
+      "visualResult": "PASS: every final page inspected; no clipping, overlap, unreadable hashes, broken tables, missing glyphs, or title rules",
+      "checks": {
+        "byteReproducibleRebuild": true,
+        "visibleHashesAndAddressesMatch": true,
+        "allDecimalLiteralsRetained": true,
+        "noTitleOrParagraphBorders": true,
+        "everyTableHasRepeatedHeader": true,
+        "everyTableHasLightGrayGrid": true,
+        "allSourceHyperlinksRetained": true,
+        "renderedPageCountMatches": true
+      },
+      "pageImages": [
+        {
+          "page": 1,
+          "sha256": "0104e236af679fe5500f1a5fbf30764756cb391b3227a71fd25f43dc46068e36"
+        },
+        {
+          "page": 2,
+          "sha256": "217a228a756d37529ee70ae7187f7dd24dbdb693bae91c64556dbed36dbf7cd4"
+        },
+        {
+          "page": 3,
+          "sha256": "d194466a14df1a6cf06dff0b217a8daf5acc5280c255ab568d39d373b8f0dd0d"
+        },
+        {
+          "page": 4,
+          "sha256": "e8dba36c48dfab47677bd0def0db6b160c9aaf39bfabbb72702db9f6a3c1f092"
+        }
+      ]
+    }
+  ],
+  "qaIntermediatesCommitted": false,
+  "originalChineseDocumentsModified": false
+}

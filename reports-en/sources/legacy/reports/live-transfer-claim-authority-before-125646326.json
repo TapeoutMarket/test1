@@ -1,0 +1,16 @@
+{
+  "chainId": 56,
+  "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+  "blockNumber": "125646326",
+  "blockHash": "0x659c60f2d03b18d18528dda78f0dda6f2714c2c6a1ea125a86f8d6155fba3b5d",
+  "actor": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "holder1": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "holder2": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+  "functionName": "claimBatch",
+  "ids": [
+    "1"
+  ],
+  "status": "REVERTED",
+  "errorName": "Unauthorized",
+  "note": "Pinned-block eth_call simulation only; no transaction submitted."
+}

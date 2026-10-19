@@ -1,0 +1,21 @@
+{
+  "environment": "ISOLATED_MOCK_NOT_MAINNET",
+  "executedDateAsiaShanghai": "2026-10-04",
+  "passed": 2,
+  "total": 2,
+  "cases": [
+    {
+      "name": "testUnclaimedRightsAndClaimedDebtFollowTransferredID",
+      "command": "node scripts/foundry-runner.mjs mock --match-test testUnclaimedRightsAndClaimedDebtFollowTransferredID -vv",
+      "result": "PASS",
+      "purpose": "Already received but unclaimed rewards follow the transferred ID while its historical claimed debt remains intact."
+    },
+    {
+      "name": "testTransferBeforeAnyClaimGivesEntireHistoryToNewHolder",
+      "command": "node scripts/foundry-runner.mjs mock --match-test testTransferBeforeAnyClaimGivesEntireHistoryToNewHolder -vv",
+      "result": "PASS",
+      "purpose": "A recipient of an ID with no prior claim can receive that ID's complete accrued reward history."
+    }
+  ],
+  "scope": "Local mock contracts only. No RPC, .env loading, signing or broadcasting; does not establish that a positive pre-transfer Vault claimable balance was exercised on mainnet."
+}

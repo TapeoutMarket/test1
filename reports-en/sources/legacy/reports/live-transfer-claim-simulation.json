@@ -1,0 +1,19 @@
+{
+  "status": "DRY_RUN_SUCCEEDED_NO_TRANSACTION_SENT",
+  "mode": "live",
+  "chainId": 56,
+  "operation": "transfer",
+  "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+  "sender": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "shareId": "1",
+  "shareAmount": "1",
+  "preflightReportedBlock": "125646185",
+  "pendingObserved": "12621",
+  "vaultBemBalanceObserved": "1",
+  "calldataHash": "0x0c2e5dc6aab6ce7bd09f20997ded75bc507f45f6cf0f21982087465bb3da4018",
+  "gasWithBuffer": "90536",
+  "gasPrice": "50000000",
+  "maximumFeeBNB": "0.0000045268",
+  "note": "CLI preflight reads and simulation used their respective latest states, not one pinned block. This is a transfer simulation only; subsequent owner/B claims have not been executed."
+}

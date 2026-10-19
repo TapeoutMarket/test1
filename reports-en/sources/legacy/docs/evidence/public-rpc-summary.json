@@ -1,0 +1,81 @@
+{
+  "blockHex": "0x7796518",
+  "blockNumber": 125396248,
+  "results": [
+    {
+      "name": "mining.code",
+      "runtimeBytes": 130,
+      "keccak256": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce"
+    },
+    {
+      "name": "mining.implementation",
+      "error": {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    },
+    {
+      "name": "mining.owner",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "bem.code",
+      "runtimeBytes": 2205,
+      "keccak256": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344"
+    },
+    {
+      "name": "bem.implementation",
+      "error": {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    },
+    {
+      "name": "bem.owner",
+      "error": {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    },
+    {
+      "name": "collection.code",
+      "runtimeBytes": 295,
+      "keccak256": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992"
+    },
+    {
+      "name": "collection.implementation",
+      "error": {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    },
+    {
+      "name": "collection.owner",
+      "error": {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    },
+    {
+      "name": "mining.paused",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "mining.isSealed",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "name": "bem.decimals",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000008"
+    },
+    {
+      "name": "collection.supportsInterface",
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  ]
+}

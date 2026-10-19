@@ -1,0 +1,66 @@
+{
+  "mode": "mock",
+  "results": [
+    {
+      "command": "node scripts/vault.mjs preflight",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs deposit",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs deposit --send-local",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs harvest --actor b --send-local",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs claim --actor a --id 1 --send-local",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs claim --actor b --ids 2 --send-local",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs transfer --actor b --id 2 --to 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 --send-local",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs redeem --actor a",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs withdraw",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs emergency",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs harvest --broadcast",
+      "exitCode": 1,
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/vault.mjs redeem --actor a --send-local",
+      "exitCode": 1,
+      "status": "PASS"
+    }
+  ],
+  "liveTransactions": "NONE"
+}

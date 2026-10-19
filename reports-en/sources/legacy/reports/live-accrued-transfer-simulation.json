@@ -1,0 +1,16 @@
+{
+  "status": "DRY_RUN_SUCCEEDED_NO_TRANSACTION_SENT",
+  "mode": "live",
+  "chainId": 56,
+  "operation": "harvest",
+  "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+  "sender": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "preflightReportedBlock": "125706567",
+  "pendingObserved": "96731",
+  "vaultBemBalanceObserved": "1",
+  "calldataHash": "0xe060bba62b44b0683c379ec71ca27d4186dc6879cdda27161f89f1f206f42aaf",
+  "gasWithBuffer": "173107",
+  "gasPrice": "50000000",
+  "maximumFeeBNB": "0.00000865535",
+  "note": "This is a read-only latest-state harvest simulation, not a transaction and not proof of a positive Vault claimable amount after harvest. A successful real harvest receipt and fixed-block positive claimable observation are required before the transfer stage."
+}

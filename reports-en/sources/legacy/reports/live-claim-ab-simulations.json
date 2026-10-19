@@ -1,0 +1,29 @@
+{
+  "status": "INDEPENDENT_DRY_RUNS_PASSED",
+  "chainId": 56,
+  "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+  "noTransactionSubmitted": true,
+  "scope": "Two independent simulations against each call's latest mainnet state. A was not broadcast, so B's simulation uses its existing historical credit, not a post-A state. Each user-run live script simulates again before broadcasting.",
+  "a": {
+    "operation": "harvest-claim",
+    "actor": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "shareId": 1,
+    "preflightReportedBlock": "125607152",
+    "pendingObservedRaw": "294996",
+    "gas": "203007",
+    "gasPrice": "50000000",
+    "maximumFeeBNB": "0.00001015035",
+    "calldataHash": "0x9a6d51e47e984df05b8ea191700df3ccc44753bb35eadb67fc4be1fb40fc815f"
+  },
+  "b": {
+    "operation": "claim",
+    "actor": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "shareId": 2,
+    "preflightReportedBlock": "125607244",
+    "pendingObservedRaw": "295660",
+    "gas": "129855",
+    "gasPrice": "50000000",
+    "maximumFeeBNB": "0.00000649275",
+    "calldataHash": "0x6c30026c32eeeba9f50003bfa6ab26e4d6f7e1e4131623c51074fd5173bc0aa1"
+  }
+}

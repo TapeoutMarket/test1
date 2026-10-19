@@ -1,0 +1,14 @@
+{
+  "status": "DRY_RUN_PASS",
+  "chainId": 56,
+  "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+  "actor": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "shareId": 1,
+  "preflightReportedBlock": "125545369",
+  "pendingObservedRaw": "81796",
+  "gas": "351758",
+  "gasPrice": "50000000",
+  "maximumFeeBNB": "0.0000175879",
+  "calldataHash": "0x9a6d51e47e984df05b8ea191700df3ccc44753bb35eadb67fc4be1fb40fc815f",
+  "noTransactionSubmitted": true
+}

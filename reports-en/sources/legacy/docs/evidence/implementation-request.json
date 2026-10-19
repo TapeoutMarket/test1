@@ -1,0 +1,24 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getStorageAt",
+    "params": [
+      "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+      "0x7796518"
+    ]
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xf8d6d8eb894d6971c8976ad8b4971cbefe028156",
+        "data": "0x5c60da1b"
+      },
+      "0x7796518"
+    ]
+  }
+]

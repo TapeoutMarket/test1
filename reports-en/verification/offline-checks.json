@@ -1,0 +1,26 @@
+{
+  "scope": "English report delivery, saved evidence and offline tool validation only",
+  "rpcCalls": 0,
+  "signaturesCreated": 0,
+  "transactionsBroadcast": 0,
+  "mainnetTools": {
+    "command": "node --import tsx --test live-test/*.test.mjs mainnet-test/*.test.mjs mainnet-recovery/*.test.mjs mainnet-pool/*.test.mjs mainnet-funding/*.test.mjs mainnet-completion/*.test.mjs mainnet-observe/*.test.mjs mainnet-rewards/*.test.mjs mainnet-entitlement-transfer/*.test.mjs mainnet-entitlement-transfer/audit/*.test.mjs",
+    "exitCode": 0,
+    "passed": 840,
+    "failed": 0,
+    "skipped": 0,
+    "output": "reports-en/verification/mainnet-tools.tap",
+    "outputSha256": "f0352001beffd59b10716bd67356a935a1fa8c2a56e29f4c459cb347680be4a3"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "result": "PASS"
+  },
+  "preexistingMainnetFiles": {
+    "count": 177,
+    "allBytesUnchanged": true
+  },
+  "coreVerificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+  "gitEvidenceWhitespacePolicy": "Ten captured JSON outputs retain original trailing blank lines. For the evidence commit only, diff --check uses core.whitespace=-blank-at-eof; no evidence bytes were normalized. All other whitespace checks remain enabled."
+}

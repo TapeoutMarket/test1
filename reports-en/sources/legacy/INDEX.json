@@ -1,0 +1,521 @@
+{
+  "scope": "Immutable copies of legacy Chinese reports and their saved public JSON evidence; no environment files or signing keys",
+  "records": [
+    {
+      "originalWorkspacePath": "docs/PROTOCOL_CHECK.md",
+      "snapshotPath": "reports-en/sources/legacy/docs/PROTOCOL_CHECK.md",
+      "sha256": "08a7a8cc79d9d45a41f92d339e31890f0ea8e2de29036cb113904f5fe3014bd9",
+      "bytes": 10625
+    },
+    {
+      "originalWorkspacePath": "docs/TEST_REPORT.md",
+      "snapshotPath": "reports-en/sources/legacy/docs/TEST_REPORT.md",
+      "sha256": "e75aae2e5117cc95f5442c07113dec3682d618c98b73e5a9594ba4326dba7312",
+      "bytes": 9294
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/implementation-code-request.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/implementation-code-request.json",
+      "sha256": "d2322e85173493554b828bd16792266cd980dc9ecad47a9f7b544a63334fa53a",
+      "bytes": 333
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/implementation-code-response.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/implementation-code-response.json",
+      "sha256": "1187aa38a087b8f9342315ea96fa78581646f0ff5fbc18c86333694896b457d4",
+      "bytes": 74347
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/implementation-request.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/implementation-request.json",
+      "sha256": "ddadcc690c3a60a0494e03b44ea65e4908baad2cb2055e0642567df2ba9f3c6f",
+      "bytes": 465
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/implementation-response.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/implementation-response.json",
+      "sha256": "2e5feec6dd047c2b8ab20f5000cf171beaf48b1af6c6c5c3409af76f2a698966",
+      "bytes": 207
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/implementation-summary.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/implementation-summary.json",
+      "sha256": "effcb56c5f779ef65a7f5a96f6f90d300a2d2d9c52e3aab470c8f8b03b5d4952",
+      "bytes": 518
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/mining-sourcify.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/mining-sourcify.json",
+      "sha256": "d13bfe175dd0588706ad762832f432ee42a47c9101161037960779d891412971",
+      "bytes": 125
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/official-frontend-extract.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/official-frontend-extract.json",
+      "sha256": "ca33b032ee8e1171c41f80aa7c2364a4e8f5321e2fa0e89d1532cd352ffeca14",
+      "bytes": 568
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/pod-mainnet.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/pod-mainnet.json",
+      "sha256": "e949f712ba37082823199d428ffa599186c46ee2c7f64090d411b02579dd0501",
+      "bytes": 43706
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/pod-stats.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/pod-stats.json",
+      "sha256": "ada6f7321e1f6babeb8f1c25dd31346198010565f9a20a3c639edbc00f842a12",
+      "bytes": 520
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/public-rpc-discovery.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/public-rpc-discovery.json",
+      "sha256": "8080ee695e9cd0f0df278e45f14666451a75198ecc098d0479e05e20a83afad6",
+      "bytes": 88
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/public-rpc-labels.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/public-rpc-labels.json",
+      "sha256": "ebaeed72d79ab198b7181364f85b2ca6590ce74abab7a3e0d658adfaeae7d962",
+      "bytes": 551
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/public-rpc-request.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/public-rpc-request.json",
+      "sha256": "2dabcd7cac0795308429573836fe8cb8239f372175c0fb0edd9c0d63a37ff425",
+      "bytes": 2725
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/public-rpc-response.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/public-rpc-response.json",
+      "sha256": "e942c638cf463f45da28e5e9d50cc93f10c6182163d1d29f806c95379e824197",
+      "bytes": 6352
+    },
+    {
+      "originalWorkspacePath": "docs/evidence/public-rpc-summary.json",
+      "snapshotPath": "reports-en/sources/legacy/docs/evidence/public-rpc-summary.json",
+      "sha256": "14976ebe6190d3ecdf404bb2bf3e48946e0fd91e570e923539f89d2aad810ed0",
+      "bytes": 2004
+    },
+    {
+      "originalWorkspacePath": "reports/cli-smoke.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/cli-smoke.json",
+      "sha256": "f0937fd46d65b3fd438a68edbd4aacac29701cbab50e4aeff061db563d1232f6",
+      "bytes": 1586
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.json",
+      "sha256": "ce1e62a82bee4319bd725512ce905f4f0e80b145eb5a4a26114efc360fe3f4e6",
+      "bytes": 8759
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.md",
+      "sha256": "7784df79f2476337311b31035ca80792e175b726a6cc83912b4fb00926d5a5ed",
+      "bytes": 5324
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-authority.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-authority.json",
+      "sha256": "7202f9522f5281bb9c7a362e4555019acc5d9cabf7834d251937e7140232f8f2",
+      "bytes": 1216
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-baseline-125706961.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-baseline-125706961.json",
+      "sha256": "b6e496666285a587fca08a607f5a92e957965ca5db85e1f8890c26051254c5c5",
+      "bytes": 1411
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-baseline.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-baseline.json",
+      "sha256": "b6e496666285a587fca08a607f5a92e957965ca5db85e1f8890c26051254c5c5",
+      "bytes": 1411
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.json",
+      "sha256": "79a358f95c385f29f9d1d7ec61fc1015ecb89ed443c5e44b91c69e7a936fcbf4",
+      "bytes": 32859
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.md",
+      "sha256": "f5a38da7e6393b9a009f8aba011f740bebb1b8ca6092d6e4a6e08e648a2c1426",
+      "bytes": 9803
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-report.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-report.json",
+      "sha256": "79a358f95c385f29f9d1d7ec61fc1015ecb89ed443c5e44b91c69e7a936fcbf4",
+      "bytes": 32859
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-report.md",
+      "sha256": "f5a38da7e6393b9a009f8aba011f740bebb1b8ca6092d6e4a6e08e648a2c1426",
+      "bytes": 9803
+    },
+    {
+      "originalWorkspacePath": "reports/live-accrued-transfer-simulation.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-accrued-transfer-simulation.json",
+      "sha256": "4f3abaad17f78b88bc99eb5d5733aac43d85e151300c8c68da89b0d00fd3e0a5",
+      "bytes": 787
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-1791102155967.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-1791102155967.json",
+      "sha256": "94bb141672f14403d4d1afbd0b96cd31446034fb50f5f7f16645c73952c5fe34",
+      "bytes": 1683
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-1791121545165.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-1791121545165.json",
+      "sha256": "2b9db2c621234a7581707b02482c06b62a431a457b935e9a4e207acca54af7e1",
+      "bytes": 1684
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-1791133222101.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-1791133222101.json",
+      "sha256": "75d184db07dc1e30cff6eb8f403b720e532591d953c0ac59004d36e3d80280f9",
+      "bytes": 1689
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-1791133276399.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-1791133276399.json",
+      "sha256": "cd4b6cab08e55eb79801a45abae3cd217742d117c4f9eed3efbd18d319ed8594",
+      "bytes": 1685
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-baseline-125545165.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-baseline-125545165.json",
+      "sha256": "fce6373fbe9a31de190ec0f1fd6011369986a3253fc5e32b03836cc297dc197f",
+      "bytes": 1246
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-baseline.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-baseline.json",
+      "sha256": "fce6373fbe9a31de190ec0f1fd6011369986a3253fc5e32b03836cc297dc197f",
+      "bytes": 1246
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.json",
+      "sha256": "b84766184b06e8fbcd5f7dc691be99d00b014f41ac32c5ec8b4444913ac642df",
+      "bytes": 6023
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.md",
+      "sha256": "3fe019863bd8694e1425305e39bc82c5311dd8b4a72f85d57b3e9160a0c09f79",
+      "bytes": 4141
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-report.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-report.json",
+      "sha256": "b84766184b06e8fbcd5f7dc691be99d00b014f41ac32c5ec8b4444913ac642df",
+      "bytes": 6023
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-report.md",
+      "sha256": "3fe019863bd8694e1425305e39bc82c5311dd8b4a72f85d57b3e9160a0c09f79",
+      "bytes": 4141
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-a-simulation.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-a-simulation.json",
+      "sha256": "56fbbb1771b056153f3c918b22ae1ab2f0ab84e852728adcc8e23161d3a83544",
+      "bytes": 454
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.json",
+      "sha256": "1819b2ebf7b17faf37d1e0679373f34b97b19243072f554a2b9834d0931a057d",
+      "bytes": 12950
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.md",
+      "sha256": "e655235e1296f5b222b66743250a3bb9956093a094974095e21c5490ed02db7c",
+      "bytes": 5108
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-baseline-125607064.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-baseline-125607064.json",
+      "sha256": "446fe0c5dcccc44f8ed9d0e923a9ab3a17357d40bd4dadf5c141cec63c036e5a",
+      "bytes": 1315
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-baseline.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-baseline.json",
+      "sha256": "446fe0c5dcccc44f8ed9d0e923a9ab3a17357d40bd4dadf5c141cec63c036e5a",
+      "bytes": 1315
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-initial-inspection.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-initial-inspection.json",
+      "sha256": "446fe0c5dcccc44f8ed9d0e923a9ab3a17357d40bd4dadf5c141cec63c036e5a",
+      "bytes": 1315
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-report.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-report.json",
+      "sha256": "1819b2ebf7b17faf37d1e0679373f34b97b19243072f554a2b9834d0931a057d",
+      "bytes": 12950
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-report.md",
+      "sha256": "e655235e1296f5b222b66743250a3bb9956093a094974095e21c5490ed02db7c",
+      "bytes": 5108
+    },
+    {
+      "originalWorkspacePath": "reports/live-claim-ab-simulations.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-claim-ab-simulations.json",
+      "sha256": "7e034faa7e481f97cbb40c567e6ea5e9de8f81426d256514c9d35feb28b3089f",
+      "bytes": 1149
+    },
+    {
+      "originalWorkspacePath": "reports/live-deploy-1791054236385.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-deploy-1791054236385.json",
+      "sha256": "2645e5ffece053ed9ef079c3633a9b194629e18525673d0c9963a3af5be4197b",
+      "bytes": 1594
+    },
+    {
+      "originalWorkspacePath": "reports/live-deposit-1791055111304.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-deposit-1791055111304.json",
+      "sha256": "2f6792d8c4912a72963cdf85f2c67b5feac8e5d0dad893455140f44126a369ea",
+      "bytes": 1688
+    },
+    {
+      "originalWorkspacePath": "reports/live-harvest-1791131939279.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-harvest-1791131939279.json",
+      "sha256": "97c84064a30cb09a75ba150fb401020e94bab562338abb5fa9ea065ab8e77b6d",
+      "bytes": 1690
+    },
+    {
+      "originalWorkspacePath": "reports/live-harvest-claim-1791058245750.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-harvest-claim-1791058245750.json",
+      "sha256": "ff7c10964f6473cff1348d0b157f5d68c29fbc820f0d90cc8d6e131f4e6c218a",
+      "bytes": 1931
+    },
+    {
+      "originalWorkspacePath": "reports/live-harvest-claim-1791102107053.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-harvest-claim-1791102107053.json",
+      "sha256": "d90693064eba8e2bad7f9df96fc77aecfda686b2b43d5a600de330b61dfe3271",
+      "bytes": 1932
+    },
+    {
+      "originalWorkspacePath": "reports/live-harvest-claim-1791121489912.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-harvest-claim-1791121489912.json",
+      "sha256": "beb83382885b78047f26176e6cfbe3c58ebd5d83c18e595e5a409874035bccf2",
+      "bytes": 1932
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-1791135259532.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-1791135259532.json",
+      "sha256": "f41a39509a3765ed1b0d135e6de768bab4bf4c551aa635a57922c202dd051dd4",
+      "bytes": 1774
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.json",
+      "sha256": "7f783390bd695388874523c4ec35eb1b0e8fb6e06b48f9f64c6504376d7741c8",
+      "bytes": 17066
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.md",
+      "sha256": "245ee702ff5946ce3e9d15b91351f1e00c9b403e7f7dfb605234be4d051695db",
+      "bytes": 8296
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-preparation.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-preparation.json",
+      "sha256": "02aac687a97d6cbfbaa486c31f5b5ebd8327225fc26400e8f7f280a51695cbe1",
+      "bytes": 1802
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-receipt-inspection.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-receipt-inspection.json",
+      "sha256": "9ed4653fdf89b068d26004ed2910fec3dcb7aca930c7301c7144aee7fda2347a",
+      "bytes": 4469
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-report.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-report.json",
+      "sha256": "7f783390bd695388874523c4ec35eb1b0e8fb6e06b48f9f64c6504376d7741c8",
+      "bytes": 17066
+    },
+    {
+      "originalWorkspacePath": "reports/live-redeem-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-redeem-report.md",
+      "sha256": "245ee702ff5946ce3e9d15b91351f1e00c9b403e7f7dfb605234be4d051695db",
+      "bytes": 8296
+    },
+    {
+      "originalWorkspacePath": "reports/live-reward-tests-summary.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-reward-tests-summary.json",
+      "sha256": "f4e7e6b4c35d993b59df54d42990a2dbe232fdd649346f0271c9217bc0cc351c",
+      "bytes": 2698
+    },
+    {
+      "originalWorkspacePath": "reports/live-reward-tests-summary.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-reward-tests-summary.md",
+      "sha256": "fcaf0ad980209b72b6916670f56633981359f5d53e71b21f1e6dd4cd8a5d1743",
+      "bytes": 3625
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-1791121446470.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-1791121446470.json",
+      "sha256": "4cbbd0634644c80c024bddc7f224732f88b52b20f0f2e752f9ad531e3c4f3389",
+      "bytes": 1750
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-1791133132775.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-1791133132775.json",
+      "sha256": "3aa4d83bd46eb578650293c86153abe2553a6383f19cdfc55d333d00efa0265a",
+      "bytes": 1754
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-1791135205959.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-1791135205959.json",
+      "sha256": "e16efbe6a07ff14347abfc9a44b07fbeeedfceada79f81a547bb0754151969bc",
+      "bytes": 1749
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.json",
+      "sha256": "232f744580268959d3a71e92e831531ad5a56787d10c3ce74283a01bbfbe27fe",
+      "bytes": 23576
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.md",
+      "sha256": "faa2032e95986b02c682f43e6fb16e470f553193c9fe059f7f3527334ff82b88",
+      "bytes": 11673
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-authority-before-125646326.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-authority-before-125646326.json",
+      "sha256": "eecd5f6a6972f8bade660e7ed4a5b8f29dc1065ca0c30a8c629369a5d8ad9c8c",
+      "bytes": 556
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-authority.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-authority.json",
+      "sha256": "faa10671fcd9de5cc06c656e8ed09eebe4d28fff4a1c9191fe7ea5c426d0066a",
+      "bytes": 1216
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-baseline-125646568.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-baseline-125646568.json",
+      "sha256": "77e6e93c4698389ac16a88afe65a38993684f2a17d632f786978f11f599de309",
+      "bytes": 1348
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-baseline.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-baseline.json",
+      "sha256": "77e6e93c4698389ac16a88afe65a38993684f2a17d632f786978f11f599de309",
+      "bytes": 1348
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-local-validation.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-local-validation.json",
+      "sha256": "ea217ec0ccdf00857887f11a641ae79e644638ece742b5f1ca1650566b44a532",
+      "bytes": 1048
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-report.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-report.json",
+      "sha256": "232f744580268959d3a71e92e831531ad5a56787d10c3ce74283a01bbfbe27fe",
+      "bytes": 23576
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-report.md",
+      "sha256": "faa2032e95986b02c682f43e6fb16e470f553193c9fe059f7f3527334ff82b88",
+      "bytes": 11673
+    },
+    {
+      "originalWorkspacePath": "reports/live-transfer-claim-simulation.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/live-transfer-claim-simulation.json",
+      "sha256": "ce0d9958b03fd1ca534758ad3ea810b2219c39f617e864de9750133eead5a68a",
+      "bytes": 809
+    },
+    {
+      "originalWorkspacePath": "reports/local-smoke.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/local-smoke.json",
+      "sha256": "7f6b25dc5149e484389ee4ccf9a88681a68be48fd1aeb9acc5f59797525467ea",
+      "bytes": 416
+    },
+    {
+      "originalWorkspacePath": "reports/mock-claim-1790992078622.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/mock-claim-1790992078622.json",
+      "sha256": "0a8661ee546246199f97121b9ebb3cb9b6724deb9d18fbad908213b9ee622751",
+      "bytes": 1703
+    },
+    {
+      "originalWorkspacePath": "reports/mock-claim-1790992078802.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/mock-claim-1790992078802.json",
+      "sha256": "c60091e0b0287ebe968d8180ee4e3da5f9c146ca4fe75650047f481a0c811b4b",
+      "bytes": 1686
+    },
+    {
+      "originalWorkspacePath": "reports/mock-deposit-1790992074202.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/mock-deposit-1790992074202.json",
+      "sha256": "b1e84495a73fc48863e28701503a61b21f98d9ecef46ec353797f759de01f364",
+      "bytes": 1706
+    },
+    {
+      "originalWorkspacePath": "reports/mock-harvest-1790992078448.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/mock-harvest-1790992078448.json",
+      "sha256": "1cb85cccf00281958a63727d2a61697f0d409398b91c560f90bbf5590402e5ab",
+      "bytes": 1705
+    },
+    {
+      "originalWorkspacePath": "reports/mock-transfer-1790992083007.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/mock-transfer-1790992083007.json",
+      "sha256": "d2d0a80c4b6ae12cd2ec75da9aec151697d167c74f4e122f4082dc93fdec60e1",
+      "bytes": 1747
+    },
+    {
+      "originalWorkspacePath": "reports/tapeout-complete-test-report-evidence-index.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/tapeout-complete-test-report-evidence-index.json",
+      "sha256": "987a319853085af53bbb508e387a4447176aba7f81e0923b6ef4b3076145221d",
+      "bytes": 2496
+    },
+    {
+      "originalWorkspacePath": "reports/tapeout-complete-test-report.docx",
+      "snapshotPath": "reports-en/sources/legacy/reports/tapeout-complete-test-report.docx",
+      "sha256": "3561aa3601ef4d74b987cfd463c89810bdc045f542c0ade544357e5c187a42bd",
+      "bytes": 50216
+    },
+    {
+      "originalWorkspacePath": "reports/tapeout-complete-test-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/tapeout-complete-test-report.md",
+      "sha256": "128eb55de66530b2aa032be760b49bf99dc2f02a57aef636f742460bcabd82ef",
+      "bytes": 20011
+    },
+    {
+      "originalWorkspacePath": "reports/tapeout-redemption-test-report-evidence-index.json",
+      "snapshotPath": "reports-en/sources/legacy/reports/tapeout-redemption-test-report-evidence-index.json",
+      "sha256": "5d397065ffef5abf8476dc976c383941a1ffc88d0d2646e7fb8b60eb6d332e6d",
+      "bytes": 2903
+    },
+    {
+      "originalWorkspacePath": "reports/tapeout-redemption-test-report.docx",
+      "snapshotPath": "reports-en/sources/legacy/reports/tapeout-redemption-test-report.docx",
+      "sha256": "97d328ba75e96c482a8074d527f084bc1b6d3cdb1d8c158ced2a689c3aaede0e",
+      "bytes": 43848
+    },
+    {
+      "originalWorkspacePath": "reports/tapeout-redemption-test-report.md",
+      "snapshotPath": "reports-en/sources/legacy/reports/tapeout-redemption-test-report.md",
+      "sha256": "2f23a86f2d65cece0fbbd0a8f3e75db7a09abdd671acf8f208e694617f875a5b",
+      "bytes": 9045
+    }
+  ]
+}

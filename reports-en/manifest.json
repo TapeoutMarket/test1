@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "language": "en",
+  "scope": "Full English editions of all 33 canonical Markdown reports and selected associated handoff/runbook documents, plus 2 Word editions. Historical archived duplicate bundles and unrelated READMEs/specifications are excluded.",
+  "interpretation": "Historical PASS/NOT_RUN/UNVERIFIED states remain tied to original cutoffs; this translation creates no new chain evidence.",
+  "reports": [
+    {
+      "scope": "groupbuy",
+      "source": "CONTRACT_REPORT.md",
+      "english": "reports-en/groupbuy/CONTRACT_REPORT.md",
+      "sourceSha256": "0fdd4ee2a6a87c823269cb02a911db5bad79c1ab8a8448b00d890d1ced83d957",
+      "englishSha256": "bdadd52c0c3be2613b90a12a0b85609e3f60e55f2e8c65d7df1c9a5120fddbc3"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "PROTOCOL_COMPATIBILITY.md",
+      "english": "reports-en/groupbuy/PROTOCOL_COMPATIBILITY.md",
+      "sourceSha256": "ee2e25ce057a0a0c51e0a4cb8c3dc34c5195b9d21fb38b2c3973ddc73ae45462",
+      "englishSha256": "9c9a9ab1fc0014b9c59063f8c1df3d2a340d4a4d558afcdc399f044a16df97e0"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "SECURITY_MODEL.md",
+      "english": "reports-en/groupbuy/SECURITY_MODEL.md",
+      "sourceSha256": "1e22531b7253711f80b7c3f7ea44b4677af75e0113497ef5280bb644e39b9cd0",
+      "englishSha256": "6858b706a2e8887f664bd91b6c1dc4ff46024f007f98b6067305b24bb3794df0"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "MARKET_HANDOFF.md",
+      "english": "reports-en/groupbuy/MARKET_HANDOFF.md",
+      "sourceSha256": "52587490c493a66bccdc497d5cafeb6acd8c712f13effc5154f9b3caf8879d61",
+      "englishSha256": "36e90bc6e8d555abbd81c5034e60e6a97a9e9f8ef487a10ee8e3248e51db1c39"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "docs/REAL_BSC_FORK_TEST_REPORT.md",
+      "english": "reports-en/groupbuy/docs/REAL_BSC_FORK_TEST_REPORT.md",
+      "sourceSha256": "add31e42afbbbbf456c535965d5c52073370dc014850589c868bcecd2ef48dd3",
+      "englishSha256": "06df5cf4837183f1eab7cee4f2b5245de24b1c278c5a66f0a047819194ef7056"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "docs/REAL_FORK_EVIDENCE_AUDIT.md",
+      "english": "reports-en/groupbuy/docs/REAL_FORK_EVIDENCE_AUDIT.md",
+      "sourceSha256": "82b9164ada9219795e77bca33f5025fa9ebf78821d1da6b0a8816eb063e02685",
+      "englishSha256": "1619db6c9db9009e0dc0079b4bbaf13a70c966f9a6d0faa8d4d31e76aac34b8f"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "docs/REAL_FORK_EVIDENCE_AUDIT_BEFORE_PENDING_FIX.md",
+      "english": "reports-en/groupbuy/docs/REAL_FORK_EVIDENCE_AUDIT_BEFORE_PENDING_FIX.md",
+      "sourceSha256": "b87bd93f2434ba828ffe4a19aca34bb729e7c63ab657744405c79874f44d41f9",
+      "englishSha256": "6a2d73d4882c3ca67caf770bba0f2916a926660054f519c8bdde54bcdf7c9ff0"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "docs/REAL_PROTOCOL_IDENTITY_REVIEW.md",
+      "english": "reports-en/groupbuy/docs/REAL_PROTOCOL_IDENTITY_REVIEW.md",
+      "sourceSha256": "d4d3be93e0f0dd50748e90bfbf5f960d79602811a03af858a6394af625686120",
+      "englishSha256": "9d42e7e31326607b45461597db0620a9f854a9c24518fd2e0e4ee6a0187a36d1"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "live-test/DEPLOYMENT_PREPARATION_REPORT.md",
+      "english": "reports-en/groupbuy/live-test/DEPLOYMENT_PREPARATION_REPORT.md",
+      "sourceSha256": "518cc9322d7ad2f697a407cf0777c01cb6a9e82ac9355b74d08947daebd5795a",
+      "englishSha256": "f885a930373fb774137aa53367ba224873ad533e728d30701286773bc5d43202"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "live-test/GOVERNANCE_REVIEW.md",
+      "english": "reports-en/groupbuy/live-test/GOVERNANCE_REVIEW.md",
+      "sourceSha256": "6693599a39a0e709173aa484d268d893578588b31cccdd28269f9a3294c318a9",
+      "englishSha256": "735d33f2ad6b88e8085b6c511e7a39dc930a4dd44b94b6e89582fcf10906d7d9"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "live-test/LIVE_DEPLOYMENT_REPORT.md",
+      "english": "reports-en/groupbuy/live-test/LIVE_DEPLOYMENT_REPORT.md",
+      "sourceSha256": "6ee5f2350384d9410d69f60b02cf83314acbbe6ad83e1d2b405ccafacf2e9475",
+      "englishSha256": "b4e7bdd6e286b07abb05cb6f56beb40b9d036786f1960d715fa831780318947d"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "live-test/MAINNET_TEST_READINESS.md",
+      "english": "reports-en/groupbuy/live-test/MAINNET_TEST_READINESS.md",
+      "sourceSha256": "233438aee7f7022d37f1363c58e72bce7013c72e3d0bc3c30d295a7a1909a665",
+      "englishSha256": "31eddae62380838ce970899eef5a69400413dbbfbe9d317b5e8c72eca3bdd59a"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "live-test/MAINNET_DEPLOY_RUNBOOK.md",
+      "english": "reports-en/groupbuy/live-test/MAINNET_DEPLOY_RUNBOOK.md",
+      "sourceSha256": "b0d54a089a0f544bcc5a6aaa0fd10d86eb7ea7b914ff77729f5672e8f6af2f35",
+      "englishSha256": "87488e99aff4d93c259e2b04a6ee7524a045b0789853fe35755b06dc59779921"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "mainnet-test/MAINNET_TEST_REPORT.md",
+      "english": "reports-en/groupbuy/mainnet-test/MAINNET_TEST_REPORT.md",
+      "sourceSha256": "d0101fe0c47823c35ebcd4ec9bdbc63ffc9592c8c6f3ab72ff9ead120e285aa2",
+      "englishSha256": "8299701cd0ddb675fec717e41a05186857d94de7b6952fcf8298ec091502ef90"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "mainnet-test/POOL_TEST_NEXT_STEPS.md",
+      "english": "reports-en/groupbuy/mainnet-test/POOL_TEST_NEXT_STEPS.md",
+      "sourceSha256": "1ac5cc3a9af94a8917ab5b4658db631935ca17938475063172c15df763fbd7a4",
+      "englishSha256": "bc2f82c0128f70589e7c660e503d29c157eabaea637be98d4ac7ceaa8e30e46e"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "mainnet-rewards/BEM_REWARDS_TEST_REPORT.md",
+      "english": "reports-en/groupbuy/mainnet-rewards/BEM_REWARDS_TEST_REPORT.md",
+      "sourceSha256": "4886947714b19e8cdfd1fa71978cb047e3175d17ed63ed753e0daf3ec8204f5f",
+      "englishSha256": "af4c2962295ee7edff4bd47821c7356d2b79ab0a087789125baadd72800113a2"
+    },
+    {
+      "scope": "groupbuy",
+      "source": "mainnet-entitlement-transfer/BEM_ENTITLEMENT_TRANSFER_REPORT.md",
+      "english": "reports-en/groupbuy/mainnet-entitlement-transfer/BEM_ENTITLEMENT_TRANSFER_REPORT.md",
+      "sourceSha256": "69f5e5a83c8520dabbe89502153d6146ec7a2340968c8aa6d399d14f5b22199c",
+      "englishSha256": "d76326b8f69a973d6488fafbda7edd8185cd4256eefd4f444c4f4a00a7d033a8"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/docs/PROTOCOL_CHECK.md",
+      "workspaceOriginal": "docs/PROTOCOL_CHECK.md",
+      "english": "reports-en/legacy/docs/PROTOCOL_CHECK.md",
+      "sourceSha256": "08a7a8cc79d9d45a41f92d339e31890f0ea8e2de29036cb113904f5fe3014bd9",
+      "englishSha256": "7e3ab3244325d96c27107391fd3a249673696fc11e4fd02056805342e8f82f53"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/docs/TEST_REPORT.md",
+      "workspaceOriginal": "docs/TEST_REPORT.md",
+      "english": "reports-en/legacy/docs/TEST_REPORT.md",
+      "sourceSha256": "e75aae2e5117cc95f5442c07113dec3682d618c98b73e5a9594ba4326dba7312",
+      "englishSha256": "95060b8e33a70077efae3196a9fe6ddf706f2b37068bd0383ac6d99e18c328f2"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.md",
+      "workspaceOriginal": "reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.md",
+      "english": "reports-en/legacy/reports/live-accrued-transfer-2231b89de3b5d147bba984778b5c3bd0a3ea4c0517c3464fb5b1a4cfca09002a.md",
+      "sourceSha256": "7784df79f2476337311b31035ca80792e175b726a6cc83912b4fb00926d5a5ed",
+      "englishSha256": "d0bc32ad476be9b9f253650d1c7a72a1404b7135f99ef45bb65282b4072b4851"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.md",
+      "workspaceOriginal": "reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.md",
+      "english": "reports-en/legacy/reports/live-accrued-transfer-f9a57e647e31ab0ca1746dd80c82b55b270b49121c531608ab5710a38687ce15.md",
+      "sourceSha256": "f5a38da7e6393b9a009f8aba011f740bebb1b8ca6092d6e4a6e08e648a2c1426",
+      "englishSha256": "813582d7de1e997da9b6f7a0fc6c2922c29c1709946ca2ea17abe79035be8d35"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-accrued-transfer-report.md",
+      "workspaceOriginal": "reports/live-accrued-transfer-report.md",
+      "english": "reports-en/legacy/reports/live-accrued-transfer-report.md",
+      "sourceSha256": "f5a38da7e6393b9a009f8aba011f740bebb1b8ca6092d6e4a6e08e648a2c1426",
+      "englishSha256": "813582d7de1e997da9b6f7a0fc6c2922c29c1709946ca2ea17abe79035be8d35"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.md",
+      "workspaceOriginal": "reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.md",
+      "english": "reports-en/legacy/reports/live-claim-a-receipt-0x4da3cb2bce785ebcd3932742547f73e30d44a1a528f955c2a5df29b81398d86a.md",
+      "sourceSha256": "3fe019863bd8694e1425305e39bc82c5311dd8b4a72f85d57b3e9160a0c09f79",
+      "englishSha256": "a158b12952313e7ca43b2df482243e9951fbafc2f5eb145b3b569227a86aecbf"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-claim-a-report.md",
+      "workspaceOriginal": "reports/live-claim-a-report.md",
+      "english": "reports-en/legacy/reports/live-claim-a-report.md",
+      "sourceSha256": "3fe019863bd8694e1425305e39bc82c5311dd8b4a72f85d57b3e9160a0c09f79",
+      "englishSha256": "a158b12952313e7ca43b2df482243e9951fbafc2f5eb145b3b569227a86aecbf"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.md",
+      "workspaceOriginal": "reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.md",
+      "english": "reports-en/legacy/reports/live-claim-ab-0x6d79acb0affb05f9a53ef26a1aea65eff1994d9f16f044f506f167a8ec621690-0xfd0e1cd74228dab384058eb91bed450b18e6f5a23427a8d1d772901cd6495a18.md",
+      "sourceSha256": "e655235e1296f5b222b66743250a3bb9956093a094974095e21c5490ed02db7c",
+      "englishSha256": "c0c02bf47bf788739b9a4a873bf7ff831192dc2a78a4bec02669a19bf2fa9489"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-claim-ab-report.md",
+      "workspaceOriginal": "reports/live-claim-ab-report.md",
+      "english": "reports-en/legacy/reports/live-claim-ab-report.md",
+      "sourceSha256": "e655235e1296f5b222b66743250a3bb9956093a094974095e21c5490ed02db7c",
+      "englishSha256": "c0c02bf47bf788739b9a4a873bf7ff831192dc2a78a4bec02669a19bf2fa9489"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.md",
+      "workspaceOriginal": "reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.md",
+      "english": "reports-en/legacy/reports/live-redeem-43d192bcb1f7cd030c7443e35cff03f381872af6c5a0077d84667199025caa81.md",
+      "sourceSha256": "245ee702ff5946ce3e9d15b91351f1e00c9b403e7f7dfb605234be4d051695db",
+      "englishSha256": "1c08f9b53aa89ae5062d89d01517c05fb7144fbbeb4d70da3cc7d75af88a70da"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-redeem-report.md",
+      "workspaceOriginal": "reports/live-redeem-report.md",
+      "english": "reports-en/legacy/reports/live-redeem-report.md",
+      "sourceSha256": "245ee702ff5946ce3e9d15b91351f1e00c9b403e7f7dfb605234be4d051695db",
+      "englishSha256": "1c08f9b53aa89ae5062d89d01517c05fb7144fbbeb4d70da3cc7d75af88a70da"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-reward-tests-summary.md",
+      "workspaceOriginal": "reports/live-reward-tests-summary.md",
+      "english": "reports-en/legacy/reports/live-reward-tests-summary.md",
+      "sourceSha256": "fcaf0ad980209b72b6916670f56633981359f5d53e71b21f1e6dd4cd8a5d1743",
+      "englishSha256": "83d566f942fd13cb5e60f4711ea19ccabb69653f9e6af4658f0a4d4fac5d8a42"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.md",
+      "workspaceOriginal": "reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.md",
+      "english": "reports-en/legacy/reports/live-transfer-claim-a4c188fc662453dd42b59117e0a8f2511861919cee1ac0faaa2b2ad63cc4ed40-3d05ebb74f067c99f47536409c7dae1780556b8c9e477bc9ba689197d57ee16f-9949203096963379fd54df44ddfa58bf047ce4ca64c96646649b222e50e1a441.md",
+      "sourceSha256": "faa2032e95986b02c682f43e6fb16e470f553193c9fe059f7f3527334ff82b88",
+      "englishSha256": "08cafca6cba5029ae5d81d6b62fb6738a82419721583d1feb44fb3a09cbce466"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/live-transfer-claim-report.md",
+      "workspaceOriginal": "reports/live-transfer-claim-report.md",
+      "english": "reports-en/legacy/reports/live-transfer-claim-report.md",
+      "sourceSha256": "faa2032e95986b02c682f43e6fb16e470f553193c9fe059f7f3527334ff82b88",
+      "englishSha256": "08cafca6cba5029ae5d81d6b62fb6738a82419721583d1feb44fb3a09cbce466"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/tapeout-complete-test-report.md",
+      "workspaceOriginal": "reports/tapeout-complete-test-report.md",
+      "english": "reports-en/legacy/reports/tapeout-complete-test-report.md",
+      "sourceSha256": "128eb55de66530b2aa032be760b49bf99dc2f02a57aef636f742460bcabd82ef",
+      "englishSha256": "f5002fa0a6f280360d25f4de949f120c51d1e1d510253a54ec626b412fa5fde9"
+    },
+    {
+      "scope": "legacy",
+      "source": "reports-en/sources/legacy/reports/tapeout-redemption-test-report.md",
+      "workspaceOriginal": "reports/tapeout-redemption-test-report.md",
+      "english": "reports-en/legacy/reports/tapeout-redemption-test-report.md",
+      "sourceSha256": "2f23a86f2d65cece0fbbd0a8f3e75db7a09abdd671acf8f208e694617f875a5b",
+      "englishSha256": "1b0ab1538715ea8e4e1fbdfd89bae97f946121acad4fba7fbc67012f5d28aba0"
+    }
+  ],
+  "wordEditions": [
+    {
+      "path": "reports-en/legacy/reports/tapeout-complete-test-report.docx",
+      "englishMarkdown": "reports-en/legacy/reports/tapeout-complete-test-report.md",
+      "visualReview": "reports-en/docx-validation.json",
+      "sha256": "3cb30a2e104a79508f20110656ed2e5dc9a25b3f8486e8b05980a222735af35b"
+    },
+    {
+      "path": "reports-en/legacy/reports/tapeout-redemption-test-report.docx",
+      "englishMarkdown": "reports-en/legacy/reports/tapeout-redemption-test-report.md",
+      "visualReview": "reports-en/docx-validation.json",
+      "sha256": "7aa35e6b2cebe1a20f176c90195ff230f3f9656bc06047d28f00e08945360e10"
+    }
+  ]
+}

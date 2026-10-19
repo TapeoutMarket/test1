@@ -1,0 +1,81 @@
+{
+  "report": "tapeout-redemption-test-report",
+  "chainId": 56,
+  "evidenceCutoffBlock": "125717060",
+  "evidenceCutoffBlockHash": "0x80ae5a7f8984572c218a79e2ebedd8a136ec7d7c2daac8fc759214ea34ebc5e4",
+  "mainnetRound": 5,
+  "verificationStatus": "VERIFIED_FULL_REDEMPTION",
+  "checkCount": 59,
+  "allChecksPassed": true,
+  "rpcCalledDuringDocumentBuild": false,
+  "historyMethod": "PRIOR_VERIFIED_HISTORY_THROUGH_FIXED_BASELINE_PLUS_COMPLETE_CURRENT_ROUND_SCAN",
+  "objectiveCoverage": {
+    "twoSharesConsolidatedAtA": "VERIFIED_ON_LIVE",
+    "minerAndAllVaultBEMRedeemedToA": "VERIFIED_ON_LIVE",
+    "preExistingNonzeroVaultBalancePlusNewMining": "NOT_EXERCISED_ON_LIVE",
+    "nonzeroRemainderPayment": "NOT_EXERCISED_ON_LIVE",
+    "hundredSharesBatchClaim": "NOT_IMPLEMENTED_OR_TESTED_BY_THIS_TWO_ID_CONTRACT"
+  },
+  "collectorUnitTests": {
+    "command": "node --test scripts/test/redeem-report.test.mjs",
+    "passed": 10,
+    "failed": 0
+  },
+  "visualReview": {
+    "status": "PASS",
+    "pages": 4,
+    "allPagesInspected": true,
+    "chineseGlyphs": "PASS",
+    "tablesAndPageBreaks": "PASS",
+    "clippingOrOverlap": false,
+    "qaRenderDirectory": "/private/tmp/tapeout-redemption-render-final"
+  },
+  "sources": [
+    {
+      "path": "reports/live-redeem-report.json",
+      "sha256": "7f783390bd695388874523c4ec35eb1b0e8fb6e06b48f9f64c6504376d7741c8"
+    },
+    {
+      "path": "reports/live-redeem-receipt-inspection.json",
+      "sha256": "9ed4653fdf89b068d26004ed2910fec3dcb7aca930c7301c7144aee7fda2347a"
+    },
+    {
+      "path": "reports/live-accrued-transfer-report.json",
+      "sha256": "79a358f95c385f29f9d1d7ec61fc1015ecb89ed443c5e44b91c69e7a936fcbf4"
+    },
+    {
+      "path": "src/TestMinerVault.sol",
+      "sha256": "5b33d3385f77becd099e549a3fc2686493b947e1cfc6406f94620586b0d1b3c8"
+    },
+    {
+      "path": "scripts/redeem-report.mjs",
+      "sha256": "afde4ee7419c74727b584a1cf147ab5a97b5854dc495d070c545599dedc90cf6"
+    },
+    {
+      "path": "scripts/test/redeem-report.test.mjs",
+      "sha256": "201bcf261da973be8b99e8262d4555424b80ec2328014f348ace00b46d244c18"
+    },
+    {
+      "path": "scripts/build-complete-test-report.py",
+      "sha256": "96d81d565811e8ee05dc67f498b9f08484b6ebde5804eb1f93fd9ba6e0230192"
+    },
+    {
+      "path": "scripts/build-redemption-test-report.py",
+      "sha256": "b1815853855cc696f0acf80267159a7ac247918b65af6f5d31bd783d178ccd48"
+    },
+    {
+      "path": "reports/tapeout-redemption-test-report.md",
+      "sha256": "2f23a86f2d65cece0fbbd0a8f3e75db7a09abdd671acf8f208e694617f875a5b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "reports/tapeout-redemption-test-report.docx",
+      "sha256": "97d328ba75e96c482a8074d527f084bc1b6d3cdb1d8c158ced2a689c3aaede0e"
+    },
+    {
+      "path": "reports/tapeout-redemption-test-report.md",
+      "sha256": "2f23a86f2d65cece0fbbd0a8f3e75db7a09abdd671acf8f208e694617f875a5b"
+    }
+  ]
+}

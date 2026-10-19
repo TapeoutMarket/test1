@@ -1,0 +1,69 @@
+{
+  "report": "tapeout-complete-test-report",
+  "evidenceCutoffBlock": "125712665",
+  "evidenceCutoffBlockHash": "0x6dd23ea483fa2dad0c10ad56f378f3db1291fbf45da779ac8ba1f9d123d9aabb",
+  "chainId": 56,
+  "mainnetRoundsVerified": 4,
+  "rpcCalledDuringDocumentBuild": false,
+  "sources": [
+    {
+      "path": "reports/live-claim-a-report.json",
+      "sha256": "b84766184b06e8fbcd5f7dc691be99d00b014f41ac32c5ec8b4444913ac642df"
+    },
+    {
+      "path": "reports/live-claim-ab-report.json",
+      "sha256": "1819b2ebf7b17faf37d1e0679373f34b97b19243072f554a2b9834d0931a057d"
+    },
+    {
+      "path": "reports/live-transfer-claim-report.json",
+      "sha256": "232f744580268959d3a71e92e831531ad5a56787d10c3ce74283a01bbfbe27fe"
+    },
+    {
+      "path": "reports/live-accrued-transfer-report.json",
+      "sha256": "79a358f95c385f29f9d1d7ec61fc1015ecb89ed443c5e44b91c69e7a936fcbf4"
+    },
+    {
+      "path": "reports/live-deploy-1791054236385.json",
+      "sha256": "2645e5ffece053ed9ef079c3633a9b194629e18525673d0c9963a3af5be4197b"
+    },
+    {
+      "path": "reports/live-deposit-1791055111304.json",
+      "sha256": "2f6792d8c4912a72963cdf85f2c67b5feac8e5d0dad893455140f44126a369ea"
+    },
+    {
+      "path": "reports/live-transfer-claim-authority.json",
+      "sha256": "faa10671fcd9de5cc06c656e8ed09eebe4d28fff4a1c9191fe7ea5c426d0066a"
+    },
+    {
+      "path": "reports/live-accrued-transfer-authority.json",
+      "sha256": "7202f9522f5281bb9c7a362e4555019acc5d9cabf7834d251937e7140232f8f2"
+    },
+    {
+      "path": "reports/live-transfer-claim-local-validation.json",
+      "sha256": "ea217ec0ccdf00857887f11a641ae79e644638ece742b5f1ca1650566b44a532"
+    },
+    {
+      "path": "reports/local-smoke.json",
+      "sha256": "7f6b25dc5149e484389ee4ccf9a88681a68be48fd1aeb9acc5f59797525467ea"
+    },
+    {
+      "path": "reports/cli-smoke.json",
+      "sha256": "f0937fd46d65b3fd438a68edbd4aacac29701cbab50e4aeff061db563d1232f6"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "sha256": "e75aae2e5117cc95f5442c07113dec3682d618c98b73e5a9594ba4326dba7312"
+    },
+    {
+      "path": "reports/tapeout-complete-test-report.md",
+      "sha256": "128eb55de66530b2aa032be760b49bf99dc2f02a57aef636f742460bcabd82ef"
+    }
+  ],
+  "deliverable": {
+    "docx": "reports/tapeout-complete-test-report.docx",
+    "sha256": "3561aa3601ef4d74b987cfd463c89810bdc045f542c0ade544357e5c187a42bd",
+    "renderedPages": 8,
+    "visualReview": "PASS_ALL_8_PAGES",
+    "distinctTransactionLinks": 12
+  }
+}

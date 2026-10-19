@@ -1,0 +1,34 @@
+{
+  "beforeTransfer": {
+    "chainId": 56,
+    "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+    "blockNumber": "125706961",
+    "blockHash": "0xcc2dddfaf5ae279b435fdaed56863c7dea077164028187541f3c28ed351c725b",
+    "actor": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "holder1": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "holder2": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "functionName": "claimBatch",
+    "ids": [
+      "1"
+    ],
+    "status": "REVERTED",
+    "errorName": "Unauthorized",
+    "note": "Pinned-block eth_call simulation only; no transaction submitted."
+  },
+  "afterTransfer": {
+    "chainId": 56,
+    "vault": "0x4D42634488E9E9C30D1AbAFd4C5f47b29502E35B",
+    "blockNumber": "125712342",
+    "blockHash": "0xd4decbfa8742e62fa33485e21eb89e1ce06b4599a79605055cbead9605e35d2d",
+    "actor": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "holder1": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "holder2": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+    "functionName": "claimBatch",
+    "ids": [
+      "1"
+    ],
+    "status": "REVERTED",
+    "errorName": "Unauthorized",
+    "note": "Pinned-block eth_call simulation only; no transaction submitted."
+  }
+}
