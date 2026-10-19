@@ -1,0 +1,483 @@
+{
+  "storage": [
+    {
+      "astId": 54836,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "factory",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_address"
+    },
+    {
+      "astId": 54838,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "creator",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_address"
+    },
+    {
+      "astId": 54841,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "state",
+      "offset": 20,
+      "slot": "1",
+      "type": "t_enum(State)57152"
+    },
+    {
+      "astId": 54844,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "_config",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_struct(Config)57190_storage"
+    },
+    {
+      "astId": 54847,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "_terms",
+      "offset": 0,
+      "slot": "11",
+      "type": "t_struct(Terms)57219_storage"
+    },
+    {
+      "astId": 54849,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "_payload",
+      "offset": 0,
+      "slot": "23",
+      "type": "t_bytes_storage"
+    },
+    {
+      "astId": 54851,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "configHash",
+      "offset": 0,
+      "slot": "24",
+      "type": "t_bytes32"
+    },
+    {
+      "astId": 54853,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "termsHash",
+      "offset": 0,
+      "slot": "25",
+      "type": "t_bytes32"
+    },
+    {
+      "astId": 54855,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "terminationReason",
+      "offset": 0,
+      "slot": "26",
+      "type": "t_uint8"
+    },
+    {
+      "astId": 54857,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "soldCount",
+      "offset": 0,
+      "slot": "27",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54859,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "fundedWei",
+      "offset": 0,
+      "slot": "28",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54861,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "totalPrincipalIn",
+      "offset": 0,
+      "slot": "29",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54863,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "totalPrincipalRefunded",
+      "offset": 0,
+      "slot": "30",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54865,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "purchaseSpent",
+      "offset": 0,
+      "slot": "31",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54867,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "soldBitmap",
+      "offset": 0,
+      "slot": "32",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54871,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "_holders",
+      "offset": 0,
+      "slot": "33",
+      "type": "t_mapping(t_uint256,t_address)"
+    },
+    {
+      "astId": 54875,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "claimed",
+      "offset": 0,
+      "slot": "34",
+      "type": "t_mapping(t_uint256,t_uint256)"
+    },
+    {
+      "astId": 54877,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "accPerShare",
+      "offset": 0,
+      "slot": "35",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54879,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "totalAccounted",
+      "offset": 0,
+      "slot": "36",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54881,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "totalPaid",
+      "offset": 0,
+      "slot": "37",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54883,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "remainder",
+      "offset": 0,
+      "slot": "38",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 54885,
+      "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+      "label": "redeemedBeneficiary",
+      "offset": 0,
+      "slot": "39",
+      "type": "t_address"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_bytes32": {
+      "encoding": "inplace",
+      "label": "bytes32",
+      "numberOfBytes": "32"
+    },
+    "t_bytes_storage": {
+      "encoding": "bytes",
+      "label": "bytes",
+      "numberOfBytes": "32"
+    },
+    "t_enum(MarketKind)57146": {
+      "encoding": "inplace",
+      "label": "enum Types.MarketKind",
+      "numberOfBytes": "1"
+    },
+    "t_enum(State)57152": {
+      "encoding": "inplace",
+      "label": "enum Types.State",
+      "numberOfBytes": "1"
+    },
+    "t_mapping(t_uint256,t_address)": {
+      "encoding": "mapping",
+      "key": "t_uint256",
+      "label": "mapping(uint256 => address)",
+      "numberOfBytes": "32",
+      "value": "t_address"
+    },
+    "t_mapping(t_uint256,t_uint256)": {
+      "encoding": "mapping",
+      "key": "t_uint256",
+      "label": "mapping(uint256 => uint256)",
+      "numberOfBytes": "32",
+      "value": "t_uint256"
+    },
+    "t_string_storage": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(Config)57190_storage": {
+      "encoding": "inplace",
+      "label": "struct Types.Config",
+      "numberOfBytes": "288",
+      "members": [
+        {
+          "astId": 57166,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "chainId",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 57168,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "templateVersion",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint32"
+        },
+        {
+          "astId": 57171,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "marketKind",
+          "offset": 4,
+          "slot": "1",
+          "type": "t_enum(MarketKind)57146"
+        },
+        {
+          "astId": 57173,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "market",
+          "offset": 5,
+          "slot": "1",
+          "type": "t_address"
+        },
+        {
+          "astId": 57175,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "collection",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_address"
+        },
+        {
+          "astId": 57177,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "mining",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_address"
+        },
+        {
+          "astId": 57179,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "bem",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_address"
+        },
+        {
+          "astId": 57181,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "marketCodeHash",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_bytes32"
+        },
+        {
+          "astId": 57183,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "seaportDomainSeparator",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_bytes32"
+        },
+        {
+          "astId": 57185,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "seaportVersionHash",
+          "offset": 0,
+          "slot": "7",
+          "type": "t_bytes32"
+        },
+        {
+          "astId": 57187,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "safetyMargin",
+          "offset": 0,
+          "slot": "8",
+          "type": "t_uint64"
+        },
+        {
+          "astId": 57189,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "mockOnly",
+          "offset": 8,
+          "slot": "8",
+          "type": "t_bool"
+        }
+      ]
+    },
+    "t_struct(Terms)57219_storage": {
+      "encoding": "inplace",
+      "label": "struct Types.Terms",
+      "numberOfBytes": "384",
+      "members": [
+        {
+          "astId": 57192,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "seller",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+        },
+        {
+          "astId": 57194,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "tokenId",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 57196,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "totalPrice",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 57198,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "deadline",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_uint64"
+        },
+        {
+          "astId": 57200,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "orderHash",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_bytes32"
+        },
+        {
+          "astId": 57202,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "counter",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 57204,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "listingId",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 57206,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "listingPrice",
+          "offset": 0,
+          "slot": "7",
+          "type": "t_uint96"
+        },
+        {
+          "astId": 57208,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "feeBps",
+          "offset": 12,
+          "slot": "7",
+          "type": "t_uint16"
+        },
+        {
+          "astId": 57210,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "executionHash",
+          "offset": 0,
+          "slot": "8",
+          "type": "t_bytes32"
+        },
+        {
+          "astId": 57212,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "orderStart",
+          "offset": 0,
+          "slot": "9",
+          "type": "t_uint64"
+        },
+        {
+          "astId": 57214,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "orderEnd",
+          "offset": 8,
+          "slot": "9",
+          "type": "t_uint64"
+        },
+        {
+          "astId": 57216,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "name",
+          "offset": 0,
+          "slot": "10",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 57218,
+          "contract": "src/GroupBuyVault.sol:GroupBuyVault",
+          "label": "metadataURI",
+          "offset": 0,
+          "slot": "11",
+          "type": "t_string_storage"
+        }
+      ]
+    },
+    "t_uint16": {
+      "encoding": "inplace",
+      "label": "uint16",
+      "numberOfBytes": "2"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    },
+    "t_uint32": {
+      "encoding": "inplace",
+      "label": "uint32",
+      "numberOfBytes": "4"
+    },
+    "t_uint64": {
+      "encoding": "inplace",
+      "label": "uint64",
+      "numberOfBytes": "8"
+    },
+    "t_uint8": {
+      "encoding": "inplace",
+      "label": "uint8",
+      "numberOfBytes": "1"
+    },
+    "t_uint96": {
+      "encoding": "inplace",
+      "label": "uint96",
+      "numberOfBytes": "12"
+    }
+  }
+}

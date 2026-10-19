@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "scope": "ONLY_TRANSPORT_MOCK_UPSTREAM",
+  "kind": "LAN_ANVIL_FORK",
+  "instanceId": "aa78f73d-7a64-4800-9496-3ccda0872155",
+  "chainId": 56,
+  "forkBlockNumber": "1",
+  "forkBlockHash": "0x191773ae59d153e7c1bf80bd11fe9a74c054ee40028d728ea660cc56709ce82e",
+  "gatewayURL": "http://127.0.0.1:53170/",
+  "createdAt": "2026-10-19T12:52:20.929Z",
+  "allowedClientIPs": [
+    "127.0.0.1"
+  ],
+  "sandboxAccounts": [
+    "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+  ],
+  "sourceRPC": "REDACTED_READ_ONLY",
+  "signedTransactionsAccepted": false,
+  "status": "STOPPED"
+}

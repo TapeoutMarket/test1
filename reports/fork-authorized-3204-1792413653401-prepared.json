@@ -1,0 +1,85 @@
+{
+  "status": "PREPARED_READ_ONLY_NOT_EXECUTED",
+  "caseName": "authorized-3204-1792413653401",
+  "productionReady": false,
+  "realForkLifecycle": "NOT_RUN",
+  "transactionsSent": 0,
+  "execution": {
+    "mode": "fork",
+    "chainId": 56,
+    "local": true,
+    "forkStatus": "PINNED_LOCAL_FORK",
+    "forkBlockNumber": "128554249",
+    "forkBlockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+  },
+  "orderCheckpoint": {
+    "origin": "fork-created",
+    "stateScope": "LOCAL_FORK_CREATED_NO_PUBLIC_SIGNATURE",
+    "blockNumber": "128554251",
+    "blockHash": "0x8d65e1ad469be8b147dc79bc935102661603813a15b51d4928cdb5342952eee1",
+    "sourcePin": "128554249",
+    "executionCanonicalHashMatched": true
+  },
+  "orderFile": "fixtures/fork-created-3204-4b806c1325967dc1.json",
+  "orderFileSHA256": "ef6b0a6596305cb91f870f37f99a3b22aa10e6db0068c0162b1a0cacc9d2d5ef",
+  "orderHash": "0x4b806c1325967dc170bf08c74644b20dd00af8b79c58e874bbc6e54f836a0edc",
+  "market": "0x0000000000000068F116a894984e2DB1123eB395",
+  "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "tokenId": "3204",
+  "observation": {
+    "blockNumber": "128554251",
+    "blockHash": "0x8d65e1ad469be8b147dc79bc935102661603813a15b51d4928cdb5342952eee1",
+    "timestamp": "1792412931"
+  },
+  "configFile": "fixtures/fork-authorized-3204-1792413653401.config.json",
+  "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+  "termsHash": "0xa2c8d1b6f68d342c14fce306fa655e7a1f465469afd1ce0dfb6cd1f0b63170f6",
+  "deadline": "1792416531",
+  "deadlineSelection": "MIN_ORDER_END_MINUS_MARGIN_AND_FORK_NOW_PLUS_ONE_HOUR",
+  "buyerPaysWei": "303000000000000000",
+  "mining": {
+    "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "codeHash": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce",
+    "minerKey": "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+    "pendingRaw": "13532613"
+  },
+  "bem": {
+    "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+    "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344",
+    "decimals": 8
+  },
+  "positiveAccrualTransferTest": "PENDING_OBSERVED_NOT_YET_RECEIVED",
+  "semanticReview": "UNKNOWN: successful getters and runtime hashes do not prove claim recipient/permission, proxy implementation, or non-tax/non-rebasing BEM semantics. Review primary sources and actual fork receipts.",
+  "commands": {
+    "deployPlan": [
+      "npm",
+      "run",
+      "cli",
+      "--",
+      "deploy-local"
+    ],
+    "createPlan": [
+      "npm",
+      "run",
+      "cli",
+      "--",
+      "create-pool",
+      "--order",
+      "fixtures/fork-created-3204-4b806c1325967dc1.json",
+      "--config",
+      "fixtures/fork-authorized-3204-1792413653401.config.json",
+      "--deadline",
+      "1792416531",
+      "--round",
+      "1",
+      "--name",
+      "tapeout3204",
+      "--factory",
+      "<NEW_FORK_FACTORY>",
+      "--expected-template",
+      "<NEW_FORK_TEMPLATE>",
+      "--from",
+      "<LOCAL_A>"
+    ]
+  }
+}

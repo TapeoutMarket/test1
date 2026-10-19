@@ -1,0 +1,244 @@
+{
+  "scope": "LOCAL_FORK_CREATED_NO_PUBLIC_SIGNATURE",
+  "status": "FORK_ORDER_CREATED",
+  "mainnetTransactionsSent": 0,
+  "marketDatabaseWrites": 0,
+  "sourceRPCWrites": 0,
+  "privateKeysRead": false,
+  "publicOrderSignatureProduced": false,
+  "transactions": [
+    {
+      "operation": "approve-selected-nft",
+      "transactionHash": "0xe09cdb76567056548033c5e4d977bb4cfa3cb110a5d53830afa8954de49a8f07",
+      "to": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "from": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "calldataHash": "0x323d73306d8fc1af3366437f778b6ccd984ca076e29982539916c3807d18fa2a",
+      "value": "0",
+      "status": "success",
+      "blockNumber": "128554250",
+      "blockHash": "0xfe152f1c337558cd424daa09a7a473ced68cddabfb52286a2e853bb6e45c705c",
+      "gasUsed": "56268",
+      "effectiveGasPrice": "1000000000"
+    },
+    {
+      "operation": "validate-unsigned-seaport-order",
+      "transactionHash": "0xbe93c542a76cf70112dde074a0b8d3b7d89ec1676c6a02fc8c7e2f5c7e74fd07",
+      "to": "0x0000000000000068F116a894984e2DB1123eB395",
+      "from": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "calldataHash": "0x967e7a51df8fe1300b0f5c3db8783a8a6407d81ade27a829c57a47100cb8b10b",
+      "value": "0",
+      "status": "success",
+      "blockNumber": "128554251",
+      "blockHash": "0x03cdde589505d2395eadeb161018dd5f3ad62b2e18568aa731998d6e5d4f4013",
+      "gasUsed": "68668",
+      "effectiveGasPrice": "1000000000"
+    }
+  ],
+  "execution": {
+    "mode": "fork",
+    "chainId": 56,
+    "local": true,
+    "forkStatus": "PINNED_LOCAL_FORK",
+    "forkBlockNumber": "128554249",
+    "forkBlockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+  },
+  "orderOrigin": "fork-created",
+  "seller": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "market": "0x0000000000000068F116a894984e2DB1123eB395",
+  "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "tokenId": "3204",
+  "feeRecipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "feeRecipientRole": "EXPLICIT_FORK_TEST_RECIPIENT_NOT_VERIFIED_MARKET_FEE_CONFIGURATION",
+  "sellerPriceWei": "300000000000000000",
+  "marketFeeWei": "3000000000000000",
+  "buyerTotalWei": "303000000000000000",
+  "sourcePin": {
+    "blockNumber": "128554249",
+    "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+  },
+  "before": {
+    "blockNumber": "128554249",
+    "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+    "timestamp": "1792412907"
+  },
+  "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+  "marketCodeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+  "collectionCodeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+  "planOrder": {
+    "schemaVersion": "1",
+    "source": {
+      "kind": "json",
+      "name": "LOCAL_FORK_CREATED_NO_PUBLIC_SIGNATURE"
+    },
+    "sourceChainId": 56,
+    "market": "0x0000000000000068F116a894984e2DB1123eB395",
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "tokenId": "3204",
+    "seller": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "buyerPaysWei": "303000000000000000",
+    "currency": {
+      "kind": "native",
+      "symbol": "BNB",
+      "token": "0x0000000000000000000000000000000000000000"
+    },
+    "fees": [
+      {
+        "kind": "seller",
+        "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+        "amountWei": "300000000000000000"
+      },
+      {
+        "kind": "market",
+        "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+        "amountWei": "3000000000000000"
+      }
+    ],
+    "nativeStartTime": "1792412907",
+    "nativeEndTime": "1792499307",
+    "quoteExpiresAt": null,
+    "validation": {
+      "status": "unknown",
+      "blockNumber": "128554249",
+      "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+    },
+    "exportedAt": "2026-10-19T12:46:55.857Z",
+    "identity": {
+      "status": "verified",
+      "marketCodeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+      "collectionCodeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+      "proxy": null,
+      "evidenceVersion": "fork-local-seaport-getters-v1"
+    },
+    "protocol": "seaport",
+    "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+    "seaport": {
+      "parameters": {
+        "offerer": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+        "zone": "0x0000000000000000000000000000000000000000",
+        "offer": [
+          {
+            "itemType": 2,
+            "token": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+            "identifierOrCriteria": "3204",
+            "startAmount": "1",
+            "endAmount": "1"
+          }
+        ],
+        "consideration": [
+          {
+            "itemType": 0,
+            "token": "0x0000000000000000000000000000000000000000",
+            "identifierOrCriteria": "0",
+            "startAmount": "300000000000000000",
+            "endAmount": "300000000000000000",
+            "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9"
+          },
+          {
+            "itemType": 0,
+            "token": "0x0000000000000000000000000000000000000000",
+            "identifierOrCriteria": "0",
+            "startAmount": "3000000000000000",
+            "endAmount": "3000000000000000",
+            "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129"
+          }
+        ],
+        "orderType": 0,
+        "startTime": "1792412907",
+        "endTime": "1792499307",
+        "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "salt": "104434010785354324441846608309955035684669043581522590269070695982792988310736",
+        "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "totalOriginalConsiderationItems": "2"
+      },
+      "components": {
+        "offerer": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+        "zone": "0x0000000000000000000000000000000000000000",
+        "offer": [
+          {
+            "itemType": 2,
+            "token": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+            "identifierOrCriteria": "3204",
+            "startAmount": "1",
+            "endAmount": "1"
+          }
+        ],
+        "consideration": [
+          {
+            "itemType": 0,
+            "token": "0x0000000000000000000000000000000000000000",
+            "identifierOrCriteria": "0",
+            "startAmount": "300000000000000000",
+            "endAmount": "300000000000000000",
+            "recipient": "0x1b55E6A757987576E1a130A011f9E12498De7DB9"
+          },
+          {
+            "itemType": 0,
+            "token": "0x0000000000000000000000000000000000000000",
+            "identifierOrCriteria": "0",
+            "startAmount": "3000000000000000",
+            "endAmount": "3000000000000000",
+            "recipient": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129"
+          }
+        ],
+        "orderType": 0,
+        "startTime": "1792412907",
+        "endTime": "1792499307",
+        "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "salt": "104434010785354324441846608309955035684669043581522590269070695982792988310736",
+        "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "counter": "0"
+      },
+      "signature": "0x",
+      "domain": {
+        "name": "Seaport",
+        "version": "1.6",
+        "chainId": 56,
+        "verifyingContract": "0x0000000000000068F116a894984e2DB1123eB395",
+        "domainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb"
+      }
+    }
+  },
+  "notes": [
+    "This is a fork-specific order, not an imported existing mainnet listing.",
+    "Only real Seaport code on the selected fork is used. Runtime hashes and ABI/domain checks are not a full source audit.",
+    "signature=0x cannot authorize a mainnet order; any Seaport validation occurs only inside this fork."
+  ],
+  "simulations": "PASS",
+  "sellerImpersonatedOnlyInFork": true,
+  "impersonationStopped": true,
+  "validationCheckpoint": {
+    "status": "verified",
+    "blockNumber": "128554251",
+    "blockHash": "0x03cdde589505d2395eadeb161018dd5f3ad62b2e18568aa731998d6e5d4f4013"
+  },
+  "protocol": {
+    "protocol": "seaport",
+    "status": "READ_ONLY_VALIDATED",
+    "executable": true,
+    "permanentInvalid": false,
+    "checks": {
+      "pinnedMarketIdentity": true,
+      "pinnedCollectionIdentity": true,
+      "domainMatches": true,
+      "originalCounter": true,
+      "notCancelled": true,
+      "notFilled": true,
+      "started": true,
+      "notExpired": true,
+      "sellerOwnsMiner": true,
+      "sellerApproval": true,
+      "signatureOrSeaportValidation": true,
+      "sourceIdentityExplicitlyVerified": true
+    },
+    "blockNumber": "128554251",
+    "blockHash": "0x03cdde589505d2395eadeb161018dd5f3ad62b2e18568aa731998d6e5d4f4013",
+    "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+    "quoteTtlIsNotNativeExpiry": true,
+    "executionSimulationStillRequired": true
+  },
+  "orderFile": "fixtures/fork-created-3204-157965afaffa5c59.json",
+  "nextEnvironment": {
+    "ORDER_FILE": "fixtures/fork-created-3204-157965afaffa5c59.json",
+    "FORK_ORDER_ORIGIN": "fork-created"
+  }
+}

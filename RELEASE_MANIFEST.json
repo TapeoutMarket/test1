@@ -1,0 +1,828 @@
+{
+  "version": "1.0.0-candidate.1",
+  "sourceSnapshotHash": "6b9c0d6195f80217f5a9aeb867e5ccecaf855e0cd8545c85455e22efdacd90bf",
+  "sourceIndex": [
+    {
+      "path": ".env.example",
+      "sha256": "bcbb52ad840a0d6ffc62a3e78ef3844da1585513b28c2dd2730a1392e582633c",
+      "bytes": 2717
+    },
+    {
+      "path": ".github/workflows/local-ci.yml",
+      "sha256": "df6d47854e759637cd47dadc570c5e4c8709eefa63e797c55acaac0a7c735971",
+      "bytes": 572
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f7bfc3061360aba02c1731f7c1763ef0c0a4ef31591b6e7846ffed4dffe66650",
+      "bytes": 126
+    },
+    {
+      "path": "FORK_TEST_RUNBOOK.md",
+      "sha256": "0ae12ab2640349aba45bbf6da9923ddf16ce38b66967bbed68ed589f32bde9e9",
+      "bytes": 10319
+    },
+    {
+      "path": "LIVE_TEST_CHECKLIST.md",
+      "sha256": "387b4f88c207982c9affd36a395bc083b02f42fe97c2ddc4f7f15642a6c7ae58",
+      "bytes": 7382
+    },
+    {
+      "path": "MARKET_HANDOFF.md",
+      "sha256": "52587490c493a66bccdc497d5cafeb6acd8c712f13effc5154f9b3caf8879d61",
+      "bytes": 9616
+    },
+    {
+      "path": "PROTOCOL_COMPATIBILITY.md",
+      "sha256": "ee2e25ce057a0a0c51e0a4cb8c3dc34c5195b9d21fb38b2c3973ddc73ae45462",
+      "bytes": 13893
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad401993ca5376ec4751195f84f8b622a74edca3d1a94efe746fdfe4ff7b2660",
+      "bytes": 10489
+    },
+    {
+      "path": "SECURITY_MODEL.md",
+      "sha256": "1e22531b7253711f80b7c3f7ea44b4677af75e0113497ef5280bb644e39b9cd0",
+      "bytes": 12733
+    },
+    {
+      "path": "SPEC.md",
+      "sha256": "7f493cdbadfe7744af80bb0352225b9e731e72c8e02cad6ff711d643138a76d4",
+      "bytes": 13540
+    },
+    {
+      "path": "cli/index.ts",
+      "sha256": "74ee015f7f7a3ed545235d63f0e52af9a81adb3fccda208abfe70cbd79f9b3b8",
+      "bytes": 20110
+    },
+    {
+      "path": "docs/ABI_EVENTS_ERRORS.md",
+      "sha256": "d28cefec71ecf177da9107add5cb88739924ae643fdb8625f7d03be2d5e49e21",
+      "bytes": 16834
+    },
+    {
+      "path": "docs/FORK_CLIENT_RUNBOOK.md",
+      "sha256": "93ae54e74bcddfcb7dcbbd61663eea3675b20e7e0d293b62e3e83064fc0e8c24",
+      "bytes": 15867
+    },
+    {
+      "path": "docs/FORK_INPUTS.md",
+      "sha256": "a51fa16882b1370414f9432f24a0c0c8dc6feacf186b8aeb4f9f58a7c83d7da8",
+      "bytes": 11404
+    },
+    {
+      "path": "docs/LOCAL_FORK_RUNBOOK.md",
+      "sha256": "eaa54fa6245f67e877c9ddc3f5315cf7e677845f9c9a821ad0347fb6d490ecfb",
+      "bytes": 12971
+    },
+    {
+      "path": "docs/MAC_M4_FORK_HOST_PROMPT.md",
+      "sha256": "d95e3c2c98b7e1f3397c6dbb30da38d0044f58be4443e485b38e1305eec13ece",
+      "bytes": 8123
+    },
+    {
+      "path": "docs/REAL_BSC_FORK_TEST_REPORT.md",
+      "sha256": "add31e42afbbbbf456c535965d5c52073370dc014850589c868bcecd2ef48dd3",
+      "bytes": 24060
+    },
+    {
+      "path": "docs/REAL_FORK_EVIDENCE_AUDIT.md",
+      "sha256": "82b9164ada9219795e77bca33f5025fa9ebf78821d1da6b0a8816eb063e02685",
+      "bytes": 11443
+    },
+    {
+      "path": "docs/REAL_FORK_EVIDENCE_AUDIT_BEFORE_PENDING_FIX.md",
+      "sha256": "b87bd93f2434ba828ffe4a19aca34bb729e7c63ab657744405c79874f44d41f9",
+      "bytes": 10398
+    },
+    {
+      "path": "docs/REAL_PROTOCOL_IDENTITY_REVIEW.md",
+      "sha256": "d4d3be93e0f0dd50748e90bfbf5f960d79602811a03af858a6394af625686120",
+      "bytes": 10807
+    },
+    {
+      "path": "fixtures/fork-authorized-3204-1792413376728.config.json",
+      "sha256": "5ab54ec5411059a2e016ac787fef59d83bb0d6cdc622d1e1fd8c1a982d18ae8c",
+      "bytes": 626
+    },
+    {
+      "path": "fixtures/fork-authorized-3204-1792413653401.config.json",
+      "sha256": "5ab54ec5411059a2e016ac787fef59d83bb0d6cdc622d1e1fd8c1a982d18ae8c",
+      "bytes": 626
+    },
+    {
+      "path": "fixtures/fork-authorized-3204-1792414018906.config.json",
+      "sha256": "5ab54ec5411059a2e016ac787fef59d83bb0d6cdc622d1e1fd8c1a982d18ae8c",
+      "bytes": 626
+    },
+    {
+      "path": "fixtures/fork-created-3204-157965afaffa5c59.json",
+      "sha256": "0e8722d1f23b7c00e4f37477e3777af99aabcfc600438281ed0950a3a6a1c7d3",
+      "bytes": 4681
+    },
+    {
+      "path": "fixtures/fork-created-3204-4b806c1325967dc1.json",
+      "sha256": "ef6b0a6596305cb91f870f37f99a3b22aa10e6db0068c0162b1a0cacc9d2d5ef",
+      "bytes": 4679
+    },
+    {
+      "path": "fixtures/fork-created-3204-a1b8430ebad7a22c.json",
+      "sha256": "87fd9a91ccc19104caf5185760555658404c84b35e4e180b57a7bfe505a2e652",
+      "bytes": 4677
+    },
+    {
+      "path": "fixtures/mock-pool.example.json",
+      "sha256": "4aede6339afc5187fe45f89ab75e05315b3baec3a3c9e45eff1f5d7f82171c8f",
+      "bytes": 253
+    },
+    {
+      "path": "fixtures/official-order.example.json",
+      "sha256": "4841d68b8c4a044e6265414602a3b5fca35aa0b1161a6c53ab4cffd1776b7fab",
+      "bytes": 1940
+    },
+    {
+      "path": "fixtures/seaport-order.example.json",
+      "sha256": "c8ce5336e177f988b1627268a1b9d4ba23ea889b45c0bbb34076561af343e0d0",
+      "bytes": 4236
+    },
+    {
+      "path": "fixtures/seaport/BUILD.json",
+      "sha256": "dbbcadb277318534c014c61ef839303bd48a6c8fc131f8839bc145deeb783703",
+      "bytes": 10485
+    },
+    {
+      "path": "fixtures/seaport/ConduitController.json",
+      "sha256": "36c9c2f01af8e59afd90f209d2c177656a40341182238d82ef8b8b95048e1537",
+      "bytes": 36753
+    },
+    {
+      "path": "fixtures/seaport/Seaport.json",
+      "sha256": "fa9602aa9afa1852a5114129a3379b5d3708758523c77cc2392ad9acd1008c8e",
+      "bytes": 169977
+    },
+    {
+      "path": "foundry.toml",
+      "sha256": "e7d85417ae1847c7e30c170305add977a1a03ad0ed4efb52ff48f37017f86cef",
+      "bytes": 438
+    },
+    {
+      "path": "lib/forge-std/LICENSE-APACHE",
+      "sha256": "50b6bf8bdb63265ce14953b480b7aaa0271e78f56843b99c184abd3ae5048cd7",
+      "bytes": 10897
+    },
+    {
+      "path": "lib/forge-std/LICENSE-MIT",
+      "sha256": "6d185dfe089d4de346d391fc5997fbd4739bad1d6556010413c10f420d704ecc",
+      "bytes": 1073
+    },
+    {
+      "path": "lib/forge-std/src/Base.sol",
+      "sha256": "29297a56d2b1692d4439545b93ed62890da7e9e1060c03005b43151af7984bf0",
+      "bytes": 2227
+    },
+    {
+      "path": "lib/forge-std/src/Script.sol",
+      "sha256": "69481d9a1b816761680fe82700233d0ecbb85f81f4e2826841664779cbb6f535",
+      "bytes": 881
+    },
+    {
+      "path": "lib/forge-std/src/StdAssertions.sol",
+      "sha256": "d4c89eec70d267dec6188461fbc74d3dc8c47e518d176a23417533a232ed9780",
+      "bytes": 23360
+    },
+    {
+      "path": "lib/forge-std/src/StdChains.sol",
+      "sha256": "09a88ace5bc037f4a805c7ae071abf675ce802c8b36810287cd327b7d035fb81",
+      "bytes": 14232
+    },
+    {
+      "path": "lib/forge-std/src/StdCheats.sol",
+      "sha256": "29af42f9d670fd22e9fc3ebe3c2da194471e93e210361c41d3d26ef04e9dca28",
+      "bytes": 31809
+    },
+    {
+      "path": "lib/forge-std/src/StdConstants.sol",
+      "sha256": "6c785abd2fb9d42560f867d8e43e729c55f5bda2c06e5ddae27b17e301de4f04",
+      "bytes": 1867
+    },
+    {
+      "path": "lib/forge-std/src/StdError.sol",
+      "sha256": "82ca17e33a03775e95b4612bd604a8732c73b2982a0278d214e06c68a886dc11",
+      "bytes": 1013
+    },
+    {
+      "path": "lib/forge-std/src/StdInvariant.sol",
+      "sha256": "f572e991cfe874844b3b75a540e38e2161c29b5d9ab1635a3c4f1a16c548f987",
+      "bytes": 3977
+    },
+    {
+      "path": "lib/forge-std/src/StdJson.sol",
+      "sha256": "0211b47e93dbeb6a7de6112470a77137038ed73b79b015847f013e49fcd7511f",
+      "bytes": 9703
+    },
+    {
+      "path": "lib/forge-std/src/StdMath.sol",
+      "sha256": "f04fc0616741563eb32d66c11af7fdca55a7202221e14282268c7be851fc63ab",
+      "bytes": 1360
+    },
+    {
+      "path": "lib/forge-std/src/StdStorage.sol",
+      "sha256": "c6dbb05b29be5bcbfabf06ea46b64fe9fbdb7542681795614ca3dee248214215",
+      "bytes": 17841
+    },
+    {
+      "path": "lib/forge-std/src/StdStyle.sol",
+      "sha256": "324c2b0e100e88edbdb75f60f8a4c42f056f8d618ae5f56b1c404df64e8280a7",
+      "bytes": 10462
+    },
+    {
+      "path": "lib/forge-std/src/StdToml.sol",
+      "sha256": "de3fb35af79a1fd2a2de9bc4ca7866e4102f9d3fbf11f66f3fe82696412d47e2",
+      "bytes": 9703
+    },
+    {
+      "path": "lib/forge-std/src/StdUtils.sol",
+      "sha256": "c64a4d5023e6d46884734b8cb1b0f424bab26f0ccc920779b58d2f841c4506ae",
+      "bytes": 10024
+    },
+    {
+      "path": "lib/forge-std/src/Test.sol",
+      "sha256": "b1b48a4dfbd65fed186163326dc8870316679f64a195aa18050f83657d2df39c",
+      "bytes": 1095
+    },
+    {
+      "path": "lib/forge-std/src/Vm.sol",
+      "sha256": "9068805b59ac1d0ea03a8fa1f15ae49c094e0c6c852a2500e0dd112f264b2cb1",
+      "bytes": 125243
+    },
+    {
+      "path": "lib/forge-std/src/console.sol",
+      "sha256": "896c5a5a5c235cb11a39876d430e1fc2c621e7950c4637ca58251b84b053f178",
+      "bytes": 69270
+    },
+    {
+      "path": "lib/forge-std/src/console2.sol",
+      "sha256": "3bbe2e07ec53d8cf9c091667fe10234fcb3e2b45eab2c711002188806f46e779",
+      "bytes": 117
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC1155.sol",
+      "sha256": "d44fde880db31958113ed5b490ed30766f7843137947893506e35b161b959000",
+      "bytes": 7604
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC165.sol",
+      "sha256": "9bdab733bba2df028853aef1f5e06871fb4157d15c3c6a670be13f9b614c193b",
+      "bytes": 537
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC20.sol",
+      "sha256": "283cedb0cf82640370b77b8a42175bc417c69a02d8989ac6d6a99be2157acd4d",
+      "bytes": 2067
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC4626.sol",
+      "sha256": "6a5115bfcaba28ad7f11d1e3973718683f5bac596f0e567d0a1cd4d3308e98b7",
+      "bytes": 11980
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC6909.sol",
+      "sha256": "b42d2ff602839f784bbf1012e124c01e11784b5b08bc828fbc6b151d2477f517",
+      "bytes": 3481
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC721.sol",
+      "sha256": "f6383f58bcf3a0f34717ae4ed5866b78201fd646df2e5eb2b7234d2ea2466ae5",
+      "bytes": 9041
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC7540.sol",
+      "sha256": "c6a7854c86bf3772a996fd70fc11b84930b03f136e98fce6e8cc36534af1d6c1",
+      "bytes": 6611
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC7575.sol",
+      "sha256": "31c45af17a667da7fe1710097cdc1edb6dbae0665f12a361b8632a4be0ead219",
+      "bytes": 12603
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "sha256": "6620d9c5ea2e2291440e1dcce5072f948b7ec4d65075876a0d0ac9267d3342e3",
+      "bytes": 2185
+    },
+    {
+      "path": "lib/forge-std/src/safeconsole.sol",
+      "sha256": "ed11aa2efc83fa8e575215a11dd7a9be385cf49dacbc379630168d7334899e46",
+      "bytes": 427535
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1c813826e83bbb82268850fb50ac68cb9679915e6e1d3cc1d9c142b225174075",
+      "bytes": 29870
+    },
+    {
+      "path": "package.json",
+      "sha256": "553d359f03c4f10fea124b844aca0a304ef64cacb4ee650da9bf51bb49f25900",
+      "bytes": 1878
+    },
+    {
+      "path": "remappings.txt",
+      "sha256": "65df789f496828ff41be04385df871c9c89ead20a4544b38f301afd5e10a77bc",
+      "bytes": 264
+    },
+    {
+      "path": "schemas/order-envelope-v1.schema.json",
+      "sha256": "62c7d280c715a008a6ea866c0c66449fe52b8e0142e32298bdb7d206fd455277",
+      "bytes": 28563
+    },
+    {
+      "path": "script/DeployLocal.s.sol",
+      "sha256": "acaa278c44651946f04f0249cc708a4be22ed9429bb8b790501ce8ec6f4efbaa",
+      "bytes": 1884
+    },
+    {
+      "path": "scripts/archive.mjs",
+      "sha256": "8baaa88ec1d7c05baf6445ecba68b07fab9c0e97db3f33240f935beba21e317e",
+      "bytes": 2605
+    },
+    {
+      "path": "scripts/bootstrap.mjs",
+      "sha256": "281cdc241f22471ba9a53cb0c00d6a37b1af8c94c442bdd09f13194ee1a75f0a",
+      "bytes": 1912
+    },
+    {
+      "path": "scripts/build-seaport.mjs",
+      "sha256": "ccc067352661bf3855ebcb964532ee0f8f5a75288601646021768972a0d19c18",
+      "bytes": 2196
+    },
+    {
+      "path": "scripts/check-authorized-source.mjs",
+      "sha256": "f1bbcce0bfbab2684e20daccfceb1aac9f1042f6387b93a825006f9f5390be5c",
+      "bytes": 9216
+    },
+    {
+      "path": "scripts/configure-local.mjs",
+      "sha256": "45cd7cd47a794bfc7c088da30e815dbe7de63d09f2e96f70dba09761c7c8c207",
+      "bytes": 14662
+    },
+    {
+      "path": "scripts/export.mjs",
+      "sha256": "8a5a8ef22dad22b24d189f403a02024b0afbde6fde6311e885ccab54a8002044",
+      "bytes": 1421
+    },
+    {
+      "path": "scripts/forge.mjs",
+      "sha256": "ee1d192888975207a83cba98b9bac407e96714b87126bdec3ee2b3890f5b1a59",
+      "bytes": 1985
+    },
+    {
+      "path": "scripts/fork-connect.mjs",
+      "sha256": "c9dd4450524594d6275113cded80223fe50225d4fa437f3b91f3e0d261cca4f8",
+      "bytes": 3963
+    },
+    {
+      "path": "scripts/fork-create-order.mjs",
+      "sha256": "b9e63705cec3868b299bb7f3d049f979ecb9e822cc3bbc7228ecb52884b93246",
+      "bytes": 15786
+    },
+    {
+      "path": "scripts/fork-host.mjs",
+      "sha256": "2e8d76a90b06074a9b8edfb3f64375c3cbc13251aff7886d17e6f5459ff14262",
+      "bytes": 10471
+    },
+    {
+      "path": "scripts/fork-lan-common.mjs",
+      "sha256": "17417c10929bbc2b8a7ef4d1b6b238635a603c17e350a9fe85456222e7f8651a",
+      "bytes": 12849
+    },
+    {
+      "path": "scripts/fork-local.mjs",
+      "sha256": "76af97e1f6e05bdfa0f0c41defba2f60eb8f932769a3937b1e3231a0194c7ed0",
+      "bytes": 8503
+    },
+    {
+      "path": "scripts/fork-preflight.mjs",
+      "sha256": "2eaac5ea092d9cc34c06febad688dd0d8f4c6f40efb6093e90162924c0908278",
+      "bytes": 16037
+    },
+    {
+      "path": "scripts/fork-prepare.mjs",
+      "sha256": "a97d4c79fd2aa418f738bf205629d743f503782fe2a7cf5f37468314f2282745",
+      "bytes": 9132
+    },
+    {
+      "path": "scripts/local-smoke.mjs",
+      "sha256": "6dbe2e2ad743ff14dce1348a925ead8a7663b3977625ce68f2bf277a2bdb9c7c",
+      "bytes": 12670
+    },
+    {
+      "path": "scripts/probe-authorized-fork.mjs",
+      "sha256": "4ca6898768694b2ec1a55582c3d71d607f37f045e2cf5a78ea1e77e399bb7fb1",
+      "bytes": 5064
+    },
+    {
+      "path": "scripts/release-files.mjs",
+      "sha256": "d8b5d1f41a780ca80379b9ca211dff81d24bfafb3d17023c57008ccfdb8fb5ee",
+      "bytes": 1395
+    },
+    {
+      "path": "scripts/report.mjs",
+      "sha256": "422e08a518879a5a9efbc12a996839e1f26d54ddcc477e8300ed6ee11ca327b1",
+      "bytes": 14835
+    },
+    {
+      "path": "scripts/run-authorized-fork-tests.mjs",
+      "sha256": "bba3291fd2beb8cb47dc73ef3f45e2852a9b72c4e2e9631db1ef1c280c2f9c83",
+      "bytes": 28810
+    },
+    {
+      "path": "scripts/start-authorized-fork.mjs",
+      "sha256": "bcbd4b2afc3675023bc454deba59846dca7c23ae18c480a219c548bbc5b12d35",
+      "bytes": 1244
+    },
+    {
+      "path": "scripts/test-fork-lan.mjs",
+      "sha256": "353581163dc1a7b271b94be5df29d55742ac5c087474197cbd4046cf6faf9598",
+      "bytes": 12486
+    },
+    {
+      "path": "scripts/test-fork-local.mjs",
+      "sha256": "7056fdd470c31ca569a85dc9fa008731320dce775ca149f62bbde0c262a6d3bc",
+      "bytes": 9120
+    },
+    {
+      "path": "scripts/test-real-mining-settlement.mjs",
+      "sha256": "791f7b1f33512e1f122ad1e73e11027d52e756d96f75217f7da9e318b1c8412e",
+      "bytes": 17502
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "sha256": "331ef62a5585ea10db5ffc3dce1e8a758c1b690a87cc8ba4e60304ed51d0f44c",
+      "bytes": 2438
+    },
+    {
+      "path": "sdk/contracts.ts",
+      "sha256": "c0b287f9e8a01206a7c90388674a8a3fa54ee373e0906c53a2a2cf2673f56f86",
+      "bytes": 6364
+    },
+    {
+      "path": "sdk/execution.ts",
+      "sha256": "7d78a954f09bfd58d5cee54a2ac5d9e65b941ccf4f663026cf198bc92b4552a4",
+      "bytes": 10109
+    },
+    {
+      "path": "sdk/generate-abi-guide.ts",
+      "sha256": "64d51e04dcf9eb1def0759e7917cf7986cb769f78255d6bb6eec8caf401813c9",
+      "bytes": 11231
+    },
+    {
+      "path": "sdk/generate-order-artifacts.ts",
+      "sha256": "a5fe82a500e89418d52b74f20f6fb8c0c8ddd1c632f4ada7515d18ee5c15eeba",
+      "bytes": 5583
+    },
+    {
+      "path": "sdk/index.ts",
+      "sha256": "0a77da8403b973fb73a94d4a202cad885a259aa93cce961b4d463fb18b37fbbd",
+      "bytes": 240
+    },
+    {
+      "path": "sdk/live-identity.ts",
+      "sha256": "2579f8b7fd67ebd5fcdfd7dd55cdd4df4e4bd80a50f9205a06a0e8c593817c83",
+      "bytes": 11726
+    },
+    {
+      "path": "sdk/order-envelope.ts",
+      "sha256": "91410d8deac86da7a2efd47e1f1c8f2576c48b3ef70060a5ce7b78665fa01c95",
+      "bytes": 10569
+    },
+    {
+      "path": "sdk/order-source.ts",
+      "sha256": "870bb87d60fbc166045b445a23f42b9925a02fb0ecd4c29da6863562367b8c52",
+      "bytes": 3191
+    },
+    {
+      "path": "sdk/postconditions.ts",
+      "sha256": "0b1a1385b15d61e34ec2da1ce61a239d4e6bbb411670ecd2c40c65da7997e6b8",
+      "bytes": 11104
+    },
+    {
+      "path": "sdk/protocol.ts",
+      "sha256": "4479d016e0532753176816e765aacb215728b8093e99e48f12fe344deb5f1dc1",
+      "bytes": 4850
+    },
+    {
+      "path": "src/GovernanceTimelock.sol",
+      "sha256": "ae88c7a86cc1c74cc4b1008f85a2b41eb5bad41b8b56575521fd13057c1c0958",
+      "bytes": 1374
+    },
+    {
+      "path": "src/GroupBuyFactory.sol",
+      "sha256": "39fc74e2ca79c8fd7e76392961a64f518e819492cc3f118c0751f535e9edde54",
+      "bytes": 13015
+    },
+    {
+      "path": "src/GroupBuyVault.sol",
+      "sha256": "d7598d25a0a05f62e1262b0d53a647478f6db751f63a3c7b19b43031c058ea98",
+      "bytes": 19132
+    },
+    {
+      "path": "src/Types.sol",
+      "sha256": "3e3c63b1c12de583304989ec862478494de0d3a1d4a4a65fa0382a1f9f99fd8f",
+      "bytes": 2762
+    },
+    {
+      "path": "src/interfaces/IGroupBuyVault.sol",
+      "sha256": "c019e388bf01c232f4b63df2c7b31e2e215b889f5aa1b8a94b5bb2382fc876af",
+      "bytes": 643
+    },
+    {
+      "path": "src/interfaces/IProtocols.sol",
+      "sha256": "89ce165d115f905e232e5f692102bc8e423272341dfe7da0e7af2e3674afaed4",
+      "bytes": 1738
+    },
+    {
+      "path": "src/markets/MarketLogic.sol",
+      "sha256": "e0e2fbca914a489210f5142e2f32206461a9bbcf479ac406fdcd52ffe0d68f82",
+      "bytes": 9038
+    },
+    {
+      "path": "src/markets/MarketValidator.sol",
+      "sha256": "979607a038c4c54a1268184e82a74969256e675c847c1c3565f5c672410b603f",
+      "bytes": 603
+    },
+    {
+      "path": "tapeout-groupbuy-codex-prompt.md",
+      "sha256": "b5b92ba922404ade77ad9de4e160830e9ca1194119a61a99ddadec3c11a36187",
+      "bytes": 37834
+    },
+    {
+      "path": "test/fork/README.md",
+      "sha256": "78a82e3a26a971c00b9fa2d5b7c0f0381ae55e05915e66b98d9a958c3d7c9957",
+      "bytes": 3699
+    },
+    {
+      "path": "test/helpers/FactoryVersions.sol",
+      "sha256": "ecbbf26828d0d1c1a74bfd6f95d22f4556f20db29b5bc0b194d18a23d94f001f",
+      "bytes": 1350
+    },
+    {
+      "path": "test/helpers/Mocks.sol",
+      "sha256": "324bb6426b1ec936ffb89b514a6327766ee42d054505ddc1130f63c6465d07c1",
+      "bytes": 6327
+    },
+    {
+      "path": "test/helpers/TestBase.sol",
+      "sha256": "a9c2572c4783536f8661b434b014ff00ca0b237e03e0c8924cbfe3cb86aa9e7e",
+      "bytes": 5362
+    },
+    {
+      "path": "test/integration/RealSeaport.t.sol",
+      "sha256": "bac036bc9b2a8e9f5dca46de29f96037a015c5383b93e3641c14ebd84031fae7",
+      "bytes": 10269
+    },
+    {
+      "path": "test/invariant/Accounting.t.sol",
+      "sha256": "806339cd0efcb762cd94f9ef8b8b2c09f09d115d27231652e1c584f7aaa0ce32",
+      "bytes": 7551
+    },
+    {
+      "path": "test/sdk/configure-local.test.ts",
+      "sha256": "4cdbe5042cebcd7af1a778847bd6429df03ddded65ed1d073544794cb42f78db",
+      "bytes": 3999
+    },
+    {
+      "path": "test/sdk/execution-lan.test.ts",
+      "sha256": "41ee72c906ec16124ce075ed12456fc1bd945107b919377ef8c97422b5fc0516",
+      "bytes": 6303
+    },
+    {
+      "path": "test/sdk/fork-create-order.test.ts",
+      "sha256": "3ac684f127061278c5199074a7813263a6842df14f1e187a3ea678f638dc1d8d",
+      "bytes": 3277
+    },
+    {
+      "path": "test/sdk/fork-lan.test.ts",
+      "sha256": "e8834fb80532713af2a1110aab6d6c5413046df9e891cd0d2b39faa62b1d9056",
+      "bytes": 7639
+    },
+    {
+      "path": "test/sdk/fork-local.test.ts",
+      "sha256": "3dd188e5bdca19e28e492ff22caff86a9e8e8429e0a5b537424997550a37d5fb",
+      "bytes": 2130
+    },
+    {
+      "path": "test/sdk/fork-preflight.test.ts",
+      "sha256": "8906af22b609cc8f06a1fb590fedbe7348538b6b1b0347cd8c0b1acd9fa8edcc",
+      "bytes": 7019
+    },
+    {
+      "path": "test/sdk/fork-prepare.test.ts",
+      "sha256": "f3668bee34c0b39911da214a7cb024590ad089303c31838e39952fa0bc05c450",
+      "bytes": 3304
+    },
+    {
+      "path": "test/sdk/live-identity.test.ts",
+      "sha256": "a00dfbf7e94150d97ddd227edcf6f943588775d9ebe2f0aaf1d7a9e0ec7068ca",
+      "bytes": 7590
+    },
+    {
+      "path": "test/sdk/order-envelope.test.ts",
+      "sha256": "15870d21f0a84f4c8c6ddb41080e905a0115979af04a2cbee78b107f6f2d73af",
+      "bytes": 9882
+    },
+    {
+      "path": "test/sdk/postconditions.test.ts",
+      "sha256": "77966d29516a56ff6c46908a409b9cf9a7389dec064db8d89e1eddfa401d7c07",
+      "bytes": 4820
+    },
+    {
+      "path": "test/sdk/protocol.test.ts",
+      "sha256": "0cf4d6d04982392fc2aa9d9d7639dd04c7026a2849e58942797388d503fd3477",
+      "bytes": 5758
+    },
+    {
+      "path": "test/unit/FactoryClones.t.sol",
+      "sha256": "7da44117dd15b3603014eee1d8fb8a42131994329f7cb24172e0a210f39aee6c",
+      "bytes": 14646
+    },
+    {
+      "path": "test/unit/FactoryGovernance.t.sol",
+      "sha256": "403754d3baf1463fd4eed5bf718d2cbabe572d0aa85d78fba16814adf90883eb",
+      "bytes": 8779
+    },
+    {
+      "path": "test/unit/FundingRewards.t.sol",
+      "sha256": "441cc9c5283a5798c1bf32bb2e9fcd7e4fa1069dd0a4cb45854c049304a42388",
+      "bytes": 16312
+    },
+    {
+      "path": "test/unit/GasBench.t.sol",
+      "sha256": "cc421072e6811a546e1d308cb7858a5cd21762b8c2da0a18d83afc4015395e8d",
+      "bytes": 7223
+    },
+    {
+      "path": "test/unit/VaultEdge.t.sol",
+      "sha256": "08283e46a87e278f9655980ae2139844b6716673224985907d0eaa2508294b0d",
+      "bytes": 21947
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "5d1b725f5e1038b3ae7fc8bb974e4a0d3542fac1af0f902fb2619068a4cdb0f6",
+      "bytes": 346
+    }
+  ],
+  "dependencies": {
+    "name": "tapeout-groupbuy-v1",
+    "version": "1.0.0-candidate.1",
+    "private": true,
+    "type": "module",
+    "engines": {
+      "node": ">=20.19"
+    },
+    "scripts": {
+      "build": "node scripts/forge.mjs build",
+      "test": "node scripts/forge.mjs test",
+      "test:unit": "node scripts/forge.mjs test --match-path 'test/unit/*'",
+      "test:integration": "node scripts/forge.mjs test --match-path 'test/integration/*'",
+      "test:invariant": "node scripts/forge.mjs test --match-path 'test/invariant/*'",
+      "test:sdk": "node --import tsx --test test/sdk/*.test.ts",
+      "typecheck": "tsc --noEmit",
+      "cli": "node --import tsx cli/index.ts",
+      "export": "node scripts/export.mjs",
+      "report": "node scripts/report.mjs",
+      "archive": "node scripts/archive.mjs",
+      "verify": "node scripts/verify.mjs",
+      "build:seaport": "node scripts/build-seaport.mjs",
+      "test:local": "node scripts/local-smoke.mjs",
+      "test:fork-lan": "node scripts/test-fork-lan.mjs",
+      "test:fork-local": "node scripts/test-fork-local.mjs",
+      "fork:local": "node scripts/fork-local.mjs",
+      "fork:host": "node scripts/fork-host.mjs",
+      "fork:connect": "node scripts/fork-connect.mjs",
+      "fork:preflight": "node --import tsx scripts/fork-preflight.mjs",
+      "fork:prepare": "node --import tsx scripts/fork-prepare.mjs",
+      "fork:create-order": "node --import tsx scripts/fork-create-order.mjs",
+      "test:fork-real": "node --import tsx scripts/run-authorized-fork-tests.mjs"
+    },
+    "dependencies": {
+      "@openzeppelin/contracts": "5.4.0",
+      "@openzeppelin/contracts-upgradeable": "5.4.0",
+      "seaport-core": "1.5.0",
+      "seaport-types": "0.0.1",
+      "viem": "2.57.2",
+      "zod": "3.24.2"
+    },
+    "devDependencies": {
+      "@types/node": "22.13.4",
+      "solc-seaport": "npm:solc@0.8.17",
+      "tsx": "4.19.3",
+      "typescript": "5.7.3"
+    },
+    "overrides": {
+      "tmp": "0.2.7"
+    }
+  },
+  "lockSHA256": "1c813826e83bbb82268850fb50ac68cb9679915e6e1d3cc1d9c142b225174075",
+  "compiler": {
+    "compiler": "0.8.24",
+    "evmVersion": "paris",
+    "optimizerRuns": 200,
+    "viaIR": true,
+    "contracts": [
+      {
+        "name": "GroupBuyVault",
+        "runtimeBytes": 24167,
+        "creationBytes": 32184,
+        "runtimeArtifactHash": "0x082155e59b0f44d40258be5aeb9454dace9ef3dbbc512d7c57cc475d5b22a98a",
+        "immutableReferences": {
+          "54828": [
+            {
+              "start": 6916,
+              "length": 32
+            }
+          ],
+          "54831": [
+            {
+              "start": 5123,
+              "length": 32
+            },
+            {
+              "start": 6381,
+              "length": 32
+            },
+            {
+              "start": 13575,
+              "length": 32
+            }
+          ]
+        },
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      },
+      {
+        "name": "GroupBuyFactory",
+        "runtimeBytes": 10333,
+        "creationBytes": 10543,
+        "runtimeArtifactHash": "0x6ec653b2d64c981f6f8841f7f939d25b88bd409def9a93d569489d0da61c896d",
+        "immutableReferences": {
+          "39647": [
+            {
+              "start": 5676,
+              "length": 32
+            },
+            {
+              "start": 5861,
+              "length": 32
+            }
+          ]
+        },
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      },
+      {
+        "name": "GovernanceTimelock",
+        "runtimeBytes": 5663,
+        "creationBytes": 7032,
+        "runtimeArtifactHash": "0x1e175c7a3c55e64d48283e9220734e7b2468f1a884d0fe535b52a5c05aa6accb",
+        "immutableReferences": {
+          "53422": [
+            {
+              "start": 2128,
+              "length": 32
+            },
+            {
+              "start": 4620,
+              "length": 32
+            }
+          ],
+          "53424": [
+            {
+              "start": 1154,
+              "length": 32
+            }
+          ]
+        },
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      },
+      {
+        "name": "MarketValidator",
+        "runtimeBytes": 7681,
+        "creationBytes": 7709,
+        "runtimeArtifactHash": "0x38b59c524567e54481c0119746a29f744dd3d804b85f0032c67c6a4918959d8c",
+        "immutableReferences": {},
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      }
+    ]
+  },
+  "templateVersion": 1,
+  "factoryVersion": 1,
+  "phase": 1,
+  "productionReady": false,
+  "archive": {
+    "path": "artifacts/tapeout-groupbuy-v1-source.tar.gz",
+    "sha256": "4508fc6b367ab0335b50e0f092229f156e90c4efe2f0cadc2e460f9e323a27d5",
+    "note": "Outer manifest is finalized after archive; embedded manifest cannot contain its own archive hash.",
+    "bytes": 2959978,
+    "fileCount": 479
+  }
+}

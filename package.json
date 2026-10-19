@@ -1,0 +1,51 @@
+{
+  "name": "tapeout-groupbuy-v1",
+  "version": "1.0.0-candidate.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build": "node scripts/forge.mjs build",
+    "test": "node scripts/forge.mjs test",
+    "test:unit": "node scripts/forge.mjs test --match-path 'test/unit/*'",
+    "test:integration": "node scripts/forge.mjs test --match-path 'test/integration/*'",
+    "test:invariant": "node scripts/forge.mjs test --match-path 'test/invariant/*'",
+    "test:sdk": "node --import tsx --test test/sdk/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "cli": "node --import tsx cli/index.ts",
+    "export": "node scripts/export.mjs",
+    "report": "node scripts/report.mjs",
+    "archive": "node scripts/archive.mjs",
+    "verify": "node scripts/verify.mjs",
+    "build:seaport": "node scripts/build-seaport.mjs",
+    "test:local": "node scripts/local-smoke.mjs",
+    "test:fork-lan": "node scripts/test-fork-lan.mjs",
+    "test:fork-local": "node scripts/test-fork-local.mjs",
+    "fork:local": "node scripts/fork-local.mjs",
+    "fork:host": "node scripts/fork-host.mjs",
+    "fork:connect": "node scripts/fork-connect.mjs",
+    "fork:preflight": "node --import tsx scripts/fork-preflight.mjs",
+    "fork:prepare": "node --import tsx scripts/fork-prepare.mjs",
+    "fork:create-order": "node --import tsx scripts/fork-create-order.mjs",
+    "test:fork-real": "node --import tsx scripts/run-authorized-fork-tests.mjs"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "@openzeppelin/contracts-upgradeable": "5.4.0",
+    "seaport-core": "1.5.0",
+    "seaport-types": "0.0.1",
+    "viem": "2.57.2",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.4",
+    "solc-seaport": "npm:solc@0.8.17",
+    "tsx": "4.19.3",
+    "typescript": "5.7.3"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "compiler": "0.8.24",
+  "evmVersion": "paris",
+  "optimizerRuns": 200,
+  "viaIR": true,
+  "contracts": [
+    {
+      "name": "GroupBuyVault",
+      "runtimeBytes": 24167,
+      "creationBytes": 32184,
+      "runtimeArtifactHash": "0x082155e59b0f44d40258be5aeb9454dace9ef3dbbc512d7c57cc475d5b22a98a",
+      "immutableReferences": {
+        "54828": [
+          {
+            "start": 6916,
+            "length": 32
+          }
+        ],
+        "54831": [
+          {
+            "start": 5123,
+            "length": 32
+          },
+          {
+            "start": 6381,
+            "length": 32
+          },
+          {
+            "start": 13575,
+            "length": 32
+          }
+        ]
+      },
+      "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+    },
+    {
+      "name": "GroupBuyFactory",
+      "runtimeBytes": 10333,
+      "creationBytes": 10543,
+      "runtimeArtifactHash": "0x6ec653b2d64c981f6f8841f7f939d25b88bd409def9a93d569489d0da61c896d",
+      "immutableReferences": {
+        "39647": [
+          {
+            "start": 5676,
+            "length": 32
+          },
+          {
+            "start": 5861,
+            "length": 32
+          }
+        ]
+      },
+      "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+    },
+    {
+      "name": "GovernanceTimelock",
+      "runtimeBytes": 5663,
+      "creationBytes": 7032,
+      "runtimeArtifactHash": "0x1e175c7a3c55e64d48283e9220734e7b2468f1a884d0fe535b52a5c05aa6accb",
+      "immutableReferences": {
+        "53422": [
+          {
+            "start": 2128,
+            "length": 32
+          },
+          {
+            "start": 4620,
+            "length": 32
+          }
+        ],
+        "53424": [
+          {
+            "start": 1154,
+            "length": 32
+          }
+        ]
+      },
+      "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+    },
+    {
+      "name": "MarketValidator",
+      "runtimeBytes": 7681,
+      "creationBytes": 7709,
+      "runtimeArtifactHash": "0x38b59c524567e54481c0119746a29f744dd3d804b85f0032c67c6a4918959d8c",
+      "immutableReferences": {},
+      "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+    }
+  ]
+}

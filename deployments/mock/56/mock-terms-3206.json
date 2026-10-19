@@ -1,0 +1,11 @@
+{
+  "scope": "LOCAL_MOCK_ONLY",
+  "seller": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+  "tokenId": "3206",
+  "totalPrice": "100000057",
+  "deadline": "1792414879",
+  "listingId": "3206",
+  "feeBps": 100,
+  "name": "tapeout3206",
+  "metadataURI": "ipfs://local/3204/{id}.json"
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "scope": "ONLY_TRANSPORT_MOCK_UPSTREAM",
+  "status": "PASS",
+  "generatedAt": "2026-10-19T12:52:20.513Z",
+  "actualBSCForkExecuted": false,
+  "sourceRpcWritesAfterFixtureInitialization": 0,
+  "sourceBoundary": "READ_ONLY_PROXY_ONLY_AFTER_LOCAL_FIXTURE_SETUP",
+  "localMockSourceFixtureWrites": [
+    {
+      "method": "evm_mine",
+      "count": 1
+    }
+  ],
+  "verificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+  "mainnetTransactions": 0,
+  "openedLANListener": false,
+  "checks": [
+    {
+      "name": "mock_source_started",
+      "status": "PASS"
+    },
+    {
+      "name": "token_permissions",
+      "status": "PASS"
+    },
+    {
+      "name": "gateway_session",
+      "status": "PASS"
+    },
+    {
+      "name": "nodeinfo_redaction",
+      "status": "PASS"
+    },
+    {
+      "name": "auth_rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "session_rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "socket_ip_rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "origin_rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_eth_sendRawTransaction",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_eth_sign",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_anvil_setCode",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_anvil_setStorageAt",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_anvil_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_anvil_loadState",
+      "status": "PASS"
+    },
+    {
+      "name": "sender_rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "relay_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_transaction_mined",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_balance_changed",
+      "status": "PASS"
+    },
+    {
+      "name": "source_block_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "source_balance_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_block_advanced",
+      "status": "PASS"
+    },
+    {
+      "name": "snapshot_revert",
+      "status": "PASS"
+    },
+    {
+      "name": "relay_raw_send_rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "batch_prevalidation",
+      "status": "PASS"
+    },
+    {
+      "name": "cli_deploy_local_via_relay",
+      "status": "PASS"
+    },
+    {
+      "name": "source_unchanged_after_cli_deploy",
+      "status": "PASS"
+    },
+    {
+      "name": "gateway_port_closed",
+      "status": "PASS"
+    },
+    {
+      "name": "relay_port_closed",
+      "status": "PASS"
+    },
+    {
+      "name": "anvil_internal_port_closed",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_hash_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "nativeAnvilMetadata": {
+    "version": "anvil/v1.4.3",
+    "forkConfigKeys": [
+      "forkUrl",
+      "forkBlockNumber",
+      "forkRetryBackoff"
+    ],
+    "forkBlockNumber": 1,
+    "forkBlockHashPresent": false,
+    "environmentChainId": 56,
+    "forkHashEvidence": "GATEWAY_VERIFIES_ACTUAL_ETH_GET_BLOCK_BY_NUMBER_HASH"
+  }
+}

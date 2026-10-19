@@ -1,0 +1,67 @@
+{
+  "status": "LOCAL_CONFIGURED",
+  "localOnly": true,
+  "productionReady": false,
+  "transactions": [
+    {
+      "operation": "scheduleBatch",
+      "hash": "0x22e77f9996202fa09edf7dd1cc376823b709e4f4463c739946ace0a36b575a20",
+      "status": "success",
+      "blockNumber": "128554256",
+      "blockHash": "0x56301c4761c77ccf4269fda5db20fc5a9aebc6e2492d592ad6a55f41cd95467b",
+      "gasUsed": "85602"
+    },
+    {
+      "operation": "executeBatch",
+      "hash": "0x7e962a7f026c884c8cfa681340d29687f75fda7a032a53ae80feaa67813dbcb2",
+      "status": "success",
+      "blockNumber": "128554258",
+      "blockHash": "0xc4728fcfa1d75a8830e01da9f015dee5e45edfbb9fcf5fde971cd8b9d9a0442c",
+      "gasUsed": "413011"
+    }
+  ],
+  "mode": "fork",
+  "chainId": 56,
+  "checkpoint": {
+    "number": "128554255",
+    "hash": "0x4afe5984b3291dcbefde13ef0070e73c8670de612fe46486dc1bdc231b660683"
+  },
+  "execution": {
+    "mode": "fork",
+    "chainId": 56,
+    "local": true,
+    "forkStatus": "PINNED_LOCAL_FORK",
+    "forkBlockNumber": "128554249",
+    "forkBlockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+  },
+  "factory": "0x4c680b72d3561d7649e3df85e78fb588fcff9db1",
+  "template": "0x91dda15869d9a9261799ebfa1126cf9dfac0d43a",
+  "timelock": "0x02f453192530e07541e61b43da079273f410979b",
+  "from": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+  "guardian": "0x63979C9d5200A5080be93eb440D469d2F2ec6682",
+  "configFile": "fixtures/fork-authorized-3204-1792414018906.config.json",
+  "configHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+  "templateCodeHash": "0xbd048645bfc14c772c190fa5d532e883ba0bf58fe8bef3e4b94894ce3b7f3559",
+  "minimumDelay": "1",
+  "minimumDelayFloor": "1",
+  "operationId": "0x8283d468d2e7f696411712fa1cd61613f64c6b0768f5bdc944586fd8c3cc9c86",
+  "salt": "0x162e79ed2dbc3f2699d5bf863b73c83130365562eb44ed2c745483874ad84b17",
+  "operationState": 0,
+  "actions": [
+    "approveTemplate",
+    "approveConfig",
+    "selectConfiguration",
+    "resumeCreation"
+  ],
+  "note": "Only verified local Anvil is used. Advancing local time may expire an order; recheck the fixed order after governance. Interface checks do not certify production governance bytecode or multisig roles.",
+  "scheduleSimulation": "PASS",
+  "localTimeAdvancedSeconds": "2",
+  "after": {
+    "blockNumber": "128554258",
+    "selectedTemplate": "0x91Dda15869D9A9261799ebFA1126Cf9DFaC0D43a",
+    "selectedConfigHash": "0x9469c79d863bbdd7831478b42a27714454375c25ed63199875cc87891374bd7a",
+    "creationPaused": false,
+    "templateApproved": true,
+    "configurationApproved": true
+  }
+}

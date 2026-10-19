@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 1,
+  "status": "READ_ONLY_IDENTITY_REVIEW_COMPLETED_WITH_UNKNOWNS",
+  "blockNumber": "128554249",
+  "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+  "transport": "LOCAL_READ_ONLY_SOURCE_PROXY",
+  "sourceCredentialsRead": false,
+  "transactionsSent": 0,
+  "results": [
+    {
+      "field": "collection",
+      "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "bytes": 295,
+      "codeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+      "smallRuntimeCode": "0x60806040819052635c60da1b60e01b81526020816004817f000000000000000000000000f8d6d8eb894d6971c8976ad8b4971cbefe0281566001600160a01b03165afa90811560a6575f916053575b5060d5565b905060203d60201160a0575b601f8101601f191682019167ffffffffffffffff831181841017608c576087926040520160b1565b5f604e565b634e487b7160e01b5f52604160045260245ffd5b503d605f565b6040513d5f823e3d90fd5b602090607f19011260d1576080516001600160a01b038116810360d15790565b5f80fd5b5f8091368280378136915af43d5f803e1560ed573d5ff35b3d5ffdfea2646970667358221220c2e8270f3a3f13f5fd821ce105141f9eef95453fdd7c6180fa1237b10fa7235664736f6c63430008180033",
+      "storage": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x000000000000000000000000f8d6d8eb894d6971c8976ad8b4971cbefe028156"
+      },
+      "getters": {
+        "implementation": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "owner": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "isSealed": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "paused": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "minter": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "decimals": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        }
+      }
+    },
+    {
+      "field": "mining",
+      "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "bytes": 130,
+      "codeHash": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce",
+      "smallRuntimeCode": "0x60806040527f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc545f9081906001600160a01b0316368280378136915af43d5f803e156048573d5ff35b3d5ffdfea2646970667358221220488679945504be8ff8f387239f290c969a3241f8b64e4cb13325201f62d8d58b64736f6c63430008180033",
+      "storage": {
+        "implementation": "0x000000000000000000000000a3dbe873da37cd4e4a13c7cef23a7db6ca60f898",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "getters": {
+        "implementation": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "owner": {
+          "status": "READ_OK",
+          "value": "0x0000000000000000000000000000000000000000"
+        },
+        "isSealed": {
+          "status": "READ_OK",
+          "value": true
+        },
+        "paused": {
+          "status": "READ_OK",
+          "value": false
+        },
+        "minter": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "decimals": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        }
+      }
+    },
+    {
+      "field": "bem",
+      "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+      "bytes": 2205,
+      "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344",
+      "storage": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "getters": {
+        "implementation": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "owner": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "isSealed": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "paused": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "minter": {
+          "status": "READ_OK",
+          "value": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46"
+        },
+        "decimals": {
+          "status": "READ_OK",
+          "value": 8
+        }
+      }
+    },
+    {
+      "field": "market",
+      "address": "0x0000000000000068F116a894984e2DB1123eB395",
+      "bytes": 23981,
+      "codeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+      "storage": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "getters": {
+        "implementation": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "owner": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "isSealed": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "paused": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "minter": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        },
+        "decimals": {
+          "status": "NOT_AVAILABLE_OR_REVERTED"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "These observations are pinned to BSC block 128554249 and do not establish current or future protocol state.",
+    "Getter results and application ABI signatures are not a complete source semantic audit.",
+    "Zero EIP1967 slots alone do not prove absence of a custom proxy.",
+    "Mining owner()==0 and isSealed()==true are observed state, not independent proof of absence of all upgrade or privileged paths.",
+    "This review sent zero transactions. Any separate local-fork lifecycle receipt proves only its exact observed path and must be cited separately.",
+    "No mainnet transaction, market/database write, source RPC credential read, or signing key use was performed by this review."
+  ],
+  "resolvedReferences": [
+    {
+      "field": "collectionBeacon",
+      "address": "0xf8d6d8eb894d6971c8976ad8b4971cbefe028156",
+      "bytes": 619,
+      "codeHash": "0x964014cd563c5bc62e1f8a3b2995969d6385f25da1e4efa353a01a62e0b75cca",
+      "metadataIPFS": "QmZQYCFkBDRHB37k9ZiWKemT2BYP1SZvFPSPJmg33B41Bp"
+    },
+    {
+      "field": "collectionImplementation",
+      "address": "0x8E1D125Def6d3826C278299273a0760D47626068",
+      "bytes": 12560,
+      "codeHash": "0x2ea433839e23b3773b7880d6f1807affb0f648ae98760b9a3b6394879665c345",
+      "metadataIPFS": "QmVo93VCkGh5ePSV2qcMukjJzkacTSgfPMeYXvctzBPCiG"
+    },
+    {
+      "field": "miningImplementation",
+      "address": "0xa3dbe873da37cd4e4a13c7cef23a7db6ca60f898",
+      "bytes": 24574,
+      "codeHash": "0x63b1124d3448fdeb28b163c52142e15a7a464d7ae7d817e51f6c242b62424479",
+      "metadataIPFS": "QmQ5utAzxYyU5yXN7QqkFn3pjAatiJB1Yi5CZwMmHchUuq"
+    },
+    {
+      "field": "bem",
+      "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+      "bytes": 2205,
+      "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344",
+      "metadataIPFS": "QmRVuR4snZHCRcTNSts1ky6K6JkCBHaR3SqzN5VHS9ACqA"
+    }
+  ],
+  "seaportVerifiedSource": {
+    "url": "https://sourcify.dev/server/v2/contract/56/0x0000000000000068F116a894984e2DB1123eB395?fields=all",
+    "httpStatus": 200,
+    "runtimeMatch": "match",
+    "creationMatch": "match",
+    "verifiedAt": "2026-05-15T22:35:26Z",
+    "proxyResolution": {
+      "isProxy": false,
+      "proxyType": null,
+      "implementations": []
+    },
+    "compilation": {
+      "language": "Solidity",
+      "compiler": "solc",
+      "compilerVersion": "0.8.24+commit.e11b9ed9",
+      "compilerSettings": {
+        "viaIR": true,
+        "metadata": {
+          "bytecodeHash": "none"
+        },
+        "libraries": {},
+        "optimizer": {
+          "runs": 9999999,
+          "enabled": true
+        },
+        "evmVersion": "cancun",
+        "remappings": [
+          ":seaport-types/=lib/seaport-types/"
+        ]
+      },
+      "name": "Seaport",
+      "fullyQualifiedName": "src/Seaport.sol:Seaport"
+    },
+    "runtimeFields": [
+      "onchainBytecode",
+      "recompiledBytecode",
+      "sourceMap",
+      "linkReferences",
+      "cborAuxdata",
+      "immutableReferences",
+      "transformations",
+      "transformationValues"
+    ],
+    "sources": [
+      "src/Seaport.sol",
+      "src/lib/Executor.sol",
+      "src/lib/Verifiers.sol",
+      "src/lib/Assertions.sol",
+      "src/lib/AmountDeriver.sol",
+      "src/lib/Consideration.sol",
+      "src/lib/OrderCombiner.sol",
+      "src/lib/CounterManager.sol",
+      "src/lib/OrderFulfiller.sol",
+      "src/lib/OrderValidator.sol",
+      "src/lib/LowLevelHelpers.sol",
+      "src/lib/ReentrancyGuard.sol",
+      "src/lib/ZoneInteraction.sol",
+      "src/lib/TokenTransferrer.sol",
+      "src/lib/ConsiderationBase.sol",
+      "src/lib/CriteriaResolution.sol",
+      "src/lib/FulfillmentApplier.sol",
+      "src/lib/GettersAndDerivers.sol",
+      "src/lib/BasicOrderFulfiller.sol",
+      "src/lib/ConsiderationDecoder.sol",
+      "src/lib/ConsiderationEncoder.sol",
+      "src/lib/SignatureVerification.sol",
+      "lib/seaport-types/src/lib/ConsiderationEnums.sol",
+      "lib/seaport-types/src/lib/ConsiderationErrors.sol",
+      "lib/seaport-types/src/conduit/lib/ConduitEnums.sol",
+      "lib/seaport-types/src/helpers/PointerLibraries.sol",
+      "lib/seaport-types/src/lib/ConsiderationStructs.sol",
+      "lib/seaport-types/src/conduit/lib/ConduitStructs.sol",
+      "lib/seaport-types/src/lib/ConsiderationConstants.sol",
+      "lib/seaport-types/src/interfaces/ConduitInterface.sol",
+      "lib/seaport-types/src/interfaces/ReentrancyErrors.sol",
+      "lib/seaport-types/src/lib/TokenTransferrerConstants.sol",
+      "lib/seaport-types/src/lib/ConsiderationErrorConstants.sol",
+      "lib/seaport-types/src/interfaces/ZoneInteractionErrors.sol",
+      "lib/seaport-types/src/interfaces/AmountDerivationErrors.sol",
+      "lib/seaport-types/src/interfaces/ConsiderationInterface.sol",
+      "lib/seaport-types/src/interfaces/TokenTransferrerErrors.sol",
+      "lib/seaport-types/src/interfaces/CriteriaResolutionErrors.sol",
+      "lib/seaport-types/src/interfaces/ConduitControllerInterface.sol",
+      "lib/seaport-types/src/interfaces/SignatureVerificationErrors.sol",
+      "lib/seaport-types/src/interfaces/ConsiderationEventsAndErrors.sol",
+      "lib/seaport-types/src/interfaces/FulfillmentApplicationErrors.sol",
+      "seaport-types/src/conduit/lib/ConduitEnums.sol",
+      "seaport-types/src/conduit/lib/ConduitStructs.sol",
+      "seaport-types/src/helpers/PointerLibraries.sol",
+      "seaport-types/src/interfaces/AmountDerivationErrors.sol",
+      "seaport-types/src/interfaces/ConduitControllerInterface.sol",
+      "seaport-types/src/interfaces/ConduitInterface.sol",
+      "seaport-types/src/interfaces/ConsiderationEventsAndErrors.sol",
+      "seaport-types/src/interfaces/ConsiderationInterface.sol",
+      "seaport-types/src/interfaces/CriteriaResolutionErrors.sol",
+      "seaport-types/src/interfaces/FulfillmentApplicationErrors.sol",
+      "seaport-types/src/interfaces/ReentrancyErrors.sol",
+      "seaport-types/src/interfaces/SignatureVerificationErrors.sol",
+      "seaport-types/src/interfaces/TokenTransferrerErrors.sol",
+      "seaport-types/src/interfaces/ZoneInteractionErrors.sol",
+      "seaport-types/src/lib/ConsiderationConstants.sol",
+      "seaport-types/src/lib/ConsiderationEnums.sol",
+      "seaport-types/src/lib/ConsiderationErrorConstants.sol",
+      "seaport-types/src/lib/ConsiderationErrors.sol",
+      "seaport-types/src/lib/ConsiderationStructs.sol",
+      "seaport-types/src/lib/TokenTransferrerConstants.sol"
+    ],
+    "bytecodeHashes": {
+      "onchainBytecode": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+      "recompiledBytecode": "0x5e28ee299328fa1e92f53ac4f6b90bab00d16db6bf0a42dd28c379f9274219cc"
+    },
+    "onchainBytecodeMatchesPinnedRPC": true,
+    "verificationInterpretation": "Sourcify runtimeMatch with immutable transformations; raw recompiled bytecode hash differs and is not claimed identical"
+  },
+  "chainId": 56,
+  "completedAt": "2026-10-19T12:39:02.588Z",
+  "scope": "Fixed-block protocol identity and publicly available source evidence; no transaction or complete semantic audit",
+  "primaryReferences": [
+    {
+      "kind": "OFFICIAL_TAPEOUT_CONFIGURATION",
+      "url": "https://tapeout.net/pod/pod-mainnet.json",
+      "httpStatus": 200,
+      "observed": {
+        "chainId": 56,
+        "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+        "mining": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+        "bem": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a"
+      }
+    },
+    {
+      "kind": "OFFICIAL_TAPEOUT_APP_ABI",
+      "url": "https://tapeout.net/pod/assets/main-C1q9aWV9.js",
+      "httpStatus": 200,
+      "observedSignatures": [
+        "minerKey(address,uint256)",
+        "getMiner(bytes32)",
+        "pending(bytes32)",
+        "claim(bytes32)",
+        "claimMany(bytes32[])"
+      ],
+      "scope": "Application ABI evidence only; not source-level proof of authorization or recipient semantics"
+    },
+    {
+      "kind": "OFFICIAL_SEAPORT_DEPLOYMENT_TABLE",
+      "url": "https://github.com/ProjectOpenSea/seaport/blob/main/docs/Deployment.md",
+      "observed": {
+        "version": "1.6",
+        "address": "0x0000000000000068F116a894984e2DB1123eB395"
+      }
+    },
+    {
+      "kind": "VERIFIED_SEAPORT_SOURCE",
+      "url": "https://sourcify.dev/server/v2/contract/56/0x0000000000000068F116a894984e2DB1123eB395?fields=all",
+      "httpStatus": 200
+    }
+  ],
+  "pinnedProtocolReads": {
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "tokenId": "3204",
+    "nftOwner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "minerKey": "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+    "pendingRaw": "13532613",
+    "bemDecimals": 8,
+    "seaport": {
+      "version": "1.6",
+      "domainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb",
+      "conduitController": "0x00000000F9490004C11Cef243f5400493c00Ad63"
+    },
+    "evidenceFile": "reports/authorized-source-observation.json"
+  },
+  "conclusions": {
+    "seaport": {
+      "status": "VERIFIED_IDENTITY_AND_SOURCE_RECORD",
+      "version": "1.6",
+      "proxy": false,
+      "sourceRuntimeHashMatchesPinnedRPC": true
+    },
+    "collection": {
+      "status": "BEACON_PROXY_RUNTIME_OBSERVED",
+      "beacon": "0xf8d6d8eb894d6971c8976ad8b4971cbefe028156",
+      "implementation": "0x8E1D125Def6d3826C278299273a0760D47626068",
+      "upgradeAuthority": "UNKNOWN",
+      "completeSourceSemantics": "UNKNOWN"
+    },
+    "mining": {
+      "status": "ERC1967_IMPLEMENTATION_PROXY_RUNTIME_OBSERVED",
+      "isERC1167Clone": false,
+      "implementation": "0xa3dbe873da37cd4e4a13c7cef23a7db6ca60f898",
+      "owner": "0x0000000000000000000000000000000000000000",
+      "isSealed": true,
+      "paused": false,
+      "completeUpgradePathAudit": "UNKNOWN",
+      "minerKeyObservedForConfiguredNFT": "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+      "pendingObservedRaw": "13532613",
+      "claimCallerPermissionAllPaths": "UNKNOWN",
+      "claimRecipientAllPaths": "UNKNOWN",
+      "pendingFormulaAndTimingAllPaths": "UNKNOWN",
+      "pendingZeroImpliesNothingToSettle": false,
+      "pendingZeroPositiveSettlementEvidence": "Direct Mining claim and post-fix Vault harvest both observed positive actual inflow; complete internal accounting mechanism remains UNKNOWN"
+    },
+    "bem": {
+      "status": "READ_GETTERS_AND_CODE_OBSERVED",
+      "decimals": 8,
+      "minter": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "feeOnTransferAllPaths": "UNKNOWN",
+      "rebaseAllPaths": "UNKNOWN",
+      "customProxyOrUpgradeAbsenceSourceAudit": "UNKNOWN"
+    }
+  },
+  "sourceRetrievalLimitations": [
+    {
+      "kind": "BSCSCAN_VERIFIED_SOURCE_PAGES",
+      "status": "HTTP_403_CHALLENGE",
+      "meaning": "Source content was not acquired; not evidence that the contracts are unverified"
+    },
+    {
+      "kind": "SOURCIFY_MINING_PROXY_MINING_IMPLEMENTATION_BEM",
+      "status": "HTTP_404_MATCH_NULL",
+      "addresses": [
+        "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+        "0xa3dbe873da37cd4e4a13c7cef23a7db6ca60f898",
+        "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a"
+      ],
+      "meaning": "No matching verification returned by this queried service"
+    },
+    {
+      "kind": "COMPILER_METADATA_IPFS",
+      "status": "HTTP_429_GATEWAY_SERVICE_WORKER_TRANSITION",
+      "gateways": [
+        "https://ipfs.io/ipfs/",
+        "https://dweb.link/ipfs/"
+      ],
+      "cids": [
+        "QmQ5utAzxYyU5yXN7QqkFn3pjAatiJB1Yi5CZwMmHchUuq",
+        "QmRVuR4snZHCRcTNSts1ky6K6JkCBHaR3SqzN5VHS9ACqA"
+      ],
+      "meaning": "Metadata source contents were not acquired; no broader claim about availability"
+    }
+  ],
+  "separateForkPathEvidence": {
+    "reportFile": "reports/real-bsc-fork-tests.json",
+    "scope": "REAL_BSC_STATE_LOCAL_FORK_ONLY",
+    "status": "PASS",
+    "sourcePin": {
+      "chainId": 56,
+      "blockNumber": "128554249",
+      "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+    },
+    "scenarioCount": 23,
+    "localTransactionCount": 25,
+    "mainnetTransactionsSent": 0,
+    "sourceRPCWrites": 0,
+    "sourceCodeAndProtocolStoragePatched": false,
+    "orderOrigin": "fork-created",
+    "publicSignature": "0x",
+    "scopeLimitation": "Observed compatibility of the executed local-fork paths only; does not resolve complete Mining/BEM semantic audit unknowns",
+    "selectedScenarios": [
+      {
+        "name": "purchase-real-miner",
+        "status": "PASS",
+        "sellerReceivedWei": "300000000000000000",
+        "feeRecipientReceivedWei": "3000000000000000"
+      },
+      {
+        "name": "harvest-real-bem",
+        "status": "PASS",
+        "actualVaultInflowRaw": "13533093",
+        "perShareAccruedRaw": "135330",
+        "dustRaw": "93"
+      },
+      {
+        "name": "a-claim-b-retains",
+        "status": "PASS",
+        "aReceivedRaw": "5954520",
+        "bReceivedRaw": "0",
+        "id1ClaimableRaw": "135330",
+        "bPerShareClaimableRaw": "135330"
+      },
+      {
+        "name": "b-claim-retain-id1",
+        "status": "PASS",
+        "bReceivedRaw": "7443150",
+        "id1UnclaimedRaw": "135330"
+      },
+      {
+        "name": "transfer-accrued-id1",
+        "status": "PASS",
+        "movedEntitlementRaw": "135330"
+      },
+      {
+        "name": "old-holder-rejected",
+        "status": "PASS",
+        "simulationOnly": true,
+        "transactionsSent": 0,
+        "expectedError": "NotHolder",
+        "observedError": "NotHolder"
+      },
+      {
+        "name": "new-holder-claim",
+        "status": "PASS",
+        "newHolderReceivedRaw": "135330"
+      },
+      {
+        "name": "prepare-positive-redemption-balance",
+        "status": "PASS",
+        "timeAdvancedOnlyInForkSeconds": 3600,
+        "pendingBeforeRaw": "0",
+        "actualNewVaultInflowRaw": "37601",
+        "positiveVaultBalanceRaw": "37694"
+      },
+      {
+        "name": "normal-redeem-later-reverted",
+        "status": "PASS",
+        "aReceivedRaw": "37694",
+        "laterReverted": true,
+        "receiptStatus": "VALID_IN_THIS_SNAPSHOT_BRANCH_ONLY"
+      },
+      {
+        "name": "without-harvest-final-branch",
+        "status": "PASS",
+        "aResidualReceivedRaw": "37694",
+        "bemTransferEventsDuringMinerExit": 0,
+        "realDependencyFaultsInjected": false
+      }
+    ],
+    "selectedReceipts": [
+      {
+        "label": "harvest",
+        "branch": "main",
+        "transactionHash": "0x85f2e4a2c0aa5c921f1bfd85180b4b49a3e6d4470c5385bc1fca392537594c6c",
+        "blockNumber": "128554264",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "claim-batch",
+        "branch": "main",
+        "transactionHash": "0xb6c58ebbca2b03782a59ea2dd885384b72fd7bf490522984debe25d7c0ec2f42",
+        "blockNumber": "128554265",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "claim-batch",
+        "branch": "main",
+        "transactionHash": "0x592d7ce0831adf8d987f920233dbe343d2b9369ffd4061bc3681a9c4ef56eb2b",
+        "blockNumber": "128554266",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "claim-batch",
+        "branch": "main",
+        "transactionHash": "0x1e8a1b56675240f0895d4f90af6b86309665f029c2b2d9737ef5a288ec66039b",
+        "blockNumber": "128554268",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "harvest",
+        "branch": "main",
+        "transactionHash": "0xbb4c0e08ec3731f159bdaaa59d89723df909e16290cb8ac35aedfe04aaef3d79",
+        "blockNumber": "128554271",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "redeem",
+        "branch": "normal-redeem-later-reverted",
+        "transactionHash": "0xa96014430ee6fc2409608c33cad436942eba3b0b60865ea077e2311afd58229d",
+        "blockNumber": "128554272",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "redeem-without-harvest",
+        "branch": "without-harvest-final-branch",
+        "transactionHash": "0xf81843fb715873347e6af2662d72e3386f84341e69ea5c59d78a489640abcd3b",
+        "blockNumber": "128554272",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      },
+      {
+        "label": "claim-residual",
+        "branch": "without-harvest-final-branch",
+        "transactionHash": "0x2d64f08bb92b27907d42187bc073c33afa112ccae34331f225d474e1426f2a02",
+        "blockNumber": "128554273",
+        "status": "success",
+        "observedCanonicalBeforeAnySnapshotRevert": true
+      }
+    ],
+    "reportSha256": "8762427a6054472f7d064e708eeda3997aaf625f45d21cc41c56b945d594131e",
+    "reportCompletedAt": "2026-10-19T12:47:20.106Z",
+    "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+    "pendingZeroHarvestRegression": {
+      "status": "PASS",
+      "pendingBeforeRaw": "0",
+      "actualNewVaultInflowRaw": "37601",
+      "totalAccountedBeforeRaw": "13533093",
+      "totalAccountedAfterRaw": "13570694",
+      "vaultBalanceBeforeRaw": "93",
+      "vaultBalanceAfterRaw": "37694",
+      "fix": "Always call fixed Mining.claim in harvest; propagate real errors and account only actual BEM received"
+    }
+  },
+  "miningSettlementDiagnostic": {
+    "reportFile": "reports/real-mining-settlement-f2b486c2-14e2-4034-a43a-e80c61b40974-1792413996165.json",
+    "reportSha256": "da262b505e7c19424cbab897f5af215d66455cb0daec81c67f88853e36402345",
+    "reportCompletedAt": "2026-10-19T12:46:46.515Z",
+    "status": "PASS",
+    "sourcePin": {
+      "chainId": 56,
+      "number": "128554249",
+      "hash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+    },
+    "actor": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "localTransactionCount": 2,
+    "mainnetTransactions": 0,
+    "sourceRPCWrites": 0,
+    "observation": {
+      "pendingZeroCanStillProducePositiveClaim": true,
+      "secondPendingBeforeRaw": "0",
+      "secondActualInflowRaw": "37601",
+      "conclusion": "This real Mining implementation can settle positive BEM during claim() despite a prior pending()==0. Do not skip claim solely because pending() reads zero.",
+      "immediateSameBlockClaimStatus": "SUCCESS"
+    },
+    "immediateZeroClaim": {
+      "label": "immediate-same-block-zero-pending-eth-call",
+      "method": "eth_call",
+      "blockNumber": "128554250",
+      "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+      "pendingRaw": "0",
+      "from": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "to": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "transactionsSent": 0,
+      "status": "SUCCESS",
+      "returnData": "0x",
+      "persistentStateUnchanged": true
+    },
+    "cleanup": {
+      "status": "PASS",
+      "snapshotId": "0x0",
+      "impersonationStopped": true,
+      "snapshotRestored": true,
+      "freshForkStateRestored": true
+    },
+    "receiptCanonicalityAfterCleanup": "TRANSACTIONS_REVERTED_BY_LOCAL_SNAPSHOT_AFTER_EVIDENCE_CAPTURE",
+    "selectedSteps": [
+      {
+        "label": "first-claim",
+        "status": "PASS",
+        "before": {
+          "blockNumber": "128554249",
+          "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+          "timestamp": "1792412907",
+          "pendingRaw": "13532613",
+          "bemRaw": "369220"
+        },
+        "after": {
+          "blockNumber": "128554250",
+          "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+          "timestamp": "1792412929",
+          "pendingRaw": "0",
+          "bemRaw": "13902271"
+        },
+        "actualInflowRaw": "13533051",
+        "transactionHash": "0x72fecb1f622b9e5f8fbcb3cb9d365e5d178110346196b3fe5aafa1c2856f6135",
+        "receiptStatus": "success",
+        "blockNumber": "128554250"
+      },
+      {
+        "label": "second-claim-after-3600-seconds",
+        "status": "PASS",
+        "before": {
+          "blockNumber": "128554251",
+          "blockHash": "0x4fbbf5f5b96e32f151596996172913b4c5c05609fbd2c6d5dd5ceb600f8c2e33",
+          "timestamp": "1792416531",
+          "pendingRaw": "0",
+          "bemRaw": "13902271"
+        },
+        "after": {
+          "blockNumber": "128554252",
+          "blockHash": "0xbf4535b586dfebad9b1ca1d06068cda446655efcccd8eaf4fa773351f70d7187",
+          "timestamp": "1792416531",
+          "pendingRaw": "0",
+          "bemRaw": "13939872"
+        },
+        "actualInflowRaw": "37601",
+        "transactionHash": "0x0c08fd994c6ad53949f04bacf5f5d8c24321b9dce39590f17f919faf99c9066f",
+        "receiptStatus": "success",
+        "blockNumber": "128554252"
+      }
+    ]
+  }
+}

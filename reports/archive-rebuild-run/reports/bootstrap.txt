@@ -1,0 +1,1 @@
+{"status":"LOCAL_TOOLCHAIN_VERIFIED","solc":"0.8.24","foundry":"1.4.3","solcSHA256":"cc2d44c706905ccc382f484625dff61d741e0c24232d226f139a6835fc644f3f"}

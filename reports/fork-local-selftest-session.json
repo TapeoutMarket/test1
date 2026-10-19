@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "STOPPED",
+  "scope": "ONLY_LOCAL_TRANSPORT_MOCK_UPSTREAM",
+  "instanceId": "76f2e190-94c9-4e40-ae79-9c59ba7a358f",
+  "chainId": 56,
+  "forkBlockNumber": "1",
+  "forkBlockHash": "0x4c6e2a9bfdee8de3642f071a0e33ceeee82b024b6dc32d48210a808e60c5e54d",
+  "sourceProxyURL": "http://127.0.0.1:53058/",
+  "executionRPCURL": "http://127.0.0.1:53054/",
+  "sourceRPC": "REDACTED_READ_ONLY",
+  "createdAt": "2026-10-19T12:51:53.282Z",
+  "childPid": 93793,
+  "boundHost": "127.0.0.1",
+  "upstreamWriteMethodsAllowed": false
+}

@@ -1,0 +1,60 @@
+{
+  "status": "READ_ONLY_SOURCE_OBSERVED",
+  "sourceRPC": "REDACTED_USER_AUTHORIZED_ENV",
+  "chainId": 56,
+  "blockSelection": "PROVIDER_FINALIZED_TAG",
+  "blockNumber": "128554249",
+  "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+  "timestamp": "1792412907",
+  "accounts": {
+    "CREATOR": "0x7eEDccb674e9549b61B01Eb65aC68DA071ADF129",
+    "HOLDER_A": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "HOLDER_B": "0x63979C9d5200A5080be93eb440D469d2F2ec6682"
+  },
+  "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "tokenId": "3204",
+  "mining": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+  "bem": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+  "market": "0x0000000000000068F116a894984e2DB1123eB395",
+  "nftOwner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "holderAMinerBalance": "1",
+  "holderAOwnsConfiguredMiner": true,
+  "codeIdentities": [
+    {
+      "field": "collection",
+      "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "codeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+      "bytes": 295
+    },
+    {
+      "field": "mining",
+      "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "codeHash": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce",
+      "bytes": 130
+    },
+    {
+      "field": "bem",
+      "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+      "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344",
+      "bytes": 2205
+    },
+    {
+      "field": "market",
+      "address": "0x0000000000000068F116a894984e2DB1123eB395",
+      "codeHash": "0x16bd146d392a011a996f447b813623d4857ba2d7621af38194a009cbc03ab5f4",
+      "bytes": 23981
+    }
+  ],
+  "seaport": {
+    "version": "1.6",
+    "domainSeparator": "0x81c117ec5faefe0c9a3702715a3f7a0adc8ec4255bfc447755cbabe0877aa3eb",
+    "conduitController": "0x00000000F9490004C11Cef243f5400493c00Ad63"
+  },
+  "minerKey": "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+  "pendingRaw": "13532613",
+  "bemDecimals": 8,
+  "transactionsSent": 0,
+  "privateKeysUsedForSigning": false,
+  "fullForkLifecycle": "NOT_RUN",
+  "sourceSemantics": "RUNTIME_OBSERVED_NOT_SOURCE_AUDITED"
+}

@@ -1,0 +1,1 @@
+{"status":"EXPORTED","contracts":[{"name":"GroupBuyVault","runtimeBytes":24167},{"name":"GroupBuyFactory","runtimeBytes":10333},{"name":"GovernanceTimelock","runtimeBytes":5663},{"name":"MarketValidator","runtimeBytes":7681}]}

@@ -1,0 +1,404 @@
+
+> tapeout-groupbuy-v1@1.0.0-candidate.1 test:sdk
+> node --import tsx --test test/sdk/*.test.ts
+
+TAP version 13
+# Subtest: local governance defaults to a plan with explicit public addresses and config
+ok 1 - local governance defaults to a plan with explicit public addresses and config
+  ---
+  duration_ms: 0.668625
+  ...
+# Subtest: local governance rejects unknown/duplicate/private-key/broadcast flags
+ok 2 - local governance rejects unknown/duplicate/private-key/broadcast flags
+  ---
+  duration_ms: 0.303
+  ...
+# Subtest: local governance rejects live and nonexplicit modes before execution
+ok 3 - local governance rejects live and nonexplicit modes before execution
+  ---
+  duration_ms: 0.205125
+  ...
+# Subtest: local governance rejects official reserved and mock/real configuration confusion
+ok 4 - local governance rejects official reserved and mock/real configuration confusion
+  ---
+  duration_ms: 1.302709
+  ...
+# Subtest: local governance operation salt is stable and binds every selected identity
+ok 5 - local governance operation salt is stable and binds every selected identity
+  ---
+  duration_ms: 1.173041
+  ...
+# Subtest: local governance preserves explicit LAN fork session configuration
+ok 6 - local governance preserves explicit LAN fork session configuration
+  ---
+  duration_ms: 0.12975
+  ...
+# Subtest: LAN fork is explicit and never accepts direct LAN execution URLs or mock/live modes
+ok 7 - LAN fork is explicit and never accepts direct LAN execution URLs or mock/live modes
+  ---
+  duration_ms: 0.9455
+  ...
+# Subtest: LAN fork configuration requires UUID and a concrete block/hash
+ok 8 - LAN fork configuration requires UUID and a concrete block/hash
+  ---
+  duration_ms: 0.190209
+  ...
+# Subtest: LAN session binding rejects stale sessions, wrong pins and non-fork assertions
+ok 9 - LAN session binding rejects stale sessions, wrong pins and non-fork assertions
+  ---
+  duration_ms: 0.150167
+  ...
+# Subtest: LAN identity reports remote fork location separately from loopback transport
+ok 10 - LAN identity reports remote fork location separately from loopback transport
+  ---
+  duration_ms: 0.2265
+  ...
+# Subtest: LAN identity rejects chain/client/metadata/canonical block mismatches and host restarts
+ok 11 - LAN identity rejects chain/client/metadata/canonical block mismatches and host restarts
+  ---
+  duration_ms: 0.502916
+  ...
+# Subtest: manual mutation cannot enable LAN relay under live mode
+ok 12 - manual mutation cannot enable LAN relay under live mode
+  ---
+  duration_ms: 0.071875
+  ...
+# Subtest: default loopback fork refuses a LAN session and only ignores method-not-found responses
+ok 13 - default loopback fork refuses a LAN session and only ignores method-not-found responses
+  ---
+  duration_ms: 0.323584
+  ...
+# Subtest: fork order creator defaults to plan and permits only explicit same-computer fork sending
+ok 14 - fork order creator defaults to plan and permits only explicit same-computer fork sending
+  ---
+  duration_ms: 0.981958
+  ...
+# Subtest: fork order envelope fixes 0.3 BNB seller plus 1 percent fee and a one-day unsigned expiry
+ok 15 - fork order envelope fixes 0.3 BNB seller plus 1 percent fee and a one-day unsigned expiry
+  ---
+  duration_ms: 7.279334
+  ...
+# Subtest: real Seaport validate ABI encodes the full unsigned order and canonical components
+ok 16 - real Seaport validate ABI encodes the full unsigned order and canonical components
+  ---
+  duration_ms: 2.965416
+  ...
+# Subtest: LAN gateway requires explicit RFC1918 IPv4 without credentials or path
+ok 17 - LAN gateway requires explicit RFC1918 IPv4 without credentials or path
+  ---
+  duration_ms: 3.434459
+  ...
+# Subtest: LAN authentication requires client socket IP, token and exact session independently
+ok 18 - LAN authentication requires client socket IP, token and exact session independently
+  ---
+  duration_ms: 0.2995
+  ...
+# Subtest: gateway accepts local unlocked transactions only from explicit sandbox addresses
+ok 19 - gateway accepts local unlocked transactions only from explicit sandbox addresses
+  ---
+  duration_ms: 0.733042
+  ...
+# Subtest: signed transactions signing wallet APIs resets and storage/code mutation are denied
+ok 20 - signed transactions signing wallet APIs resets and storage/code mutation are denied
+  ---
+  duration_ms: 0.194458
+  ...
+# Subtest: source proxy rejects every supported local write method and account enumeration
+ok 21 - source proxy rejects every supported local write method and account enumeration
+  ---
+  duration_ms: 0.113167
+  ...
+# Subtest: nodeInfo output retains only chain and block proof and removes credentials
+ok 22 - nodeInfo output retains only chain and block proof and removes credentials
+  ---
+  duration_ms: 0.354375
+  ...
+# Subtest: session proof binds UUID chain block number and hash
+ok 23 - session proof binds UUID chain block number and hash
+  ---
+  duration_ms: 0.197625
+  ...
+# Subtest: request validation bounds batches and rejects JSON RPC notifications
+ok 24 - request validation bounds batches and rejects JSON RPC notifications
+  ---
+  duration_ms: 0.19825
+  ...
+# Subtest: error redaction preserves only bounded revert hex and excludes provider text
+ok 25 - error redaction preserves only bounded revert hex and excludes provider text
+  ---
+  duration_ms: 0.191
+  ...
+# Subtest: host config defaults to separate local and gateway ports and no permitted senders
+ok 26 - host config defaults to separate local and gateway ports and no permitted senders
+  ---
+  duration_ms: 0.234792
+  ...
+# Subtest: relay config requires explicit session pin and private origin
+ok 27 - relay config requires explicit session pin and private origin
+  ---
+  duration_ms: 0.2035
+  ...
+# Subtest: mine batches remain bounded and account/IP syntax cannot widen policy
+ok 28 - mine batches remain bounded and account/IP syntax cannot widen policy
+  ---
+  duration_ms: 0.206042
+  ...
+# Subtest: local fork requires explicit source and exact positive block/hash
+ok 29 - local fork requires explicit source and exact positive block/hash
+  ---
+  duration_ms: 0.602084
+  ...
+# Subtest: local port validation cannot select public interfaces or unsafe ports
+ok 30 - local port validation cannot select public interfaces or unsafe ports
+  ---
+  duration_ms: 0.114625
+  ...
+# Subtest: local source URL accepts explicit HTTP(S) but cannot point to same local fork port
+ok 31 - local source URL accepts explicit HTTP(S) but cannot point to same local fork port
+  ---
+  duration_ms: 0.14375
+  ...
+# Subtest: selftest factory cannot accidentally use public or private LAN source providers
+ok 32 - selftest factory cannot accidentally use public or private LAN source providers
+  ---
+  duration_ms: 0.237083
+  ...
+# Subtest: fork gate permits only explicit loopback HTTP origins
+ok 33 - fork gate permits only explicit loopback HTTP origins
+  ---
+  duration_ms: 0.468375
+  ...
+# Subtest: fork gate requires concrete positive safe block numbers
+ok 34 - fork gate requires concrete positive safe block numbers
+  ---
+  duration_ms: 0.191167
+  ...
+# Subtest: fork gate matches endpoint number hash and explicit chain metadata
+ok 35 - fork gate matches endpoint number hash and explicit chain metadata
+  ---
+  duration_ms: 0.103875
+  ...
+# Subtest: fork gate refuses missing nodeInfo fields instead of treating chain56 as evidence
+ok 36 - fork gate refuses missing nodeInfo fields instead of treating chain56 as evidence
+  ---
+  duration_ms: 0.195625
+  ...
+# Subtest: native Anvil 1.4.3 metadata may omit hash but the independently read execution block must match the source pin
+ok 37 - native Anvil 1.4.3 metadata may omit hash but the independently read execution block must match the source pin
+  ---
+  duration_ms: 0.194209
+  ...
+# Subtest: fork gate rejects endpoint number hash and environment chain mismatches
+ok 38 - fork gate rejects endpoint number hash and environment chain mismatches
+  ---
+  duration_ms: 0.082416
+  ...
+# Subtest: fork gate source URL validation rejects non HTTP schemes and fragments
+ok 39 - fork gate source URL validation rejects non HTTP schemes and fragments
+  ---
+  duration_ms: 0.065125
+  ...
+# Subtest: LAN preflight allows host-only upstream credentials but still requires the pin and session
+ok 40 - LAN preflight allows host-only upstream credentials but still requires the pin and session
+  ---
+  duration_ms: 0.38625
+  ...
+# Subtest: preflight retains default source requirement and rejects topology/mode ambiguity
+ok 41 - preflight retains default source requirement and rejects topology/mode ambiguity
+  ---
+  duration_ms: 0.147708
+  ...
+# Subtest: LAN metadata validates sanitized number/hash/chain without exposing or comparing forkUrl
+ok 42 - LAN metadata validates sanitized number/hash/chain without exposing or comparing forkUrl
+  ---
+  duration_ms: 0.116916
+  ...
+# Subtest: LAN preflight checks exact host instance and pinned identity
+ok 43 - LAN preflight checks exact host instance and pinned identity
+  ---
+  duration_ms: 0.101625
+  ...
+# Subtest: fork preparation bounds default deadline by order and one hour
+ok 44 - fork preparation bounds default deadline by order and one hour
+  ---
+  duration_ms: 0.434041
+  ...
+# Subtest: fork preparation rejects impossible or injected deadline and margin values
+ok 45 - fork preparation rejects impossible or injected deadline and margin values
+  ---
+  duration_ms: 0.138709
+  ...
+# Subtest: fork preparation accepts explicit bounded deadline and has no send flag
+ok 46 - fork preparation accepts explicit bounded deadline and has no send flag
+  ---
+  duration_ms: 0.244792
+  ...
+# Subtest: external order validation remains pinned to the original source block
+ok 47 - external order validation remains pinned to the original source block
+  ---
+  duration_ms: 0.240542
+  ...
+# Subtest: fork-created orders require explicit origin and a real canonical post-pin checkpoint
+ok 48 - fork-created orders require explicit origin and a real canonical post-pin checkpoint
+  ---
+  duration_ms: 0.228542
+  ...
+# Subtest: standard clone decoder binds exact implementation and rejects proxy/extended runtime
+ok 49 - standard clone decoder binds exact implementation and rejects proxy/extended runtime
+  ---
+  duration_ms: 2.452292
+  ...
+# Subtest: mock/public production labels and inconsistent Config cannot stand in for reviewed live manifest
+ok 50 - mock/public production labels and inconsistent Config cannot stand in for reviewed live manifest
+  ---
+  duration_ms: 13.753875
+  ...
+# Subtest: live Vault write checks expected template and actual runtime/config commitments
+ok 51 - live Vault write checks expected template and actual runtime/config commitments
+  ---
+  duration_ms: 9.47675
+  ...
+# Subtest: direct withdrawals and no-harvest redemption preserve independence from Factory/protocol liveness
+ok 52 - direct withdrawals and no-harvest redemption preserve independence from Factory/protocol liveness
+  ---
+  duration_ms: 8.551416
+  ...
+# Subtest: Factory actions additionally reject changed EIP1967 implementation and unsafe governance
+ok 53 - Factory actions additionally reject changed EIP1967 implementation and unsafe governance
+  ---
+  duration_ms: 11.847458
+  ...
+# Subtest: create manifest binds creator, immutable terms, full payload, round and predicted address
+ok 54 - create manifest binds creator, immutable terms, full payload, round and predicted address
+  ---
+  duration_ms: 9.718792
+  ...
+# Subtest: both market examples are strict public structure, neither grants execution
+ok 55 - both market examples are strict public structure, neither grants execution
+  ---
+  duration_ms: 11.700542
+  ...
+# Subtest: full Seaport payload roundtrips exact Order struct and hashes all consideration
+ok 56 - full Seaport payload roundtrips exact Order struct and hashes all consideration
+  ---
+  duration_ms: 3.767875
+  ...
+# Subtest: missing signature, counter, original count or complete offer is explicit invalid input
+ok 57 - missing signature, counter, original count or complete offer is explicit invalid input
+  ---
+  duration_ms: 5.28275
+  ...
+# Subtest: unknown fields and credential-shaped payloads are rejected instead of copied
+ok 58 - unknown fields and credential-shaped payloads are rejected instead of copied
+  ---
+  duration_ms: 6.710458
+  ...
+# Subtest: tips, wrong domain, fee, amount, counter, partial orders and criteria fail closed
+ok 59 - tips, wrong domain, fee, amount, counter, partial orders and criteria fail closed
+  ---
+  duration_ms: 8.147541
+  ...
+# Subtest: official quote TTL is separate and cannot fabricate native expiry or compatible adapter
+ok 60 - official quote TTL is separate and cannot fabricate native expiry or compatible adapter
+  ---
+  duration_ms: 1.207166
+  ...
+# Subtest: ID costs conserve exact total for nondivisible prices and all costs are positive
+ok 61 - ID costs conserve exact total for nondivisible prices and all costs are positive
+  ---
+  duration_ms: 0.30475
+  ...
+# Subtest: Config hash matches independently compiled Vault initialization ABI tuple layout
+ok 62 - Config hash matches independently compiled Vault initialization ABI tuple layout
+  ---
+  duration_ms: 2.207708
+  ...
+# Subtest: JSON file source rejects traversal and symlink escapes before content reading
+ok 63 - JSON file source rejects traversal and symlink escapes before content reading
+  ---
+  duration_ms: 5.773833
+  ...
+# Subtest: HTTP reads require explicit localhost origin and exact method/operation/path allowlist
+ok 64 - HTTP reads require explicit localhost origin and exact method/operation/path allowlist
+  ---
+  duration_ms: 0.820791
+  ...
+# Subtest: mock/fork never use a remote execution endpoint and cannot authorize live broadcast
+ok 65 - mock/fork never use a remote execution endpoint and cannot authorize live broadcast
+  ---
+  duration_ms: 0.449542
+  ...
+# Subtest: fork identity requires Anvil plus number/hash metadata, not chain ID alone
+ok 66 - fork identity requires Anvil plus number/hash metadata, not chain ID alone
+  ---
+  duration_ms: 0.743375
+  ...
+# Subtest: provider failures never expose URLs, private keys or arbitrary provider detail
+ok 67 - provider failures never expose URLs, private keys or arbitrary provider detail
+  ---
+  duration_ms: 0.224292
+  ...
+# Subtest: live mode rejects loopback chain56 and development clients instead of relabeling local receipts
+ok 68 - live mode rejects loopback chain56 and development clients instead of relabeling local receipts
+  ---
+  duration_ms: 0.401167
+  ...
+# Subtest: withdrawal postconditions bind exact recipient, principal and unique released IDs
+ok 69 - withdrawal postconditions bind exact recipient, principal and unique released IDs
+  ---
+  duration_ms: 18.623125
+  ...
+# Subtest: claim postconditions reject repeated claim IDs, unexpected recipient and noncanonical receipts
+ok 70 - claim postconditions reject repeated claim IDs, unexpected recipient and noncanonical receipts
+  ---
+  duration_ms: 8.287709
+  ...
+# Subtest: single-ID batch transfer accepts real TransferSingle and rejects different operator
+ok 71 - single-ID batch transfer accepts real TransferSingle and rejects different operator
+  ---
+  duration_ms: 4.292792
+  ...
+# Subtest: Seaport initial 0/0 is not filled and single-token approval suffices
+ok 72 - Seaport initial 0/0 is not filled and single-token approval suffices
+  ---
+  duration_ms: 6.125375
+  ...
+# Subtest: cancel, counter increment and fully filled are permanent; approval loss remains temporary
+ok 73 - cancel, counter increment and fully filled are permanent; approval loss remains temporary
+  ---
+  duration_ms: 5.218834
+  ...
+# Subtest: unsigned unvalidated order and domain mismatch cannot pass protocol check
+ok 74 - unsigned unvalidated order and domain mismatch cannot pass protocol check
+  ---
+  duration_ms: 1.635208
+  ...
+# Subtest: official unknown remains disabled without even probing a guessed ABI
+ok 75 - official unknown remains disabled without even probing a guessed ABI
+  ---
+  duration_ms: 0.630667
+  ...
+# Subtest: local Mock terms are explicitly isolated from fork/live and reserved official
+ok 76 - local Mock terms are explicitly isolated from fork/live and reserved official
+  ---
+  duration_ms: 0.491667
+  ...
+# Subtest: HTTP source sends only explicit read and disables redirects
+ok 77 - HTTP source sends only explicit read and disables redirects
+  ---
+  duration_ms: 15.683958
+  ...
+# Subtest: optional external balance/NFT observations cannot block direct emergency/refund paths
+ok 78 - optional external balance/NFT observations cannot block direct emergency/refund paths
+  ---
+  duration_ms: 1.347625
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 78
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 946.317

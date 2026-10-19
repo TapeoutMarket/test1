@@ -1,0 +1,180 @@
+[
+  {
+    "type": "function",
+    "name": "status",
+    "inputs": [
+      {
+        "name": "config",
+        "type": "tuple",
+        "internalType": "struct Types.Config",
+        "components": [
+          {
+            "name": "chainId",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "templateVersion",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "marketKind",
+            "type": "uint8",
+            "internalType": "enum Types.MarketKind"
+          },
+          {
+            "name": "market",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "collection",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "mining",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "bem",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "marketCodeHash",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          },
+          {
+            "name": "seaportDomainSeparator",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          },
+          {
+            "name": "seaportVersionHash",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          },
+          {
+            "name": "safetyMargin",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "mockOnly",
+            "type": "bool",
+            "internalType": "bool"
+          }
+        ]
+      },
+      {
+        "name": "terms",
+        "type": "tuple",
+        "internalType": "struct Types.Terms",
+        "components": [
+          {
+            "name": "seller",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "tokenId",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "totalPrice",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "deadline",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "orderHash",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          },
+          {
+            "name": "counter",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "listingId",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "listingPrice",
+            "type": "uint96",
+            "internalType": "uint96"
+          },
+          {
+            "name": "feeBps",
+            "type": "uint16",
+            "internalType": "uint16"
+          },
+          {
+            "name": "executionHash",
+            "type": "bytes32",
+            "internalType": "bytes32"
+          },
+          {
+            "name": "orderStart",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "orderEnd",
+            "type": "uint64",
+            "internalType": "uint64"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "metadataURI",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      },
+      {
+        "name": "payload",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint8",
+        "internalType": "enum Types.MarketStatus"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "error",
+    "name": "IdentityMismatch",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "InvalidSignature",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UnsupportedOrder",
+    "inputs": []
+  }
+]

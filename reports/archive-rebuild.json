@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "sourceSnapshotHash": "4266a281c82ad893adbae0dec5661cebfcca7ea6246c79159ee9d535c800e7fe",
+  "verificationInputHash": "cd8df1be89a3af14094b83fef1241a01f9c093096de121f2ef1c523d23d3ae92",
+  "initialArchiveSHA256": "89fa86e3111d5dd97aca31aab06dc7883df6ed9e20a2103f9565faae0129078d",
+  "extractedChecksums": {
+    "status": "PASS",
+    "checkedFiles": 219
+  },
+  "freshDependencyInstall": {
+    "status": "PASS",
+    "command": "npm ci --ignore-scripts --offline --cache ../../.npm-cache",
+    "usesLockIntegrity": true
+  },
+  "compilerProvisioning": "Reused already SHA-256-verified native solc tool; source files all came from archive and dependencies from pinned npm lock.",
+  "nativeCompiler": {
+    "status": "LOCAL_TOOLCHAIN_VERIFIED",
+    "solc": "0.8.24",
+    "foundry": "1.4.3",
+    "solcSHA256": "cc2d44c706905ccc382f484625dff61d741e0c24232d226f139a6835fc644f3f"
+  },
+  "cleanVerification": {
+    "status": "PASS",
+    "steps": [
+      {
+        "name": "bootstrap",
+        "status": "PASS"
+      },
+      {
+        "name": "format",
+        "status": "PASS"
+      },
+      {
+        "name": "clean",
+        "status": "PASS"
+      },
+      {
+        "name": "seaport-build",
+        "status": "PASS"
+      },
+      {
+        "name": "build",
+        "status": "PASS"
+      },
+      {
+        "name": "solidity-tests",
+        "status": "PASS"
+      },
+      {
+        "name": "gas",
+        "status": "PASS"
+      },
+      {
+        "name": "typecheck",
+        "status": "PASS"
+      },
+      {
+        "name": "sdk-tests",
+        "status": "PASS"
+      },
+      {
+        "name": "export",
+        "status": "PASS"
+      },
+      {
+        "name": "fork-preflight",
+        "status": "PASS"
+      }
+    ]
+  },
+  "solidityTests": 74,
+  "sdkTests": 41,
+  "localCLIOperations": 57,
+  "compilerOutputIdentical": true,
+  "scope": "NEW_DIRECTORY_LOCAL_ONLY; fork/live/UI NOT_RUN",
+  "note": "Final archive adds this rebuild evidence and report appendix to the same unchanged source snapshot. Verify final archive using adjacent .sha256 and embedded SHA256SUMS.",
+  "rawEvidenceRoot": "reports/archive-rebuild-run",
+  "evidencePathRule": "Resolve original verification evidence paths relative to rawEvidenceRoot; original logs and their hashes are preserved."
+}

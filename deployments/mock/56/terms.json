@@ -1,0 +1,16 @@
+{
+  "seller": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+  "tokenId": "3204",
+  "totalPrice": "100000057",
+  "deadline": "1792500665",
+  "orderHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "counter": "0",
+  "listingId": "1",
+  "listingPrice": "100000057",
+  "feeBps": 100,
+  "executionHash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+  "orderStart": "0",
+  "orderEnd": "0",
+  "name": "tapeout3204",
+  "metadataURI": "ipfs://local/3204/{id}.json"
+}

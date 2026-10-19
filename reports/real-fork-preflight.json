@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-19T12:46:56.875Z",
+  "status": "NOT_RUN",
+  "scope": "BSC_REAL_STATE_FORK_INTEGRATION",
+  "preflight": {
+    "status": "PASS",
+    "reasonCode": "READ_ONLY_IDENTITY_AND_ORDER_CHECKS_PASSED"
+  },
+  "transactionsSent": 0,
+  "sourceRpcWrites": 0,
+  "loadedEnvFile": false,
+  "completeForkTestExecuted": false,
+  "note": "This gate only checks identity and reads an order. A complete fork lifecycle is NOT executed.",
+  "startupPlan": {
+    "execution": "MANUAL_ONLY_NOT_STARTED",
+    "command": "anvil --host 127.0.0.1 --chain-id 56 --fork-url \"$FORK_SOURCE_RPC_URL\" --fork-block-number \"$FORK_BLOCK_NUMBER\"",
+    "sourceEndpoint": "[REDACTED]"
+  },
+  "executionTopology": "loopback",
+  "fixture": {
+    "path": "fixtures/fork-created-3204-157965afaffa5c59.json",
+    "sha256": "0e8722d1f23b7c00e4f37477e3777af99aabcfc600438281ed0950a3a6a1c7d3",
+    "protocol": "seaport",
+    "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+    "market": "0x0000000000000068F116a894984e2DB1123eB395",
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "tokenId": "3204"
+  },
+  "pinnedFork": {
+    "chainId": 56,
+    "blockNumber": "128554249",
+    "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+    "localAnvil": true,
+    "localTransport": true,
+    "executionLocation": "LOOPBACK_ANVIL_FORK",
+    "sourceEndpointMatchedPrivately": true,
+    "directSourceReadByClient": true,
+    "sourceEvidence": "CLIENT_READ_UPSTREAM_PINNED_BLOCK",
+    "nodeInfoNumberMatched": true,
+    "nodeInfoHashPresent": false,
+    "nodeInfoHashMatched": null,
+    "executionBlockHashMatched": true
+  },
+  "orderCheckpoint": {
+    "origin": "fork-created",
+    "stateScope": "LOCAL_FORK_CREATED_NO_PUBLIC_SIGNATURE",
+    "blockNumber": "128554251",
+    "blockHash": "0x03cdde589505d2395eadeb161018dd5f3ad62b2e18568aa731998d6e5d4f4013",
+    "sourcePin": "128554249",
+    "executionCanonicalHashMatched": true
+  },
+  "protocol": {
+    "protocol": "seaport",
+    "status": "READ_ONLY_VALIDATED",
+    "executable": true,
+    "permanentInvalid": false,
+    "checks": {
+      "pinnedMarketIdentity": true,
+      "pinnedCollectionIdentity": true,
+      "domainMatches": true,
+      "originalCounter": true,
+      "notCancelled": true,
+      "notFilled": true,
+      "started": true,
+      "notExpired": true,
+      "sellerOwnsMiner": true,
+      "sellerApproval": true,
+      "signatureOrSeaportValidation": true,
+      "sourceIdentityExplicitlyVerified": true
+    },
+    "blockNumber": "128554251",
+    "blockHash": "0x03cdde589505d2395eadeb161018dd5f3ad62b2e18568aa731998d6e5d4f4013",
+    "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+    "quoteTtlIsNotNativeExpiry": true,
+    "executionSimulationStillRequired": true
+  }
+}

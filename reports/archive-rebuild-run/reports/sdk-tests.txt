@@ -1,0 +1,219 @@
+
+> tapeout-groupbuy-v1@1.0.0-candidate.1 test:sdk
+> node --import tsx --test test/sdk/*.test.ts
+
+TAP version 13
+# Subtest: local governance defaults to a plan with explicit public addresses and config
+ok 1 - local governance defaults to a plan with explicit public addresses and config
+  ---
+  duration_ms: 0.575833
+  ...
+# Subtest: local governance rejects unknown/duplicate/private-key/broadcast flags
+ok 2 - local governance rejects unknown/duplicate/private-key/broadcast flags
+  ---
+  duration_ms: 0.286833
+  ...
+# Subtest: local governance rejects live and nonexplicit modes before execution
+ok 3 - local governance rejects live and nonexplicit modes before execution
+  ---
+  duration_ms: 0.195584
+  ...
+# Subtest: local governance rejects official reserved and mock/real configuration confusion
+ok 4 - local governance rejects official reserved and mock/real configuration confusion
+  ---
+  duration_ms: 1.354833
+  ...
+# Subtest: local governance operation salt is stable and binds every selected identity
+ok 5 - local governance operation salt is stable and binds every selected identity
+  ---
+  duration_ms: 1.114291
+  ...
+# Subtest: fork gate permits only explicit loopback HTTP origins
+ok 6 - fork gate permits only explicit loopback HTTP origins
+  ---
+  duration_ms: 1.840709
+  ...
+# Subtest: fork gate requires concrete positive safe block numbers
+ok 7 - fork gate requires concrete positive safe block numbers
+  ---
+  duration_ms: 0.703125
+  ...
+# Subtest: fork gate matches endpoint number hash and explicit chain metadata
+ok 8 - fork gate matches endpoint number hash and explicit chain metadata
+  ---
+  duration_ms: 0.195208
+  ...
+# Subtest: fork gate refuses missing nodeInfo fields instead of treating chain56 as evidence
+ok 9 - fork gate refuses missing nodeInfo fields instead of treating chain56 as evidence
+  ---
+  duration_ms: 0.215542
+  ...
+# Subtest: fork gate rejects endpoint number hash and environment chain mismatches
+ok 10 - fork gate rejects endpoint number hash and environment chain mismatches
+  ---
+  duration_ms: 0.187292
+  ...
+# Subtest: fork gate source URL validation rejects non HTTP schemes and fragments
+ok 11 - fork gate source URL validation rejects non HTTP schemes and fragments
+  ---
+  duration_ms: 0.084833
+  ...
+# Subtest: standard clone decoder binds exact implementation and rejects proxy/extended runtime
+ok 12 - standard clone decoder binds exact implementation and rejects proxy/extended runtime
+  ---
+  duration_ms: 0.650208
+  ...
+# Subtest: mock/public production labels and inconsistent Config cannot stand in for reviewed live manifest
+ok 13 - mock/public production labels and inconsistent Config cannot stand in for reviewed live manifest
+  ---
+  duration_ms: 3.142417
+  ...
+# Subtest: live Vault write checks expected template and actual runtime/config commitments
+ok 14 - live Vault write checks expected template and actual runtime/config commitments
+  ---
+  duration_ms: 5.791625
+  ...
+# Subtest: direct withdrawals and no-harvest redemption preserve independence from Factory/protocol liveness
+ok 15 - direct withdrawals and no-harvest redemption preserve independence from Factory/protocol liveness
+  ---
+  duration_ms: 5.826084
+  ...
+# Subtest: Factory actions additionally reject changed EIP1967 implementation and unsafe governance
+ok 16 - Factory actions additionally reject changed EIP1967 implementation and unsafe governance
+  ---
+  duration_ms: 6.962459
+  ...
+# Subtest: create manifest binds creator, immutable terms, full payload, round and predicted address
+ok 17 - create manifest binds creator, immutable terms, full payload, round and predicted address
+  ---
+  duration_ms: 5.322291
+  ...
+# Subtest: both market examples are strict public structure, neither grants execution
+ok 18 - both market examples are strict public structure, neither grants execution
+  ---
+  duration_ms: 10.166208
+  ...
+# Subtest: full Seaport payload roundtrips exact Order struct and hashes all consideration
+ok 19 - full Seaport payload roundtrips exact Order struct and hashes all consideration
+  ---
+  duration_ms: 4.931584
+  ...
+# Subtest: missing signature, counter, original count or complete offer is explicit invalid input
+ok 20 - missing signature, counter, original count or complete offer is explicit invalid input
+  ---
+  duration_ms: 3.0505
+  ...
+# Subtest: unknown fields and credential-shaped payloads are rejected instead of copied
+ok 21 - unknown fields and credential-shaped payloads are rejected instead of copied
+  ---
+  duration_ms: 4.582208
+  ...
+# Subtest: tips, wrong domain, fee, amount, counter, partial orders and criteria fail closed
+ok 22 - tips, wrong domain, fee, amount, counter, partial orders and criteria fail closed
+  ---
+  duration_ms: 6.223667
+  ...
+# Subtest: official quote TTL is separate and cannot fabricate native expiry or compatible adapter
+ok 23 - official quote TTL is separate and cannot fabricate native expiry or compatible adapter
+  ---
+  duration_ms: 1.133125
+  ...
+# Subtest: ID costs conserve exact total for nondivisible prices and all costs are positive
+ok 24 - ID costs conserve exact total for nondivisible prices and all costs are positive
+  ---
+  duration_ms: 0.346167
+  ...
+# Subtest: Config hash matches independently compiled Vault initialization ABI tuple layout
+ok 25 - Config hash matches independently compiled Vault initialization ABI tuple layout
+  ---
+  duration_ms: 1.387542
+  ...
+# Subtest: JSON file source rejects traversal and symlink escapes before content reading
+ok 26 - JSON file source rejects traversal and symlink escapes before content reading
+  ---
+  duration_ms: 4.02875
+  ...
+# Subtest: HTTP reads require explicit localhost origin and exact method/operation/path allowlist
+ok 27 - HTTP reads require explicit localhost origin and exact method/operation/path allowlist
+  ---
+  duration_ms: 0.385166
+  ...
+# Subtest: mock/fork never use a remote execution endpoint and cannot authorize live broadcast
+ok 28 - mock/fork never use a remote execution endpoint and cannot authorize live broadcast
+  ---
+  duration_ms: 0.1395
+  ...
+# Subtest: fork identity requires Anvil plus number/hash metadata, not chain ID alone
+ok 29 - fork identity requires Anvil plus number/hash metadata, not chain ID alone
+  ---
+  duration_ms: 0.314458
+  ...
+# Subtest: provider failures never expose URLs, private keys or arbitrary provider detail
+ok 30 - provider failures never expose URLs, private keys or arbitrary provider detail
+  ---
+  duration_ms: 0.228416
+  ...
+# Subtest: live mode rejects loopback chain56 and development clients instead of relabeling local receipts
+ok 31 - live mode rejects loopback chain56 and development clients instead of relabeling local receipts
+  ---
+  duration_ms: 0.415209
+  ...
+# Subtest: withdrawal postconditions bind exact recipient, principal and unique released IDs
+ok 32 - withdrawal postconditions bind exact recipient, principal and unique released IDs
+  ---
+  duration_ms: 18.199458
+  ...
+# Subtest: claim postconditions reject repeated claim IDs, unexpected recipient and noncanonical receipts
+ok 33 - claim postconditions reject repeated claim IDs, unexpected recipient and noncanonical receipts
+  ---
+  duration_ms: 9.451583
+  ...
+# Subtest: single-ID batch transfer accepts real TransferSingle and rejects different operator
+ok 34 - single-ID batch transfer accepts real TransferSingle and rejects different operator
+  ---
+  duration_ms: 5.679333
+  ...
+# Subtest: Seaport initial 0/0 is not filled and single-token approval suffices
+ok 35 - Seaport initial 0/0 is not filled and single-token approval suffices
+  ---
+  duration_ms: 8.495917
+  ...
+# Subtest: cancel, counter increment and fully filled are permanent; approval loss remains temporary
+ok 36 - cancel, counter increment and fully filled are permanent; approval loss remains temporary
+  ---
+  duration_ms: 4.159416
+  ...
+# Subtest: unsigned unvalidated order and domain mismatch cannot pass protocol check
+ok 37 - unsigned unvalidated order and domain mismatch cannot pass protocol check
+  ---
+  duration_ms: 3.300834
+  ...
+# Subtest: official unknown remains disabled without even probing a guessed ABI
+ok 38 - official unknown remains disabled without even probing a guessed ABI
+  ---
+  duration_ms: 1.637875
+  ...
+# Subtest: local Mock terms are explicitly isolated from fork/live and reserved official
+ok 39 - local Mock terms are explicitly isolated from fork/live and reserved official
+  ---
+  duration_ms: 0.769375
+  ...
+# Subtest: HTTP source sends only explicit read and disables redirects
+ok 40 - HTTP source sends only explicit read and disables redirects
+  ---
+  duration_ms: 19.755292
+  ...
+# Subtest: optional external balance/NFT observations cannot block direct emergency/refund paths
+ok 41 - optional external balance/NFT observations cannot block direct emergency/refund paths
+  ---
+  duration_ms: 1.60775
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 775.601166

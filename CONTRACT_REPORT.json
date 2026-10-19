@@ -1,0 +1,2384 @@
+{
+  "version": "1.0.0-candidate.1",
+  "sourceSnapshotHash": "6b9c0d6195f80217f5a9aeb867e5ccecaf855e0cd8545c85455e22efdacd90bf",
+  "phase": 1,
+  "productionReady": false,
+  "layers": {
+    "mock": "PASS",
+    "realSeaportLocal": "PASS",
+    "bscStateFork": "PASS",
+    "live": "NOT_RUN",
+    "ui": "NOT_RUN"
+  },
+  "compiler": {
+    "compiler": "0.8.24",
+    "evmVersion": "paris",
+    "optimizerRuns": 200,
+    "viaIR": true,
+    "contracts": [
+      {
+        "name": "GroupBuyVault",
+        "runtimeBytes": 24167,
+        "creationBytes": 32184,
+        "runtimeArtifactHash": "0x082155e59b0f44d40258be5aeb9454dace9ef3dbbc512d7c57cc475d5b22a98a",
+        "immutableReferences": {
+          "54828": [
+            {
+              "start": 6916,
+              "length": 32
+            }
+          ],
+          "54831": [
+            {
+              "start": 5123,
+              "length": 32
+            },
+            {
+              "start": 6381,
+              "length": 32
+            },
+            {
+              "start": 13575,
+              "length": 32
+            }
+          ]
+        },
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      },
+      {
+        "name": "GroupBuyFactory",
+        "runtimeBytes": 10333,
+        "creationBytes": 10543,
+        "runtimeArtifactHash": "0x6ec653b2d64c981f6f8841f7f939d25b88bd409def9a93d569489d0da61c896d",
+        "immutableReferences": {
+          "39647": [
+            {
+              "start": 5676,
+              "length": 32
+            },
+            {
+              "start": 5861,
+              "length": 32
+            }
+          ]
+        },
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      },
+      {
+        "name": "GovernanceTimelock",
+        "runtimeBytes": 5663,
+        "creationBytes": 7032,
+        "runtimeArtifactHash": "0x1e175c7a3c55e64d48283e9220734e7b2468f1a884d0fe535b52a5c05aa6accb",
+        "immutableReferences": {
+          "53422": [
+            {
+              "start": 2128,
+              "length": 32
+            },
+            {
+              "start": 4620,
+              "length": 32
+            }
+          ],
+          "53424": [
+            {
+              "start": 1154,
+              "length": 32
+            }
+          ]
+        },
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      },
+      {
+        "name": "MarketValidator",
+        "runtimeBytes": 7681,
+        "creationBytes": 7709,
+        "runtimeArtifactHash": "0x38b59c524567e54481c0119746a29f744dd3d804b85f0032c67c6a4918959d8c",
+        "immutableReferences": {},
+        "note": "Artifact hash has compiler immutable placeholders; verify actual deployed runtime separately."
+      }
+    ]
+  },
+  "dependencyLockSHA256": "1c813826e83bbb82268850fb50ac68cb9679915e6e1d3cc1d9c142b225174075",
+  "toolchain": {
+    "foundry": "1.4.3",
+    "node": "v20.19.5",
+    "seaport": {
+      "kind": "REAL_SEAPORT_SOURCE_LOCAL_ARTIFACT_NOT_BSC_FORK",
+      "packages": {
+        "core": "1.5.0",
+        "types": "0.0.1"
+      },
+      "compiler": "0.8.17+commit.8df45f5f.Emscripten.clang",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "viaIR": true,
+        "evmVersion": "london",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode"
+            ]
+          }
+        }
+      },
+      "artifacts": [
+        {
+          "name": "Seaport",
+          "runtimeBytes": 21434
+        },
+        {
+          "name": "ConduitController",
+          "runtimeBytes": 5575
+        }
+      ],
+      "sources": [
+        {
+          "file": "seaport-core/src/Seaport.sol",
+          "sha256": "8a4857ecbabbdf79670273ddc09a4849a198939db7160b599bfd58071ab46bff"
+        },
+        {
+          "file": "seaport-core/src/conduit/Conduit.sol",
+          "sha256": "de984ad516186b6ff02cf011f0a83d188652fbb5fc37f13c2322119e75fdafd4"
+        },
+        {
+          "file": "seaport-core/src/conduit/ConduitController.sol",
+          "sha256": "0bde678b6219c41878362d27cfee22973087d3bf933cddb96e7c2eb8fec32a45"
+        },
+        {
+          "file": "seaport-core/src/helpers/SeaportRouter.sol",
+          "sha256": "57b9ddc35e7649bacf2a0b183424bb22b31d3338b6f97e2d81be78268e12b985"
+        },
+        {
+          "file": "seaport-core/src/helpers/TransferHelper.sol",
+          "sha256": "807ba7f232ab4a460df395001ae4e58821e26da5dde69ece63e25d37625dca46"
+        },
+        {
+          "file": "seaport-core/src/lib/AmountDeriver.sol",
+          "sha256": "58297507c88bc02497dd9967765d339c6d69d691953fedb43f26d9afb3f33072"
+        },
+        {
+          "file": "seaport-core/src/lib/Assertions.sol",
+          "sha256": "91d7ae2ef53a32c77cd6a00028038f712a12fe83370e70b401b2b9ce0b04641a"
+        },
+        {
+          "file": "seaport-core/src/lib/BasicOrderFulfiller.sol",
+          "sha256": "6900c72d9be3db341aba5be6c0f10b24077c4d2c697ef9acad34023dbb7edc9d"
+        },
+        {
+          "file": "seaport-core/src/lib/Consideration.sol",
+          "sha256": "f9f46cd11a5eda7a8e0ed14bb483e6bfca3169ac21d212a8db458e105c37f59d"
+        },
+        {
+          "file": "seaport-core/src/lib/ConsiderationBase.sol",
+          "sha256": "e6ab2789b907ac77cd406789ccc11d6fa35f36ddbe7519322a8020377c71308f"
+        },
+        {
+          "file": "seaport-core/src/lib/ConsiderationDecoder.sol",
+          "sha256": "ad21136c824470b671bb6a525acc0194c0cedd2ff06cbc7ae01630240abd7806"
+        },
+        {
+          "file": "seaport-core/src/lib/ConsiderationEncoder.sol",
+          "sha256": "a25532911a15421364f235e4f0ccb9833d08867671d60aef5420098267844b3b"
+        },
+        {
+          "file": "seaport-core/src/lib/CounterManager.sol",
+          "sha256": "f216a8747c4839f718f90a3ea3c935a0c7af3c0be3e48b75c9487f129afc4ae9"
+        },
+        {
+          "file": "seaport-core/src/lib/CriteriaResolution.sol",
+          "sha256": "61869d024a9aefd8d8979f4a1759b0fdc3ecea7e0f2b76ed8614752af9b0a79b"
+        },
+        {
+          "file": "seaport-core/src/lib/Executor.sol",
+          "sha256": "a31a1cd157932d58be4a76340f6aa3129e35f5a865806d8be38c4e68bc1e03d8"
+        },
+        {
+          "file": "seaport-core/src/lib/FulfillmentApplier.sol",
+          "sha256": "569599c7921567c2a99a186bf07bd44dce202b9d0216abcca03aad02f7a36921"
+        },
+        {
+          "file": "seaport-core/src/lib/GettersAndDerivers.sol",
+          "sha256": "4385cd460072e5c79e92d3f10024626d72919f9f4fb51891b06b26e8d3c491d7"
+        },
+        {
+          "file": "seaport-core/src/lib/LowLevelHelpers.sol",
+          "sha256": "c905f5c144f82d9b9c28ea1e09dfa4de269b948f295fa2ca8dca8fb5d2e6ab77"
+        },
+        {
+          "file": "seaport-core/src/lib/OrderCombiner.sol",
+          "sha256": "7c945c54f7012a706c878fd4a138540431a2be962d5969088ba1ae744dba06de"
+        },
+        {
+          "file": "seaport-core/src/lib/OrderFulfiller.sol",
+          "sha256": "6094c9a91d3686e82b317ce9f685188ca4487f08313a5f21bdccc15a0d016bb0"
+        },
+        {
+          "file": "seaport-core/src/lib/OrderValidator.sol",
+          "sha256": "ea6fbace4d250daecbb8217a9e3fb3b2b6c13cf3df06002ae5614e7e931e2ff0"
+        },
+        {
+          "file": "seaport-core/src/lib/ReentrancyGuard.sol",
+          "sha256": "9e47be638bf6402524dff4fbe34cd21b5b815ed7e34122a68222862f5177b77e"
+        },
+        {
+          "file": "seaport-core/src/lib/SignatureVerification.sol",
+          "sha256": "177bfd652063569afb1c7b3e6d1013242a4a0a039e7059d4faaeb9d9d021ca05"
+        },
+        {
+          "file": "seaport-core/src/lib/TokenTransferrer.sol",
+          "sha256": "ae99953c06268567b609aed276a4eb468e722bfb3dfabee36e77dda385db45ac"
+        },
+        {
+          "file": "seaport-core/src/lib/Verifiers.sol",
+          "sha256": "f1d0fed67794ab71946595ea7fe10d6104b9a1e307e287649a13e5924544f150"
+        },
+        {
+          "file": "seaport-core/src/lib/ZoneInteraction.sol",
+          "sha256": "c253b77a4bcba18b006522b564095fd4ea1483315ce4f7bdbb54b72f3eddbbb6"
+        },
+        {
+          "file": "seaport-types/src/conduit/lib/ConduitConstants.sol",
+          "sha256": "3bb1dee5315d989dd16933e949e2cd8e6d0791f93c989d7e796fc33bb53e62b9"
+        },
+        {
+          "file": "seaport-types/src/conduit/lib/ConduitEnums.sol",
+          "sha256": "a4bd7b99dff7055c135c96b06d4aaf466bb4d46a36b6324d24b16abd33356c23"
+        },
+        {
+          "file": "seaport-types/src/conduit/lib/ConduitStructs.sol",
+          "sha256": "326858bdc55a747240a5a9f90b38eada9ea0f8d6a9558a099c378a44424a0ed3"
+        },
+        {
+          "file": "seaport-types/src/helpers/PointerLibraries.sol",
+          "sha256": "3604c82c0c3eca6e50c91238778f89b25602b8ec4c17053d00ca2dc71bc474db"
+        },
+        {
+          "file": "seaport-types/src/helpers/TransferHelperStructs.sol",
+          "sha256": "0fba43803f8504f6bd235607299da608d7f3de0e1ca546950436d2d50b18c8e7"
+        },
+        {
+          "file": "seaport-types/src/interfaces/AbridgedTokenInterfaces.sol",
+          "sha256": "9222104eeee80a213565da74348ff6e1c203bcdc7b9f67e693162ffc9dc55b11"
+        },
+        {
+          "file": "seaport-types/src/interfaces/AmountDerivationErrors.sol",
+          "sha256": "7a9992a84b44306fd446d80beccc2d229acbe65c004aa43ff88ce4d2f89f4803"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ConduitControllerInterface.sol",
+          "sha256": "eeafa5abeeded55731f354bf191a96e706540039fcb55ff73ade5a3d4dc40ac4"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ConduitInterface.sol",
+          "sha256": "119f51c149fb117c55c2a812c104c55f809fed683296a3f5009e284b1b23752a"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ConsiderationEventsAndErrors.sol",
+          "sha256": "fee87449f873b1d829f3e5589e96a2dacccb757320c5dec9ae2ae05575368ec2"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ConsiderationInterface.sol",
+          "sha256": "6ce713fa619f770c3bfc437c4e5b5b374a5356ed99026c23dab606331646862b"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ContractOffererInterface.sol",
+          "sha256": "57a3f59ce417e70ffe6cb588160f1e947497517b2a5be4258bc10a61e070e1cd"
+        },
+        {
+          "file": "seaport-types/src/interfaces/CriteriaResolutionErrors.sol",
+          "sha256": "73f7e3698c324bdabecc8de8834381797387ccf54b51a76c0280015d8e5c4207"
+        },
+        {
+          "file": "seaport-types/src/interfaces/EIP1271Interface.sol",
+          "sha256": "37f74706f43eb59185c9affc51a3809f316db9f665424d791d81ed6c87d01067"
+        },
+        {
+          "file": "seaport-types/src/interfaces/FulfillmentApplicationErrors.sol",
+          "sha256": "ce9057c30cd8191fb0d44dfd2d7c9683d1de3f644b37567671dbf5fd1753c152"
+        },
+        {
+          "file": "seaport-types/src/interfaces/IERC165.sol",
+          "sha256": "26ca0015672417d8f9b240fcf2d0c7082a1c45bca7fbad7134dedb9222c1ae60"
+        },
+        {
+          "file": "seaport-types/src/interfaces/IERC721Receiver.sol",
+          "sha256": "19fc56cfcae9ae7eaf10b30eb21eb9ad965d893197de20b799dac07b87a92547"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ImmutableCreate2FactoryInterface.sol",
+          "sha256": "c5272708de18e9402619f997380b2443a238c6581e707a00916beb512a35d346"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ReentrancyErrors.sol",
+          "sha256": "4b54e03310561c9145448f5ceb5a0a541095404757aaafeefdc0d5595da89634"
+        },
+        {
+          "file": "seaport-types/src/interfaces/SeaportInterface.sol",
+          "sha256": "f6b40e4761a613eb68fb56cea4a55bf82fe8ae7fe940161e110d40e361754582"
+        },
+        {
+          "file": "seaport-types/src/interfaces/SeaportRouterInterface.sol",
+          "sha256": "0565339e3c40a47a94d209c5ced57759f8c4323c4aed50a477e1ad489e618eea"
+        },
+        {
+          "file": "seaport-types/src/interfaces/SignatureVerificationErrors.sol",
+          "sha256": "e483b247a68db9c063b41002920ac12e6b56a06562b54240e2ddc16e7db15e81"
+        },
+        {
+          "file": "seaport-types/src/interfaces/TokenTransferrerErrors.sol",
+          "sha256": "88e43f9bb01734507f03f21856aa886f7943792024abd0a01435bb3d2ecfe549"
+        },
+        {
+          "file": "seaport-types/src/interfaces/TransferHelperErrors.sol",
+          "sha256": "e24398f8bd7eb2491bd06fded2c8be294e80cb6bec669d0b48419dc6b8804e95"
+        },
+        {
+          "file": "seaport-types/src/interfaces/TransferHelperInterface.sol",
+          "sha256": "9ce92565cf2476f2dba0fe3949f34a1f808861d1c26f07a823a720441804ec71"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ZoneInteractionErrors.sol",
+          "sha256": "41353885cbce99c7cfd622a77cb7a1cb58b47172d81337dfb14b9ebc563701e1"
+        },
+        {
+          "file": "seaport-types/src/interfaces/ZoneInterface.sol",
+          "sha256": "134eaa90c8095914d6d89cc1753f3547d19cc884d7998972eb54557cd41e8e13"
+        },
+        {
+          "file": "seaport-types/src/interfaces/legacy/ConsiderationInterface1_1.sol",
+          "sha256": "fd5a1ee4d247fe2743cde1c10bec6a5e3e72f72e9f350ac4c78c1d58b11a06ab"
+        },
+        {
+          "file": "seaport-types/src/interfaces/legacy/ZoneInterface1_1.sol",
+          "sha256": "1a1e53778e0c8b3e1bf8127501243a083974e8d2ea04eb6a1716766847f8ac4b"
+        },
+        {
+          "file": "seaport-types/src/lib/ConsiderationConstants.sol",
+          "sha256": "53301c202b3fc6c0dcb5058d67f7327f5a24e2c2046a8f77e27d4efe28eb3426"
+        },
+        {
+          "file": "seaport-types/src/lib/ConsiderationEnums.sol",
+          "sha256": "cf40250ee78379d12230bcb0adba323febbf1c21e272cad0f6cc47a06ce30201"
+        },
+        {
+          "file": "seaport-types/src/lib/ConsiderationErrorConstants.sol",
+          "sha256": "1371fc706ec84387791a947a3121c1fbfcc0e264136bd56bb6407e43aff9f987"
+        },
+        {
+          "file": "seaport-types/src/lib/ConsiderationErrors.sol",
+          "sha256": "3d5045d96952cbf36491379a29475d5f56a5a623695e8c2c8cd0cba979948e46"
+        },
+        {
+          "file": "seaport-types/src/lib/ConsiderationStructs.sol",
+          "sha256": "233e47acf521d4e216fba36557a26823faf799f32a1ae21893ce656b80809974"
+        },
+        {
+          "file": "seaport-types/src/lib/TokenTransferrerConstants.sol",
+          "sha256": "f12cc0b168f18b0a87a8d6e221e7339cd03293cec30bbbef4afae705385b49ba"
+        }
+      ]
+    }
+  },
+  "suites": [
+    {
+      "name": "test/integration/RealSeaport.t.sol:RealSeaportTest",
+      "tests": [
+        {
+          "name": "testRealApprovalRevokedAndRestoredIsNotPermanentCancellation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5937518
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealCancelOpensOriginalRefundOnly()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2587105
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealCounterInvalidation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 278424
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealNotStartedDeadlineAndSafetyMargin()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1856110
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealOrderBoughtElsewhereBeforeFinalContributionRollsBackLastAndKeepsExits()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2783107
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealSignatureCreateContributeFulfillAndRevenue()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 8866064
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealTipsAndExecutionPayloadTamperingRejected()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2120109
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testRealValidatedOrderAllowsEmptySignatureButDoesNotSkipCounter()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1686254
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testWrongConduitCriteriaAndTokenTermsFailClosed()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3013020
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testWrongSignatureAndWrongDomainRejected()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1608804
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/invariant/Accounting.t.sol:AccountingInvariantTest",
+      "tests": [
+        {
+          "name": "invariantPrincipalConservationAndSupplyBitmap()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Invariant": {
+              "runs": 128,
+              "calls": 8192,
+              "reverts": 0,
+              "metrics": {
+                "test/invariant/Accounting.t.sol:AccountingHandler.join": {
+                  "calls": 873,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.move": {
+                  "calls": 891,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.exit": {
+                  "calls": 884,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.residual": {
+                  "calls": 902,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.expire": {
+                  "calls": 948,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.consolidateAndRedeem": {
+                  "calls": 958,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.complete": {
+                  "calls": 938,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.donate": {
+                  "calls": 907,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.claim": {
+                  "calls": 891,
+                  "reverts": 0,
+                  "discards": 0
+                }
+              },
+              "failed_corpus_replays": 0
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "invariantRewardsNeverOverpaidAndAssetsHaveRightOwner()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Invariant": {
+              "runs": 128,
+              "calls": 8192,
+              "reverts": 0,
+              "metrics": {
+                "test/invariant/Accounting.t.sol:AccountingHandler.expire": {
+                  "calls": 891,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.join": {
+                  "calls": 921,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.move": {
+                  "calls": 900,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.donate": {
+                  "calls": 877,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.complete": {
+                  "calls": 906,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.consolidateAndRedeem": {
+                  "calls": 920,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.exit": {
+                  "calls": 937,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.claim": {
+                  "calls": 923,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.residual": {
+                  "calls": 917,
+                  "reverts": 0,
+                  "discards": 0
+                }
+              },
+              "failed_corpus_replays": 0
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/invariant/Accounting.t.sol:ActiveAccountingInvariantTest",
+      "tests": [
+        {
+          "name": "invariantEveryIdDebtPlusDustPlusUnrecognizedEqualsBalance()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Invariant": {
+              "runs": 128,
+              "calls": 8192,
+              "reverts": 0,
+              "metrics": {
+                "test/invariant/Accounting.t.sol:AccountingHandler.move": {
+                  "calls": 2778,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.donate": {
+                  "calls": 2680,
+                  "reverts": 0,
+                  "discards": 0
+                },
+                "test/invariant/Accounting.t.sol:AccountingHandler.claim": {
+                  "calls": 2734,
+                  "reverts": 0,
+                  "discards": 0
+                }
+              },
+              "failed_corpus_replays": 0
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/FactoryClones.t.sol:FactoryClonesTest",
+      "tests": [
+        {
+          "name": "testExpectedTemplateAndConfigurationPreventQueuedSubstitution()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 7730605
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testGuardianCancelOnlyFundingAndRefundBeneficiaryIsHolder()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2390681
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testHonestV2UpgradePreservesPoolIndexParametersAndRewardLedger()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 10626470
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testInitializationFailureRollsBackCloneRegistrationAndSalt()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1434284
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testInvalidLiveOfficialAndWrongCodeConfigurationRejected()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 391407
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testMaliciousFactoryCannotChangeActiveVaultOrBlockDirectLifecycle()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 8649755
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testMaliciousV2CanOnlyMakeFundingRefundableNotStealOrFreezeRefunds()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2634264
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testPaginationAndBoundedBatchCancellation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1527829
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testPauseDoesNotBlockExistingFundingExitOrActiveClaimsAndRedemption()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 9114752
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testPredictionBindsCallerTermsPayloadTemplateConfigurationAndRound()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2172364
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testStandardCloneRuntimeAndAtomicInitialization()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 109408
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/FactoryGovernance.t.sol:FactoryGovernanceTest",
+      "tests": [
+        {
+          "name": "testDirectEOAAndGuardianCannotUpgrade()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2177478
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testEOAAndZeroDelayAndSharedGuardianRejected()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 457091
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testGuardianBatchBoundAndUnknownPoolsAndPagination()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 60736
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testGuardianCanPauseOnlyAdminCanResumeOrApprove()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 184768
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testImplementationAndProxyInitializersLocked()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 39950
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testTemplateZeroCodeWrongHashProxyAndUnlockedRejected()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 495599
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testTimelockCannotBypassFloorViaDelayedUpdate()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 95774
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testTimelockMustElapseAndUpgradePreservesStorage()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2302023
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/FundingRewards.t.sol:FundingRewardsTest",
+      "tests": [
+        {
+          "name": "test45And55EachOneBatchOrderIndependentConservation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 8934368
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testActiveTransfersZeroSelfAndDuplicateBatchKeepHolderIndex()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5561755
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testAll100SingleBatchClaimAndNormalRedeemDust()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 7437488
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testClaimBatchDoesNotDependOnMiningOrSettleItsRewards()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6942755
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testCompletionProtectsAgainstPriorExitButOrdinaryJoinCanContinue()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5675456
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testCostsExactlySumToPriceAndOneWeiDifference()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 259708
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testCreator50B20CreatorExitC50D30Completes()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6889664
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testDeadlineStopsFundingAndRefundDoesNotNeedExternalProtocols()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2370321
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testDifferentClaimHistoryAndPositiveRightsFollowId()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5829421
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testDirectDonationsThirdPartyMiningClaimAndOldPending()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 8429501
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testDonationAndHistoricalDepositsCannotCompleteFunding()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 4935364
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testExactValueEmptyDuplicateOutOfRangeAndSoldRejected()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 934616
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testFundingTransferOperatorWithdrawalAndArbitraryBurnDenied()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2554254
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testFuzzCostRule(uint96)",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Fuzz": {
+              "first_case": {
+                "calldata": "0xaecff2320000000000000000000000000000000000000000000ca5a71668b90740fc7ea8",
+                "gas": 1103652,
+                "stipend": 21324
+              },
+              "runs": 256,
+              "mean_gas": 1082767,
+              "median_gas": 1082748,
+              "failed_corpus_replays": 0
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testHarvestAndClaimPaysRewardsNotReportedByPending()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 7057948
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testHarvestPropagatesZeroRewardAndMiningFailures()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5703168
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testHarvestSettlesNewRewardsWhenCachedPendingIsZero()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5805422
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testMissingOneAndOperatorCannotRedeem()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5910290
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testNormalRedeemPaymentAndNFTFailureRollBack()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 11938249
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testNormalRedeemSettlesRewardsNotReportedByPending()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6952313
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testOne45And55SharesFundingThroughFactoryClone()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5824559
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testReleasedIdsReusedAndAllExitDoesNotExtendDeadline()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 12653586
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testWithoutHarvestIgnoresMiningAndBEMFailureThenRecoversResidual()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6195588
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testZeroInitialAndZeroSyncPreserveHistory()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6937180
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchClaim100Test",
+      "tests": [
+        {
+          "name": "testGasClaim100InOneCall()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3125168
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchClaim45Test",
+      "tests": [
+        {
+          "name": "testGasClaim45InOneCall()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1473061
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchClaim55Test",
+      "tests": [
+        {
+          "name": "testGasClaim55InOneCallAfter45Paid()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1761513
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchContribute100Test",
+      "tests": [
+        {
+          "name": "testGasContribute100AndPurchase()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5511488
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchRedeem100Test",
+      "tests": [
+        {
+          "name": "testGasRedeem100WithPositiveHarvestAndDust()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3299901
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchTransfer100Test",
+      "tests": [
+        {
+          "name": "testGasTransfer100ToRedeemer()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3166077
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/GasBench.t.sol:GasBenchWithdraw99Test",
+      "tests": [
+        {
+          "name": "testGasWithdraw99FundingShares()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1378124
+            }
+          },
+          "gas": null
+        }
+      ]
+    },
+    {
+      "name": "test/unit/VaultEdge.t.sol:VaultEdgeTest",
+      "tests": [
+        {
+          "name": "testActiveSingleAndBatchCallbacksShareGuard()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6521017
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testApprovalRevocationIsTemporaryAndUnknownReadCannotTerminate()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 2441678
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testBEMPaymentCallbackCrossEntryGuard()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 9134869
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testBNBRefundCallbackGuardAndFailureRollbackIsolation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 1994519
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testBadMarketplacePostconditionRollsBackLastContribution()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 14460087
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testBoundCancellationStillVisibleAfterERC1271SignatureRevocation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3362258
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testBoundCounterInvalidationStillVisibleAfterERC1271Revocation()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3107795
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testFundingCallbackCrossEntryGuard()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 3393782
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testLateBEMAfterNormalRedemptionBelongsOnlyToFixedBeneficiary()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 8128936
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testMarketSellerPaymentCallbackWhilePurchasingSharesGuard()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 7101596
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testNFTRecipientCallbackGuardAndRejectionRollsBackClosure()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 9944275
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testPriceUpAndDownAndNewListingNeverRetargetOrder()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 302659
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testTaxTokenAndBalanceDecreaseNeverRewriteOrOverpayHistory()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5736017
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testUnsolicitedTargetNFTAndWrongCallbacksCannotActivateOrSpend()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 449526
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testWithoutHarvestSkipsBothBrokenBalanceAndMiningThenResidualBeneficiaryOnly()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 6204747
+            }
+          },
+          "gas": null
+        },
+        {
+          "name": "testZeroSelfAndDuplicateTransfersKeepHolderIndexConsistent()",
+          "status": "Success",
+          "reason": null,
+          "kind": {
+            "Unit": {
+              "gas": 5568029
+            }
+          },
+          "gas": null
+        }
+      ]
+    }
+  ],
+  "solidityTestCount": 79,
+  "sdkTests": {
+    "passed": 78,
+    "failed": 0,
+    "evidence": "reports/sdk-tests.txt"
+  },
+  "verification": {
+    "status": "PASS",
+    "completed": true,
+    "verificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+    "steps": [
+      {
+        "name": "bootstrap",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/bootstrap.mjs"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/bootstrap.txt",
+        "evidenceSHA256": "a6bb9cdfb68d6d610f976edb23d70f00a578e491af34133948af0be77e570e95"
+      },
+      {
+        "name": "format",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/forge.mjs",
+          "fmt",
+          "--check"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/format.txt",
+        "evidenceSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "clean",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/forge.mjs",
+          "clean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/clean.txt",
+        "evidenceSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "seaport-build",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/build-seaport.mjs"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/seaport-build.txt",
+        "evidenceSHA256": "7447234d414693f204a887147e2f044a25908bf3f44808c94343c5acb33dccb2"
+      },
+      {
+        "name": "build",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/forge.mjs",
+          "build",
+          "--sizes"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/build.txt",
+        "evidenceSHA256": "a2250f9c30d2f64d2826b045aaca5e81f434280be55a477c42bc8886fa77bd2a"
+      },
+      {
+        "name": "solidity-tests",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/forge.mjs",
+          "test",
+          "--json"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/solidity-tests.json",
+        "evidenceSHA256": "1fa2f405c08042b389eab474f5cb90c1e11a7fd911ee65a235fc1ebf11625240"
+      },
+      {
+        "name": "gas",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/forge.mjs",
+          "test",
+          "--match-contract",
+          "GasBench.*Test",
+          "--gas-report",
+          "-vv"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/gas.txt",
+        "evidenceSHA256": "ab2df9d35342cb77e24ad387498833e91b8912fd3272124c75b52031813202cb"
+      },
+      {
+        "name": "typecheck",
+        "command": [
+          "npm",
+          "run",
+          "typecheck"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/typecheck.txt",
+        "evidenceSHA256": "83cda1c2898b301ec34d2331b1fafd4dfa3996cfded1b7c6dced21fddec41edd"
+      },
+      {
+        "name": "sdk-tests",
+        "command": [
+          "npm",
+          "run",
+          "test:sdk"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/sdk-tests.txt",
+        "evidenceSHA256": "b93e59026edc64ed133a53c68db0d0db0347b8cb44f900257ba821655fc7270d"
+      },
+      {
+        "name": "export",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "scripts/export.mjs"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/export.txt",
+        "evidenceSHA256": "eefb7a44c27fe3488850824e6e6c41a18cd279be0238414c44e845786f38fc56"
+      },
+      {
+        "name": "fork-preflight",
+        "command": [
+          "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+          "--import",
+          "tsx",
+          "scripts/fork-preflight.mjs"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "evidence": "reports/fork-preflight.txt",
+        "evidenceSHA256": "0cd0c407462a0ce9c245f0f31d6ea60c2fc916e0013a740a27dee19b5ef09170"
+      }
+    ]
+  },
+  "localCLI": {
+    "status": "PASS",
+    "operations": 57,
+    "evidence": "reports/local-smoke.json",
+    "mainnetEvidence": false
+  },
+  "localForkTransport": {
+    "status": "PASS",
+    "scope": "LOCAL_MOCK_UPSTREAM_TRANSPORT_ONLY",
+    "evidence": "reports/fork-local-selftest.json",
+    "checks": 32,
+    "actualBSCForkExecuted": false
+  },
+  "lanTransport": {
+    "status": "PASS",
+    "scope": "LOCAL_MOCK_UPSTREAM_TRANSPORT_ONLY",
+    "evidence": "reports/fork-lan-selftest.json",
+    "checks": 30,
+    "actualBSCForkExecuted": false,
+    "crossMachineLAN": "NOT_RUN"
+  },
+  "bscFork": {
+    "status": "PASS",
+    "evidence": "reports/real-bsc-fork-tests.json",
+    "evidenceSHA256": "8762427a6054472f7d064e708eeda3997aaf625f45d21cc41c56b945d594131e",
+    "orderOrigin": "LOCAL_FORK_CREATED_NO_PUBLIC_SIGNATURE",
+    "existingMainnetSignedOrder": "NOT_RUN",
+    "zeroPendingSettlement": {
+      "status": "PASS",
+      "evidence": "reports/real-bsc-fork-tests.json",
+      "actualNewVaultInflowRaw": "37601"
+    },
+    "mainnetTransactions": 0,
+    "productionReady": false
+  },
+  "gas": [
+    {
+      "operation": "GAS_LOCAL_CLAIM_BATCH_45",
+      "executionGas": "1457684"
+    },
+    {
+      "operation": "GAS_LOCAL_CONTRIBUTE_100_PURCHASE",
+      "executionGas": "5222775"
+    },
+    {
+      "operation": "GAS_LOCAL_WITHDRAW_99_FUNDING",
+      "executionGas": "1366613"
+    },
+    {
+      "operation": "GAS_LOCAL_CLAIM_BATCH_100",
+      "executionGas": "3106504"
+    },
+    {
+      "operation": "GAS_LOCAL_CLAIM_BATCH_55_AFTER_45",
+      "executionGas": "1740363"
+    },
+    {
+      "operation": "GAS_LOCAL_TRANSFER_BATCH_100_TO_REDEEMER",
+      "executionGas": "3144291"
+    },
+    {
+      "operation": "GAS_LOCAL_REDEEM_100_POSITIVE_HARVEST_DUST",
+      "executionGas": "3285783"
+    }
+  ],
+  "staticScan": {
+    "tool": "Slither",
+    "status": "NOT_RUN",
+    "reason": "Not installed in this environment; compiler checks and tests are not an independent security audit."
+  },
+  "fork": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-19T12:51:14.608Z",
+    "status": "NOT_RUN",
+    "scope": "BSC_REAL_STATE_FORK_INTEGRATION",
+    "preflight": {
+      "status": "NOT_RUN",
+      "reasonCode": "MISSING_REQUIRED_INPUTS",
+      "missing": [
+        "FORK_SOURCE_RPC_URL",
+        "ORDER_FILE",
+        "FORK_BLOCK_NUMBER"
+      ]
+    },
+    "transactionsSent": 0,
+    "sourceRpcWrites": 0,
+    "loadedEnvFile": false,
+    "completeForkTestExecuted": false,
+    "note": "This gate only checks identity and reads an order. A complete fork lifecycle is NOT executed.",
+    "startupPlan": {
+      "execution": "MANUAL_ONLY_NOT_STARTED",
+      "command": "anvil --host 127.0.0.1 --chain-id 56 --fork-url \"$FORK_SOURCE_RPC_URL\" --fork-block-number \"$FORK_BLOCK_NUMBER\"",
+      "sourceEndpoint": "[REDACTED]"
+    },
+    "executionTopology": "loopback"
+  },
+  "releaseBlockers": [
+    "BSC 真实状态 fork 的本地新建订单结果见 bscFork；既有主网签名订单、正式市场发布/API 与实链均未执行。",
+    "官方 CircuitMarket 的准确源码、ABI、代理实现及升级约束未核验；CIRCUIT_RESERVED 默认禁用。",
+    "本地源码集成为 Seaport 1.5.0；BSC 1.6 本次固定状态测试只覆盖具体已执行路径，不能推广为全部版本/订单形态兼容。",
+    "真实 collection、Mining、BEM 的固定区块身份与本次实收路径见独立报告；未核实的源码语义和升级边界保持 Unknown，不能以单例测试代替审计。",
+    "生产多签、Timelock/控制器代码、延迟和完整角色尚未配置及核验；本地 EOA 角色仅用于测试。",
+    "Vault 代码大小余量有限且不可升级 clone 无法修补；接触公众资金前仍需独立复核/审计。"
+  ],
+  "auditNote": "Tool checks and cooperative source reviews are not an independent audit.",
+  "sourceIndex": [
+    {
+      "path": ".env.example",
+      "sha256": "bcbb52ad840a0d6ffc62a3e78ef3844da1585513b28c2dd2730a1392e582633c",
+      "bytes": 2717
+    },
+    {
+      "path": ".github/workflows/local-ci.yml",
+      "sha256": "df6d47854e759637cd47dadc570c5e4c8709eefa63e797c55acaac0a7c735971",
+      "bytes": 572
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f7bfc3061360aba02c1731f7c1763ef0c0a4ef31591b6e7846ffed4dffe66650",
+      "bytes": 126
+    },
+    {
+      "path": "FORK_TEST_RUNBOOK.md",
+      "sha256": "0ae12ab2640349aba45bbf6da9923ddf16ce38b66967bbed68ed589f32bde9e9",
+      "bytes": 10319
+    },
+    {
+      "path": "LIVE_TEST_CHECKLIST.md",
+      "sha256": "387b4f88c207982c9affd36a395bc083b02f42fe97c2ddc4f7f15642a6c7ae58",
+      "bytes": 7382
+    },
+    {
+      "path": "MARKET_HANDOFF.md",
+      "sha256": "52587490c493a66bccdc497d5cafeb6acd8c712f13effc5154f9b3caf8879d61",
+      "bytes": 9616
+    },
+    {
+      "path": "PROTOCOL_COMPATIBILITY.md",
+      "sha256": "ee2e25ce057a0a0c51e0a4cb8c3dc34c5195b9d21fb38b2c3973ddc73ae45462",
+      "bytes": 13893
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad401993ca5376ec4751195f84f8b622a74edca3d1a94efe746fdfe4ff7b2660",
+      "bytes": 10489
+    },
+    {
+      "path": "SECURITY_MODEL.md",
+      "sha256": "1e22531b7253711f80b7c3f7ea44b4677af75e0113497ef5280bb644e39b9cd0",
+      "bytes": 12733
+    },
+    {
+      "path": "SPEC.md",
+      "sha256": "7f493cdbadfe7744af80bb0352225b9e731e72c8e02cad6ff711d643138a76d4",
+      "bytes": 13540
+    },
+    {
+      "path": "cli/index.ts",
+      "sha256": "74ee015f7f7a3ed545235d63f0e52af9a81adb3fccda208abfe70cbd79f9b3b8",
+      "bytes": 20110
+    },
+    {
+      "path": "docs/ABI_EVENTS_ERRORS.md",
+      "sha256": "d28cefec71ecf177da9107add5cb88739924ae643fdb8625f7d03be2d5e49e21",
+      "bytes": 16834
+    },
+    {
+      "path": "docs/FORK_CLIENT_RUNBOOK.md",
+      "sha256": "93ae54e74bcddfcb7dcbbd61663eea3675b20e7e0d293b62e3e83064fc0e8c24",
+      "bytes": 15867
+    },
+    {
+      "path": "docs/FORK_INPUTS.md",
+      "sha256": "a51fa16882b1370414f9432f24a0c0c8dc6feacf186b8aeb4f9f58a7c83d7da8",
+      "bytes": 11404
+    },
+    {
+      "path": "docs/LOCAL_FORK_RUNBOOK.md",
+      "sha256": "eaa54fa6245f67e877c9ddc3f5315cf7e677845f9c9a821ad0347fb6d490ecfb",
+      "bytes": 12971
+    },
+    {
+      "path": "docs/MAC_M4_FORK_HOST_PROMPT.md",
+      "sha256": "d95e3c2c98b7e1f3397c6dbb30da38d0044f58be4443e485b38e1305eec13ece",
+      "bytes": 8123
+    },
+    {
+      "path": "docs/REAL_BSC_FORK_TEST_REPORT.md",
+      "sha256": "add31e42afbbbbf456c535965d5c52073370dc014850589c868bcecd2ef48dd3",
+      "bytes": 24060
+    },
+    {
+      "path": "docs/REAL_FORK_EVIDENCE_AUDIT.md",
+      "sha256": "82b9164ada9219795e77bca33f5025fa9ebf78821d1da6b0a8816eb063e02685",
+      "bytes": 11443
+    },
+    {
+      "path": "docs/REAL_FORK_EVIDENCE_AUDIT_BEFORE_PENDING_FIX.md",
+      "sha256": "b87bd93f2434ba828ffe4a19aca34bb729e7c63ab657744405c79874f44d41f9",
+      "bytes": 10398
+    },
+    {
+      "path": "docs/REAL_PROTOCOL_IDENTITY_REVIEW.md",
+      "sha256": "d4d3be93e0f0dd50748e90bfbf5f960d79602811a03af858a6394af625686120",
+      "bytes": 10807
+    },
+    {
+      "path": "fixtures/fork-authorized-3204-1792413376728.config.json",
+      "sha256": "5ab54ec5411059a2e016ac787fef59d83bb0d6cdc622d1e1fd8c1a982d18ae8c",
+      "bytes": 626
+    },
+    {
+      "path": "fixtures/fork-authorized-3204-1792413653401.config.json",
+      "sha256": "5ab54ec5411059a2e016ac787fef59d83bb0d6cdc622d1e1fd8c1a982d18ae8c",
+      "bytes": 626
+    },
+    {
+      "path": "fixtures/fork-authorized-3204-1792414018906.config.json",
+      "sha256": "5ab54ec5411059a2e016ac787fef59d83bb0d6cdc622d1e1fd8c1a982d18ae8c",
+      "bytes": 626
+    },
+    {
+      "path": "fixtures/fork-created-3204-157965afaffa5c59.json",
+      "sha256": "0e8722d1f23b7c00e4f37477e3777af99aabcfc600438281ed0950a3a6a1c7d3",
+      "bytes": 4681
+    },
+    {
+      "path": "fixtures/fork-created-3204-4b806c1325967dc1.json",
+      "sha256": "ef6b0a6596305cb91f870f37f99a3b22aa10e6db0068c0162b1a0cacc9d2d5ef",
+      "bytes": 4679
+    },
+    {
+      "path": "fixtures/fork-created-3204-a1b8430ebad7a22c.json",
+      "sha256": "87fd9a91ccc19104caf5185760555658404c84b35e4e180b57a7bfe505a2e652",
+      "bytes": 4677
+    },
+    {
+      "path": "fixtures/mock-pool.example.json",
+      "sha256": "4aede6339afc5187fe45f89ab75e05315b3baec3a3c9e45eff1f5d7f82171c8f",
+      "bytes": 253
+    },
+    {
+      "path": "fixtures/official-order.example.json",
+      "sha256": "4841d68b8c4a044e6265414602a3b5fca35aa0b1161a6c53ab4cffd1776b7fab",
+      "bytes": 1940
+    },
+    {
+      "path": "fixtures/seaport-order.example.json",
+      "sha256": "c8ce5336e177f988b1627268a1b9d4ba23ea889b45c0bbb34076561af343e0d0",
+      "bytes": 4236
+    },
+    {
+      "path": "fixtures/seaport/BUILD.json",
+      "sha256": "dbbcadb277318534c014c61ef839303bd48a6c8fc131f8839bc145deeb783703",
+      "bytes": 10485
+    },
+    {
+      "path": "fixtures/seaport/ConduitController.json",
+      "sha256": "36c9c2f01af8e59afd90f209d2c177656a40341182238d82ef8b8b95048e1537",
+      "bytes": 36753
+    },
+    {
+      "path": "fixtures/seaport/Seaport.json",
+      "sha256": "fa9602aa9afa1852a5114129a3379b5d3708758523c77cc2392ad9acd1008c8e",
+      "bytes": 169977
+    },
+    {
+      "path": "foundry.toml",
+      "sha256": "e7d85417ae1847c7e30c170305add977a1a03ad0ed4efb52ff48f37017f86cef",
+      "bytes": 438
+    },
+    {
+      "path": "lib/forge-std/LICENSE-APACHE",
+      "sha256": "50b6bf8bdb63265ce14953b480b7aaa0271e78f56843b99c184abd3ae5048cd7",
+      "bytes": 10897
+    },
+    {
+      "path": "lib/forge-std/LICENSE-MIT",
+      "sha256": "6d185dfe089d4de346d391fc5997fbd4739bad1d6556010413c10f420d704ecc",
+      "bytes": 1073
+    },
+    {
+      "path": "lib/forge-std/src/Base.sol",
+      "sha256": "29297a56d2b1692d4439545b93ed62890da7e9e1060c03005b43151af7984bf0",
+      "bytes": 2227
+    },
+    {
+      "path": "lib/forge-std/src/Script.sol",
+      "sha256": "69481d9a1b816761680fe82700233d0ecbb85f81f4e2826841664779cbb6f535",
+      "bytes": 881
+    },
+    {
+      "path": "lib/forge-std/src/StdAssertions.sol",
+      "sha256": "d4c89eec70d267dec6188461fbc74d3dc8c47e518d176a23417533a232ed9780",
+      "bytes": 23360
+    },
+    {
+      "path": "lib/forge-std/src/StdChains.sol",
+      "sha256": "09a88ace5bc037f4a805c7ae071abf675ce802c8b36810287cd327b7d035fb81",
+      "bytes": 14232
+    },
+    {
+      "path": "lib/forge-std/src/StdCheats.sol",
+      "sha256": "29af42f9d670fd22e9fc3ebe3c2da194471e93e210361c41d3d26ef04e9dca28",
+      "bytes": 31809
+    },
+    {
+      "path": "lib/forge-std/src/StdConstants.sol",
+      "sha256": "6c785abd2fb9d42560f867d8e43e729c55f5bda2c06e5ddae27b17e301de4f04",
+      "bytes": 1867
+    },
+    {
+      "path": "lib/forge-std/src/StdError.sol",
+      "sha256": "82ca17e33a03775e95b4612bd604a8732c73b2982a0278d214e06c68a886dc11",
+      "bytes": 1013
+    },
+    {
+      "path": "lib/forge-std/src/StdInvariant.sol",
+      "sha256": "f572e991cfe874844b3b75a540e38e2161c29b5d9ab1635a3c4f1a16c548f987",
+      "bytes": 3977
+    },
+    {
+      "path": "lib/forge-std/src/StdJson.sol",
+      "sha256": "0211b47e93dbeb6a7de6112470a77137038ed73b79b015847f013e49fcd7511f",
+      "bytes": 9703
+    },
+    {
+      "path": "lib/forge-std/src/StdMath.sol",
+      "sha256": "f04fc0616741563eb32d66c11af7fdca55a7202221e14282268c7be851fc63ab",
+      "bytes": 1360
+    },
+    {
+      "path": "lib/forge-std/src/StdStorage.sol",
+      "sha256": "c6dbb05b29be5bcbfabf06ea46b64fe9fbdb7542681795614ca3dee248214215",
+      "bytes": 17841
+    },
+    {
+      "path": "lib/forge-std/src/StdStyle.sol",
+      "sha256": "324c2b0e100e88edbdb75f60f8a4c42f056f8d618ae5f56b1c404df64e8280a7",
+      "bytes": 10462
+    },
+    {
+      "path": "lib/forge-std/src/StdToml.sol",
+      "sha256": "de3fb35af79a1fd2a2de9bc4ca7866e4102f9d3fbf11f66f3fe82696412d47e2",
+      "bytes": 9703
+    },
+    {
+      "path": "lib/forge-std/src/StdUtils.sol",
+      "sha256": "c64a4d5023e6d46884734b8cb1b0f424bab26f0ccc920779b58d2f841c4506ae",
+      "bytes": 10024
+    },
+    {
+      "path": "lib/forge-std/src/Test.sol",
+      "sha256": "b1b48a4dfbd65fed186163326dc8870316679f64a195aa18050f83657d2df39c",
+      "bytes": 1095
+    },
+    {
+      "path": "lib/forge-std/src/Vm.sol",
+      "sha256": "9068805b59ac1d0ea03a8fa1f15ae49c094e0c6c852a2500e0dd112f264b2cb1",
+      "bytes": 125243
+    },
+    {
+      "path": "lib/forge-std/src/console.sol",
+      "sha256": "896c5a5a5c235cb11a39876d430e1fc2c621e7950c4637ca58251b84b053f178",
+      "bytes": 69270
+    },
+    {
+      "path": "lib/forge-std/src/console2.sol",
+      "sha256": "3bbe2e07ec53d8cf9c091667fe10234fcb3e2b45eab2c711002188806f46e779",
+      "bytes": 117
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC1155.sol",
+      "sha256": "d44fde880db31958113ed5b490ed30766f7843137947893506e35b161b959000",
+      "bytes": 7604
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC165.sol",
+      "sha256": "9bdab733bba2df028853aef1f5e06871fb4157d15c3c6a670be13f9b614c193b",
+      "bytes": 537
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC20.sol",
+      "sha256": "283cedb0cf82640370b77b8a42175bc417c69a02d8989ac6d6a99be2157acd4d",
+      "bytes": 2067
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC4626.sol",
+      "sha256": "6a5115bfcaba28ad7f11d1e3973718683f5bac596f0e567d0a1cd4d3308e98b7",
+      "bytes": 11980
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC6909.sol",
+      "sha256": "b42d2ff602839f784bbf1012e124c01e11784b5b08bc828fbc6b151d2477f517",
+      "bytes": 3481
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC721.sol",
+      "sha256": "f6383f58bcf3a0f34717ae4ed5866b78201fd646df2e5eb2b7234d2ea2466ae5",
+      "bytes": 9041
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC7540.sol",
+      "sha256": "c6a7854c86bf3772a996fd70fc11b84930b03f136e98fce6e8cc36534af1d6c1",
+      "bytes": 6611
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC7575.sol",
+      "sha256": "31c45af17a667da7fe1710097cdc1edb6dbae0665f12a361b8632a4be0ead219",
+      "bytes": 12603
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "sha256": "6620d9c5ea2e2291440e1dcce5072f948b7ec4d65075876a0d0ac9267d3342e3",
+      "bytes": 2185
+    },
+    {
+      "path": "lib/forge-std/src/safeconsole.sol",
+      "sha256": "ed11aa2efc83fa8e575215a11dd7a9be385cf49dacbc379630168d7334899e46",
+      "bytes": 427535
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1c813826e83bbb82268850fb50ac68cb9679915e6e1d3cc1d9c142b225174075",
+      "bytes": 29870
+    },
+    {
+      "path": "package.json",
+      "sha256": "553d359f03c4f10fea124b844aca0a304ef64cacb4ee650da9bf51bb49f25900",
+      "bytes": 1878
+    },
+    {
+      "path": "remappings.txt",
+      "sha256": "65df789f496828ff41be04385df871c9c89ead20a4544b38f301afd5e10a77bc",
+      "bytes": 264
+    },
+    {
+      "path": "schemas/order-envelope-v1.schema.json",
+      "sha256": "62c7d280c715a008a6ea866c0c66449fe52b8e0142e32298bdb7d206fd455277",
+      "bytes": 28563
+    },
+    {
+      "path": "script/DeployLocal.s.sol",
+      "sha256": "acaa278c44651946f04f0249cc708a4be22ed9429bb8b790501ce8ec6f4efbaa",
+      "bytes": 1884
+    },
+    {
+      "path": "scripts/archive.mjs",
+      "sha256": "8baaa88ec1d7c05baf6445ecba68b07fab9c0e97db3f33240f935beba21e317e",
+      "bytes": 2605
+    },
+    {
+      "path": "scripts/bootstrap.mjs",
+      "sha256": "281cdc241f22471ba9a53cb0c00d6a37b1af8c94c442bdd09f13194ee1a75f0a",
+      "bytes": 1912
+    },
+    {
+      "path": "scripts/build-seaport.mjs",
+      "sha256": "ccc067352661bf3855ebcb964532ee0f8f5a75288601646021768972a0d19c18",
+      "bytes": 2196
+    },
+    {
+      "path": "scripts/check-authorized-source.mjs",
+      "sha256": "f1bbcce0bfbab2684e20daccfceb1aac9f1042f6387b93a825006f9f5390be5c",
+      "bytes": 9216
+    },
+    {
+      "path": "scripts/configure-local.mjs",
+      "sha256": "45cd7cd47a794bfc7c088da30e815dbe7de63d09f2e96f70dba09761c7c8c207",
+      "bytes": 14662
+    },
+    {
+      "path": "scripts/export.mjs",
+      "sha256": "8a5a8ef22dad22b24d189f403a02024b0afbde6fde6311e885ccab54a8002044",
+      "bytes": 1421
+    },
+    {
+      "path": "scripts/forge.mjs",
+      "sha256": "ee1d192888975207a83cba98b9bac407e96714b87126bdec3ee2b3890f5b1a59",
+      "bytes": 1985
+    },
+    {
+      "path": "scripts/fork-connect.mjs",
+      "sha256": "c9dd4450524594d6275113cded80223fe50225d4fa437f3b91f3e0d261cca4f8",
+      "bytes": 3963
+    },
+    {
+      "path": "scripts/fork-create-order.mjs",
+      "sha256": "b9e63705cec3868b299bb7f3d049f979ecb9e822cc3bbc7228ecb52884b93246",
+      "bytes": 15786
+    },
+    {
+      "path": "scripts/fork-host.mjs",
+      "sha256": "2e8d76a90b06074a9b8edfb3f64375c3cbc13251aff7886d17e6f5459ff14262",
+      "bytes": 10471
+    },
+    {
+      "path": "scripts/fork-lan-common.mjs",
+      "sha256": "17417c10929bbc2b8a7ef4d1b6b238635a603c17e350a9fe85456222e7f8651a",
+      "bytes": 12849
+    },
+    {
+      "path": "scripts/fork-local.mjs",
+      "sha256": "76af97e1f6e05bdfa0f0c41defba2f60eb8f932769a3937b1e3231a0194c7ed0",
+      "bytes": 8503
+    },
+    {
+      "path": "scripts/fork-preflight.mjs",
+      "sha256": "2eaac5ea092d9cc34c06febad688dd0d8f4c6f40efb6093e90162924c0908278",
+      "bytes": 16037
+    },
+    {
+      "path": "scripts/fork-prepare.mjs",
+      "sha256": "a97d4c79fd2aa418f738bf205629d743f503782fe2a7cf5f37468314f2282745",
+      "bytes": 9132
+    },
+    {
+      "path": "scripts/local-smoke.mjs",
+      "sha256": "6dbe2e2ad743ff14dce1348a925ead8a7663b3977625ce68f2bf277a2bdb9c7c",
+      "bytes": 12670
+    },
+    {
+      "path": "scripts/probe-authorized-fork.mjs",
+      "sha256": "4ca6898768694b2ec1a55582c3d71d607f37f045e2cf5a78ea1e77e399bb7fb1",
+      "bytes": 5064
+    },
+    {
+      "path": "scripts/release-files.mjs",
+      "sha256": "d8b5d1f41a780ca80379b9ca211dff81d24bfafb3d17023c57008ccfdb8fb5ee",
+      "bytes": 1395
+    },
+    {
+      "path": "scripts/report.mjs",
+      "sha256": "422e08a518879a5a9efbc12a996839e1f26d54ddcc477e8300ed6ee11ca327b1",
+      "bytes": 14835
+    },
+    {
+      "path": "scripts/run-authorized-fork-tests.mjs",
+      "sha256": "bba3291fd2beb8cb47dc73ef3f45e2852a9b72c4e2e9631db1ef1c280c2f9c83",
+      "bytes": 28810
+    },
+    {
+      "path": "scripts/start-authorized-fork.mjs",
+      "sha256": "bcbd4b2afc3675023bc454deba59846dca7c23ae18c480a219c548bbc5b12d35",
+      "bytes": 1244
+    },
+    {
+      "path": "scripts/test-fork-lan.mjs",
+      "sha256": "353581163dc1a7b271b94be5df29d55742ac5c087474197cbd4046cf6faf9598",
+      "bytes": 12486
+    },
+    {
+      "path": "scripts/test-fork-local.mjs",
+      "sha256": "7056fdd470c31ca569a85dc9fa008731320dce775ca149f62bbde0c262a6d3bc",
+      "bytes": 9120
+    },
+    {
+      "path": "scripts/test-real-mining-settlement.mjs",
+      "sha256": "791f7b1f33512e1f122ad1e73e11027d52e756d96f75217f7da9e318b1c8412e",
+      "bytes": 17502
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "sha256": "331ef62a5585ea10db5ffc3dce1e8a758c1b690a87cc8ba4e60304ed51d0f44c",
+      "bytes": 2438
+    },
+    {
+      "path": "sdk/contracts.ts",
+      "sha256": "c0b287f9e8a01206a7c90388674a8a3fa54ee373e0906c53a2a2cf2673f56f86",
+      "bytes": 6364
+    },
+    {
+      "path": "sdk/execution.ts",
+      "sha256": "7d78a954f09bfd58d5cee54a2ac5d9e65b941ccf4f663026cf198bc92b4552a4",
+      "bytes": 10109
+    },
+    {
+      "path": "sdk/generate-abi-guide.ts",
+      "sha256": "64d51e04dcf9eb1def0759e7917cf7986cb769f78255d6bb6eec8caf401813c9",
+      "bytes": 11231
+    },
+    {
+      "path": "sdk/generate-order-artifacts.ts",
+      "sha256": "a5fe82a500e89418d52b74f20f6fb8c0c8ddd1c632f4ada7515d18ee5c15eeba",
+      "bytes": 5583
+    },
+    {
+      "path": "sdk/index.ts",
+      "sha256": "0a77da8403b973fb73a94d4a202cad885a259aa93cce961b4d463fb18b37fbbd",
+      "bytes": 240
+    },
+    {
+      "path": "sdk/live-identity.ts",
+      "sha256": "2579f8b7fd67ebd5fcdfd7dd55cdd4df4e4bd80a50f9205a06a0e8c593817c83",
+      "bytes": 11726
+    },
+    {
+      "path": "sdk/order-envelope.ts",
+      "sha256": "91410d8deac86da7a2efd47e1f1c8f2576c48b3ef70060a5ce7b78665fa01c95",
+      "bytes": 10569
+    },
+    {
+      "path": "sdk/order-source.ts",
+      "sha256": "870bb87d60fbc166045b445a23f42b9925a02fb0ecd4c29da6863562367b8c52",
+      "bytes": 3191
+    },
+    {
+      "path": "sdk/postconditions.ts",
+      "sha256": "0b1a1385b15d61e34ec2da1ce61a239d4e6bbb411670ecd2c40c65da7997e6b8",
+      "bytes": 11104
+    },
+    {
+      "path": "sdk/protocol.ts",
+      "sha256": "4479d016e0532753176816e765aacb215728b8093e99e48f12fe344deb5f1dc1",
+      "bytes": 4850
+    },
+    {
+      "path": "src/GovernanceTimelock.sol",
+      "sha256": "ae88c7a86cc1c74cc4b1008f85a2b41eb5bad41b8b56575521fd13057c1c0958",
+      "bytes": 1374
+    },
+    {
+      "path": "src/GroupBuyFactory.sol",
+      "sha256": "39fc74e2ca79c8fd7e76392961a64f518e819492cc3f118c0751f535e9edde54",
+      "bytes": 13015
+    },
+    {
+      "path": "src/GroupBuyVault.sol",
+      "sha256": "d7598d25a0a05f62e1262b0d53a647478f6db751f63a3c7b19b43031c058ea98",
+      "bytes": 19132
+    },
+    {
+      "path": "src/Types.sol",
+      "sha256": "3e3c63b1c12de583304989ec862478494de0d3a1d4a4a65fa0382a1f9f99fd8f",
+      "bytes": 2762
+    },
+    {
+      "path": "src/interfaces/IGroupBuyVault.sol",
+      "sha256": "c019e388bf01c232f4b63df2c7b31e2e215b889f5aa1b8a94b5bb2382fc876af",
+      "bytes": 643
+    },
+    {
+      "path": "src/interfaces/IProtocols.sol",
+      "sha256": "89ce165d115f905e232e5f692102bc8e423272341dfe7da0e7af2e3674afaed4",
+      "bytes": 1738
+    },
+    {
+      "path": "src/markets/MarketLogic.sol",
+      "sha256": "e0e2fbca914a489210f5142e2f32206461a9bbcf479ac406fdcd52ffe0d68f82",
+      "bytes": 9038
+    },
+    {
+      "path": "src/markets/MarketValidator.sol",
+      "sha256": "979607a038c4c54a1268184e82a74969256e675c847c1c3565f5c672410b603f",
+      "bytes": 603
+    },
+    {
+      "path": "tapeout-groupbuy-codex-prompt.md",
+      "sha256": "b5b92ba922404ade77ad9de4e160830e9ca1194119a61a99ddadec3c11a36187",
+      "bytes": 37834
+    },
+    {
+      "path": "test/fork/README.md",
+      "sha256": "78a82e3a26a971c00b9fa2d5b7c0f0381ae55e05915e66b98d9a958c3d7c9957",
+      "bytes": 3699
+    },
+    {
+      "path": "test/helpers/FactoryVersions.sol",
+      "sha256": "ecbbf26828d0d1c1a74bfd6f95d22f4556f20db29b5bc0b194d18a23d94f001f",
+      "bytes": 1350
+    },
+    {
+      "path": "test/helpers/Mocks.sol",
+      "sha256": "324bb6426b1ec936ffb89b514a6327766ee42d054505ddc1130f63c6465d07c1",
+      "bytes": 6327
+    },
+    {
+      "path": "test/helpers/TestBase.sol",
+      "sha256": "a9c2572c4783536f8661b434b014ff00ca0b237e03e0c8924cbfe3cb86aa9e7e",
+      "bytes": 5362
+    },
+    {
+      "path": "test/integration/RealSeaport.t.sol",
+      "sha256": "bac036bc9b2a8e9f5dca46de29f96037a015c5383b93e3641c14ebd84031fae7",
+      "bytes": 10269
+    },
+    {
+      "path": "test/invariant/Accounting.t.sol",
+      "sha256": "806339cd0efcb762cd94f9ef8b8b2c09f09d115d27231652e1c584f7aaa0ce32",
+      "bytes": 7551
+    },
+    {
+      "path": "test/sdk/configure-local.test.ts",
+      "sha256": "4cdbe5042cebcd7af1a778847bd6429df03ddded65ed1d073544794cb42f78db",
+      "bytes": 3999
+    },
+    {
+      "path": "test/sdk/execution-lan.test.ts",
+      "sha256": "41ee72c906ec16124ce075ed12456fc1bd945107b919377ef8c97422b5fc0516",
+      "bytes": 6303
+    },
+    {
+      "path": "test/sdk/fork-create-order.test.ts",
+      "sha256": "3ac684f127061278c5199074a7813263a6842df14f1e187a3ea678f638dc1d8d",
+      "bytes": 3277
+    },
+    {
+      "path": "test/sdk/fork-lan.test.ts",
+      "sha256": "e8834fb80532713af2a1110aab6d6c5413046df9e891cd0d2b39faa62b1d9056",
+      "bytes": 7639
+    },
+    {
+      "path": "test/sdk/fork-local.test.ts",
+      "sha256": "3dd188e5bdca19e28e492ff22caff86a9e8e8429e0a5b537424997550a37d5fb",
+      "bytes": 2130
+    },
+    {
+      "path": "test/sdk/fork-preflight.test.ts",
+      "sha256": "8906af22b609cc8f06a1fb590fedbe7348538b6b1b0347cd8c0b1acd9fa8edcc",
+      "bytes": 7019
+    },
+    {
+      "path": "test/sdk/fork-prepare.test.ts",
+      "sha256": "f3668bee34c0b39911da214a7cb024590ad089303c31838e39952fa0bc05c450",
+      "bytes": 3304
+    },
+    {
+      "path": "test/sdk/live-identity.test.ts",
+      "sha256": "a00dfbf7e94150d97ddd227edcf6f943588775d9ebe2f0aaf1d7a9e0ec7068ca",
+      "bytes": 7590
+    },
+    {
+      "path": "test/sdk/order-envelope.test.ts",
+      "sha256": "15870d21f0a84f4c8c6ddb41080e905a0115979af04a2cbee78b107f6f2d73af",
+      "bytes": 9882
+    },
+    {
+      "path": "test/sdk/postconditions.test.ts",
+      "sha256": "77966d29516a56ff6c46908a409b9cf9a7389dec064db8d89e1eddfa401d7c07",
+      "bytes": 4820
+    },
+    {
+      "path": "test/sdk/protocol.test.ts",
+      "sha256": "0cf4d6d04982392fc2aa9d9d7639dd04c7026a2849e58942797388d503fd3477",
+      "bytes": 5758
+    },
+    {
+      "path": "test/unit/FactoryClones.t.sol",
+      "sha256": "7da44117dd15b3603014eee1d8fb8a42131994329f7cb24172e0a210f39aee6c",
+      "bytes": 14646
+    },
+    {
+      "path": "test/unit/FactoryGovernance.t.sol",
+      "sha256": "403754d3baf1463fd4eed5bf718d2cbabe572d0aa85d78fba16814adf90883eb",
+      "bytes": 8779
+    },
+    {
+      "path": "test/unit/FundingRewards.t.sol",
+      "sha256": "441cc9c5283a5798c1bf32bb2e9fcd7e4fa1069dd0a4cb45854c049304a42388",
+      "bytes": 16312
+    },
+    {
+      "path": "test/unit/GasBench.t.sol",
+      "sha256": "cc421072e6811a546e1d308cb7858a5cd21762b8c2da0a18d83afc4015395e8d",
+      "bytes": 7223
+    },
+    {
+      "path": "test/unit/VaultEdge.t.sol",
+      "sha256": "08283e46a87e278f9655980ae2139844b6716673224985907d0eaa2508294b0d",
+      "bytes": 21947
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "5d1b725f5e1038b3ae7fc8bb974e4a0d3542fac1af0f902fb2619068a4cdb0f6",
+      "bytes": 346
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1",
+  "source": {
+    "kind": "json",
+    "name": "synthetic-schema-example"
+  },
+  "sourceChainId": 56,
+  "market": "0x1111111111111111111111111111111111111111",
+  "collection": "0x2222222222222222222222222222222222222222",
+  "tokenId": "3204",
+  "seller": "0x3333333333333333333333333333333333333333",
+  "buyerPaysWei": "10100",
+  "currency": {
+    "kind": "native",
+    "symbol": "BNB",
+    "token": "0x0000000000000000000000000000000000000000"
+  },
+  "fees": [
+    {
+      "kind": "seller",
+      "recipient": "0x3333333333333333333333333333333333333333",
+      "amountWei": "10000"
+    },
+    {
+      "kind": "market",
+      "recipient": "0x4444444444444444444444444444444444444444",
+      "amountWei": "100"
+    }
+  ],
+  "nativeStartTime": null,
+  "nativeEndTime": null,
+  "quoteExpiresAt": null,
+  "validation": {
+    "status": "unknown",
+    "blockNumber": "0",
+    "blockHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "exportedAt": "2026-10-04T00:00:00.000Z",
+  "identity": {
+    "status": "unknown",
+    "marketCodeHash": null,
+    "collectionCodeHash": null,
+    "proxy": {
+      "address": "0x1111111111111111111111111111111111111111",
+      "implementation": null,
+      "implementationCodeHash": null,
+      "mechanism": "unknown",
+      "onchainEnforced": false
+    },
+    "evidenceVersion": "schema-fixture-not-chain-evidence"
+  },
+  "protocol": "official-circuit",
+  "listingId": "1",
+  "official": {
+    "adapterStatus": "unknown",
+    "listingView": {
+      "listingId": "1",
+      "seller": "0x3333333333333333333333333333333333333333",
+      "collection": "0x2222222222222222222222222222222222222222",
+      "tokenId": "3204",
+      "price": "10100",
+      "feeBps": 100,
+      "valid": true
+    },
+    "listingFor": {
+      "listingId": "1",
+      "seller": "0x3333333333333333333333333333333333333333",
+      "price": "10100",
+      "valid": true
+    }
+  }
+}

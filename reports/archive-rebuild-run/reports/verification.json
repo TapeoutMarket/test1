@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "completed": true,
+  "verificationInputHash": "cd8df1be89a3af14094b83fef1241a01f9c093096de121f2ef1c523d23d3ae92",
+  "steps": [
+    {
+      "name": "bootstrap",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/bootstrap.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/bootstrap.txt",
+      "evidenceSHA256": "a6bb9cdfb68d6d610f976edb23d70f00a578e491af34133948af0be77e570e95"
+    },
+    {
+      "name": "format",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/forge.mjs",
+        "fmt",
+        "--check"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/format.txt",
+      "evidenceSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "clean",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/forge.mjs",
+        "clean"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/clean.txt",
+      "evidenceSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "seaport-build",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/build-seaport.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/seaport-build.txt",
+      "evidenceSHA256": "7447234d414693f204a887147e2f044a25908bf3f44808c94343c5acb33dccb2"
+    },
+    {
+      "name": "build",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/forge.mjs",
+        "build",
+        "--sizes"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/build.txt",
+      "evidenceSHA256": "7a995e8f164558b01abff6cba85743e7ba37422f545c0a5969f36893cc095231"
+    },
+    {
+      "name": "solidity-tests",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/forge.mjs",
+        "test",
+        "--json"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/solidity-tests.json",
+      "evidenceSHA256": "e866514168932989965f451758986c104dbec3442e2d346787a5f80d11f6ef84"
+    },
+    {
+      "name": "gas",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/forge.mjs",
+        "test",
+        "--match-contract",
+        "GasBench.*Test",
+        "--gas-report",
+        "-vv"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/gas.txt",
+      "evidenceSHA256": "0eda8187f1f96897df915519bb8040153cab48dfad57aa806c0f4962322e78e9"
+    },
+    {
+      "name": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/typecheck.txt",
+      "evidenceSHA256": "83cda1c2898b301ec34d2331b1fafd4dfa3996cfded1b7c6dced21fddec41edd"
+    },
+    {
+      "name": "sdk-tests",
+      "command": [
+        "npm",
+        "run",
+        "test:sdk"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/sdk-tests.txt",
+      "evidenceSHA256": "250247b44967b97707df306de02926f8fcddac1ab84ff1f7af6d2cb230a70d8d"
+    },
+    {
+      "name": "export",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "scripts/export.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/export.txt",
+      "evidenceSHA256": "8ed5dc40de58cf5bd198c6cef1b2246fd3488c53fea4908efc853ad8eb3912ef"
+    },
+    {
+      "name": "fork-preflight",
+      "command": [
+        "/Users/jaychen/.nvm/versions/node/v20.19.5/bin/node",
+        "--import",
+        "tsx",
+        "scripts/fork-preflight.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "evidence": "reports/fork-preflight.txt",
+      "evidenceSHA256": "e1040d855a5e6f2e1af625c01409fd8d5da694568ab119f230f62f40758a37cb"
+    }
+  ]
+}

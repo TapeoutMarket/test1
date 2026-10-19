@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-19T12:51:14.608Z",
+  "status": "NOT_RUN",
+  "scope": "BSC_REAL_STATE_FORK_INTEGRATION",
+  "preflight": {
+    "status": "NOT_RUN",
+    "reasonCode": "MISSING_REQUIRED_INPUTS",
+    "missing": [
+      "FORK_SOURCE_RPC_URL",
+      "ORDER_FILE",
+      "FORK_BLOCK_NUMBER"
+    ]
+  },
+  "transactionsSent": 0,
+  "sourceRpcWrites": 0,
+  "loadedEnvFile": false,
+  "completeForkTestExecuted": false,
+  "note": "This gate only checks identity and reads an order. A complete fork lifecycle is NOT executed.",
+  "startupPlan": {
+    "execution": "MANUAL_ONLY_NOT_STARTED",
+    "command": "anvil --host 127.0.0.1 --chain-id 56 --fork-url \"$FORK_SOURCE_RPC_URL\" --fork-block-number \"$FORK_BLOCK_NUMBER\"",
+    "sourceEndpoint": "[REDACTED]"
+  },
+  "executionTopology": "loopback"
+}

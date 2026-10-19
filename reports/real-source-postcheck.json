@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "READ_ONLY_SOURCE_POSTCHECK_FOR_ONE_CHECKPOINT",
+  "generatedAt": "2026-10-19T12:47:38.007Z",
+  "transactionsSentByThisScript": 0,
+  "sourceRPCWritesByThisScript": 0,
+  "privateKeysRead": false,
+  "loadedEnvFile": false,
+  "rpcMethodsUsed": [
+    "eth_chainId",
+    "eth_getBlockByNumber",
+    "eth_call"
+  ],
+  "sourceEndpoint": "LOCAL_READ_ONLY_PROXY_NOT_SERIALIZED",
+  "inputs": [
+    {
+      "path": "deployments/fork/56/local-session.json",
+      "sha256": "bf28942605c07f6cc470093166a748d63474600044de9f18f8642519c6af4143"
+    },
+    {
+      "path": "reports/authorized-source-observation.json",
+      "sha256": "36e3eca662ae75fe1eb6e123ff3e2bd299d4e5a0c993d7f0f8d3e69fd12bd933"
+    },
+    {
+      "path": "reports/real-bsc-fork-tests.json",
+      "sha256": "8762427a6054472f7d064e708eeda3997aaf625f45d21cc41c56b945d594131e"
+    }
+  ],
+  "forkRunCompletedAt": "2026-10-19T12:47:20.106Z",
+  "hostInstanceId": "f2b486c2-14e2-4034-a43a-e80c61b40974",
+  "chainId": 56,
+  "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+  "tokenId": "3204",
+  "market": "0x0000000000000068F116a894984e2DB1123eB395",
+  "orderHash": "0x157965afaffa5c5949ab133f9da4054d7607201aad675c29b81fc0f6370c3f2a",
+  "sourcePin": {
+    "blockNumber": "128554249",
+    "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+    "timestamp": "1792412907",
+    "state": {
+      "owner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "tokenApproved": "0x0000000000000000000000000000000000000000",
+      "approvedForAllToMarket": false,
+      "orderStatus": {
+        "isValidated": false,
+        "isCancelled": false,
+        "totalFilled": "0",
+        "totalSize": "0"
+      }
+    }
+  },
+  "latestObserved": {
+    "blockNumber": "128556806",
+    "blockHash": "0x45507aece822a5e9cc1e788f72e4a02f0b67939c4c021fc07bb5fe07784b86a8",
+    "timestamp": "1792414058",
+    "selection": "LATEST_OBSERVED_THEN_PINNED_BY_NUMBER_AND_HASH",
+    "state": {
+      "owner": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+      "tokenApproved": "0x0000000000000000000000000000000000000000",
+      "approvedForAllToMarket": false,
+      "orderStatus": {
+        "isValidated": false,
+        "isCancelled": false,
+        "totalFilled": "0",
+        "totalSize": "0"
+      }
+    }
+  },
+  "checks": {
+    "sourcePinnedOwnerMatchesInput": true,
+    "latestObservedOwnerMatchesInput": true,
+    "tokenApprovalUnchangedBetweenObservedBlocks": true,
+    "marketOperatorApprovalUnchangedBetweenObservedBlocks": true,
+    "generatedOrderUnknownAtSourcePin": true,
+    "generatedOrderUnknownAtLatestObservedBlock": true
+  },
+  "checkpointHashesRechecked": true,
+  "evidenceLimits": [
+    "This report observes two explicit source-chain checkpoints through the authorized read-only proxy, not an exhaustive history of all mainnet transactions.",
+    "Matching owner/approval values cannot prove that no intermediate unrelated transactions ever occurred.",
+    "An unknown generated order at the observed source block shows this exact fork order was neither validated nor filled there. It does not certify all other orders.",
+    "The fork-only transaction hashes are not mainnet receipt evidence. No provider credential or execution secret is read by this script."
+  ]
+}

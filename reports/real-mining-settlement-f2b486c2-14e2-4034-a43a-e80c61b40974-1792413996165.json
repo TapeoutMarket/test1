@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "scope": "REAL_BSC_STATE_LOCAL_MINING_SETTLEMENT_DIAGNOSTIC",
+  "status": "PASS",
+  "startedAt": "2026-10-19T12:46:36.146Z",
+  "verificationInputHash": "565320da2c84f6540cf546556291e491e764e64867c859fbf47bae41c1f1c142",
+  "privateKeysRead": false,
+  "loadedEnvFile": false,
+  "realSignaturesProduced": false,
+  "mainnetTransactions": 0,
+  "sourceRPCWrites": 0,
+  "nativeBalanceFunding": "LOCAL_ANVIL_ONLY",
+  "steps": [
+    {
+      "label": "first-claim",
+      "status": "PASS",
+      "before": {
+        "blockNumber": "128554249",
+        "blockHash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d",
+        "timestamp": "1792412907",
+        "pendingRaw": "13532613",
+        "bemRaw": "369220"
+      },
+      "transactionHash": "0x72fecb1f622b9e5f8fbcb3cb9d365e5d178110346196b3fe5aafa1c2856f6135",
+      "receipt": {
+        "type": "legacy",
+        "status": "success",
+        "cumulativeGasUsed": "104805",
+        "logs": [
+          {
+            "address": "0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a",
+            "topics": [
+              "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+              "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9"
+            ],
+            "data": "0x0000000000000000000000000000000000000000000000000000000000ce7f7b",
+            "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+            "blockNumber": "128554250",
+            "blockTimestamp": "1792412929",
+            "transactionHash": "0x72fecb1f622b9e5f8fbcb3cb9d365e5d178110346196b3fe5aafa1c2856f6135",
+            "transactionIndex": 0,
+            "logIndex": 0,
+            "removed": false
+          },
+          {
+            "address": "0x7e2e0dc66a3bd9103e69b766afa62d9f7b697b46",
+            "topics": [
+              "0x0508a8b4117d9a7b3d8f5895f6413e61b4f9a2df35afbfb41e78d0ecfff1843f",
+              "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+              "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9"
+            ],
+            "data": "0x0000000000000000000000000000000000000000000000000000000000ce7f7b",
+            "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+            "blockNumber": "128554250",
+            "blockTimestamp": "1792412929",
+            "transactionHash": "0x72fecb1f622b9e5f8fbcb3cb9d365e5d178110346196b3fe5aafa1c2856f6135",
+            "transactionIndex": 0,
+            "logIndex": 1,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x010000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000080000000000000000000008004000000000000002000000000a0000000000000000000800000000000000000000200010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000048000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000080000000000000000040000000002",
+        "transactionHash": "0x72fecb1f622b9e5f8fbcb3cb9d365e5d178110346196b3fe5aafa1c2856f6135",
+        "transactionIndex": 0,
+        "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+        "blockNumber": "128554250",
+        "gasUsed": "104805",
+        "effectiveGasPrice": "1000000000",
+        "blobGasPrice": "1",
+        "from": "0x1b55e6a757987576e1a130a011f9e12498de7db9",
+        "to": "0x7e2e0dc66a3bd9103e69b766afa62d9f7b697b46",
+        "contractAddress": null
+      },
+      "after": {
+        "blockNumber": "128554250",
+        "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+        "timestamp": "1792412929",
+        "pendingRaw": "0",
+        "bemRaw": "13902271"
+      },
+      "actualInflowRaw": "13533051",
+      "bemTransferEvents": [
+        {
+          "eventName": "Transfer",
+          "args": {
+            "from": "0x0000000000000000000000000000000000000000",
+            "to": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+            "value": "13533051"
+          },
+          "address": "0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000ce7f7b",
+          "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+          "blockNumber": "128554250",
+          "blockTimestamp": "1792412929",
+          "transactionHash": "0x72fecb1f622b9e5f8fbcb3cb9d365e5d178110346196b3fe5aafa1c2856f6135",
+          "transactionIndex": 0,
+          "logIndex": 0,
+          "removed": false
+        }
+      ],
+      "transferNetRaw": "13533051"
+    },
+    {
+      "label": "second-claim-after-3600-seconds",
+      "status": "PASS",
+      "before": {
+        "blockNumber": "128554251",
+        "blockHash": "0x4fbbf5f5b96e32f151596996172913b4c5c05609fbd2c6d5dd5ceb600f8c2e33",
+        "timestamp": "1792416531",
+        "pendingRaw": "0",
+        "bemRaw": "13902271"
+      },
+      "transactionHash": "0x0c08fd994c6ad53949f04bacf5f5d8c24321b9dce39590f17f919faf99c9066f",
+      "receipt": {
+        "type": "legacy",
+        "status": "success",
+        "cumulativeGasUsed": "104805",
+        "logs": [
+          {
+            "address": "0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a",
+            "topics": [
+              "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+              "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000092e1",
+            "blockHash": "0xbf4535b586dfebad9b1ca1d06068cda446655efcccd8eaf4fa773351f70d7187",
+            "blockNumber": "128554252",
+            "blockTimestamp": "1792416531",
+            "transactionHash": "0x0c08fd994c6ad53949f04bacf5f5d8c24321b9dce39590f17f919faf99c9066f",
+            "transactionIndex": 0,
+            "logIndex": 0,
+            "removed": false
+          },
+          {
+            "address": "0x7e2e0dc66a3bd9103e69b766afa62d9f7b697b46",
+            "topics": [
+              "0x0508a8b4117d9a7b3d8f5895f6413e61b4f9a2df35afbfb41e78d0ecfff1843f",
+              "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+              "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000092e1",
+            "blockHash": "0xbf4535b586dfebad9b1ca1d06068cda446655efcccd8eaf4fa773351f70d7187",
+            "blockNumber": "128554252",
+            "blockTimestamp": "1792416531",
+            "transactionHash": "0x0c08fd994c6ad53949f04bacf5f5d8c24321b9dce39590f17f919faf99c9066f",
+            "transactionIndex": 0,
+            "logIndex": 1,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x010000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000080000000000000000000008004000000000000002000000000a0000000000000000000800000000000000000000200010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000048000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000080000000000000000040000000002",
+        "transactionHash": "0x0c08fd994c6ad53949f04bacf5f5d8c24321b9dce39590f17f919faf99c9066f",
+        "transactionIndex": 0,
+        "blockHash": "0xbf4535b586dfebad9b1ca1d06068cda446655efcccd8eaf4fa773351f70d7187",
+        "blockNumber": "128554252",
+        "gasUsed": "104805",
+        "effectiveGasPrice": "1000000000",
+        "blobGasPrice": "1",
+        "from": "0x1b55e6a757987576e1a130a011f9e12498de7db9",
+        "to": "0x7e2e0dc66a3bd9103e69b766afa62d9f7b697b46",
+        "contractAddress": null
+      },
+      "after": {
+        "blockNumber": "128554252",
+        "blockHash": "0xbf4535b586dfebad9b1ca1d06068cda446655efcccd8eaf4fa773351f70d7187",
+        "timestamp": "1792416531",
+        "pendingRaw": "0",
+        "bemRaw": "13939872"
+      },
+      "actualInflowRaw": "37601",
+      "bemTransferEvents": [
+        {
+          "eventName": "Transfer",
+          "args": {
+            "from": "0x0000000000000000000000000000000000000000",
+            "to": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+            "value": "37601"
+          },
+          "address": "0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "0x0000000000000000000000001b55e6a757987576e1a130a011f9e12498de7db9"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000092e1",
+          "blockHash": "0xbf4535b586dfebad9b1ca1d06068cda446655efcccd8eaf4fa773351f70d7187",
+          "blockNumber": "128554252",
+          "blockTimestamp": "1792416531",
+          "transactionHash": "0x0c08fd994c6ad53949f04bacf5f5d8c24321b9dce39590f17f919faf99c9066f",
+          "transactionIndex": 0,
+          "logIndex": 0,
+          "removed": false
+        }
+      ],
+      "transferNetRaw": "37601"
+    }
+  ],
+  "receiptsAreForkOnly": true,
+  "cleanup": {
+    "status": "PASS",
+    "snapshotId": "0x0",
+    "impersonationStopped": true,
+    "snapshotRestored": true,
+    "freshForkStateRestored": true
+  },
+  "limitations": [
+    "Fresh local fork of real source state; no mainnet transaction is sent.",
+    "pending() is an observation, not assumed to equal the amount materialized by claim().",
+    "The immediate zero-pending call is eth_call at the exact first receipt block, not a mined transaction.",
+    "Snapshot restoration removes diagnostic transactions from the final local fork state.",
+    "This receipt experiment does not replace source-code or independent security audit."
+  ],
+  "sourcePin": {
+    "chainId": 56,
+    "number": "128554249",
+    "hash": "0xe44fafd52f2b1da68b810514554c21061d327cccb046b6c8afdfb315a1ef991d"
+  },
+  "hostInstanceId": "f2b486c2-14e2-4034-a43a-e80c61b40974",
+  "actor": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+  "contracts": {
+    "collection": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+    "tokenId": "3204",
+    "mining": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "bem": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a"
+  },
+  "inputs": [
+    {
+      "path": "reports/authorized-source-observation.json",
+      "sha256": "36e3eca662ae75fe1eb6e123ff3e2bd299d4e5a0c993d7f0f8d3e69fd12bd933"
+    },
+    {
+      "path": "deployments/fork/56/local-session.json",
+      "sha256": "bf28942605c07f6cc470093166a748d63474600044de9f18f8642519c6af4143"
+    }
+  ],
+  "originalDiagnostic": {
+    "path": "reports/mining-settlement-diagnostic.json",
+    "sha256": "f23300d61805a1af4c88218c84e2cd51b44f102603204f91c1607ebd63d3e541",
+    "preserved": true,
+    "backup": "reports/mining-settlement-diagnostic-original-f23300d61805a1af.json"
+  },
+  "minerKey": "0xb0e5b7d325dead6144886258056fb8e27ff5f6192aaa90fd0b45682c297c1c0d",
+  "runtimeChecks": [
+    {
+      "field": "collection",
+      "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "codeHash": "0xd8c4b0216e0aadd615fbd134465b6af060a11769edc7c844d8f14d1b8a783992",
+      "sourceAndForkMatch": true
+    },
+    {
+      "field": "mining",
+      "address": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+      "codeHash": "0xed6b710a769987f50494d713f278817992e3266e45898a990be878efc2fcbbce",
+      "sourceAndForkMatch": true
+    },
+    {
+      "field": "bem",
+      "address": "0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+      "codeHash": "0x982ba79538b51e54ee1382f57522098af0635b0f67f2574d393b29ed0958b344",
+      "sourceAndForkMatch": true
+    }
+  ],
+  "freshForkVerified": true,
+  "initialStateMatchesSource": {
+    "fork": {
+      "pending": "13532613",
+      "bem": "369220",
+      "native": "4959767700000000",
+      "nonce": 5
+    },
+    "source": {
+      "pending": "13532613",
+      "bem": "369220",
+      "native": "4959767700000000",
+      "nonce": 5
+    }
+  },
+  "sourceBlockHashVerified": true,
+  "bemDecimals": 8,
+  "immediateZeroClaim": {
+    "label": "immediate-same-block-zero-pending-eth-call",
+    "method": "eth_call",
+    "blockNumber": "128554250",
+    "blockHash": "0x390594104341971c09008c0f7664391bbd8be153172cd288b6634a8f4953863c",
+    "pendingRaw": "0",
+    "from": "0x1b55E6A757987576E1a130A011f9E12498De7DB9",
+    "to": "0x7E2E0DC66a3bD9103E69b766afA62d9f7b697b46",
+    "transactionsSent": 0,
+    "status": "SUCCESS",
+    "returnData": "0x",
+    "persistentStateUnchanged": true
+  },
+  "localTimeAdvanceSeconds": 3600,
+  "observation": {
+    "pendingZeroCanStillProducePositiveClaim": true,
+    "secondPendingBeforeRaw": "0",
+    "secondActualInflowRaw": "37601",
+    "conclusion": "This real Mining implementation can settle positive BEM during claim() despite a prior pending()==0. Do not skip claim solely because pending() reads zero.",
+    "immediateSameBlockClaimStatus": "SUCCESS"
+  },
+  "completedAt": "2026-10-19T12:46:46.515Z",
+  "receiptCanonicalityAfterCleanup": "TRANSACTIONS_REVERTED_BY_LOCAL_SNAPSHOT_AFTER_EVIDENCE_CAPTURE",
+  "verificationInputHashAfter": "565320da2c84f6540cf546556291e491e764e64867c859fbf47bae41c1f1c142"
+}

@@ -1,0 +1,1007 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tapeout:groupbuy:order-envelope:1",
+  "title": "OrderEnvelope v1",
+  "description": "Strict structural contract. SDK additionally verifies integer bounds, cross-field identity, domain/hash/payment commitments and supported protocol subset. Examples are synthetic; unknown identity never enables execution.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "json",
+                "http"
+              ]
+            },
+            "name": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+            },
+            "commit": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{7,64}$"
+            },
+            "configVersion": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+            }
+          },
+          "required": [
+            "kind",
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "sourceChainId": {
+          "const": 56
+        },
+        "market": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{40}$"
+        },
+        "collection": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{40}$"
+        },
+        "tokenId": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        "seller": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{40}$"
+        },
+        "buyerPaysWei": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        "currency": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "native"
+            },
+            "symbol": {
+              "const": "BNB"
+            },
+            "token": {
+              "const": "0x0000000000000000000000000000000000000000"
+            }
+          },
+          "required": [
+            "kind",
+            "symbol",
+            "token"
+          ],
+          "additionalProperties": false
+        },
+        "fees": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "seller",
+                  "market"
+                ]
+              },
+              "recipient": {
+                "type": "string",
+                "pattern": "^0x[0-9a-fA-F]{40}$"
+              },
+              "amountWei": {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*)$"
+              }
+            },
+            "required": [
+              "kind",
+              "recipient",
+              "amountWei"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "nativeStartTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nativeEndTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quoteExpiresAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "unknown"
+              ]
+            },
+            "blockNumber": {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            "blockHash": {
+              "type": "string",
+              "pattern": "^0x[0-9a-fA-F]{64}$"
+            }
+          },
+          "required": [
+            "status",
+            "blockNumber",
+            "blockHash"
+          ],
+          "additionalProperties": false
+        },
+        "exportedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "identity": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "unknown"
+              ]
+            },
+            "marketCodeHash": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "collectionCodeHash": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "proxy": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string",
+                      "pattern": "^0x[0-9a-fA-F]{40}$"
+                    },
+                    "implementation": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^0x[0-9a-fA-F]{40}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "implementationCodeHash": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^0x[0-9a-fA-F]{64}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "mechanism": {
+                      "type": "string",
+                      "enum": [
+                        "eip1967-rpc",
+                        "getter",
+                        "unknown"
+                      ]
+                    },
+                    "onchainEnforced": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "address",
+                    "implementation",
+                    "implementationCodeHash",
+                    "mechanism",
+                    "onchainEnforced"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "evidenceVersion": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+            }
+          },
+          "required": [
+            "status",
+            "marketCodeHash",
+            "collectionCodeHash",
+            "proxy",
+            "evidenceVersion"
+          ],
+          "additionalProperties": false
+        },
+        "protocol": {
+          "const": "seaport"
+        },
+        "orderHash": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{64}$"
+        },
+        "seaport": {
+          "type": "object",
+          "properties": {
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "offerer": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{40}$"
+                },
+                "zone": {
+                  "const": "0x0000000000000000000000000000000000000000"
+                },
+                "offer": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "itemType": {
+                        "const": 2
+                      },
+                      "token": {
+                        "type": "string",
+                        "pattern": "^0x[0-9a-fA-F]{40}$"
+                      },
+                      "identifierOrCriteria": {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]*)$"
+                      },
+                      "startAmount": {
+                        "const": "1"
+                      },
+                      "endAmount": {
+                        "const": "1"
+                      }
+                    },
+                    "required": [
+                      "itemType",
+                      "token",
+                      "identifierOrCriteria",
+                      "startAmount",
+                      "endAmount"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "maxItems": 1
+                },
+                "consideration": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "itemType": {
+                        "const": 0
+                      },
+                      "token": {
+                        "const": "0x0000000000000000000000000000000000000000"
+                      },
+                      "identifierOrCriteria": {
+                        "const": "0"
+                      },
+                      "startAmount": {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]*)$"
+                      },
+                      "endAmount": {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]*)$"
+                      },
+                      "recipient": {
+                        "type": "string",
+                        "pattern": "^0x[0-9a-fA-F]{40}$"
+                      }
+                    },
+                    "required": [
+                      "itemType",
+                      "token",
+                      "identifierOrCriteria",
+                      "startAmount",
+                      "endAmount",
+                      "recipient"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "orderType": {
+                  "const": 0
+                },
+                "startTime": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "endTime": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "zoneHash": {
+                  "const": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                "salt": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "conduitKey": {
+                  "const": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                "totalOriginalConsiderationItems": {
+                  "const": "2"
+                }
+              },
+              "required": [
+                "offerer",
+                "zone",
+                "offer",
+                "consideration",
+                "orderType",
+                "startTime",
+                "endTime",
+                "zoneHash",
+                "salt",
+                "conduitKey",
+                "totalOriginalConsiderationItems"
+              ],
+              "additionalProperties": false
+            },
+            "components": {
+              "type": "object",
+              "properties": {
+                "offerer": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{40}$"
+                },
+                "zone": {
+                  "const": "0x0000000000000000000000000000000000000000"
+                },
+                "offer": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "itemType": {
+                        "const": 2
+                      },
+                      "token": {
+                        "type": "string",
+                        "pattern": "^0x[0-9a-fA-F]{40}$"
+                      },
+                      "identifierOrCriteria": {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]*)$"
+                      },
+                      "startAmount": {
+                        "const": "1"
+                      },
+                      "endAmount": {
+                        "const": "1"
+                      }
+                    },
+                    "required": [
+                      "itemType",
+                      "token",
+                      "identifierOrCriteria",
+                      "startAmount",
+                      "endAmount"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "maxItems": 1
+                },
+                "consideration": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "itemType": {
+                        "const": 0
+                      },
+                      "token": {
+                        "const": "0x0000000000000000000000000000000000000000"
+                      },
+                      "identifierOrCriteria": {
+                        "const": "0"
+                      },
+                      "startAmount": {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]*)$"
+                      },
+                      "endAmount": {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]*)$"
+                      },
+                      "recipient": {
+                        "type": "string",
+                        "pattern": "^0x[0-9a-fA-F]{40}$"
+                      }
+                    },
+                    "required": [
+                      "itemType",
+                      "token",
+                      "identifierOrCriteria",
+                      "startAmount",
+                      "endAmount",
+                      "recipient"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "orderType": {
+                  "const": 0
+                },
+                "startTime": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "endTime": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "zoneHash": {
+                  "const": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                "salt": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "conduitKey": {
+                  "const": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                "counter": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                }
+              },
+              "required": [
+                "offerer",
+                "zone",
+                "offer",
+                "consideration",
+                "orderType",
+                "startTime",
+                "endTime",
+                "zoneHash",
+                "salt",
+                "conduitKey",
+                "counter"
+              ],
+              "additionalProperties": false
+            },
+            "signature": {
+              "type": "string",
+              "pattern": "^0x(?:[0-9a-fA-F]{2})*$",
+              "maxLength": 16386
+            },
+            "domain": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "const": "Seaport"
+                },
+                "version": {
+                  "type": "string",
+                  "pattern": "^[0-9]+\\.[0-9]+$"
+                },
+                "chainId": {
+                  "const": 56
+                },
+                "verifyingContract": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{40}$"
+                },
+                "domainSeparator": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{64}$"
+                }
+              },
+              "required": [
+                "name",
+                "version",
+                "chainId",
+                "verifyingContract",
+                "domainSeparator"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "parameters",
+            "components",
+            "signature",
+            "domain"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "source",
+        "sourceChainId",
+        "market",
+        "collection",
+        "tokenId",
+        "seller",
+        "buyerPaysWei",
+        "currency",
+        "fees",
+        "nativeStartTime",
+        "nativeEndTime",
+        "quoteExpiresAt",
+        "validation",
+        "exportedAt",
+        "identity",
+        "protocol",
+        "orderHash",
+        "seaport"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "json",
+                "http"
+              ]
+            },
+            "name": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+            },
+            "commit": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{7,64}$"
+            },
+            "configVersion": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+            }
+          },
+          "required": [
+            "kind",
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "sourceChainId": {
+          "const": 56
+        },
+        "market": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{40}$"
+        },
+        "collection": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{40}$"
+        },
+        "tokenId": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        "seller": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{40}$"
+        },
+        "buyerPaysWei": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        "currency": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "native"
+            },
+            "symbol": {
+              "const": "BNB"
+            },
+            "token": {
+              "const": "0x0000000000000000000000000000000000000000"
+            }
+          },
+          "required": [
+            "kind",
+            "symbol",
+            "token"
+          ],
+          "additionalProperties": false
+        },
+        "fees": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "seller",
+                  "market"
+                ]
+              },
+              "recipient": {
+                "type": "string",
+                "pattern": "^0x[0-9a-fA-F]{40}$"
+              },
+              "amountWei": {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*)$"
+              }
+            },
+            "required": [
+              "kind",
+              "recipient",
+              "amountWei"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "nativeStartTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nativeEndTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quoteExpiresAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "unknown"
+              ]
+            },
+            "blockNumber": {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)$"
+            },
+            "blockHash": {
+              "type": "string",
+              "pattern": "^0x[0-9a-fA-F]{64}$"
+            }
+          },
+          "required": [
+            "status",
+            "blockNumber",
+            "blockHash"
+          ],
+          "additionalProperties": false
+        },
+        "exportedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "identity": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "unknown"
+              ]
+            },
+            "marketCodeHash": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "collectionCodeHash": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "proxy": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string",
+                      "pattern": "^0x[0-9a-fA-F]{40}$"
+                    },
+                    "implementation": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^0x[0-9a-fA-F]{40}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "implementationCodeHash": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^0x[0-9a-fA-F]{64}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "mechanism": {
+                      "type": "string",
+                      "enum": [
+                        "eip1967-rpc",
+                        "getter",
+                        "unknown"
+                      ]
+                    },
+                    "onchainEnforced": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "address",
+                    "implementation",
+                    "implementationCodeHash",
+                    "mechanism",
+                    "onchainEnforced"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "evidenceVersion": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]{1,80}$"
+            }
+          },
+          "required": [
+            "status",
+            "marketCodeHash",
+            "collectionCodeHash",
+            "proxy",
+            "evidenceVersion"
+          ],
+          "additionalProperties": false
+        },
+        "protocol": {
+          "const": "official-circuit"
+        },
+        "listingId": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        "official": {
+          "type": "object",
+          "properties": {
+            "adapterStatus": {
+              "type": "string",
+              "enum": [
+                "unknown",
+                "reserved-disabled"
+              ]
+            },
+            "listingView": {
+              "type": "object",
+              "properties": {
+                "listingId": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "seller": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{40}$"
+                },
+                "collection": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{40}$"
+                },
+                "tokenId": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "price": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "feeBps": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 10000
+                },
+                "valid": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "listingId",
+                "seller",
+                "collection",
+                "tokenId",
+                "price",
+                "feeBps",
+                "valid"
+              ],
+              "additionalProperties": false
+            },
+            "listingFor": {
+              "type": "object",
+              "properties": {
+                "listingId": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "seller": {
+                  "type": "string",
+                  "pattern": "^0x[0-9a-fA-F]{40}$"
+                },
+                "price": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)$"
+                },
+                "valid": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "listingId",
+                "seller",
+                "price",
+                "valid"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "adapterStatus",
+            "listingView",
+            "listingFor"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "source",
+        "sourceChainId",
+        "market",
+        "collection",
+        "tokenId",
+        "seller",
+        "buyerPaysWei",
+        "currency",
+        "fees",
+        "nativeStartTime",
+        "nativeEndTime",
+        "quoteExpiresAt",
+        "validation",
+        "exportedAt",
+        "identity",
+        "protocol",
+        "listingId",
+        "official"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

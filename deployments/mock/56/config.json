@@ -1,0 +1,14 @@
+{
+  "chainId": "56",
+  "templateVersion": 1,
+  "marketKind": 2,
+  "market": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+  "collection": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "mining": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+  "bem": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+  "marketCodeHash": "0x961b641517552620c109fcc27d17f33cb30f5bb7ae2e11cd6e1c3e9a30831291",
+  "seaportDomainSeparator": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "seaportVersionHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "safetyMargin": "60",
+  "mockOnly": true
+}

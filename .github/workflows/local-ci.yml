@@ -1,0 +1,21 @@
+name: Local candidate verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.19.5'
+          cache: npm
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: v1.4.3
+      - run: npm ci --ignore-scripts
+      - run: node scripts/bootstrap.mjs
+      - run: npm run verify
+      - run: npm run test:local
+      - run: npm run report && npm run archive

@@ -1,0 +1,11 @@
+{
+  "scope": "LOCAL_MOCK_ONLY",
+  "seller": "0x3333333333333333333333333333333333333333",
+  "tokenId": "3204",
+  "totalPrice": "10100",
+  "deadline": "2000000000",
+  "listingId": "1",
+  "feeBps": 100,
+  "name": "mock-tapeout3204",
+  "metadataURI": ""
+}

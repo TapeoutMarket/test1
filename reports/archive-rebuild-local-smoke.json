@@ -1,0 +1,323 @@
+{
+  "status": "PASS",
+  "verificationInputHash": "cd8df1be89a3af14094b83fef1241a01f9c093096de121f2ef1c523d23d3ae92",
+  "layer": "MOCK_LOCAL_ANVIL_ONLY",
+  "chainId": 56,
+  "usedPrivateKeys": false,
+  "transactionsAndCommands": [
+    {
+      "operation": "deploy:MockNFT",
+      "hash": "0xb22d856a711e709eb0e932bda2ed29e7052383684ff51349b666bbbd6df0245d",
+      "blockNumber": "1",
+      "gasUsed": "825786"
+    },
+    {
+      "operation": "deploy:MockBEM",
+      "hash": "0x62e2a0f5c9a05d8aa6f44eede1c8b9bb53456a7f5982ad888a7a2e6a567caa53",
+      "blockNumber": "2",
+      "gasUsed": "690340"
+    },
+    {
+      "operation": "deploy:MockMining",
+      "hash": "0xabc1aaa438b7bf9047c1ecc3129b65164885494b0699624d51f0ec6291f68cc6",
+      "blockNumber": "3",
+      "gasUsed": "385375"
+    },
+    {
+      "operation": "deploy:MockCircuitMarket",
+      "hash": "0xea85391869beee1c889259342819669bfdc7a8efc720acbd92e7a5659dff7dd0",
+      "blockNumber": "4",
+      "gasUsed": "603808"
+    },
+    {
+      "operation": "deploy:GroupBuyVault",
+      "hash": "0x551270e51343805d9032021250f36310b18849b3fea2de1f778f5628c7cf9d30",
+      "blockNumber": "5",
+      "gasUsed": "7013437"
+    },
+    {
+      "operation": "deploy:GovernanceTimelock",
+      "hash": "0xde2f1c128a8e1a91a1e6c5e18187d7785d39c24c46f06eeb030f1f5a962ae4c9",
+      "blockNumber": "6",
+      "gasUsed": "1421615"
+    },
+    {
+      "operation": "deploy:GroupBuyFactory",
+      "hash": "0xdba8d7c172b37557f8bc948c8aa6815191b4ba62c29a65dd2924e5a1d98ba007",
+      "blockNumber": "7",
+      "gasUsed": "2312360"
+    },
+    {
+      "operation": "deploy:ERC1967Proxy",
+      "hash": "0xf28dca17d1a3b123c4709eb3443d76eac7a32a9000f408f6302d77095eb283fd",
+      "blockNumber": "8",
+      "gasUsed": "251749"
+    },
+    {
+      "operation": "mint",
+      "hash": "0xe6fddc45c14e6fc7c9f4e386658b852fb7e1b25e93553fa3ba936bf2cefc9a6a",
+      "blockNumber": "9",
+      "gasUsed": "68448"
+    },
+    {
+      "operation": "setApprovalForAll",
+      "hash": "0x5f105f53b8f0406bf1db647ff7d6851677a3f01f88cbb5f6aa9e5e1f7edc32e5",
+      "blockNumber": "10",
+      "gasUsed": "46191"
+    },
+    {
+      "operation": "list",
+      "hash": "0xc8f3f8d2fc6278ca7ee51562741e6a9a2dadc23588e66c52d9ceb1217c780cc5",
+      "blockNumber": "11",
+      "gasUsed": "134075"
+    },
+    {
+      "operation": "configure-local:dry-run",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"PREPARED_NOT_EXECUTED\",\n  \"localOnly\": true,\n  \"productionReady\": false,\n  \"transactions\": [],\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"checkpoint\": {\n    \"number\": \"11\",\n    \"hash\": \"0xb7c5b7808144f3d60aec3e461b9021c9750d575db0be0e0463f9953855a38548\"\n  },\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"factory\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"template\": \"0xdc64a140aa3e981100a9beca4e685f962f0cf6c9\",\n  \"timelock\": \"0x5fc8d32690cc91d4c39d9d3abcbd16989f875707\",\n  \"from\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"guardian\": \"0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC\",\n  \"configFile\": \"deployments/mock/56/config.json\",\n  \"configHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n  \"templateCodeHash\": \"0xe5531211f3077a2b66352c550527fc6039eb4bda5fe4bfd725b7214b2d2f2c27\",\n  \"minimumDelay\": \"1\",\n  \"minimumDelayFloor\": \"1\",\n  \"operationId\": \"0x4a6c6110c8ccaa92234687017d2c622d885f26448498a8ad318eb32981ca3fef\",\n  \"salt\": \"0x71cd99c3c72389b88c3d31df3e33fcefe43fa6ac4d1e3ee58b79720c3593a036\",\n  \"operationState\": 0,\n  \"actions\": [\n    \"approveTemplate\",\n    \"approveConfig\",\n    \"selectConfiguration\",\n    \"resumeCreation\"\n  ],\n  \"note\": \"Only verified local Anvil is used. Advancing local time may expire an order; recheck the fixed order after governance. Interface checks do not certify production governance bytecode or multisig roles.\",\n  \"scheduleSimulation\": \"PASS\"\n}"
+    },
+    {
+      "operation": "configure-local:send",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"LOCAL_CONFIGURED\",\n  \"localOnly\": true,\n  \"productionReady\": false,\n  \"transactions\": [\n    {\n      \"operation\": \"scheduleBatch\",\n      \"hash\": \"0x11fff7abb05d94dec3846b8ac7b89452ecf82e75272b66bcb09f219ba5df52bf\",\n      \"status\": \"success\",\n      \"blockNumber\": \"12\",\n      \"blockHash\": \"0xe3f72e76595b1591db8096ad45a7a47a82204ec380ce143dd651c33e665ae15d\",\n      \"gasUsed\": \"84906\"\n    },\n    {\n      \"operation\": \"executeBatch\",\n      \"hash\": \"0x52cec60296a8d88fc0ecb0a273b3986801f6b4f05fbe9ac6f41cda1c547159f7\",\n      \"status\": \"success\",\n      \"blockNumber\": \"14\",\n      \"blockHash\": \"0x7ab551a42bf248c120bdeb221afb29b329721ff8c3e520138cbf503ca15eccfe\",\n      \"gasUsed\": \"372592\"\n    }\n  ],\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"checkpoint\": {\n    \"number\": \"11\",\n    \"hash\": \"0xb7c5b7808144f3d60aec3e461b9021c9750d575db0be0e0463f9953855a38548\"\n  },\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"factory\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"template\": \"0xdc64a140aa3e981100a9beca4e685f962f0cf6c9\",\n  \"timelock\": \"0x5fc8d32690cc91d4c39d9d3abcbd16989f875707\",\n  \"from\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"guardian\": \"0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC\",\n  \"configFile\": \"deployments/mock/56/config.json\",\n  \"configHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n  \"templateCodeHash\": \"0xe5531211f3077a2b66352c550527fc6039eb4bda5fe4bfd725b7214b2d2f2c27\",\n  \"minimumDelay\": \"1\",\n  \"minimumDelayFloor\": \"1\",\n  \"operationId\": \"0x4a6c6110c8ccaa92234687017d2c622d885f26448498a8ad318eb32981ca3fef\",\n  \"salt\": \"0x71cd99c3c72389b88c3d31df3e33fcefe43fa6ac4d1e3ee58b79720c3593a036\",\n  \"operationState\": 0,\n  \"actions\": [\n    \"approveTemplate\",\n    \"approveConfig\",\n    \"selectConfiguration\",\n    \"resumeCreation\"\n  ],\n  \"note\": \"Only verified local Anvil is used. Advancing local time may expire an order; recheck the fixed order after governance. Interface checks do not certify production governance bytecode or multisig roles.\",\n  \"scheduleSimulation\": \"PASS\",\n  \"localTimeAdvancedSeconds\": \"2\",\n  \"after\": {\n    \"blockNumber\": \"14\",\n    \"selectedTemplate\": \"0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9\",\n    \"selectedConfigHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n    \"creationPaused\": false,\n    \"templateApproved\": true,\n    \"configurationApproved\": true\n  }\n}"
+    },
+    {
+      "operation": "CLI:create-pool",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"create-pool\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"functionName\": \"createPool\",\n  \"valueWei\": \"0\",\n  \"gas\": \"941930\",\n  \"gasPrice\": \"1176109080\",\n  \"maximumFeeBNB\": \"0.0011078124257244\",\n  \"calldataHash\": \"0x6cceb134fa684154f0ffda14dcd61b9c58caf75297a7538749c9260541531032\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xa9d4d1d55b04f0fb6d9beabe1a1b73964ea9048b385ae03da642e22c13b2e9ba\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xa9d4d1d55b04f0fb6d9beabe1a1b73964ea9048b385ae03da642e22c13b2e9ba\",\n  \"blockNumber\": \"15\"\n}"
+    },
+    {
+      "operation": "CLI:inspect",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"READ_ONLY_PINNED_SNAPSHOT\",\n  \"mode\": \"mock\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"vault\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"blockNumber\": \"15\",\n  \"blockHash\": \"0x930490473ab24d90658b52029629ed1dc662ac84d90c143b2e98f022ba3eb99e\",\n  \"stateName\": \"FUNDING\",\n  \"state\": {\n    \"factory\": \"0xa513E6E4b8f2a923D98304ec87F64353C4D5C853\",\n    \"creator\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n    \"state\": 0,\n    \"getConfig\": {\n      \"chainId\": \"56\",\n      \"templateVersion\": 1,\n      \"marketKind\": 2,\n      \"market\": \"0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9\",\n      \"collection\": \"0x5FbDB2315678afecb367f032d93F642f64180aa3\",\n      \"mining\": \"0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0\",\n      \"bem\": \"0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512\",\n      \"marketCodeHash\": \"0xbcd4541f893f0ff73f0da9e9ae3a2ffa5d1a719e5a47030db5431a0401f2bfab\",\n      \"seaportDomainSeparator\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n      \"seaportVersionHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n      \"safetyMargin\": \"60\",\n      \"mockOnly\": true\n    },\n    \"getTerms\": {\n      \"seller\": \"0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\n      \"tokenId\": \"3204\",\n      \"totalPrice\": \"100000057\",\n      \"deadline\": \"1791229197\",\n      \"orderHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n      \"counter\": \"0\",\n      \"listingId\": \"1\",\n      \"listingPrice\": \"100000057\",\n      \"feeBps\": 100,\n      \"executionHash\": \"0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470\",\n      \"orderStart\": \"0\",\n      \"orderEnd\": \"0\",\n      \"name\": \"tapeout3204\",\n      \"metadataURI\": \"ipfs://local/3204/{id}.json\"\n    },\n    \"configHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n    \"termsHash\": \"0x9cc6dd0a12a7d92c5a24729a90698857fbe497b1fdc501ed30482fb9bd0c6c7f\",\n    \"soldCount\": \"0\",\n    \"fundedWei\": \"0\",\n    \"totalPrincipalIn\": \"0\",\n    \"totalPrincipalRefunded\": \"0\",\n    \"purchaseSpent\": \"0\",\n    \"totalAccounted\": \"0\",\n    \"totalPaid\": \"0\",\n    \"accPerShare\": \"0\",\n    \"remainder\": \"0\",\n    \"redeemedBeneficiary\": \"0x0000000000000000000000000000000000000000\",\n    \"availableIds\": [\n      \"1\",\n      \"2\",\n      \"3\",\n      \"4\",\n      \"5\",\n      \"6\",\n      \"7\",\n      \"8\",\n      \"9\",\n      \"10\",\n      \"11\",\n      \"12\",\n      \"13\",\n      \"14\",\n      \"15\",\n      \"16\",\n      \"17\",\n      \"18\",\n      \"19\",\n      \"20\",\n      \"21\",\n      \"22\",\n      \"23\",\n      \"24\",\n      \"25\",\n      \"26\",\n      \"27\",\n      \"28\",\n      \"29\",\n      \"30\",\n      \"31\",\n      \"32\",\n      \"33\",\n      \"34\",\n      \"35\",\n      \"36\",\n      \"37\",\n      \"38\",\n      \"39\",\n      \"40\",\n      \"41\",\n      \"42\",\n      \"43\",\n      \"44\",\n      \"45\",\n      \"46\",\n      \"47\",\n      \"48\",\n      \"49\",\n      \"50\",\n      \"51\",\n      \"52\",\n      \"53\",\n      \"54\",\n      \"55\",\n      \"56\",\n      \"57\",\n      \"58\",\n      \"59\",\n      \"60\",\n      \"61\",\n      \"62\",\n      \"63\",\n      \"64\",\n      \"65\",\n      \"66\",\n      \"67\",\n      \"68\",\n      \"69\",\n      \"70\",\n      \"71\",\n      \"72\",\n      \"73\",\n      \"74\",\n      \"75\",\n      \"76\",\n      \"77\",\n      \"78\",\n      \"79\",\n      \"80\",\n      \"81\",\n      \"82\",\n      \"83\",\n      \"84\",\n      \"85\",\n      \"86\",\n      \"87\",\n      \"88\",\n      \"89\",\n      \"90\",\n      \"91\",\n      \"92\",\n      \"93\",\n      \"94\",\n      \"95\",\n      \"96\",\n      \"97\",\n      \"98\",\n      \"99\",\n      \"100\"\n    ],\n    \"marketStatus\": 0\n  },\n  \"shares\": [],\n  \"forkLiveTestResult\": \"NOT_RUN_BY_THIS_READ\"\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"DRY_RUN_SIMULATION_SUCCEEDED\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"45000045\",\n  \"gas\": \"2922137\",\n  \"gasPrice\": \"1155230171\",\n  \"maximumFeeBNB\": \"0.003375740826195427\",\n  \"calldataHash\": \"0xd97cb0b5deaec8888621b622dc58de7bc936e7b4e56d772af45ec7694c9777b9\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"45000045\",\n  \"gas\": \"2922137\",\n  \"gasPrice\": \"1155230171\",\n  \"maximumFeeBNB\": \"0.003375740826195427\",\n  \"calldataHash\": \"0xd97cb0b5deaec8888621b622dc58de7bc936e7b4e56d772af45ec7694c9777b9\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x9d3a286f468e93c698c41b09a778c6c009ff9fc82d5450bfc5ac631565adcdab\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x9d3a286f468e93c698c41b09a778c6c009ff9fc82d5450bfc5ac631565adcdab\",\n  \"blockNumber\": \"16\"\n}"
+    },
+    {
+      "operation": "CLI:withdraw",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"withdraw\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"withdraw\",\n  \"valueWei\": \"0\",\n  \"gas\": \"125927\",\n  \"gasPrice\": \"1138921419\",\n  \"maximumFeeBNB\": \"0.000143420957530413\",\n  \"calldataHash\": \"0x14bba0bf20abc741dd13b5d1767aa8c00c9d1416cf1496ab67264f493abc95fc\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x36fd6207583ea504ffefcb95bc9097989d112449e16b6c0a7766e49c3140e2b7\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x36fd6207583ea504ffefcb95bc9097989d112449e16b6c0a7766e49c3140e2b7\",\n  \"blockNumber\": \"17\"\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"1000001\",\n  \"gas\": \"245031\",\n  \"gasPrice\": \"1121659419\",\n  \"maximumFeeBNB\": \"0.000274841329096989\",\n  \"calldataHash\": \"0x335948adfe91dd7f30f8ed9cbac54d3cd8cf6a45620b83c6b5846b220e638ef3\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x9d8b0e80c9622d00e70c37aeca50e5cffa07d85dfbdb4b4e3dcab3ddbd5bc1cb\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x9d8b0e80c9622d00e70c37aeca50e5cffa07d85dfbdb4b4e3dcab3ddbd5bc1cb\",\n  \"blockNumber\": \"18\"\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0x70997970C51812dc3A010C7d01b50e0d17dc79C8\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"55000012\",\n  \"gas\": \"3643038\",\n  \"gasPrice\": \"1106651135\",\n  \"maximumFeeBNB\": \"0.00403157213754813\",\n  \"calldataHash\": \"0x308d31d35cbe744436e664b7579147f0bbf5547e17c1bf1370c6e162c3dc5db5\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x1cb550e8e7c45115f216495cc30661572f5839cb2408023e3ed50c814bea160e\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x1cb550e8e7c45115f216495cc30661572f5839cb2408023e3ed50c814bea160e\",\n  \"blockNumber\": \"19\"\n}"
+    },
+    {
+      "operation": "setPending",
+      "hash": "0x75ccc20aa4621a1cfdf82a0f9a7ef0e02784462e9fc4012b66bf1f736fb1b82b",
+      "blockNumber": "20",
+      "gasUsed": "88958"
+    },
+    {
+      "operation": "CLI:harvest",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"harvest\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"harvest\",\n  \"valueWei\": \"0\",\n  \"gas\": \"291244\",\n  \"gasPrice\": \"1084038983\",\n  \"maximumFeeBNB\": \"0.000315719849564852\",\n  \"calldataHash\": \"0xe060bba62b44b0683c379ec71ca27d4186dc6879cdda27161f89f1f206f42aaf\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xac2e165074829e07bc9ec5269f4dcbf0811a950192eb7ec5f134457025fdb886\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xac2e165074829e07bc9ec5269f4dcbf0811a950192eb7ec5f134457025fdb886\",\n  \"blockNumber\": \"21\"\n}"
+    },
+    {
+      "operation": "CLI:claim-batch",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"claim-batch\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"claimBatch\",\n  \"valueWei\": \"0\",\n  \"gas\": \"1774203\",\n  \"gasPrice\": \"1073694844\",\n  \"maximumFeeBNB\": \"0.001904952613309332\",\n  \"calldataHash\": \"0x8a15fe665216ae49b22c31fdbc91f96ff124d39c57782bcbaffd74013566bba6\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x095aad9e6f67204de6a593ae64da5fc3f9bfe98bc583a8e0195b41b98fa11e09\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x095aad9e6f67204de6a593ae64da5fc3f9bfe98bc583a8e0195b41b98fa11e09\",\n  \"blockNumber\": \"22\"\n}"
+    },
+    {
+      "operation": "CLI:claim-batch",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"claim-batch\",\n  \"sender\": \"0x70997970C51812dc3A010C7d01b50e0d17dc79C8\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"claimBatch\",\n  \"valueWei\": \"0\",\n  \"gas\": \"2117793\",\n  \"gasPrice\": \"1065374027\",\n  \"maximumFeeBNB\": \"0.002256241656762411\",\n  \"calldataHash\": \"0x1b23ff2a607ef98c12e967bd441bbc3ee9f127b0bca0e67ae666ab85fccb9497\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xd3c37caf329d627eafb00bc5a22ee4c51ae91395e0dcaf22d1c789cd4c069238\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xd3c37caf329d627eafb00bc5a22ee4c51ae91395e0dcaf22d1c789cd4c069238\",\n  \"blockNumber\": \"23\"\n}"
+    },
+    {
+      "operation": "CLI:transfer-shares",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"transfer-shares\",\n  \"sender\": \"0x70997970C51812dc3A010C7d01b50e0d17dc79C8\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"safeBatchTransferFrom\",\n  \"valueWei\": \"0\",\n  \"gas\": \"2444366\",\n  \"gasPrice\": \"1058146266\",\n  \"maximumFeeBNB\": \"0.002586496755637356\",\n  \"calldataHash\": \"0x79d3490bc90015f73ac31212383f15e9b2110efacf76abe32f7bc341197a06ed\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xfb165e6f85f7b10bf4c5f00ffe7dd2a3ac31b53840f71ae250e5114becba2cad\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xfb165e6f85f7b10bf4c5f00ffe7dd2a3ac31b53840f71ae250e5114becba2cad\",\n  \"blockNumber\": \"24\"\n}"
+    },
+    {
+      "operation": "CLI:redeem",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"redeem\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"functionName\": \"redeemMiner\",\n  \"valueWei\": \"0\",\n  \"gas\": \"2390177\",\n  \"gasPrice\": \"1051719569\",\n  \"maximumFeeBNB\": \"0.002513795924273713\",\n  \"calldataHash\": \"0x1769814c0aeeea3061ec42c7e65d7f006b7dd6a7e9605eaaf37568b9a9e4986b\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xdd856af463ce4584c909641253c102eaad51aa854609db6f2675c79d0e428f3c\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xdd856af463ce4584c909641253c102eaad51aa854609db6f2675c79d0e428f3c\",\n  \"blockNumber\": \"25\"\n}"
+    },
+    {
+      "operation": "CLI:report",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"READ_ONLY_PINNED_SNAPSHOT\",\n  \"mode\": \"mock\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"vault\": \"0x44195ef5c624BAee3d3D1Da69eA7dBf1f1e0b88a\",\n  \"blockNumber\": \"25\",\n  \"blockHash\": \"0x5780a8c9f37cc94abaa02ed4f7ea140c3a55aab024ebf902337d40f3ce5a544d\",\n  \"stateName\": \"REDEEMED\",\n  \"state\": {\n    \"factory\": \"0xa513E6E4b8f2a923D98304ec87F64353C4D5C853\",\n    \"creator\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n    \"state\": 4,\n    \"getConfig\": {\n      \"chainId\": \"56\",\n      \"templateVersion\": 1,\n      \"marketKind\": 2,\n      \"market\": \"0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9\",\n      \"collection\": \"0x5FbDB2315678afecb367f032d93F642f64180aa3\",\n      \"mining\": \"0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0\",\n      \"bem\": \"0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512\",\n      \"marketCodeHash\": \"0xbcd4541f893f0ff73f0da9e9ae3a2ffa5d1a719e5a47030db5431a0401f2bfab\",\n      \"seaportDomainSeparator\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n      \"seaportVersionHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n      \"safetyMargin\": \"60\",\n      \"mockOnly\": true\n    },\n    \"getTerms\": {\n      \"seller\": \"0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\n      \"tokenId\": \"3204\",\n      \"totalPrice\": \"100000057\",\n      \"deadline\": \"1791229197\",\n      \"orderHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n      \"counter\": \"0\",\n      \"listingId\": \"1\",\n      \"listingPrice\": \"100000057\",\n      \"feeBps\": 100,\n      \"executionHash\": \"0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470\",\n      \"orderStart\": \"0\",\n      \"orderEnd\": \"0\",\n      \"name\": \"tapeout3204\",\n      \"metadataURI\": \"ipfs://local/3204/{id}.json\"\n    },\n    \"configHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n    \"termsHash\": \"0x9cc6dd0a12a7d92c5a24729a90698857fbe497b1fdc501ed30482fb9bd0c6c7f\",\n    \"soldCount\": \"0\",\n    \"fundedWei\": \"0\",\n    \"totalPrincipalIn\": \"101000058\",\n    \"totalPrincipalRefunded\": \"1000001\",\n    \"purchaseSpent\": \"100000057\",\n    \"totalAccounted\": \"10037\",\n    \"totalPaid\": \"10037\",\n    \"accPerShare\": \"100\",\n    \"remainder\": \"0\",\n    \"redeemedBeneficiary\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n    \"availableIds\": [],\n    \"marketStatus\": 9\n  },\n  \"shares\": [],\n  \"forkLiveTestResult\": \"NOT_RUN_BY_THIS_READ\"\n}"
+    },
+    {
+      "operation": "mint",
+      "hash": "0x1efbc2f87571ec714a65c5a6f01a15dcd4ca73118bcf4a700c918650de4ad75b",
+      "blockNumber": "26",
+      "gasUsed": "68448"
+    },
+    {
+      "operation": "list",
+      "hash": "0x03ed12f536607d76d84aa1735429fcafa078c740ef0a2f998ed3cfb98f7b65d6",
+      "blockNumber": "27",
+      "gasUsed": "134087"
+    },
+    {
+      "operation": "CLI:create-pool",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"create-pool\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"functionName\": \"createPool\",\n  \"valueWei\": \"0\",\n  \"gas\": \"921099\",\n  \"gasPrice\": \"1035233054\",\n  \"maximumFeeBNB\": \"0.000953552130806346\",\n  \"calldataHash\": \"0x45a100f84102d63ccb732387675cff0f014307e9a79577b514b857ae3a6022ee\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xda245cd46934c0d71b3a4e572e50eea5b617b85031d851e8035dafd87e48e17d\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xda245cd46934c0d71b3a4e572e50eea5b617b85031d851e8035dafd87e48e17d\",\n  \"blockNumber\": \"28\"\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x6E781c1DE23cB8E5a477d897130628e8a71045ff\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"1000001\",\n  \"gas\": \"328414\",\n  \"gasPrice\": \"1031050923\",\n  \"maximumFeeBNB\": \"0.000338611557826122\",\n  \"calldataHash\": \"0x335948adfe91dd7f30f8ed9cbac54d3cd8cf6a45620b83c6b5846b220e638ef3\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xa2a0cd5d5d3958d5b019827574c2dd563f96f491ff65bf495a4093cf275adcfc\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xa2a0cd5d5d3958d5b019827574c2dd563f96f491ff65bf495a4093cf275adcfc\",\n  \"blockNumber\": \"29\"\n}"
+    },
+    {
+      "operation": "CLI:guardian-cancel",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"guardian-cancel\",\n  \"sender\": \"0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC\",\n  \"to\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"functionName\": \"guardianCancel\",\n  \"valueWei\": \"0\",\n  \"gas\": \"93394\",\n  \"gasPrice\": \"1027238084\",\n  \"maximumFeeBNB\": \"0.000095937873617096\",\n  \"calldataHash\": \"0x8b58a8b9c02d779477e81d825dc58e393e69c89c75fad217b798b0150f431c2e\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x1a245c6145b725736bb4cce010fe03a3e1020408cbac2906d705b060a8af462d\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x1a245c6145b725736bb4cce010fe03a3e1020408cbac2906d705b060a8af462d\",\n  \"blockNumber\": \"30\"\n}"
+    },
+    {
+      "operation": "CLI:withdraw",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"withdraw\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x6E781c1DE23cB8E5a477d897130628e8a71045ff\",\n  \"functionName\": \"withdraw\",\n  \"valueWei\": \"0\",\n  \"gas\": \"126021\",\n  \"gasPrice\": \"1023849828\",\n  \"maximumFeeBNB\": \"0.000129026579174388\",\n  \"calldataHash\": \"0x14bba0bf20abc741dd13b5d1767aa8c00c9d1416cf1496ab67264f493abc95fc\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x5ce30c61d63bbfc956926a89626f550760eb650d28bca9eda2357207c1e3edf3\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x5ce30c61d63bbfc956926a89626f550760eb650d28bca9eda2357207c1e3edf3\",\n  \"blockNumber\": \"31\"\n}"
+    },
+    {
+      "operation": "mint",
+      "hash": "0x044516a3d95b449b05c1a9671e61c1e3ed864738c8d2ded5bfa32ecab2092ee5",
+      "blockNumber": "32",
+      "gasUsed": "51348"
+    },
+    {
+      "operation": "list",
+      "hash": "0x2a06bebd2efab513ec6ba675e71bdc927946e03d161e37c71706448ef001f95d",
+      "blockNumber": "33",
+      "gasUsed": "134087"
+    },
+    {
+      "operation": "CLI:create-pool",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"create-pool\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"functionName\": \"createPool\",\n  \"valueWei\": \"0\",\n  \"gas\": \"921099\",\n  \"gasPrice\": \"1016018140\",\n  \"maximumFeeBNB\": \"0.00093585329273586\",\n  \"calldataHash\": \"0x7803bbf8b760960fe93ee42b3c49f28f8b189599e50910dc4da7b378c0ecacbb\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x96704d0058b7b2ee387fcc9aa6588361ce40b90b0f4fb5c8f0f3c386b2a144ed\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x96704d0058b7b2ee387fcc9aa6588361ce40b90b0f4fb5c8f0f3c386b2a144ed\",\n  \"blockNumber\": \"34\"\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x20107D5fb487F38c649230ae270eD5bdaa92E9cD\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"1000001\",\n  \"gas\": \"328414\",\n  \"gasPrice\": \"1014116802\",\n  \"maximumFeeBNB\": \"0.000333050155412028\",\n  \"calldataHash\": \"0x335948adfe91dd7f30f8ed9cbac54d3cd8cf6a45620b83c6b5846b220e638ef3\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x63ac44be741ff47395a8ead250931ce002f1cb2668f2da83d3f83114c2f90a8d\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x63ac44be741ff47395a8ead250931ce002f1cb2668f2da83d3f83114c2f90a8d\",\n  \"blockNumber\": \"35\"\n}"
+    },
+    {
+      "operation": "CLI:mark-refundable",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"mark-refundable\",\n  \"sender\": \"0x70997970C51812dc3A010C7d01b50e0d17dc79C8\",\n  \"to\": \"0x20107D5fb487F38c649230ae270eD5bdaa92E9cD\",\n  \"functionName\": \"markRefundable\",\n  \"valueWei\": \"0\",\n  \"gas\": \"76745\",\n  \"gasPrice\": \"1010835438\",\n  \"maximumFeeBNB\": \"0.00007757656568931\",\n  \"calldataHash\": \"0xfe6bc305796ef35413f4035b98b09b9b561024b93948b0e027aed88ca19627da\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x5e10e3d5beb5b4d190937d8e59a873cb0de70d66bc8ed2dd74e80a4687d870e1\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x5e10e3d5beb5b4d190937d8e59a873cb0de70d66bc8ed2dd74e80a4687d870e1\",\n  \"blockNumber\": \"37\"\n}"
+    },
+    {
+      "operation": "CLI:withdraw",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"withdraw\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x20107D5fb487F38c649230ae270eD5bdaa92E9cD\",\n  \"functionName\": \"withdraw\",\n  \"valueWei\": \"0\",\n  \"gas\": \"126021\",\n  \"gasPrice\": \"1009486278\",\n  \"maximumFeeBNB\": \"0.000127216470239838\",\n  \"calldataHash\": \"0x14bba0bf20abc741dd13b5d1767aa8c00c9d1416cf1496ab67264f493abc95fc\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xa4800942eaf6de547a4acf14308db4b109b1f9d77ebc80526cef15f311fb36de\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xa4800942eaf6de547a4acf14308db4b109b1f9d77ebc80526cef15f311fb36de\",\n  \"blockNumber\": \"38\"\n}"
+    },
+    {
+      "operation": "mint",
+      "hash": "0xa3ce0d831ca40d9ba8211de776fb358f1a26c3fca0ce8a96bfed2e63ce7a2dc8",
+      "blockNumber": "39",
+      "gasUsed": "51348"
+    },
+    {
+      "operation": "list",
+      "hash": "0x4cf1cce0e61e451f13a8b87b21b69bb99555b4f8739995bcadb6796c14019f61",
+      "blockNumber": "40",
+      "gasUsed": "134087"
+    },
+    {
+      "operation": "CLI:create-pool",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"create-pool\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0xa513e6e4b8f2a923d98304ec87f64353c4d5c853\",\n  \"functionName\": \"createPool\",\n  \"valueWei\": \"0\",\n  \"gas\": \"921099\",\n  \"gasPrice\": \"1006371222\",\n  \"maximumFeeBNB\": \"0.000926967526212978\",\n  \"calldataHash\": \"0xfa67ca07c1822279a139231f75e275d95eb322865971e8352c1383bbfec185db\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xf52a525367b303d18fd2a57044af23ed5753d71606500cfd4b5951f9c9e9d533\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xf52a525367b303d18fd2a57044af23ed5753d71606500cfd4b5951f9c9e9d533\",\n  \"blockNumber\": \"41\"\n}"
+    },
+    {
+      "operation": "CLI:contribute",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"contribute\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x99c2aD0ebc41588E189cC2b362fB440acCac994e\",\n  \"functionName\": \"contribute\",\n  \"valueWei\": \"100000057\",\n  \"gas\": \"6332541\",\n  \"gasPrice\": \"1005614964\",\n  \"maximumFeeBNB\": \"0.006368097989743524\",\n  \"calldataHash\": \"0x49e288028a18c54df7a3c9b1ff3368cce90d97b2ddd1047d635ce170b4fb0d0a\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xa52eb8367768caf22de458c815792d1d6f69178d77c0fcb814a03601ad020541\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xa52eb8367768caf22de458c815792d1d6f69178d77c0fcb814a03601ad020541\",\n  \"blockNumber\": \"42\"\n}"
+    },
+    {
+      "operation": "setPending",
+      "hash": "0x8a774e24d84e57878f290c22401329456b985fbf9f3890184f7ba5107417f975",
+      "blockNumber": "43",
+      "gasUsed": "88958"
+    },
+    {
+      "operation": "CLI:harvest-and-claim",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"harvest-and-claim\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x99c2aD0ebc41588E189cC2b362fB440acCac994e\",\n  \"functionName\": \"harvestAndClaim\",\n  \"valueWei\": \"0\",\n  \"gas\": \"4072355\",\n  \"gasPrice\": \"1004514469\",\n  \"maximumFeeBNB\": \"0.004090739520404495\",\n  \"calldataHash\": \"0x6f37e096286666aacd0107f8d8b8fb6acbf07f592ce36154a48042e7dc39652e\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x14e2f37f64d2b9956beee289b5570940dcec2a9b769b977ee01e626b998e40ac\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x14e2f37f64d2b9956beee289b5570940dcec2a9b769b977ee01e626b998e40ac\",\n  \"blockNumber\": \"44\"\n}"
+    },
+    {
+      "operation": "mint",
+      "hash": "0xd3c0f335f0c7c5c59dc613d9ea1a94466f1f8e231fa2f6b93849e964cdc40f0f",
+      "blockNumber": "45",
+      "gasUsed": "33931"
+    },
+    {
+      "operation": "setFaults",
+      "hash": "0x2fa9a072ea9a1c35d79eeddc66c5f3e6c11d2285c3bd4ebd86a7b1a5a5dedcb9",
+      "blockNumber": "46",
+      "gasUsed": "44014"
+    },
+    {
+      "operation": "setBroken",
+      "hash": "0x79fc559623ff454cd7aeed6c88ac4fec00d2125bee182a0948331c7d4a6ab0ce",
+      "blockNumber": "47",
+      "gasUsed": "26549"
+    },
+    {
+      "operation": "CLI:redeem-without-harvest",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"redeem-without-harvest\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x99c2aD0ebc41588E189cC2b362fB440acCac994e\",\n  \"functionName\": \"redeemWithoutHarvest\",\n  \"valueWei\": \"0\",\n  \"gas\": \"1747046\",\n  \"gasPrice\": \"1002732980\",\n  \"maximumFeeBNB\": \"0.00175182064177708\",\n  \"calldataHash\": \"0x0861050ddd90b93e892a0beb8f7c2c665c943a5a6b60d3685e6f97a3c066d943\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0xaf7bba48b693e466c985fccc04645de06ffe8e09d3fc43d8e3c9dbf7278316d7\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0xaf7bba48b693e466c985fccc04645de06ffe8e09d3fc43d8e3c9dbf7278316d7\",\n  \"blockNumber\": \"48\"\n}"
+    },
+    {
+      "operation": "setFaults",
+      "hash": "0x6c1df3e0af5a3cdbc7f878c74c4c6d8d1d54386fb90797e9ab32487ce7928a8a",
+      "blockNumber": "49",
+      "gasUsed": "22120"
+    },
+    {
+      "operation": "CLI:claim-residual",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"SIMULATED_AWAITING_SEND_GATE\",\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"command\": \"claim-residual\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"to\": \"0x99c2aD0ebc41588E189cC2b362fB440acCac994e\",\n  \"functionName\": \"claimResidual\",\n  \"valueWei\": \"0\",\n  \"gas\": \"102482\",\n  \"gasPrice\": \"1002115703\",\n  \"maximumFeeBNB\": \"0.000102698821474846\",\n  \"calldataHash\": \"0x41979773f424d0194a600492d25a2a2aa753fab423bc8bf83333dde60a890198\",\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"liveIdentity\": null,\n  \"reviewedManifestHash\": null\n}\n{\n  \"status\": \"SUBMITTED_CHECK_RECEIPT_BEFORE_RETRY\",\n  \"transactionHash\": \"0x879627d2da0242e372c7e060655ca8b86ced2f3842e139efdcee4f369293ee0e\"\n}\n{\n  \"status\": \"RECEIPT_AND_POSTCONDITIONS_VERIFIED\",\n  \"transactionHash\": \"0x879627d2da0242e372c7e060655ca8b86ced2f3842e139efdcee4f369293ee0e\",\n  \"blockNumber\": \"50\"\n}"
+    },
+    {
+      "operation": "CLI:import-order",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"IMPORTED_STRUCTURE_ONLY\",\n  \"protocol\": \"seaport\",\n  \"sourceChainId\": 56,\n  \"market\": \"0x1111111111111111111111111111111111111111\",\n  \"tokenId\": \"3204\",\n  \"buyerPaysWei\": \"10100\",\n  \"identityStatus\": \"unknown\",\n  \"executionVerified\": false\n}"
+    },
+    {
+      "operation": "CLI:protocol-check",
+      "status": "PASS",
+      "output": "{\n  \"protocol\": \"official-circuit\",\n  \"status\": \"UNKNOWN_DISABLED\",\n  \"executable\": false,\n  \"permanentInvalid\": false,\n  \"reason\": \"Actual CircuitMarket implementation/ABI unverified; CIRCUIT_RESERVED disabled\",\n  \"execution\": \"NOT_PROBED_DISABLED_PROTOCOL\"\n}"
+    },
+    {
+      "operation": "CLI:deploy-local",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"DRY_RUN_DEPLOYMENT_PLAN_NOT_EXECUTED\",\n  \"mode\": \"mock\",\n  \"script\": \"script/DeployLocal.s.sol:DeployLocal\",\n  \"sender\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"privateKeysUsed\": false,\n  \"next\": \"Start loopback Anvil; pass --from and --send-local after reviewing local deployment script\"\n}"
+    },
+    {
+      "operation": "CLI:deploy-local",
+      "status": "PASS",
+      "output": "No files changed, compilation skipped\nScript ran successfully.\n\n== Logs ==\n  LOCAL_ONLY_NOT_PRODUCTION\n  Factory 0x9d4454B023096f34B160D6B654540c56A1F81688\n  Template 0x0E801D84Fa97b50751Dbf25036d067dCf18858bF\n  Timelock 0x99bbA657f2BbC93c02D617f8bA121cB8Fc104Acf\n  Guardian 0x70997970C51812dc3A010C7d01b50e0d17dc79C8\n  Creation paused: configure through scheduleBatch and executeBatch after delay.\n\n## Setting up 1 EVM.\n\n==========================\n\nChain 56\n\nEstimated gas price: 1.004231406 gwei\n\nEstimated total gas used for script: 14294148\n\nEstimated amount required: 0.014354632343612088 BNB\n\n==========================\n\n\n==========================\n\nONCHAIN EXECUTION COMPLETE & SUCCESSFUL.\n\nTransactions saved to: /Users/jaychen/Desktop/pin/groupbuy-v1/artifacts/rebuild-check/broadcast/DeployLocal.s.sol/56/run-latest.json\n\nSensitive values saved to: /Users/jaychen/Desktop/pin/groupbuy-v1/artifacts/rebuild-check/cache/DeployLocal.s.sol/56/run-latest.json"
+    },
+    {
+      "operation": "configure-local:dry-run",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"PREPARED_NOT_EXECUTED\",\n  \"localOnly\": true,\n  \"productionReady\": false,\n  \"transactions\": [],\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"checkpoint\": {\n    \"number\": \"52\",\n    \"hash\": \"0xf754e3ffa1199ac5e620af12ce4ef650b12a4f186aaad48469b962e99b4e3db6\"\n  },\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"factory\": \"0x9d4454B023096f34B160D6B654540c56A1F81688\",\n  \"template\": \"0x0E801D84Fa97b50751Dbf25036d067dCf18858bF\",\n  \"timelock\": \"0x99bbA657f2BbC93c02D617f8bA121cB8Fc104Acf\",\n  \"from\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"guardian\": \"0x70997970C51812dc3A010C7d01b50e0d17dc79C8\",\n  \"configFile\": \"deployments/mock/56/config.json\",\n  \"configHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n  \"templateCodeHash\": \"0x4dd99bcc786a56e8f09b231e0084cb7af7691e0f6145adfba738b38aa5f260e5\",\n  \"minimumDelay\": \"60\",\n  \"minimumDelayFloor\": \"60\",\n  \"operationId\": \"0x7c6e21165ca8147308f68e93bbc610e707a517b4252bf5274c773008c5aa264d\",\n  \"salt\": \"0x465d89979c3374fb0029bff7cc93b4520bb4c78bf45aa93f7ffc20791bfcb2c7\",\n  \"operationState\": 0,\n  \"actions\": [\n    \"approveTemplate\",\n    \"approveConfig\",\n    \"selectConfiguration\",\n    \"resumeCreation\"\n  ],\n  \"note\": \"Only verified local Anvil is used. Advancing local time may expire an order; recheck the fixed order after governance. Interface checks do not certify production governance bytecode or multisig roles.\",\n  \"scheduleSimulation\": \"PASS\"\n}"
+    },
+    {
+      "operation": "configure-local:send",
+      "status": "PASS",
+      "output": "{\n  \"status\": \"LOCAL_CONFIGURED\",\n  \"localOnly\": true,\n  \"productionReady\": false,\n  \"transactions\": [\n    {\n      \"operation\": \"scheduleBatch\",\n      \"hash\": \"0xb6dcb30d3ee65348e948d578457c790b70b5d7275480cecfc5b5d64e91f64108\",\n      \"status\": \"success\",\n      \"blockNumber\": \"53\",\n      \"blockHash\": \"0xf1be4a21d7f04a21efdbab0b370da9a618bf74234214043cfb1e5d01736f8eb6\",\n      \"gasUsed\": \"84906\"\n    },\n    {\n      \"operation\": \"executeBatch\",\n      \"hash\": \"0x3894437467bf594176501072d80f06d51426cb1323acc8050b2c5069ac5ecd84\",\n      \"status\": \"success\",\n      \"blockNumber\": \"55\",\n      \"blockHash\": \"0x1ddfeb6bf05042bdf82d6a4c7b165cbe49b06c3aacf1ad43f6cc72baaae18bce\",\n      \"gasUsed\": \"372592\"\n    }\n  ],\n  \"mode\": \"mock\",\n  \"chainId\": 56,\n  \"checkpoint\": {\n    \"number\": \"52\",\n    \"hash\": \"0xf754e3ffa1199ac5e620af12ce4ef650b12a4f186aaad48469b962e99b4e3db6\"\n  },\n  \"execution\": {\n    \"mode\": \"mock\",\n    \"chainId\": 56,\n    \"local\": true,\n    \"forkStatus\": \"NO_FORK\"\n  },\n  \"factory\": \"0x9d4454B023096f34B160D6B654540c56A1F81688\",\n  \"template\": \"0x0E801D84Fa97b50751Dbf25036d067dCf18858bF\",\n  \"timelock\": \"0x99bbA657f2BbC93c02D617f8bA121cB8Fc104Acf\",\n  \"from\": \"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\n  \"guardian\": \"0x70997970C51812dc3A010C7d01b50e0d17dc79C8\",\n  \"configFile\": \"deployments/mock/56/config.json\",\n  \"configHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n  \"templateCodeHash\": \"0x4dd99bcc786a56e8f09b231e0084cb7af7691e0f6145adfba738b38aa5f260e5\",\n  \"minimumDelay\": \"60\",\n  \"minimumDelayFloor\": \"60\",\n  \"operationId\": \"0x7c6e21165ca8147308f68e93bbc610e707a517b4252bf5274c773008c5aa264d\",\n  \"salt\": \"0x465d89979c3374fb0029bff7cc93b4520bb4c78bf45aa93f7ffc20791bfcb2c7\",\n  \"operationState\": 0,\n  \"actions\": [\n    \"approveTemplate\",\n    \"approveConfig\",\n    \"selectConfiguration\",\n    \"resumeCreation\"\n  ],\n  \"note\": \"Only verified local Anvil is used. Advancing local time may expire an order; recheck the fixed order after governance. Interface checks do not certify production governance bytecode or multisig roles.\",\n  \"scheduleSimulation\": \"PASS\",\n  \"localTimeAdvancedSeconds\": \"61\",\n  \"after\": {\n    \"blockNumber\": \"55\",\n    \"selectedTemplate\": \"0x0E801D84Fa97b50751Dbf25036d067dCf18858bF\",\n    \"selectedConfigHash\": \"0x70be158581a46e64dcfb6a5645f7b1076b7c510b5ae1b6f9f78c644937a1565d\",\n    \"creationPaused\": false,\n    \"templateApproved\": true,\n    \"configurationApproved\": true\n  }\n}"
+    }
+  ],
+  "final": {
+    "state": 4,
+    "minerOwner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+  },
+  "fork": "NOT_RUN",
+  "live": "NOT_RUN"
+}

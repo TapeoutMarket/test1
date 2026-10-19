@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "scope": "ONLY_LOCAL_TRANSPORT_MOCK_UPSTREAM",
+  "status": "PASS",
+  "generatedAt": "2026-10-19T12:51:52.881Z",
+  "verificationInputHash": "9ff04a9f9e6431657fb44b45217d8e71d39eda55ba02ae2c12081b8a00cdafba",
+  "actualBSCForkExecuted": false,
+  "mainnetTransactions": 0,
+  "openedLANListener": false,
+  "sourceRpcWritesAfterFixtureInitialization": 0,
+  "localMockSourceFixtureWrites": [
+    {
+      "method": "evm_mine",
+      "count": 1
+    }
+  ],
+  "sourceBoundary": "READ_ONLY_PROXY_ONLY_AFTER_LOCAL_FIXTURE_SETUP",
+  "checks": [
+    {
+      "name": "mock_source_started",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_chain_id_56",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_pinned_block_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "nodeinfo_source_is_loopback_proxy",
+      "status": "PASS"
+    },
+    {
+      "name": "public_manifest_hides_provider",
+      "status": "PASS"
+    },
+    {
+      "name": "source_proxy_chain_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source_proxy_pinned_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_eth_sendTransaction",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_evm_snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_evm_revert",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_evm_mine",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_evm_increaseTime",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_evm_setNextBlockTimestamp",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_mine",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_setBalance",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_impersonateAccount",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_stopImpersonatingAccount",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_eth_sendRawTransaction",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_setCode",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_setStorageAt",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reject_anvil_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "sdk_local_fork_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "preflight_exact_source_proxy_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_transaction_mined",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_balance_changed",
+      "status": "PASS"
+    },
+    {
+      "name": "source_block_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "source_balance_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "cli_deploy_local",
+      "status": "PASS"
+    },
+    {
+      "name": "source_unchanged_after_cli_deploy",
+      "status": "PASS"
+    },
+    {
+      "name": "fork_port_closed",
+      "status": "PASS"
+    },
+    {
+      "name": "source_proxy_port_closed",
+      "status": "PASS"
+    },
+    {
+      "name": "source_input_hash_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "nativeAnvilMetadata": {
+    "version": "anvil/v1.4.3",
+    "forkConfigKeys": [
+      "forkUrl",
+      "forkBlockNumber",
+      "forkRetryBackoff"
+    ],
+    "forkBlockHashPresent": false,
+    "environmentChainId": 56
+  }
+}

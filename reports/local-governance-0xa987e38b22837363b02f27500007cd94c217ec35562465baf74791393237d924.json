@@ -1,0 +1,65 @@
+{
+  "status": "LOCAL_CONFIGURED",
+  "localOnly": true,
+  "productionReady": false,
+  "transactions": [
+    {
+      "operation": "scheduleBatch",
+      "hash": "0x96b1d87b1d35d6cf92ec0c99f6928e053d5ca6374d2243a3dcdc413f7247112c",
+      "status": "success",
+      "blockNumber": "53",
+      "blockHash": "0x156eae2bfe274ac678c0c5980568c1483f71d63b20fbec4ec31321983e6cb0af",
+      "gasUsed": "84930"
+    },
+    {
+      "operation": "executeBatch",
+      "hash": "0xf30905de494539faf85513959839ca72e55aff405bf7ae935142fe810192e0b2",
+      "status": "success",
+      "blockNumber": "55",
+      "blockHash": "0x9e15882f1aa64ddca272c9e9653558aeb759563d52c332ed8cad0fa72eecb514",
+      "gasUsed": "372616"
+    }
+  ],
+  "mode": "mock",
+  "chainId": 56,
+  "checkpoint": {
+    "number": "52",
+    "hash": "0xd345bd3f490528c3ac4decd18a267a0d414dc59c041a2d8b1506790fa51d2a3b"
+  },
+  "execution": {
+    "mode": "mock",
+    "chainId": 56,
+    "local": true,
+    "forkStatus": "NO_FORK"
+  },
+  "factory": "0x9d4454B023096f34B160D6B654540c56A1F81688",
+  "template": "0x0E801D84Fa97b50751Dbf25036d067dCf18858bF",
+  "timelock": "0x99bbA657f2BbC93c02D617f8bA121cB8Fc104Acf",
+  "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "guardian": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "configFile": "deployments/mock/56/config.json",
+  "configHash": "0x17c42af431ecdbd9e6517a19fc13d6db3a46883806414e64a9495422b1250f11",
+  "templateCodeHash": "0xc842c7201302bb9853f3e6f2a1207a62822e04e255880630c0fee7fd14d40763",
+  "minimumDelay": "60",
+  "minimumDelayFloor": "60",
+  "operationId": "0xa987e38b22837363b02f27500007cd94c217ec35562465baf74791393237d924",
+  "salt": "0x91a08991a4e56682e3a5e6472657bcb377c3ddd8b936d5e0a2e7d0734ddb8b1e",
+  "operationState": 0,
+  "actions": [
+    "approveTemplate",
+    "approveConfig",
+    "selectConfiguration",
+    "resumeCreation"
+  ],
+  "note": "Only verified local Anvil is used. Advancing local time may expire an order; recheck the fixed order after governance. Interface checks do not certify production governance bytecode or multisig roles.",
+  "scheduleSimulation": "PASS",
+  "localTimeAdvancedSeconds": "61",
+  "after": {
+    "blockNumber": "55",
+    "selectedTemplate": "0x0E801D84Fa97b50751Dbf25036d067dCf18858bF",
+    "selectedConfigHash": "0x17c42af431ecdbd9e6517a19fc13d6db3a46883806414e64a9495422b1250f11",
+    "creationPaused": false,
+    "templateApproved": true,
+    "configurationApproved": true
+  }
+}
